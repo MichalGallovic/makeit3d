@@ -102,7 +102,17 @@ Scenario: Editing model count in order
 	And scope into the first "data" property
 		And the properties exist:
 		"""
-		count
+		id
+		user_id
+		first_name
+		last_name
+		street
+		email
+		town
+		country
+		zip_code
+		price
+		models
 		"""
 
 
@@ -121,3 +131,18 @@ Scenario: Editing order
 	"""
 	When I request "PUT /orders/1"
 	Then I get a "200" response
+	And scope into the first "data" property
+		And the properties exist:
+		"""
+		id
+		user_id
+		first_name
+		last_name
+		street
+		email
+		town
+		country
+		zip_code
+		price
+		models
+		"""

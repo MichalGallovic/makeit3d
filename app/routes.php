@@ -26,3 +26,8 @@ Route::get('/access-logs', function() {
 		echo '<p>'.$value.'</p>';
 	}
 });
+
+// Token Authentication
+Route::get('auth', 'Tappleby\AuthToken\AuthTokenController@index');
+Route::post('auth', 'Tappleby\AuthToken\AuthTokenController@store');
+Route::delete('auth', 'Tappleby\AuthToken\AuthTokenController@destroy');
