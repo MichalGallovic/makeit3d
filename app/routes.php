@@ -13,5 +13,16 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	$data = "data";
+	$scope = "{$data}.0";
+	dd($scope);
+});
+
+Route::get('/access-logs', function() {
+	$logs = file_get_contents(__DIR__.'/storage/logs/server-access.log');
+	$logs = explode("\n",$logs);
+	$last20 = array_slice($logs,count($logs)-20,20);
+	foreach ($last20 as $key => $value) {
+		echo '<p>'.$value.'</p>';
+	}
 });
