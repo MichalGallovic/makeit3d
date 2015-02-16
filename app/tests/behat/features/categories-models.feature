@@ -1,4 +1,4 @@
-Feature: Models from Categories
+Feature: Models
 
 Scenario: Returning models by category
 	When I request "GET /categories/1/models"
