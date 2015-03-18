@@ -18,6 +18,8 @@ return array(
 	|
 	*/
 
+    'default'   =>  'mysql',
+
 	'connections' => array(
 
 		'mysql' => array(
@@ -30,17 +32,11 @@ return array(
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
 		),
-
-		'pgsql' => array(
-			'driver'   => 'pgsql',
-			'host'     => 'localhost',
-			'database' => 'homestead',
-			'username' => 'homestead',
-			'password' => 'secret',
-			'charset'  => 'utf8',
-			'prefix'   => '',
-			'schema'   => 'public',
-		),
+        'sqlite'    =>  array(
+            'driver'    =>  'sqlite',
+            'database'  =>  app_path().'/storage/databases/development.sqlite',
+            'prefix'    =>  ''
+        )
 
 	),
 

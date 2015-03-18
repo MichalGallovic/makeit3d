@@ -1,21 +1,10 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
-*/
-
+use Tappleby\AuthToken\Exceptions\NotAuthorizedException as AuthTokenNotAuthorizedException;
+use Illuminate\Support\Facades\Request;
 Route::get('/', function()
 {
-	$data = "data";
-	$scope = "{$data}.0";
-	dd($scope);
+    return "makeit3d";
 });
 
 Route::get('/access-logs', function() {
@@ -31,3 +20,11 @@ Route::get('/access-logs', function() {
 Route::get('auth', 'Tappleby\AuthToken\AuthTokenController@index');
 Route::post('auth', 'Tappleby\AuthToken\AuthTokenController@store');
 Route::delete('auth', 'Tappleby\AuthToken\AuthTokenController@destroy');
+
+// @TODO handle HTML request
+App::error(function(AuthTokenNotAuthorizedException $exception) {
+    if(Request::ajax()) {
+        return Response::json(array('error' => $exception->getMessage()), $exception->getCode());
+    }
+
+});
