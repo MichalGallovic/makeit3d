@@ -23,6 +23,16 @@ class UserTableSeeder extends Seeder {
 			]);
 		}
 
+        User::create([
+            "email" =>  "hoblikj@gmail.com",
+            "first_name"    =>  "Jakub",
+            "last_name"     =>  "Hoblík",
+            "password"  =>  Hash::make("kominar"),
+            "street"        =>  $faker->streetName,
+            "town"      =>  "Trenčín",
+            "zip_code"  =>  $faker->randomNumber(5),
+            "country"   =>  "Slovakia"
+        ]);
 	}
 
 }

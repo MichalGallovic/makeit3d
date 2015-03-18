@@ -18,7 +18,7 @@ return array(
 	|
 	*/
 
-    'default'   =>  'mysql',
+    'default'   =>  'sqlite',
 
 	'connections' => array(
 
