@@ -12,7 +12,10 @@ Route::group(["prefix"  =>  "api"], function() {
 
     Route::get('users/{id}', 'UserController@show');
     // Registration
-
+    Route::post('users/register','UserController@register');
+    Route::post('users/login','UserController@login');
+    Route::get('users/auth','UserController@getUserByToken');
+    Route::delete('users/auth','UserController@logout');
     // Categories
     Route::get('categories', 'CategoryController@index');
     Route::get('categories/{id}', 'CategoryController@show');
@@ -22,9 +25,9 @@ Route::group(["prefix"  =>  "api"], function() {
     Route::get('models/{id}', 'ModelController@show');
 
     // Token Authentication
-    Route::get('auth', 'Tappleby\AuthToken\AuthTokenController@index');
-    Route::post('auth', 'Tappleby\AuthToken\AuthTokenController@store');
-    Route::delete('auth', 'Tappleby\AuthToken\AuthTokenController@destroy');
+//    Route::get('auth', 'Tappleby\AuthToken\AuthTokenController@index');
+//    Route::post('auth', 'Tappleby\AuthToken\AuthTokenController@store');
+//    Route::delete('auth', 'Tappleby\AuthToken\AuthTokenController@destroy');
 });
 
 // @TODO handle HTML request
