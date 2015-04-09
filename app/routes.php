@@ -10,8 +10,16 @@ Route::get('/', function()
 
 Route::group(["prefix"  =>  "api"], function() {
 
-
+    Route::get('users/{id}', 'UserController@show');
     // Registration
+
+    // Categories
+    Route::get('categories', 'CategoryController@index');
+    Route::get('categories/{id}', 'CategoryController@show');
+    // Models
+    Route::get('models', 'ModelController@index');
+    Route::get('models/recently_printed', 'ModelController@recentlyPrinted');
+    Route::get('models/{id}', 'ModelController@show');
 
     // Token Authentication
     Route::get('auth', 'Tappleby\AuthToken\AuthTokenController@index');

@@ -8,7 +8,7 @@ class UserTableSeeder extends Seeder {
 	public function run()
 	{
 		$faker = Faker::create();
-
+        DB::table('users')->delete();
 		foreach(range(1, 10) as $index)
 		{
 			User::create([

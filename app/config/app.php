@@ -39,7 +39,7 @@ return array(
 	|
 	*/
 
-	'timezone' => 'UTC',
+	'timezone' => 'Europe/Bratislava',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return array(
 	|
 	*/
 
-	'key' => 'YourSecretKey!!!',
+	'key' => '7jOLuqXFdwFxnNy9NVzLoK1D18SQgnWn',
 
 	'cipher' => MCRYPT_RIJNDAEL_128,
 
