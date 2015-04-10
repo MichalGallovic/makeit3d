@@ -8,7 +8,8 @@
 		"laravel/framework": "4.2.*",
 		"league/fractal": "~0.11",
 		"guzzlehttp/guzzle": "~5.2",
-		"tappleby/laravel-auth-token": "~0.3"
+		"tappleby/laravel-auth-token": "~0.3",
+		"laracasts/flash": "1.2"
 	},
 	"autoload": {
 		"classmap": [

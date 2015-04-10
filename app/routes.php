@@ -3,19 +3,19 @@
 use Tappleby\AuthToken\Exceptions\NotAuthorizedException as AuthTokenNotAuthorizedException;
 use Illuminate\Support\Facades\Request;
 
-Route::get('/', function()
-{
-    return View::make('hello');
-});
+Route::get('/',['uses'  =>  'HomeController@index','as'=>'home']);
 
 Route::group(["prefix"  =>  "api"], function() {
 
-    Route::get('users/{id}', 'UserController@show');
+
     // Registration
     Route::post('users/register','UserController@register');
+    Route::get('users/verify/{code}','UserController@verify');
     Route::post('users/login','UserController@login');
     Route::get('users/auth','UserController@getUserByToken');
     Route::delete('users/auth','UserController@logout');
+    Route::get('users/{id}', 'UserController@show');
+
     // Categories
     Route::get('categories', 'CategoryController@index');
     Route::get('categories/{id}', 'CategoryController@show');

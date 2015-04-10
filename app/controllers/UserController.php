@@ -1,7 +1,7 @@
 <?php
 
 use App\Transformer\UserTransformer;
-
+use Illuminate\Support\Collection;
 class UserController extends ApiController {
 
 	public function index() {
@@ -12,6 +12,7 @@ class UserController extends ApiController {
         $user = User::find($id);
 
         if(!$user) {
+            return $this->errorNotFound("No such user man, sorry !");
             //@TODO error
         }
 
@@ -39,12 +40,37 @@ class UserController extends ApiController {
             "confirmation_code" =>  $confirmation_code
         ]);
 
-        Mail::send('email.verify',$confirmation_code, function($message) use ($input) {
+        Mail::send('emails.auth.verify',[$confirmation_code], function($message) use ($input) {
             $message->to($input['email'])->subject('Verify your email address');
         });
+        
+        return Response::json([
+           "data"   =>  [
+               "confirmation_code"  =>  $confirmation_code
+           ]
+        ]);
+//        return $this->respondWithSuccess("Your account was registered successfully. The confirmation email was sent to you.");
 
-//        return $this->respondWithItem()
+    }
 
+    public function verify($confirmation_code) {
+        if(!$confirmation_code){
+//            throw new InvalidConfirmationCodeException;
+            return Redirect::home();
+        }
+        $user = User::where('confirmation_code',$confirmation_code)->first();
+
+        if(!$user){
+//            throw new InvalidConfirmationCodeException;
+            return Redirect::home();
+        }
+
+        $user->confirmed = 1;
+        $user->confirmation_code = null;
+        $user->save();
+
+
+        return View::make('site.user.verify')->with('email',$user->email);
     }
 
     public function login() {

@@ -87,6 +87,22 @@ class ApiController extends Controller
         ]);
     }
 
+    protected function respondWithSuccess($message) {
+        if ($this->statusCode !== 200) {
+            trigger_error(
+                "You shall not success with code other than 200...",
+                E_USER_WARNING
+            );
+        }
+
+        return $this->respondWithArray([
+            'success'   =>  [
+                'message'   =>  $message
+            ]
+        ]);
+
+    }
+
     /**
      * Generates a Response with a 403 HTTP header and a given message.
      *

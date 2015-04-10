@@ -121,7 +121,8 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-        'Tappleby\AuthToken\AuthTokenServiceProvider'
+        'Tappleby\AuthToken\AuthTokenServiceProvider',
+        'Laracasts\Flash\FlashServiceProvider'
 	),
 
 	/*
@@ -190,7 +191,8 @@ return array(
 		'View'              => 'Illuminate\Support\Facades\View',
 
         'AuthToken' => 'Tappleby\Support\Facades\AuthToken',
-        'AuthTokenNotAuthorizedException' => 'Tappleby\AuthToken\Exceptions\NotAuthorizedException'
+        'AuthTokenNotAuthorizedException' => 'Tappleby\AuthToken\Exceptions\NotAuthorizedException',
+        'Flash' => 'Laracasts\Flash\Flash'
 
 	),
 
