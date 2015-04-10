@@ -14,7 +14,7 @@ Route::group(["prefix"  =>  "api"], function() {
     Route::post('users/register','UserController@register');
     Route::post('users/login','UserController@login');
     Route::delete('users/logout','UserController@logout')->before('auth.token');
-
+    Route::get('users/current','UserController@getCurrentUser')->before('auth.token');
 //    Route::get('users/{id}', 'UserController@show');
 
     // Categories

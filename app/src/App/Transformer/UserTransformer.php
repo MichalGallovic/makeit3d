@@ -15,7 +15,8 @@ class UserTransformer extends TransformerAbstract {
             'street'        =>  $user->street,
             'town'          =>  $user->town,
             'country'       =>  $user->country,
-            'zip_code'       =>  $user->zip_code
+            'zip_code'      =>  $user->zip_code,
+            'created_at'    =>  $user->created_at
         ];
     }
 }

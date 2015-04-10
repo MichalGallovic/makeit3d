@@ -90,14 +90,15 @@ class UserController extends ApiController {
     }
 
     public function logout() {
-        try {
-            $this->tokenController->destroy();
-        }
-        catch(AuthTokenNotAuthorizedException $e) {
-            return $this->errorUnauthorized("Login before logout :)");
-        }
+        $this->tokenController->destroy();
 
         return $this->respondWithSuccess("You logged out successfully");
+    }
+
+    public function getCurrentUser() {
+        $response = $this->tokenController->index();
+        $user = User::find($response->getData()->id);
+        return $this->respondWithItem($user, new UserTransformer);
     }
 
 }
