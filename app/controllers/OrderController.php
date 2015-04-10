@@ -1,6 +1,8 @@
 <?php
 
-class OrderController extends \BaseController {
+use App\Transformer\OrderTransformer;
+
+class OrderController extends ApiController {
 
 	/**
 	 * Display a listing of the resource.
@@ -10,7 +12,9 @@ class OrderController extends \BaseController {
 	 */
 	public function index()
 	{
+        $orders = Order::all();
 
+        return $this->respondWithCollection($orders, new OrderTransformer);
 	}
 
 	public function show($id)

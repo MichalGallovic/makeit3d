@@ -17,10 +17,18 @@ class OrderTableSeeder extends Seeder {
 		{
             $models_data = json_encode(["data"=> array_slice($models,rand(0,count($models) - 1))]);
 
-			Order::create([
+			$order = Order::create([
                 'user_id'   =>  $users[rand(0,count($users) - 1)],
                 'models'    =>  $models_data
 			]);
+
+            $price = 0;
+            foreach($order->models() as $model) {
+                $price += $model->price;
+            }
+
+            $order->price = $price;
+            $order->save();
 		}
 	}
 

@@ -2,8 +2,12 @@
 
 use User;
 use League\Fractal\TransformerAbstract;
-
+use App\Transformer\OrderTransformer;
 class UserTransformer extends TransformerAbstract {
+
+    protected $availableIncludes = [
+        'orders'
+    ];
 
     public function transform(User $user) {
         return [
@@ -18,5 +22,11 @@ class UserTransformer extends TransformerAbstract {
             'zip_code'      =>  $user->zip_code,
             'created_at'    =>  $user->created_at
         ];
+    }
+
+    public function includeOrders(User $user) {
+        $orders = $user->orders;
+
+        return $this->collection($orders, new OrderTransformer);
     }
 }

@@ -18,6 +18,13 @@ class CreateOrdersTable extends Migration {
             $table->unsignedInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->text('models');
+            $table->unsignedBigInteger('price')->default(0);
+            $table->string('first_name')->nullable();
+            $table->string('last_name')->nullable();
+            $table->string('street')->nullable();
+            $table->string('town')->nullable();
+            $table->string('country')->nullable();
+            $table->string('zipcode')->nullable();
 			$table->timestamps();
 		});
 	}

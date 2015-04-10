@@ -4,7 +4,10 @@ use Tappleby\AuthToken\Exceptions\NotAuthorizedException as AuthTokenNotAuthoriz
 use Illuminate\Support\Facades\Request;
 
 Route::get('/',['uses'  =>  'HomeController@index','as'=>'home']);
-
+Route::get('/tst',function() {
+   $user = User::find(2);
+    dd($user->orders);
+});
 Route::get('users/verify/{code}','UserController@verify');
 
 Route::group(["prefix"  =>  "api"], function() {
@@ -25,6 +28,7 @@ Route::group(["prefix"  =>  "api"], function() {
     Route::get('models/recently_printed', 'ModelController@recentlyPrinted');
     Route::get('models/{id}', 'ModelController@show');
 
+    Route::get('orders', 'OrderController@index');
     // Token Authentication
 //    Route::get('auth', 'Tappleby\AuthToken\AuthTokenController@index');
 //    Route::post('auth', 'Tappleby\AuthToken\AuthTokenController@store');
