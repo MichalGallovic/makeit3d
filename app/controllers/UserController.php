@@ -7,28 +7,19 @@ use App\Exceptions\User\InvalidConfirmationCodeException;
 use Tappleby\AuthToken\AuthTokenController;
 use League\Fractal\Manager;
 use Tappleby\AuthToken\Exceptions\NotAuthorizedException as AuthTokenNotAuthorizedException;
+use App\Repositories\DbUserRepository;
+
 class UserController extends ApiController {
 
     protected $tokenController;
+    protected $userRepo;
 
-    public function __construct(Manager $manager, AuthTokenController $tokenController) {
+    public function __construct(Manager $manager, AuthTokenController $tokenController, DbUserRepository $userRepo) {
         parent::__construct($manager);
         $this->tokenController = $tokenController;
+        $this->userRepo = $userRepo;
     }
 
-	public function index() {
-        $users = User::take(10)->get();
-    }
-
-    public function show($id) {
-        $user = User::find($id);
-
-        if(!$user) {
-            return $this->errorNotFound("No such user man, sorry !");
-        }
-
-        return $this->respondWithItem($user, new UserTransformer);
-    }
 
     public function register() {
         $input = Request::only(["username","password"]);
@@ -95,9 +86,66 @@ class UserController extends ApiController {
     }
 
     public function getCurrentUser() {
-        $response = $this->tokenController->index();
-        $user = User::find($response->getData()->id);
+        $user = $this->userRepo->getCurrentUser();
+
         return $this->respondWithItem($user, new UserTransformer);
     }
 
+
+
+    public function editCurrentUser() {
+        $user = $this->userRepo->getCurrentUser();
+
+        $input = Input::only([
+            'username',
+            'password',
+            'first_name',
+            'last_name',
+            'street',
+            'town',
+            'country',
+            'zip_code'
+        ]);
+
+
+        $rules = [
+            'username'      =>  'required|email',
+            'password'      =>  'required|min:6'
+        ];
+
+        $username = $input['username'];
+
+        if(!$this->isUsernameUnique($username, $user))
+            return $this->errorWrongArgs("This email has already been taken. Choose different please.");
+
+
+        $validator = Validator::make($input,$rules);
+
+        if($validator->fails()) {
+            $messages = $validator->messages();
+            return $this->errorWrongArgs($messages->first());
+        }
+
+        $input['email'] = $input['username'];
+        $input['password'] = Hash::make($input['password']);
+
+        $user->fill($input);
+        $user->save();
+
+        return $this->respondWithSuccess("User preferences updated successfully");
+    }
+
+    //######## Private methods #########
+
+    private function isUsernameUnique($username,$currentUser) {
+        if($username == $currentUser->email)
+            return true;
+
+        $userMatch = User::where('email','!=',$currentUser->email)->where('email',$username)->first();
+
+        if($userMatch)
+            return false;
+
+        return true;
+    }
 }

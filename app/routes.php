@@ -18,6 +18,7 @@ Route::group(["prefix"  =>  "api"], function() {
     Route::post('users/login','UserController@login');
     Route::delete('users/logout','UserController@logout')->before('auth.token');
     Route::get('users/current','UserController@getCurrentUser')->before('auth.token');
+    Route::put('users/current/edit','UserController@editCurrentUser')->before('auth.token');
 //    Route::get('users/{id}', 'UserController@show');
 
     // Categories
@@ -27,7 +28,7 @@ Route::group(["prefix"  =>  "api"], function() {
     Route::get('models', 'ModelController@index');
     Route::get('models/recently_printed', 'ModelController@recentlyPrinted');
     Route::get('models/{id}', 'ModelController@show');
-
+    Route::post('models/create','ModelController@create')->before('auth.token');
     Route::get('orders', 'OrderController@index');
     // Token Authentication
 //    Route::get('auth', 'Tappleby\AuthToken\AuthTokenController@index');

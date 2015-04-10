@@ -4,21 +4,21 @@ use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 
-class Makeit3dCommand extends Command {
+class Makeit3dDumpCommand extends Command {
 
 	/**
 	 * The console command name.
 	 *
 	 * @var string
 	 */
-	protected $name = 'makeit3d:refresh';
+	protected $name = 'makeit3d:dump';
 
 	/**
 	 * The console command description.
 	 *
 	 * @var string
 	 */
-	protected $description = 'Resets and seeds database.';
+	protected $description = 'Command description.';
 
 	/**
 	 * Create a new command instance.
@@ -37,13 +37,9 @@ class Makeit3dCommand extends Command {
 	 */
 	public function fire()
 	{
-		$this->call('migrate:refresh');
-        $this->call('migrate',['--package' =>  'tappleby/laravel-auth-token']);
-        $this->info("Database refreshed...OK!");
-
-        $this->call('db:seed');
-        $this->info("Database seeded...OK!");
-
+        $this->info('This may take a while...chill-out');
+		$this->call('dump-autoload');
+        $this->info('Dump autoload finished ... OK!');
 	}
 
 	/**

@@ -1,8 +1,20 @@
 <?php
 
 use App\Transformer\ModelTransformer;
+use League\Fractal\Manager;
+use App\Repositories\DbUserRepository;
+
 
 class ModelController extends ApiController {
+
+    protected $tokenController;
+    protected $userRepo;
+
+    public function __construct(Manager $manager,  DbUserRepository $userRepo) {
+        parent::__construct($manager);
+
+        $this->userRepo = $userRepo;
+    }
 
 	public function index()
 	{
@@ -22,6 +34,12 @@ class ModelController extends ApiController {
 
         return $this->respondWithItem($model, new ModelTransformer);
 	}
+
+    public function create() {
+        $user = $this->userRepo->getCurrentUser();
+
+
+    }
 
     public function recentlyPrinted() {
         $recently_printed = DB::table('printed_models')->orderBy('created_at', 'desc')->take(12)->lists('model_id');

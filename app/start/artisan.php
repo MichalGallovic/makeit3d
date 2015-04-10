@@ -12,3 +12,4 @@
 */
 
 Artisan::add(new Makeit3dCommand);
+Artisan::add(new Makeit3dDumpCommand);
