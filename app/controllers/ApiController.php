@@ -17,6 +17,11 @@ class ApiController extends Controller
     public function __construct(Manager $fractal)
     {
         $this->fractal = $fractal;
+
+        $include = Input::get('include');
+        if(isset($include)) {
+            $fractal->parseIncludes($include);
+        }
     }
 
     /**

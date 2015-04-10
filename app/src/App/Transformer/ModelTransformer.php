@@ -2,8 +2,13 @@
 
 use Model;
 use League\Fractal\TransformerAbstract;
+use App\Transformer\CategoryTransformer;
 
 class ModelTransformer extends TransformerAbstract {
+
+    protected $availableIncludes = [
+        'category'
+    ];
 
     public function transform(Model $model) {
         return [
@@ -11,8 +16,13 @@ class ModelTransformer extends TransformerAbstract {
             'name'          =>  $model->name,
             'price'         =>  (float) $model->price,
             'image_url'     =>  $model->image_url,
-            'category'      =>  'TODO NESTED RELATIONSHIP',
             'printing_time' =>  (int) $model->printing_time
         ];
+    }
+
+    public function includeCategory(Model $model) {
+        $category = $model->category;
+
+        return $this->item($category, new CategoryTransformer);
     }
 }

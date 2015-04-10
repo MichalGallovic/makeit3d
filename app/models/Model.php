@@ -4,7 +4,7 @@ class Model extends \Eloquent {
 	protected $fillable = [];
 
     public function category() {
-        return $this->hasOne('Category');
+        return $this->belongsTo('Category');
     }
 
     public function printedByUsers() {

@@ -2,8 +2,13 @@
 
 use Category;
 use League\Fractal\TransformerAbstract;
+use App\Transformer\ModelTransformer;
 
 class CategoryTransformer extends TransformerAbstract {
+
+    protected $availableIncludes = [
+        'models'
+    ];
 
     public function transform(Category $category) {
 
@@ -12,5 +17,11 @@ class CategoryTransformer extends TransformerAbstract {
             'name'          =>  $category->name,
             'image_url'     =>  $category->image_url
         ];
+    }
+
+    public function includeModels(Category $category) {
+        $models = $category->models;
+
+        return $this->collection($models, new ModelTransformer);
     }
 }

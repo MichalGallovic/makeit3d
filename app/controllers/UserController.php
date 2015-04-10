@@ -25,14 +25,13 @@ class UserController extends ApiController {
 
         if(!$user) {
             return $this->errorNotFound("No such user man, sorry !");
-            //@TODO error
         }
 
         return $this->respondWithItem($user, new UserTransformer);
     }
 
     public function register() {
-        $input = Request::only(["email","password"]);
+        $input = Request::only(["username","password"]);
         $rules = [
             "username"  =>  "required|email|unique:users,email",
             "password"  =>  "required|min:6"
