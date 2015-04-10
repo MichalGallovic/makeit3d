@@ -51,6 +51,10 @@ App::error(function(Exception $exception, $code)
 	Log::error($exception);
 });
 
+App::error(function(\App\Exceptions\User\InvalidConfirmationCodeException $exception, $code)
+{
+    return Redirect::home();
+});
 /*
 |--------------------------------------------------------------------------
 | Maintenance Mode Handler

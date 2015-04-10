@@ -1,8 +1,20 @@
 <?php
 
 use App\Transformer\UserTransformer;
+use App\Transformer\LoggedInTransformer;
 use Illuminate\Support\Collection;
+use App\Exceptions\User\InvalidConfirmationCodeException;
+use Tappleby\AuthToken\AuthTokenController;
+use League\Fractal\Manager;
+use Tappleby\AuthToken\Exceptions\NotAuthorizedException as AuthTokenNotAuthorizedException;
 class UserController extends ApiController {
+
+    protected $tokenController;
+
+    public function __construct(Manager $manager, AuthTokenController $tokenController) {
+        parent::__construct($manager);
+        $this->tokenController = $tokenController;
+    }
 
 	public function index() {
         $users = User::take(10)->get();
@@ -22,7 +34,7 @@ class UserController extends ApiController {
     public function register() {
         $input = Request::only(["email","password"]);
         $rules = [
-            "email"  =>  "required|email|unique:users",
+            "username"  =>  "required|email|unique:users,email",
             "password"  =>  "required|min:6"
         ];
         $validator = Validator::make($input, $rules);
@@ -35,15 +47,15 @@ class UserController extends ApiController {
         $confirmation_code = str_random(30);
 
         User::create([
-            "email"             =>  $input['email'],
+            "email"             =>  $input['username'],
             "password"          =>  Hash::make($input['password']),
             "confirmation_code" =>  $confirmation_code
         ]);
 
         Mail::send('emails.auth.verify',[$confirmation_code], function($message) use ($input) {
-            $message->to($input['email'])->subject('Verify your email address');
+            $message->to($input['username'])->subject('Verify your email address');
         });
-        
+
         return Response::json([
            "data"   =>  [
                "confirmation_code"  =>  $confirmation_code
@@ -55,14 +67,12 @@ class UserController extends ApiController {
 
     public function verify($confirmation_code) {
         if(!$confirmation_code){
-//            throw new InvalidConfirmationCodeException;
-            return Redirect::home();
+            throw new InvalidConfirmationCodeException("Invalid confirmation code.");
         }
         $user = User::where('confirmation_code',$confirmation_code)->first();
 
         if(!$user){
-//            throw new InvalidConfirmationCodeException;
-            return Redirect::home();
+            throw new InvalidConfirmationCodeException("Invalid confirmation code.");
         }
 
         $user->confirmed = 1;
@@ -74,15 +84,20 @@ class UserController extends ApiController {
     }
 
     public function login() {
+        $response = $this->tokenController->store()->getData();
 
-    }
-
-    public function getUserByToken() {
-
+        return $this->respondWithItem($response, new LoggedInTransformer);
     }
 
     public function logout() {
+        try {
+            $this->tokenController->destroy();
+        }
+        catch(AuthTokenNotAuthorizedException $e) {
+            return $this->errorUnauthorized("Login before logout :)");
+        }
 
+        return $this->respondWithSuccess("You logged out successfully");
     }
 
 }

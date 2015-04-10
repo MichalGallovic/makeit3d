@@ -5,15 +5,16 @@ use Illuminate\Support\Facades\Request;
 
 Route::get('/',['uses'  =>  'HomeController@index','as'=>'home']);
 
+Route::get('users/verify/{code}','UserController@verify');
+
 Route::group(["prefix"  =>  "api"], function() {
 
 
-    // Registration
+    // Authentication
     Route::post('users/register','UserController@register');
-    Route::get('users/verify/{code}','UserController@verify');
     Route::post('users/login','UserController@login');
-    Route::get('users/auth','UserController@getUserByToken');
-    Route::delete('users/auth','UserController@logout');
+    Route::delete('users/logout','UserController@logout')->before('auth.token');
+
     Route::get('users/{id}', 'UserController@show');
 
     // Categories
