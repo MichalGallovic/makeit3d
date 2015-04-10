@@ -55,6 +55,18 @@ App::error(function(\App\Exceptions\User\InvalidConfirmationCodeException $excep
 {
     return Redirect::home();
 });
+
+App::error(function(\Tappleby\AuthToken\Exceptions\NotAuthorizedException $exception, $code){
+    return Response::json([
+        "data" => [
+            'error' => [
+                'code' => "GEN-NOT-AUTHORIZED",
+                'http_code' => 401,
+                'message' => "Not authorized, sorry.",
+            ]
+        ]
+    ], 401);
+});
 /*
 |--------------------------------------------------------------------------
 | Maintenance Mode Handler
