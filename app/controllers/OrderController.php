@@ -53,7 +53,11 @@ class OrderController extends ApiController {
         if(!$this->areModelsValid($input['models']))
             return $this->errorWrongArgs("Invalid models. Format: comma separated values only numbers (i.e: 1,2,3,4)");
 
-        $this->orderRepo->createOrder($input,$user);
+        $order = $this->orderRepo->createOrder($input,$user);
+
+        Mail::send('emails.order.create',["order"   =>  $order], function($message) use ($order){
+            $message->to($order->user->email)->subject("Order:#".$order->id);
+        });
 
         return $this->respondWithSuccess("Your order has been created. Email with details, has been send to you.");
     }

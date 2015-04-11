@@ -36,13 +36,13 @@ class UserController extends ApiController {
 
         $confirmation_code = str_random(30);
 
-        User::create([
+        $user = User::create([
             "email"             =>  $input['username'],
             "password"          =>  Hash::make($input['password']),
             "confirmation_code" =>  $confirmation_code
         ]);
 
-        Mail::send('emails.auth.verify',[$confirmation_code], function($message) use ($input) {
+        Mail::send('emails.auth.verify',["user" =>  $user], function($message) use ($input) {
             $message->to($input['username'])->subject('Verify your email address');
         });
 
@@ -125,6 +125,7 @@ class UserController extends ApiController {
         }
 
         $input['email'] = $input['username'];
+
 
         $user->fill($input);
         $user->save();

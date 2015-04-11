@@ -41,7 +41,7 @@ class ModelController extends ApiController {
     public function create() {
         $user = $this->userRepo->getCurrentUser();
 
-
+        
     }
 
     public function recentlyPrinted() {
