@@ -1,15 +1,17 @@
 <?php
 
 use App\Transformer\OrderTransformer;
+use App\Repositories\DbUserRepository;
 
 class OrderController extends ApiController {
 
-	/**
-	 * Display a listing of the resource.
-	 * GET /order
-	 *
-	 * @return Response
-	 */
+    protected $userRepo;
+
+	public function __construct(DbUserRepository $userRepo) {
+        $this->userRepo = $userRepo;
+    }
+
+
 	public function index()
 	{
         $orders = Order::all();
@@ -17,10 +19,11 @@ class OrderController extends ApiController {
         return $this->respondWithCollection($orders, new OrderTransformer);
 	}
 
-	public function show($id)
-	{
-		//
-	}
+	public function create() {
+        $user = $this->userRepo->getCurrentUser();
+
+
+    }
 
 
 

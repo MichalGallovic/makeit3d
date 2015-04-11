@@ -29,7 +29,9 @@ Route::group(["prefix"  =>  "api"], function() {
     Route::get('models/recently_printed', 'ModelController@recentlyPrinted');
     Route::get('models/{id}', 'ModelController@show');
     Route::post('models/create','ModelController@create')->before('auth.token');
+    // Orders
     Route::get('orders', 'OrderController@index');
+    Route::get('orders/create', 'OrderController@create');
     // Token Authentication
 //    Route::get('auth', 'Tappleby\AuthToken\AuthTokenController@index');
 //    Route::post('auth', 'Tappleby\AuthToken\AuthTokenController@store');

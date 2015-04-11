@@ -26,13 +26,16 @@ class ModelController extends ApiController {
 
 	public function show($id)
 	{
-        $model = Model::find($id);
+        $ids = explode(',', $id);
 
+        $model = Model::find($ids);
         if(!$model) {
             return $this->errorNotFound('Oh, no such models man, sorry...');
         }
+        if($model->count() == 1)
+            return $this->respondWithItem($model->first(), new ModelTransformer);
 
-        return $this->respondWithItem($model, new ModelTransformer);
+        return $this->respondWithCollection($model, new ModelTransformer);
 	}
 
     public function create() {
