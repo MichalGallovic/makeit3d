@@ -21,6 +21,7 @@ class CreateModelsTable extends Migration {
             $table->foreign('category_id')->references('id')->on('category');
             $table->string('image_url')->nullable();
             $table->bigInteger('printing_time')->nullable();
+            $table->boolean('visible')->default(1);
             $table->string('file_path')->nullable();
 			$table->timestamps();
 		});

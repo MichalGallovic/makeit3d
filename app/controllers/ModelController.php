@@ -10,6 +10,8 @@ class ModelController extends ApiController {
     protected $tokenController;
     protected $userRepo;
 
+    const MODEL_DEFAULT_IMAGE = 'assets/images/models/default.png';
+
     public function __construct(Manager $manager,  DbUserRepository $userRepo) {
         parent::__construct($manager);
 
@@ -61,17 +63,21 @@ class ModelController extends ApiController {
 
         $path = public_path()."/storage/models/";
 
+        $timePrefix = time();
         try {
-            $file->move($path,$fileName);
+            $file->move($path,$timePrefix."_".$fileName);
         } catch(Exception $e) {
             return $this->errorInternalError("API error - uploading file. Contact admin at admin@makeit3d.rocks");
         }
 
         $model = new Model;
-        $model->name = str_replace($extension,"",$fileName);
-        $model->file_path = $path.$fileName;
+        $model->name = str_replace(".".$extension,"",$fileName);
+        $model->file_path = "/storage/models/".$timePrefix."_".$fileName;
+        $model->image_url = asset(self::MODEL_DEFAULT_IMAGE);
+        $model->visible = 0;
         $model->save();
 
+        return $this->respondWithItem($model, new ModelTransformer);
     }
 
     public function recentlyPrinted() {
