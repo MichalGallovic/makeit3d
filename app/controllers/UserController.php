@@ -98,7 +98,6 @@ class UserController extends ApiController {
 
         $input = Input::only([
             'username',
-            'password',
             'first_name',
             'last_name',
             'street',
@@ -109,8 +108,7 @@ class UserController extends ApiController {
 
 
         $rules = [
-            'username'      =>  'required|email',
-            'password'      =>  'required|min:6'
+            'username'      =>  'required|email'
         ];
 
         $username = $input['username'];
@@ -127,7 +125,6 @@ class UserController extends ApiController {
         }
 
         $input['email'] = $input['username'];
-        $input['password'] = Hash::make($input['password']);
 
         $user->fill($input);
         $user->save();

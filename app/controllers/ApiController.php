@@ -157,4 +157,5 @@ class ApiController extends Controller
     {
         return $this->setStatusCode(400)->respondWithError($message, self::CODE_WRONG_ARGS);
     }
+
 }
