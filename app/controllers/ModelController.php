@@ -40,8 +40,38 @@ class ModelController extends ApiController {
 
     public function create() {
         $user = $this->userRepo->getCurrentUser();
+        $input = Input::only(['name','model']);
 
-        
+        $rules = [
+            "model" => "required"
+        ];
+
+        $validator = Validator::make($input, $rules);
+
+        if($validator->fails())
+            return $this->errorWrongArgs($validator->messages()->first());
+
+        $file = $input['model'];
+
+        $extension = $file->getClientOriginalExtension();
+        if(!$this->isValidType($extension))
+            return $this->errorWrongArgs("Wrong file type. Please use .stl or .gcode files only");
+
+        $fileName = isset($input['name']) ? $input['name'].".".$extension : $file->getClientOriginalName();
+
+        $path = public_path()."/storage/models/";
+
+        try {
+            $file->move($path,$fileName);
+        } catch(Exception $e) {
+            return $this->errorInternalError("API error - uploading file. Contact admin at admin@makeit3d.rocks");
+        }
+
+        $model = new Model;
+        $model->name = str_replace($extension,"",$fileName);
+        $model->file_path = $path.$fileName;
+        $model->save();
+
     }
 
     public function recentlyPrinted() {
@@ -50,6 +80,12 @@ class ModelController extends ApiController {
 
         return $this->respondWithCollection($models, new ModelTransformer);
 
+    }
+
+
+    //####### PRIVATE METHODS
+    private function isValidType($fileExtension) {
+        return in_array($fileExtension,["gcode","stl"]);
     }
 
 

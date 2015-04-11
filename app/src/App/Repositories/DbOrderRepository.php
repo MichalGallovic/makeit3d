@@ -19,13 +19,16 @@ class DbOrderRepository {
         $order->country = $input['country'];
         $order->zip_code = $input['zip_code'];
 
+        $order->save();
+
         $price = 0;
-        $models = Model::find($input['models']);
+        $models = $order->models();
 
         foreach($models as $model) {
             $price += $model->price;
         }
         $order->price = $price;
+
         $order->save();
 
         return $order;

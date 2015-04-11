@@ -5,8 +5,7 @@ use Illuminate\Support\Facades\Request;
 
 Route::get('/',['uses'  =>  'HomeController@index','as'=>'home']);
 Route::get('/tst',function() {
-   $user = User::find(2);
-    dd($user->orders);
+   phpinfo();
 });
 Route::get('users/verify/{code}','UserController@verify');
 
