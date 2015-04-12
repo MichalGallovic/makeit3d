@@ -4,7 +4,6 @@ use App\Transformer\ModelTransformer;
 use League\Fractal\Manager;
 use App\Repositories\DbUserRepository;
 
-
 class ModelController extends ApiController {
 
     protected $tokenController;
@@ -77,6 +76,35 @@ class ModelController extends ApiController {
         $model->visible = 0;
         $model->save();
 
+
+        switch($extension) {
+            case "gco":
+            case "gcode": {
+                break;
+            }
+            case "stl": {
+                break;
+            }
+
+
+        }
+        // if gcode
+        // upload to octoprint.makeit3d.dev/api/files/local
+        // if done = true -> OK
+        // else try reupload -> if error, throw 500 with message
+        //
+        // if OK -> GET files->local->refs->resource -> to get printing time & price & volume & length
+        // update model & send in response
+
+
+        // if stl
+        // upload to octoprint.makeit3d.dev/api/files/local
+        // if done = true -> OK
+        // else try reupload -> if error, throw 500 with message
+        //
+        // if OK -> POST files->local->refs->resource -> to slice with CuraEngine
+        // response refs->resouce
+
         return $this->respondWithItem($model, new ModelTransformer);
     }
 
@@ -91,7 +119,7 @@ class ModelController extends ApiController {
 
     //####### PRIVATE METHODS
     private function isValidType($fileExtension) {
-        return in_array($fileExtension,["gcode","stl"]);
+        return in_array($fileExtension,["gcode","gco","stl"]);
     }
 
 

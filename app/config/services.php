@@ -27,5 +27,9 @@ return array(
 		'model'  => 'User',
 		'secret' => '',
 	),
+    'octoprint' =>  [
+        "api_key"   =>  '2AB67DB172BE4647BC1056289E3583A3',
+        "root_prefix"      =>  "octoprint"
+    ]
 
 );

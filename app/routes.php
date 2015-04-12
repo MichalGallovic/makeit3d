@@ -3,9 +3,16 @@
 use Tappleby\AuthToken\Exceptions\NotAuthorizedException as AuthTokenNotAuthorizedException;
 use Illuminate\Support\Facades\Request;
 
+use App\Octoprint\Octoprint;
+
 Route::get('/',['uses'  =>  'HomeController@index','as'=>'home']);
-Route::get('/tst',function() {
+Route::get('/phpinfo',function() {
    phpinfo();
+});
+Route::get('/tst', function() {
+    $octoprint = new Octoprint();
+
+    return $octoprint->root_url;
 });
 Route::get('users/verify/{code}','UserController@verify');
 
