@@ -81,27 +81,19 @@ class ModelController extends ApiController {
 
         $path = public_path()."/storage/models/".$timePrefix."_".$fileName;
 
-        $response = $this->octoprint->localFile($path)->upload();
+        $gcode = $this->octoprint->localFile($path)->upload();
 
-        dd($response);
-        // if gcode
-        // upload to octoprint.makeit3d.dev/api/files/local
-        // if done = true -> OK
-        // else try reupload -> if error, throw 500 with message
-        //
-        // if OK -> GET files->local->refs->resource -> to get printing time & price & volume & length
-        // update model & send in response
+        $model->printing_time = $gcode->printing_time;
+        $model->filament_length = $gcode->filament_length;
+        $model->filament_volume = $gcode->filament_volume;
+
+//        $model->stl_path;
+//        $model->gcode_path;
+        $model->gcode_download_link = $gcode->download_link;
+        $model->save();
 
 
-        // if stl
-        // upload to octoprint.makeit3d.dev/api/files/local
-        // if done = true -> OK
-        // else try reupload -> if error, throw 500 with message
-        //
-        // if OK -> POST files->local->refs->resource -> to slice with CuraEngine
-        // response refs->resouce
-
-        return $this->respondWithItem($response, new ModelTransformer);
+        return $this->respondWithItem($model, new ModelTransformer);
     }
 
     public function recentlyPrinted() {

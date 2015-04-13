@@ -4,14 +4,14 @@ use Illuminate\Support\Collection;
 
 class OctoprintGcodeModel
 {
-    protected $name;
-    protected $stl_source_name;
-    protected $download_link;
+    public $name;
+    public $stl_source_name;
+    public $download_link;
     public $api_link;
-    protected $printing_time;
-    protected $filament_length;
-    protected $filament_volume;
-    public $data;
+    public $printing_time;
+    public $filament_length;
+    public $filament_volume;
+    protected $data;
 
     public function __construct($response = [])
     {
@@ -63,8 +63,12 @@ class OctoprintGcodeModel
         $gcodeAnalysis = $this->data->gcodeAnalysis;
 
         $this->printing_time = $gcodeAnalysis->estimatedPrintTime;
-dd($gcodeAnalysis);
-//        if(!$this->objEmpty($gcodeAnalysis->fillament));
+
+        if($this->objEmpty($gcodeAnalysis->filament))
+           return;
+
+        $this->filament_volume = $gcodeAnalysis->filament->tool0->volume;
+        $this->filament_length = $gcodeAnalysis->filament->tool0->length;
     }
 
     protected function getSafeFromArr($arr, $property) {

@@ -12,11 +12,14 @@ class ModelTransformer extends TransformerAbstract {
 
     public function transform(Model $model) {
         return [
-            'id'            =>  (int) $model->id,
-            'name'          =>  $model->name,
-            'price'         =>  (float) $model->price,
-            'image_url'     =>  $model->image_url,
-            'printing_time' =>  (int) $model->printing_time
+            'id'                =>  (int) $model->id,
+            'name'              =>  $model->name,
+            'price'             =>  (float) $model->price,
+            'image_url'         =>  $model->image_url,
+            'printing_time'     =>  (float) $model->printing_time,
+            'filament_length'   =>  (float) $model->filament_length,
+            'filament_volume'   =>  (float) $model->filament_volume,
+            'download_link'     =>  $model->gcode_download_link
         ];
     }
 
