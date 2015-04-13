@@ -3,7 +3,9 @@
 use App\Octoprint\Exceptions\NameNotSpecifiedException;
 use Config;
 use GuzzleHttp\Client;
-use Illuminate\Support\Facades\File;
+use File;
+use GuzzleHttp\Post\PostFile;
+use Illuminate\Filesystem\FileNotFoundException;
 
 class Octoprint {
 
@@ -32,7 +34,7 @@ class Octoprint {
 
 
     public function files() {
-        $this->endpoint = "files/";
+        $this->endpoint = "/files";
         return $this;
     }
 
@@ -43,7 +45,7 @@ class Octoprint {
     }
 
     protected function local() {
-        $this->endpoint .= "local/";
+        $this->endpoint .= "/local";
         return $this;
     }
 
@@ -51,7 +53,7 @@ class Octoprint {
         if(!$name)
             throw new NameNotSpecifiedException("Name of the file not specified");
 
-        $this->endpoint .= $name;
+        $this->endpoint .= "/".$name;
         $this->fileName = $name;
         return $this;
     }
@@ -68,10 +70,33 @@ class Octoprint {
     }
 
     public function upload() {
+        $this->files()->local();
         $endpointUrl = $this->getEndpointUrl();
-        // get file
-        $uploadUrl = str_replace($this->fileName,"",$this->endpoint);
-        
+        $path = $this->fileName;
+
+        if(!File::exists($path))
+            throw new FileNotFoundException($path);
+
+        $fileContent = File::get($path);
+
+        $response = $this->client->post($endpointUrl,[
+           'body'   =>  [
+               'file' =>  fopen($path,'r')
+           ],
+           'headers'=>  [
+               "X-Api-Key"  =>  $this->api_key
+           ]
+        ]);
+
+        $this->parseResponse($response);
+
+        return $response->json();
+    }
+
+    public function uploadAndSlice() {
+        $response = $this->upload();
+        dd($response);
+
     }
 
     protected function parseResponse($response) {
@@ -103,7 +128,7 @@ class Octoprint {
         if($api_root_prefix)
             $root_url = $api_root_prefix.".".$domain_root;
 
-        $root_url = "http://".$root_url.'/api/';
+        $root_url = "http://".$root_url.'/api';
 
         return $root_url;
 

@@ -11,7 +11,7 @@ Route::get('/phpinfo',function() {
 });
 Route::get('/tst', function() {
     $octoprint = new Octoprint();
-    $octoprint->localUpload($path);
+    dd($octoprint->localFile(public_path().'/storage/models/1428791443_Ancient.stl')->uploadAndSlice());
     dd($octoprint->localFile("")->get());
 });
 Route::get('users/verify/{code}','UserController@verify');
