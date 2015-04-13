@@ -3,18 +3,21 @@
 use App\Transformer\ModelTransformer;
 use League\Fractal\Manager;
 use App\Repositories\DbUserRepository;
-
+use App\Octoprint\Octoprint;
 class ModelController extends ApiController {
 
     protected $tokenController;
     protected $userRepo;
 
+    protected $octoprint;
+
     const MODEL_DEFAULT_IMAGE = 'assets/images/models/default.png';
 
-    public function __construct(Manager $manager,  DbUserRepository $userRepo) {
+    public function __construct(Manager $manager,  DbUserRepository $userRepo, Octoprint $octoprint) {
         parent::__construct($manager);
 
         $this->userRepo = $userRepo;
+        $this->octoprint = $octoprint;
     }
 
 	public function index()
@@ -77,12 +80,16 @@ class ModelController extends ApiController {
         $model->save();
 
 
+        $path = public_path().$model->file_path;
+
         switch($extension) {
             case "gco":
             case "gcode": {
+                $response = $this->octoprint->localFile($path)->upload();
                 break;
             }
             case "stl": {
+                $response = $this->octoprint->localFile($path)->uploadAndSlice();
                 break;
             }
 
@@ -105,7 +112,7 @@ class ModelController extends ApiController {
         // if OK -> POST files->local->refs->resource -> to slice with CuraEngine
         // response refs->resouce
 
-        return $this->respondWithItem($model, new ModelTransformer);
+        return $this->respondWithItem($response, new ModelTransformer);
     }
 
     public function recentlyPrinted() {

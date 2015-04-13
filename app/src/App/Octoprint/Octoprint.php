@@ -1,11 +1,17 @@
 <?php namespace App\Octoprint;
 
 use App\Octoprint\Exceptions\NameNotSpecifiedException;
+use App\Octoprint\Exceptions\OctoprintException;
+use App\Octoprint\Exceptions\TTLExceededException;
 use Config;
 use GuzzleHttp\Client;
 use File;
+use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Post\PostFile;
 use Illuminate\Filesystem\FileNotFoundException;
+use Symfony\Component\HttpKernel\Exception\UnsupportedMediaTypeHttpException;
+use Symfony\Component\Process\Exception\ProcessTimedOutException;
+use App\Octoprint\Exceptions\FileNotFoundException as OctoprintFileNotFoundException;
 
 class Octoprint {
 
@@ -21,8 +27,14 @@ class Octoprint {
 
     protected $fileName;
 
+    protected $location;
+
     public $statusCode;
 
+    const TTL = 10;
+    const SLICE_TTL = 60;
+    const FILE_CREATED = 201;
+    const NOT_FOUND = 404;
     public function __construct($api_key = null) {
         $this->api_key = $this->api_key($api_key);
         $this->client = new Client();
@@ -45,6 +57,7 @@ class Octoprint {
     }
 
     protected function local() {
+        $this->location = "local";
         $this->endpoint .= "/local";
         return $this;
     }
@@ -90,13 +103,93 @@ class Octoprint {
 
         $this->parseResponse($response);
 
+        if($this->statusCode != self::FILE_CREATED)
+            throw new UnsupportedMediaTypeHttpException;
+
         return $response->json();
     }
 
     public function uploadAndSlice() {
         $response = $this->upload();
-        dd($response);
 
+        $this->waitUntilDone($response);
+
+        $fileResourceUrl = $response['files'][$this->location]["refs"]["resource"];
+
+        $response = $this->slice($fileResourceUrl);
+
+        dd($response);
+    }
+
+    public function slice($sliceUrl) {
+        try {
+            $response = $this->client->post($sliceUrl,[
+                "headers"   =>  [
+                    "X-Api-Key"  =>  $this->api_key
+                ],
+                "json"  =>  ["command"   =>  "slice"]
+            ]);
+
+        } catch(ClientException $e) {
+            $this->parseResponse($e->getResponse());
+
+            $this->errorWithFileNoutFound($e->getMessage());
+        }
+
+
+        $gcodeResourceUrl = $response->json()['refs']['resource'];
+
+        $response = $this->getSlicedResponse($gcodeResourceUrl);
+
+        return $response->json();
+
+    }
+
+    protected function errorWithFileNoutFound($response, $message = "") {
+        if($response->getStatusCode() == self::NOT_FOUND)
+            throw new OctoprintFileNotFoundException($message);
+    }
+
+    protected function getSlicedResponse($futureGcodeUrl) {
+        return $this->waitUntilSliced($futureGcodeUrl);
+    }
+
+    protected function waitUntilSliced($futureGcodeUrl, $totalWaiting = 0) {
+        if($totalWaiting > self::SLICE_TTL)
+            throw new TTLExceededException("Waited longer than".self::SLICE_TTL.". Possible slicing error occured.");
+
+        $response = null;
+
+        try {
+            $response = $this->client->get($futureGcodeUrl,[
+                "headers"   =>   [
+                    "X-Api-Key" =>  $this->api_key
+                ]
+            ]);
+
+
+        } catch(ClientException $e) {
+            if($e->getResponse()->getStatusCode() == self::NOT_FOUND) {
+                sleep(1);
+                $totalWaiting += 1;
+                return $this->waitUntilSliced($futureGcodeUrl, $totalWaiting);
+            } else {
+                throw new OctoprintException($e->getMessage());
+            }
+        }
+
+        return $response;
+    }
+
+    protected function waitUntilDone($response, $totalWaiting = 0) {
+        if($totalWaiting > self::TTL)
+            throw new TTLExceededException("Waited longer than".self::TTL);
+
+        if(!$response['done']) {
+            sleep(0.1);
+            $totalWaiting += 0.1;
+            return $this->waitUntilDone($response, $totalWaiting);
+        }
     }
 
     protected function parseResponse($response) {
