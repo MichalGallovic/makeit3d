@@ -13,6 +13,7 @@ use Symfony\Component\HttpKernel\Exception\UnsupportedMediaTypeHttpException;
 use Symfony\Component\Process\Exception\ProcessTimedOutException;
 use App\Octoprint\Exceptions\FileNotFoundException as OctoprintFileNotFoundException;
 use Log;
+use Illuminate\Support\Collection;
 
 class Octoprint {
 
@@ -29,6 +30,8 @@ class Octoprint {
     protected $fileName;
 
     protected $location;
+
+    protected $namespace;
 
     public $statusCode;
 
@@ -48,6 +51,7 @@ class Octoprint {
 
     public function files() {
         $this->endpoint = "/files";
+        $this->namespace = "files";
         return $this;
     }
 
@@ -75,12 +79,29 @@ class Octoprint {
     public function get() {
         $endpointUrl = $this->getEndpointUrl();
 
+        $response = $this->client->get($endpointUrl,["headers"=>[
+            "X-Api-Key" =>  $this->api_key
+        ]]);
+
+        $this->parseResponse($response);
+
+        return $response->json();
+    }
+
+    public function forceGcodeAnalysis() {
+        $endpointUrl = $this->getEndpointUrl();
         $testResponse = [];
 
+        $totalWaiting = 0;
         while(!isset($testResponse['gcodeAnalysis'])) {
-            sleep(0.1);
-            $response = $this->client->get($endpointUrl,["headers"=>[
-                "X-Api-Key" =>  $this->api_key
+            sleep(1);
+            $totalWaiting += 1;
+            Log::info($totalWaiting);
+            if ($totalWaiting > self::TTL * 2)
+                throw new TTLExceededException("TTL for gcodeAnalysis exceeded " . (self::TTL * 2) . " seconds. Endpoint:" . $endpointUrl);
+
+            $response = $this->client->get($endpointUrl, ["headers" => [
+                "X-Api-Key" => $this->api_key
             ]]);
             $testResponse = $response->json();
         }
@@ -90,14 +111,40 @@ class Octoprint {
         return $response->json();
     }
 
+
+    public function getFilesCollection($items) {
+        $collection = new Collection();
+        foreach($items as $item) {
+            $model = new OctoprintGcodeModel($item);
+            $collection->push($model);
+        }
+
+        return $collection;
+    }
+
+    public function getCollection() {
+        $items = $this->get();
+
+        $collection = new Collection();
+
+        switch($this->namespace) {
+            case "files": {
+                $collection = $this->getFilesCollection($items[$this->namespace]);
+            }
+        }
+
+        return $collection;
+    }
+
     public function upload() {
         $this->files()->local();
         $endpointUrl = $this->getEndpointUrl();
         $path = $this->fileName;
         $this->fileName = pathinfo($this->fileName,PATHINFO_BASENAME);
-        
+
         if(!File::exists($path))
             throw new FileNotFoundException($path);
+
 
         $fileContent = File::get($path);
 
@@ -124,7 +171,7 @@ class Octoprint {
         }
 
 
-        return new OctoprintGcodeModel($this->localFile($this->fileName)->get());
+        return new OctoprintGcodeModel($this->localFile($this->fileName)->forceGcodeAnalysis());
     }
 
 
@@ -157,7 +204,7 @@ class Octoprint {
         // make sure it was processed and gcodeanalysis is included
         if(!isset($response->json()['gcodeAnalysis'])) {
             $fileName = pathinfo($response->json()['refs']['resource']);
-            $response = $this->localFile($fileName)->get();
+            $response = $this->localFile($fileName)->forceGcodeAnalysis();
         }
 
         return $response->json();

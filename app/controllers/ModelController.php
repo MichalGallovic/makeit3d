@@ -62,8 +62,8 @@ class ModelController extends ApiController {
         if(!$this->isValidType($extension))
             return $this->errorWrongArgs("Wrong file type. Please use .stl or .gcode files only");
 
-        $fileName = isset($input['name']) ? $input['name'].".".$extension : $file->getClientOriginalName();
-
+        $fileName = str_replace(" ","_",$file->getClientOriginalName());
+        $customFileName = isset($input['name']) ? $input['name'].".".$extension : $file->getClientOriginalName();
         $path = public_path()."/storage/models/";
 
         $timePrefix = time();
@@ -74,7 +74,7 @@ class ModelController extends ApiController {
         }
 
         $model = new Model;
-        $model->name = str_replace(".".$extension,"",$fileName);
+        $model->name = pathinfo($customFileName,PATHINFO_FILENAME);
         $model->image_url = asset(self::MODEL_DEFAULT_IMAGE);
         $model->visible = 0;
         $model->created_by = $user->id;
