@@ -11,8 +11,8 @@ Route::get('/phpinfo',function() {
 });
 Route::get('/tst', function() {
     $octoprint = new Octoprint();
-    dd($octoprint->localFile(public_path().'/storage/models/1428791443_Ancient.stl')->uploadAndSlice());
-    dd($octoprint->localFile("")->get());
+//    dd($octoprint->slice("http://octoprint.makeit3d.dev/api/files/local/Ancestry3d_ColganteEquilibrium.stl"));
+    dd($octoprint->localFile("1428929954_UltimakerRobot_support.gcode")->get());
 });
 Route::get('users/verify/{code}','UserController@verify');
 

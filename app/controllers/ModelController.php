@@ -74,27 +74,16 @@ class ModelController extends ApiController {
 
         $model = new Model;
         $model->name = str_replace(".".$extension,"",$fileName);
-        $model->file_path = "/storage/models/".$timePrefix."_".$fileName;
         $model->image_url = asset(self::MODEL_DEFAULT_IMAGE);
         $model->visible = 0;
         $model->save();
 
 
-        $path = public_path().$model->file_path;
+        $path = public_path()."/storage/models/".$timePrefix."_".$fileName;
 
-        switch($extension) {
-            case "gco":
-            case "gcode": {
-                $response = $this->octoprint->localFile($path)->upload();
-                break;
-            }
-            case "stl": {
-                $response = $this->octoprint->localFile($path)->uploadAndSlice();
-                break;
-            }
+        $response = $this->octoprint->localFile($path)->upload();
 
-
-        }
+        dd($response);
         // if gcode
         // upload to octoprint.makeit3d.dev/api/files/local
         // if done = true -> OK

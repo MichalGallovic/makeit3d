@@ -12,6 +12,7 @@ use Illuminate\Filesystem\FileNotFoundException;
 use Symfony\Component\HttpKernel\Exception\UnsupportedMediaTypeHttpException;
 use Symfony\Component\Process\Exception\ProcessTimedOutException;
 use App\Octoprint\Exceptions\FileNotFoundException as OctoprintFileNotFoundException;
+use Log;
 
 class Octoprint {
 
@@ -73,9 +74,16 @@ class Octoprint {
 
     public function get() {
         $endpointUrl = $this->getEndpointUrl();
-        $response = $this->client->get($endpointUrl,["headers"=>[
-            "X-Api-Key" =>  $this->api_key
-        ]]);
+
+        $testResponse = [];
+
+        while(!isset($testResponse['gcodeAnalysis'])) {
+            sleep(0.1);
+            $response = $this->client->get($endpointUrl,["headers"=>[
+                "X-Api-Key" =>  $this->api_key
+            ]]);
+            $testResponse = $response->json();
+        }
 
         $this->parseResponse($response);
 
@@ -86,7 +94,8 @@ class Octoprint {
         $this->files()->local();
         $endpointUrl = $this->getEndpointUrl();
         $path = $this->fileName;
-
+        $this->fileName = pathinfo($this->fileName,PATHINFO_BASENAME);
+        
         if(!File::exists($path))
             throw new FileNotFoundException($path);
 
@@ -106,22 +115,26 @@ class Octoprint {
         if($this->statusCode != self::FILE_CREATED)
             throw new UnsupportedMediaTypeHttpException;
 
-        return $response->json();
+        $responseData = $response->json();
+        $extension =  pathinfo($this->fileName, PATHINFO_EXTENSION);
+
+
+        if($extension == "stl") {
+            return new OctoprintGcodeModel($this->slice($responseData));
+        }
+
+
+        return new OctoprintGcodeModel($this->localFile($this->fileName)->get());
     }
 
-    public function uploadAndSlice() {
-        $response = $this->upload();
 
-        $this->waitUntilDone($response);
 
-        $fileResourceUrl = $response['files'][$this->location]["refs"]["resource"];
+    public function slice($responseData) {
 
-        $response = $this->slice($fileResourceUrl);
+        $this->waitUntilDone($responseData);
 
-        dd($response);
-    }
+        $sliceUrl = $responseData['files'][$this->location]["refs"]["resource"];
 
-    public function slice($sliceUrl) {
         try {
             $response = $this->client->post($sliceUrl,[
                 "headers"   =>  [
@@ -141,6 +154,12 @@ class Octoprint {
 
         $response = $this->getSlicedResponse($gcodeResourceUrl);
 
+        // make sure it was processed and gcodeanalysis is included
+        if(!isset($response->json()['gcodeAnalysis'])) {
+            $fileName = pathinfo($response->json()['refs']['resource']);
+            $response = $this->localFile($fileName)->get();
+        }
+
         return $response->json();
 
     }
@@ -152,6 +171,13 @@ class Octoprint {
 
     protected function getSlicedResponse($futureGcodeUrl) {
         return $this->waitUntilSliced($futureGcodeUrl);
+    }
+
+    protected function isWithGcodeAnalysis($responseData) {
+        if(!isset($responseData["gcodeAnalysis"]))
+            return false;
+
+        return true;
     }
 
     protected function waitUntilSliced($futureGcodeUrl, $totalWaiting = 0) {
@@ -181,14 +207,14 @@ class Octoprint {
         return $response;
     }
 
-    protected function waitUntilDone($response, $totalWaiting = 0) {
+    protected function waitUntilDone($responseData, $totalWaiting = 0) {
         if($totalWaiting > self::TTL)
             throw new TTLExceededException("Waited longer than".self::TTL);
 
-        if(!$response['done']) {
+        if(!$responseData['done']) {
             sleep(0.1);
             $totalWaiting += 0.1;
-            return $this->waitUntilDone($response, $totalWaiting);
+            return $this->waitUntilDone($responseData, $totalWaiting);
         }
     }
 
