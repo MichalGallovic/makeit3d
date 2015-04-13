@@ -9,6 +9,18 @@ class UserTableSeeder extends Seeder {
 	{
 		$faker = Faker::create();
         DB::table('users')->delete();
+
+        // main user for model adding and stuff
+        User::create([
+            "id"            =>  1,
+            "email"         =>  "makeit3d@makeit3d.com",
+            "first_name"    =>  "Makeit3D",
+            "password"      =>  Hash::make("kominarskycech"),
+            "street"        =>  "Plzenská 5",
+            "town"          =>  "Bratislava",
+            "zip_code"      =>  "83103",
+            "country"       =>  "Slovakia"
+        ]);
 		foreach(range(1, 10) as $index)
 		{
 			User::create([

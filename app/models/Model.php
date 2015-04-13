@@ -7,6 +7,10 @@ class Model extends \Eloquent {
         return $this->belongsTo('Category');
     }
 
+    public function createdBy() {
+        return $this->belongsTo('User','created_by');
+    }
+
     public function printedByUsers() {
         return $this->belongsToMany('User','printed_models');
     }

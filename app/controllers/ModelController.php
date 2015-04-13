@@ -13,6 +13,7 @@ class ModelController extends ApiController {
 
     const MODEL_DEFAULT_IMAGE = 'assets/images/models/default.png';
 
+
     public function __construct(Manager $manager,  DbUserRepository $userRepo, Octoprint $octoprint) {
         parent::__construct($manager);
 
@@ -76,6 +77,7 @@ class ModelController extends ApiController {
         $model->name = str_replace(".".$extension,"",$fileName);
         $model->image_url = asset(self::MODEL_DEFAULT_IMAGE);
         $model->visible = 0;
+        $model->created_by = $user->id;
         $model->save();
 
 
@@ -86,10 +88,11 @@ class ModelController extends ApiController {
         $model->printing_time = $gcode->printing_time;
         $model->filament_length = $gcode->filament_length;
         $model->filament_volume = $gcode->filament_volume;
-
-//        $model->stl_path;
-//        $model->gcode_path;
-        $model->gcode_download_link = $gcode->download_link;
+        $model->price = $gcode->filament_length/100;
+        $model->gcode_api = $gcode->api_link;
+        $model->uploaded_file_link = $path.$timePrefix."_".$fileName;
+        $model->download_link_gcode = $gcode->download_link_gcode;
+        $model->download_link_stl = $gcode->download_link_stl;
         $model->save();
 
 

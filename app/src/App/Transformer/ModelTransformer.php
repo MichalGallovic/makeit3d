@@ -14,12 +14,15 @@ class ModelTransformer extends TransformerAbstract {
         return [
             'id'                =>  (int) $model->id,
             'name'              =>  $model->name,
+            'visible'           =>  (int) $model->visible,
             'price'             =>  (float) $model->price,
             'image_url'         =>  $model->image_url,
             'printing_time'     =>  (float) $model->printing_time,
             'filament_length'   =>  (float) $model->filament_length,
             'filament_volume'   =>  (float) $model->filament_volume,
-            'download_link'     =>  $model->gcode_download_link
+            'download_link_gcode'     =>  $model->download_link_gcode,
+            'download_link_stl' =>  $model->download_link_stl,
+            'created_by'        =>  $model->createdBy->first_name . " " . $model->createdBy->last_name
         ];
     }
 

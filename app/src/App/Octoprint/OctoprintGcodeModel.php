@@ -4,9 +4,10 @@ use Illuminate\Support\Collection;
 
 class OctoprintGcodeModel
 {
-    public $name;
-    public $stl_source_name;
-    public $download_link;
+    public $name_gcode;
+    public $name_stl;
+    public $download_link_stl;
+    public $download_link_gcode;
     public $api_link;
     public $printing_time;
     public $filament_length;
@@ -21,10 +22,13 @@ class OctoprintGcodeModel
 
     public function setParams()
     {
-        $this->name = $this->data->name;
+        $this->name_gcode = $this->data->name;
         $this->parseLinks();
         $this->parseRefs();
         $this->parseGcodeAnalysis();
+
+        if(isset($this->name_stl))
+            $this->download_link_stl = str_replace($this->name_gcode,$this->name_stl,$this->download_link_gcode);
     }
 
     protected function parseLinks()
@@ -41,10 +45,12 @@ class OctoprintGcodeModel
 
         foreach ($links as $link) {
             if (pathinfo($link->name, PATHINFO_EXTENSION) == "stl") {
-                $this->stl_source_name = $link->name;
+                $this->name_stl = $link->name;
                 break;
             }
         }
+
+
     }
 
     protected function parseRefs()
@@ -52,7 +58,7 @@ class OctoprintGcodeModel
         if (!isset($this->data->refs))
             return;
 
-        $this->download_link = $this->data->refs->download;
+        $this->download_link_gcode = $this->data->refs->download;
         $this->api_link = $this->data->refs->resource;
     }
 
