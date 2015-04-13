@@ -11,8 +11,8 @@ Route::get('/phpinfo',function() {
 });
 Route::get('/tst', function() {
     $octoprint = new Octoprint();
-
-    return $octoprint->root_url;
+    $octoprint->localUpload($path);
+    dd($octoprint->localFile("")->get());
 });
 Route::get('users/verify/{code}','UserController@verify');
 
