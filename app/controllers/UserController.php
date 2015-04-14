@@ -8,6 +8,7 @@ use Tappleby\AuthToken\AuthTokenController;
 use League\Fractal\Manager;
 use Tappleby\AuthToken\Exceptions\NotAuthorizedException as AuthTokenNotAuthorizedException;
 use App\Repositories\DbUserRepository;
+use Bogardo\Mailgun\Facades\Mailgun;
 
 class UserController extends ApiController {
 
@@ -46,12 +47,11 @@ class UserController extends ApiController {
             $message->to($input['username'])->subject('Verify your email address');
         });
 
-        return Response::json([
-           "data"   =>  [
-               "confirmation_code"  =>  $confirmation_code
-           ]
-        ]);
-//        return $this->respondWithSuccess("Your account was registered successfully. The confirmation email was sent to you.");
+//        Mailgun::send('emails.auth.verify',["user" =>  $user], function($message) use ($input) {
+//            $message->to($input['username'])->subject('Verify your email address');
+//        });
+
+        return $this->respondWithSuccess("Your account was registered successfully. The confirmation email was sent to you.");
 
     }
 

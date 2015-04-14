@@ -3,13 +3,13 @@
 <table>
 <thead>
     <tr>
-        <th>Model name</th><th>Printing time</th><th>Price</th>
+        <th>Model name</th><th>Price</th>
     </tr>
 </thead>
 <tbody>
 @foreach($order->models() as $model)
     <tr>
-        <td>{{ $model->name }}</td><td>{{ $model->printing_time }}</td><td>{{ $model->price }}</td>
+        <td>{{ $model->name }}</td><td>{{ $model->price }}</td>
     </tr>
 @endforeach
 <h6>Total price: {{ $order->price }}</h6>

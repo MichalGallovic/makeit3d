@@ -121,8 +121,11 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+
         'Tappleby\AuthToken\AuthTokenServiceProvider',
-        'Laracasts\Flash\FlashServiceProvider'
+        'Laracasts\Flash\FlashServiceProvider',
+        'App\Search\SearchServiceProvider',
+        'Bogardo\Mailgun\MailgunServiceProvider'
 	),
 
 	/*
@@ -192,7 +195,8 @@ return array(
 
         'AuthToken' => 'Tappleby\Support\Facades\AuthToken',
         'AuthTokenNotAuthorizedException' => 'Tappleby\AuthToken\Exceptions\NotAuthorizedException',
-        'Flash' => 'Laracasts\Flash\Flash'
+        'Flash' => 'Laracasts\Flash\Flash',
+        'Search'    =>'App\Facades\Search'
 
 	),
 

@@ -3,6 +3,7 @@
 use App\Transformer\OrderTransformer;
 use App\Repositories\DbUserRepository;
 use App\Repositories\DbOrderRepository;
+use Bogardo\Mailgun\Facades\Mailgun;
 
 class OrderController extends ApiController {
 
@@ -58,6 +59,9 @@ class OrderController extends ApiController {
         Mail::send('emails.order.create',["order"   =>  $order], function($message) use ($order){
             $message->to($order->user->email)->subject("Order:#".$order->id);
         });
+//        Mailgun::send('emails.order.create',["order"   =>  $order], function($message) use ($order){
+//            $message->to($order->user->email)->subject("Order:#".$order->id);
+//        });
 
         return $this->respondWithSuccess("Your order has been created. Email with details, has been send to you.");
     }

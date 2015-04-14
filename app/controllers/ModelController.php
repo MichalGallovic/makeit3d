@@ -4,6 +4,8 @@ use App\Transformer\ModelTransformer;
 use League\Fractal\Manager;
 use App\Repositories\DbUserRepository;
 use App\Octoprint\Octoprint;
+use App\Facades\Search;
+
 class ModelController extends ApiController {
 
     protected $tokenController;
@@ -23,7 +25,10 @@ class ModelController extends ApiController {
 
 	public function index()
 	{
-        $models = Model::all();
+        if($search = Request::get('search'))
+            $models = Search::models($search);
+        else
+            $models = Model::all();
 
         return $this->respondWithCollection($models, new ModelTransformer);
 	}

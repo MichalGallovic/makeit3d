@@ -14,4 +14,10 @@ class Model extends \Eloquent {
     public function printedByUsers() {
         return $this->belongsToMany('User','printed_models');
     }
+
+    public function scopeSearch($query, $search) {
+        return $query->where('name','LIKE',"%$search%")->orWhereHas('category', function($q) use ($search){
+            $q->where('name','LIKE',"%$search%");
+        });
+    }
 }

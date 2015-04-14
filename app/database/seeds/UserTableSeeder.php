@@ -43,7 +43,8 @@ class UserTableSeeder extends Seeder {
             "street"        =>  $faker->streetName,
             "town"      =>  "Trenčín",
             "zip_code"  =>  $faker->randomNumber(5),
-            "country"   =>  "Slovakia"
+            "country"   =>  "Slovakia",
+            "confirmed" => 1
         ]);
 	}
 

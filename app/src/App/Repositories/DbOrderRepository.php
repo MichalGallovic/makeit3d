@@ -1,3 +1,4 @@
+
 <?php namespace App\Repositories;
 
 use Order;
@@ -12,8 +13,8 @@ class DbOrderRepository {
         $order = new Order;
         $order->models = json_encode(["data" => $input['models']]);
         $order->user_id = $user->id;
-        $order->first_name = $input['first_name'];
-        $order->last_name = $input['last_name'];
+        $order->first_name = $user->first_name ? $user->first_name : $input['first_name'];
+        $order->last_name = $user->last_name ? $user->last_name : $input['last_name'];
         $order->street = $input['street'];
         $order->town = $input['town'];
         $order->country = $input['country'];
