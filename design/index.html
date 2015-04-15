@@ -9,23 +9,25 @@
 <body>
   <nav role="navigation" class="navbar navbar-default">
     <div class="container">
-      <div class="col-lg-12">
-        <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target=".navbar-ex1-collapse" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">MakeIt3D</a>
-        </div>
-        <div class="collapse navbar-collapse navbar-ex1-collapse pull-right">
-          <ul class="nav navbar-nav"> 
-            <li><a href="#">Categories</a></li>
-            <li><a href="#">Print Your Model</a></li>
-            <li><a href="#">Sign up</a></li>
-            <li><a href="#">Login</a></li>
-          </ul>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target=".navbar-ex1-collapse" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="navbar-brand"><img src="/images/logo_sm.png" alt=""/><img src="/images/logo2_sm.png" alt=""/></a>
+          </div>
+          <div class="collapse navbar-collapse navbar-ex1-collapse pull-right">
+            <ul class="nav navbar-nav"> 
+              <li><a href="categories.html">Categories</a></li>
+              <li><a href="print.html">Print Your Model</a></li>
+              <li><a href="signup.html">Sign up</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </nav>
   <div class="container">
-    <div class="row">
+    <div class="row mt20">
       <h2 class="text-center">What do you want to print today ?</h2>
       <div class="col-lg-12 mt20">
         <div class="m3d-searchbar"></div>
@@ -34,17 +36,41 @@
     </div>
     <div class="row mt20">
       <div class="col-lg-12">
-        <h3>Results</h3>
-        <div class="row mt20">
-          <div class="col-lg-3">
-            <div class="m3d-tile">
-              <div class="m3d-tile__header"><span>Robot</span></div>
-              <div class="m3d-tile__content"><img src="http://lorempixel.com/300/300/technics" class="img-responsive"/></div>
-              <div class="m3d-tile__footer clearfix">Price :<span>20 &euro;</span>
-                <button class="pull-right">Open</button>
-              </div>
+        <h3>Recently printed</h3>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 mt30">
+            <div class="m3d-tile"><a data-toggle="modal" href="#modal-1" class="m3d-tile__content"><img src="http://lorempixel.com/600/600/technics" class="img-responsive"/></a>
+              <div class="m3d-tile__info"><span class="left">Robot</span><span class="right">30 &euro;</span></div>
             </div>
           </div>
+          <div class="col-md-3 col-sm-6 mt30">
+            <div class="m3d-tile"><a href="" class="m3d-tile__content"><img src="http://lorempixel.com/600/600/people" class="img-responsive"/></a>
+              <div class="m3d-tile__info"><span class="left">Chobot</span><span class="right">10 &euro;</span></div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mt30">
+            <div class="m3d-tile"><a href="" class="m3d-tile__content"><img src="http://lorempixel.com/600/600/nightlife" class="img-responsive"/></a>
+              <div class="m3d-tile__info"><span class="left">Bobot</span><span class="right">15 &euro;</span></div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mt30">
+            <div class="m3d-tile"><a href="" class="m3d-tile__content"><img src="http://lorempixel.com/600/600/sports" class="img-responsive"/></a>
+              <div class="m3d-tile__info"><span class="left">Makerbot</span><span class="right">20 &euro;</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="modal-1" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 style="color:black" class="modal-title text-center">Robot</h2>
+        </div>
+        <div class="modal-body"><img src="http://lorempixel.com/600/400/technics" class="img-responsive"/></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Register</button>
         </div>
       </div>
     </div>
