@@ -1,0 +1,10 @@
+@import "../foundation/colors";
+//base
+$body-bg: none;
+$font-family-base: 'Lato', sans-serif;
+$headings-color: white;
+//navbar
+$navbar-default-bg: white;
+$navbar-height: 80px;
+$navbar-default-brand-color: lighten(black, 40%);
+$navbar-default-link-color: $background-color;

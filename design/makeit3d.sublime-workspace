@@ -1,0 +1,1983 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"text-dc",
+				"text-decoration"
+			],
+			[
+				"tran",
+				"transition"
+			],
+			[
+				"box-s",
+				"box-sizing"
+			],
+			[
+				"show",
+				"showExtras"
+			],
+			[
+				"hide",
+				"hideExtras"
+			],
+			[
+				"clear",
+				"clearExtrasData"
+			],
+			[
+				"reser",
+				"reservation_type"
+			],
+			[
+				"price",
+				"price_total"
+			],
+			[
+				"switch",
+				"switchExtras"
+			],
+			[
+				"select",
+				"selectExtras"
+			],
+			[
+				"extras",
+				"extras_data〔variable〕"
+			],
+			[
+				"margin",
+				"margint40"
+			],
+			[
+				"getSeleced",
+				"getSelectedObjects"
+			],
+			[
+				"swi",
+				"switch〔keyword〕"
+			],
+			[
+				"getSelecte",
+				"getSelectedRoomsJSON"
+			],
+			[
+				"reserva",
+				"reservation_type"
+			],
+			[
+				"is",
+				"isSwitchingContext"
+			],
+			[
+				"vyber",
+				"vyber_pobytu"
+			],
+			[
+				"new_s",
+				"new_sub_object〔variable〕"
+			],
+			[
+				"sele",
+				"selected"
+			],
+			[
+				"has",
+				"hasOwnProperty"
+			],
+			[
+				"refresh",
+				"refreshSummary"
+			],
+			[
+				"arriva",
+				"arrival_date"
+			],
+			[
+				"reservat",
+				"reservation_type"
+			],
+			[
+				"setSel",
+				"setSelectedStays"
+			],
+			[
+				"count",
+				"countNights"
+			],
+			[
+				"refres",
+				"refreshSummary"
+			],
+			[
+				"depar",
+				"departure_date"
+			],
+			[
+				"arr",
+				"arrival_date"
+			],
+			[
+				"cu",
+				"count_price"
+			],
+			[
+				"roo",
+				"rooms"
+			],
+			[
+				"setSelect",
+				"setSelectedRadio"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"stay",
+				"stay_data〔variable〕"
+			],
+			[
+				"new_servi",
+				"new_services"
+			],
+			[
+				"url",
+				"urlSegments"
+			],
+			[
+				"error",
+				"errorIds"
+			],
+			[
+				"reserved",
+				"reservedMainItems"
+			],
+			[
+				"escape",
+				"escapeDots"
+			],
+			[
+				"err",
+				"errorIds"
+			],
+			[
+				"toolti",
+				"tooltipster"
+			],
+			[
+				"vali",
+				"validation"
+			],
+			[
+				"form",
+				"formValid"
+			],
+			[
+				"toolt",
+				"tooltipster"
+			],
+			[
+				"validate",
+				"validateEmail〔function〕"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"vyber_",
+				"vyber_ubytovania"
+			],
+			[
+				"render",
+				"renderTemplate"
+			],
+			[
+				"add",
+				"addDays"
+			],
+			[
+				"swith",
+				"switchRoute"
+			],
+			[
+				"with",
+				"withAnimation"
+			],
+			[
+				"empty",
+				"emptyDom〔function〕"
+			],
+			[
+				"unbind",
+				"unbindPlugins"
+			],
+			[
+				"food",
+				"food_data〔variable〕"
+			],
+			[
+				"seri",
+				"services_data〔variable〕"
+			],
+			[
+				"room",
+				"room_data〔variable〕"
+			],
+			[
+				"parse",
+				"parseFood"
+			],
+			[
+				"services",
+				"services_data〔variable〕"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"prot",
+				"prototype"
+			],
+			[
+				"uby",
+				"ubytovanie"
+			],
+			[
+				"poby",
+				"pobytyVyber"
+			],
+			[
+				"ubyt",
+				"ubytovanieSluzby"
+			],
+			[
+				"ubyto",
+				"ubytovanieVyber"
+			],
+			[
+				"main",
+				"main_food"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"inlie",
+				"inline-block"
+			],
+			[
+				"border-",
+				"border-left"
+			],
+			[
+				"padding-",
+				"padding-left"
+			],
+			[
+				"bore",
+				"border-box"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"mail",
+				"$mailchimp_lists〔variable〕"
+			],
+			[
+				"api",
+				"api_key"
+			],
+			[
+				"Valida",
+				"ValidationException〔namespace〕"
+			],
+			[
+				"ec",
+				"escape.	autoescape (block)"
+			],
+			[
+				"bl",
+				"blockquote	Tag"
+			],
+			[
+				"print",
+				"printf〔function〕"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"pla",
+				"playing"
+			],
+			[
+				"play",
+				"playBtn〔variable〕"
+			],
+			[
+				"cehc",
+				"checkboxes"
+			],
+			[
+				"bo",
+				"board"
+			],
+			[
+				"chec",
+				"checkbox〔variable〕"
+			],
+			[
+				"check",
+				"checkboxes"
+			],
+			[
+				"boar",
+				"boardArray"
+			],
+			[
+				"Life",
+				"LifeView"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"pre",
+				"prevBoard"
+			],
+			[
+				"next",
+				"nextRow〔variable〕"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"win",
+				"window〔variable〕"
+			],
+			[
+				"mys",
+				"mysqlPath"
+			],
+			[
+				"my",
+				"mysqlPath"
+			],
+			[
+				"targ",
+				"target_dir"
+			],
+			[
+				"pri",
+				"printf"
+			],
+			[
+				"first",
+				"firstName"
+			],
+			[
+				"C",
+				"Configuration"
+			],
+			[
+				"image",
+				"imageName"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"bootstrap",
+				"bootstrap-sass-official"
+			],
+			[
+				"logi",
+				"login-controller-mixin"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"sess",
+				"sessionAuthenticationFailed"
+			],
+			[
+				"if",
+				"if	if(handlebars)"
+			],
+			[
+				"auth",
+				"authenticators"
+			],
+			[
+				"expir",
+				"expiresAt"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 1190,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1792,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "jade/index.jade",
+			"settings":
+			{
+				"buffer_size": 1266,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "// csstyle for sass\n// Clean, Simple Styling for the Web\n// http://www.csstyle.io\n// Copyright (c) 2014 Dave Geddes\n// https://twitter.com/geddski\n// https://github.com/geddski\n\n$csstyle-option-symbol: '\\\\--' !default;\n$csstyle-part-symbol: '__' !default;\n$csstyle-tweak-symbol: '\\\\+' !default;\n$csstyle-location-symbol: '\\\\@' !default;\n$csstyle-root-id: 'csstyle' !default;\n\n// build selectors\n@function _build_selector($prefix, $names){\n    $selector: \"\";\n    \n    @for $i from 1 through length($names){\n      $selector: $selector + $prefix + nth($names, $i);\n      \n      @if($i != length($names)){\n        $selector: $selector + \",\";\n      }\n    }\n    \n    @return $selector;\n}\n\n// components\n@mixin component($names...){\n  #{_build_selector(\".\", $names)}{\n    @content\n  }\n}\n\n// options\n// override components\n@mixin option($names...){\n  #{_build_selector(\"&.\" + $csstyle-option-symbol, $names)}{\n    @content;\n  }\n}\n\n// parts\n// make up the structure of a component\n// override components\n@mixin part($names...){\n    // check if nested in an option\n    $optionIndex: str-index(#{&}, \".\" + $csstyle-option-symbol);\n    $optionIndex: 0 !default;\n    $optionIndex: $optionIndex - 1;\n\n    // check if nested in another part\n    $partIndex: str-index(#{&}, $csstyle-part-symbol);\n    $partIndex: 0 !default;\n    $partIndex: $partIndex - 1;\n\n    $component: str-slice(#{&}, 0, $optionIndex);\n    \n    // part is nested in an option\n    @if $optionIndex > 0 {\n      // part is also nested in another part\n      @if ($partIndex > 0){\n        #{_build_selector(\"&\" + $csstyle-part-symbol, $names)}{\n          @content;\n        }\n      }\n      @else{\n        #{_build_selector(\"& \" + $component + $csstyle-part-symbol, $names)}{\n          @content;\n        }\n      }\n    }\n    @else {\n      #{_build_selector(\"&\" + $csstyle-part-symbol, $names)}{\n        @content;\n      }\n    }\n}\n\n// tweaks\n// override components, options, and modifiers\n@mixin tweak($names...){\n  #{_build_selector(\"#\" + $csstyle-root-id + \" .\" + $csstyle-tweak-symbol, $names)}{\n    @content;\n  }\n}\n\n// locations\n// override components, parts, options, and tweaks\n@mixin location($names...){\n  #{_build_selector(\"#\" + $csstyle-root-id + \" .\" + $csstyle-location-symbol, $names)}{\n    @content;\n  }\n}\n",
+			"file": "node_modules/csstyle/csstyle.scss",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 2266,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/app.scss",
+			"settings":
+			{
+				"buffer_size": 56,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/vendor/vendor.scss",
+			"settings":
+			{
+				"buffer_size": 127,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bower.json",
+			"settings":
+			{
+				"buffer_size": 389,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/app.css",
+			"settings":
+			{
+				"buffer_size": 143226,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/components/button.scss",
+			"settings":
+			{
+				"buffer_size": 353,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/components/button.css",
+			"settings":
+			{
+				"buffer_size": 4915,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "sass/vendor/cssstyle.scss",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "html/index.html",
+			"settings":
+			{
+				"buffer_size": 132,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS3"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"cs",
+				"Set Syntax: CSS3"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"addre",
+				"Package Control: Add Repository"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"markdo",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"package",
+				"Package Control: Disable Package"
+			],
+			[
+				"table",
+				"Table Editor: Enable for current syntax"
+			],
+			[
+				"minif",
+				"Minify Javascript"
+			],
+			[
+				"mini",
+				"Minify Javascript"
+			],
+			[
+				"mi",
+				"Minify Javascript"
+			],
+			[
+				"mif",
+				"Minify Javascript"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML (Erlang)"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"rename",
+				"ANF: Rename File"
+			],
+			[
+				"twig",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"behat",
+				"Set Syntax: Behat"
+			],
+			[
+				"hand",
+				"Set Syntax: Handlebars"
+			],
+			[
+				"han",
+				"Set Syntax: Handlebars"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"handl",
+				"Set Syntax: Handlebars"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"rub",
+				"Set Syntax: Ruby"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"move",
+				"Quick File Move: Move Current File"
+			],
+			[
+				"delete",
+				"ANF: Delete Current File"
+			],
+			[
+				"handle",
+				"Set Syntax: Handlebars"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 153.0,
+		"history":
+		[
+			"import urllib2,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components/bootstrap-sass",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components/bootstrap-sass/assets/stylesheets",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components/jquery",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/css",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/jade",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp/node_modules",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/sass",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/sass/components",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/sass/vendor"
+	],
+	"file_history":
+	[
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components/jquery/dist/jquery.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp-jade/node_modules/.bin/jade",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components/csstyle/.bower.json",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp/node_modules/gulp-util/lib/isNull.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/html/html.index",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/html",
+		"/Users/michalgallovic/Documents/Developer/PHP/API/build-apis-you-wont-hate/chapter6/vendor/predis/predis/lib/Predis/ResponseObjectInterface.php",
+		"/Users/michalgallovic/Documents/Developer/PHP/API/build-apis-you-wont-hate/README.md",
+		"/Users/michalgallovic/Library/Application Support/Flow/Editor/www_root/wp-config.php",
+		"/Users/michalgallovic/Library/Application Support/Flow/Editor/web/app/config/mail.php",
+		"/Users/michalgallovic/Desktop/hms_rezervacny/node_modules/gulp-connect/node_modules/connect/lib/middleware/methodOverride.js",
+		"/Users/michalgallovic/Desktop/hms_rezervacny/node_modules/gulp/node_modules/liftoff/node_modules/resolve/test/mock.js",
+		"/Users/michalgallovic/Desktop/hms_rezervacny/js/respond.min.js",
+		"/Users/michalgallovic/Desktop/hms_rezervacny/js/main.js",
+		"/Users/michalgallovic/Desktop/hms_rezervacny/js/rlite.min.js.map",
+		"/Users/michalgallovic/Desktop/hms_rezervacny/node_modules/gulp-connect/node_modules/gulp-util/lib/replaceExtension.js",
+		"/Users/michalgallovic/Desktop/hms_rezervacny/js/reservation.js",
+		"/Users/michalgallovic/Documents/FEI/8semester/OP/style.css",
+		"/Users/michalgallovic/Documents/FEI/8semester/OP/index.html",
+		"/Users/michalgallovic/Downloads/SlickNav-master/jquery.slicknav.min.js",
+		"/Users/michalgallovic/Downloads/SlickNav-master/slicknav.css",
+		"/Users/michalgallovic/.homestead/Homestead.yaml",
+		"/Users/michalgallovic/Downloads/Luxen Premium Hotel Template 1.1.2/Luxen Template/room-single.html",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/plugins/anandpatel/wysiwygeditors/formwidgets/Wysiwyg.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/modules/system/classes/CombineAssets.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/composer.json",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/plugins/hms/stays/controllers/Categories.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/plugins/rainlab/translate/updates/create_attributes_table.php",
+		"/Users/michalgallovic/Downloads/Luxen Premium Hotel Template 1.1.2/Luxen Template/index-mailchimp.html",
+		"/Users/michalgallovic/Downloads/Luxen Premium Hotel Template 1.1.2/Luxen Template/index.html",
+		"/Users/michalgallovic/Downloads/Luxen Premium Hotel Template 1.1.2/Luxen Template/contact.html",
+		"/Users/michalgallovic/Downloads/Luxen Premium Hotel Template 1.1.2/Luxen Template/js/main.js",
+		"/Users/michalgallovic/Downloads/Luxen Premium Hotel Template 1.1.2/Luxen Template/css/main.css",
+		"/Users/michalgallovic/Downloads/Luxen Premium Hotel Template 1.1.2/Luxen Template/mail.php",
+		"/Users/michalgallovic/Downloads/Luxen Premium Hotel Template 1.1.2/Luxen Template/reservation.php",
+		"/Users/michalgallovic/Downloads/htaccess",
+		"/Users/michalgallovic/Downloads/Luxen Premium Hotel Template 1.1.2/Luxen Template/blog.html",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/assets/css/main.css",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/modules/backend/assets/images/loading-indicator-transparent.svg",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/modules/backend/assets/images/loading-indicator-white.svg",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/modules/backend/assets/images/loading-indicator.svg",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/tests/fixtures/cms/themes/test/pages/blog-archive.htm",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/plugins/anandpatel/seoextension/updates/create_blog_posts_table.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/plugins/rainlab/translate/controllers/messages/_grid_header.htm",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/plugins/anandpatel/seoextension/components/blogpost/default.htm",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/vendor/erusev/parsedown/test/data/block-level_html.html",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/vendor/bin/boris",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/app/config/mail.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/vendor/guzzlehttp/guzzle/src/Adapter/MockAdapter.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/partials/meta.htm",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/modules/backend/widgets/Lists.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/vendor/symfony/finder/Symfony/Component/Finder/Tests/Fixtures/lorem.txt",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/vendor/nikic/php-parser/lib/PHPParser/Node/Expr/GreaterOrEqual.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/modules/backend/assets/vendor/select2/select2_locale_ro.js",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/vendor/guzzlehttp/streams/src/LazyOpenStream.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/pages/404.htm",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/plugins/anandpatel/wysiwygeditors/routes.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/plugins/rainlab/translate/routes.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/plugins/shahiemseymor/maintenance/routes.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/vendor/laravel/framework/src/Illuminate/Foundation/Console/RoutesCommand.php",
+		"/Users/michalgallovic/Downloads/Luxen Premium Hotel Template 1.1.2/Luxen Template/right-sidebar-page.html",
+		"/Users/michalgallovic/Downloads/Luxen Premium Hotel Template 1.1.2/Luxen Template/gallery.html",
+		"/Users/michalgallovic/Downloads/Luxen Premium Hotel Template 1.1.2/Luxen Template/css/flexslider.css",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/modules/backend/assets/less/core/fonts.less",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/modules/backend/widgets/Form.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/photos/newsletter/oktober-users.csv",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/vendor/symfony/security-core/Symfony/Component/Security/Core/Authentication/Token/RememberMeToken.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/plugins/rainlab/translate/formwidgets/MLRichEditor.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/plugins/michalgallovic/mailchimp/vendor/Mailchimp/Lists.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/vendor/predis/predis/lib/Predis/Command/ListSet.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/vendor/predis/predis/lib/Predis/Command/KeyExists.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/vendor/laravel/framework/src/Illuminate/Foundation/Providers/RouteListServiceProvider.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/vendor/guzzlehttp/streams/src/LimitStream.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/vendor/bin/lessc",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/modules/cms/classes/ComponentBase.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/modules/system/traits/PropertyContainer.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/vendor/swiftmailer/swiftmailer/lib/swift_init.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/modules/backend/layouts/default.htm",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/vendor/laravel/framework/src/Illuminate/Auth/GenericUser.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/modules/backend/controllers/auth/signin.htm",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/server.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/plugins/rainlab/mailchimp/components/Signup.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/plugins/michalgallovic/mailchimp/vendor/Mailchimp.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/partials/newsletter.htm",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/photos/newsletter2.csv",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/vendor/nikic/php-parser/lib/PHPParser/Node/Expr/NotEqual.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/plugins/rainlab/mailchimp/Plugin.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/plugins/rainlab/mailchimp/models/Settings.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/modules/system/controllers/Settings.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/vendor/twig/twig/lib/Twig/Node/SetTemp.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/modules/system/classes/SystemException.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/vendor/october/rain/src/Database/Traits/Validation.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/modules/cms/classes/Layout.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/plugins/rainlab/blog/assets/vendor/prettify/lang-apollo.js",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/layouts/default.htm",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/demo/pages/home.htm",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/pages/home.htm",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/partials/fallbacks.htm",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/assets/css/font-awesome.min.css",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/app/filters.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/partials/scripts.htm",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/modules/backend/widgets/filter/partials/_scope_checkbox.htm",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/plugins/rainlab/editable/components/Editable.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/hotelmostslavy.sublime-project",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/plugins/hms/translatable-editable/components/TranslatableEditable.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/plugins/hms/translatable-editable/updates/version.yaml",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/plugins/michalgallovic/editable/Plugin.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/plugins/hms/translatable-editable/Plugin.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/assets/css/supersized.css",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/modules/cms/twig/DebugExtension.php",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/photos/dok1.doc",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/.gitignore",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/.gitattributes",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/.editorconfig",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/assets/flags/1x1/ht.svg",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/pages/hotel/trencianske-teplice.htm",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/pages/ubytovanie/ubytovanie.htm",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/pages/ubytovanie/apartman-rodinny.htm",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/assets/css/artill-clean-icons/artill_clean_icons-webfont.woff",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/assets/flags/1x1/tw.svg",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/assets/flags/1x1/tc.svg",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/layouts/homepage.htm",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/assets/flags/1x1/la.svg",
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/assets/js/main.js",
+		"/Users/michalgallovic/Desktop/10397815_10203165305280361_3289263939489556010_n.jpg",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/composer.json",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/app/filters.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/vendor/nikic/php-parser/doc/3_Other_node_tree_representations.markdown"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"clock",
+			"ICON",
+			"true",
+			"		\n",
+			"green",
+			";\n",
+			"button",
+			"box",
+			"))\n",
+			"blue",
+			"false",
+			"))\n",
+			"red",
+			"split",
+			"content",
+			"container",
+			"res-content",
+			"checkbox",
+			"click",
+			"checkbox",
+			"checkboz",
+			"checkbox",
+			"vyber_pob",
+			"stays",
+			"singleRoom",
+			"{{#",
+			"singleroomE",
+			"singleRom",
+			"model-create",
+			"checkbox",
+			"ubytovanie/dokon",
+			"reservedMain",
+			"input",
+			"/dokoncit",
+			"checkbox",
+			"pobyty/vyber",
+			"<hr",
+			"hr",
+			"pobyty/",
+			"todo",
+			"log",
+			"complete",
+			"ubytovanie/",
+			"dokonci",
+			"pokra",
+			"Filter",
+			"log",
+			"countNights",
+			"lie",
+			"stays",
+			"refreshSumm",
+			"lie",
+			"setSelec",
+			"model-create",
+			"lie",
+			"setDepartureDate",
+			"departure",
+			"me",
+			"refreshTem",
+			"model-create",
+			"stay",
+			"{{#each",
+			"lie",
+			"reservedMainItems",
+			"initFrom",
+			"countTotal",
+			"reservationMain",
+			"odchod",
+			"stays",
+			"reserved",
+			"parsedFood",
+			"setFood",
+			"selected",
+			"stays",
+			"checked",
+			"toggle",
+			"#reservation label",
+			"point",
+			"vertical",
+			".radio ",
+			"lie",
+			"liec",
+			"liece",
+			"food-services",
+			"lie",
+			"ubytovanie/vy",
+			"fireAni",
+			"reservedM",
+			"clearCou",
+			"ubytovanie/",
+			"ubytovani",
+			"ubytovanie",
+			"finish_res",
+			"fireEAni",
+			"isEmpty",
+			"clearCount",
+			"remove",
+			"sub_",
+			"pobyty",
+			"formValid",
+			"animat",
+			"/vyber",
+			"ubytovanie",
+			"room",
+			"dokoncit",
+			"{{{",
+			"model-create",
+			"destroy",
+			"validation",
+			"renderTool",
+			"{{{",
+			"{{{l",
+			"res-summ",
+			"počet",
+			"finish_reservation",
+			"počet os",
+			"form",
+			"počet",
+			"strava",
+			"checked",
+			"prop",
+			"me.switchRoute(me.router.urlSegments);",
+			"this",
+			"me.",
+			"removeCurrentTemp",
+			"removeCurrent",
+			"deleteTemplateFrom",
+			"unbindModelFromView"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1190,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								375,
+								375
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1792,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								110,
+								110
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"auto_complete": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "jade/index.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1266,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								405,
+								406
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "node_modules/csstyle/csstyle.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2266,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "sass/app.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 56,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "sass/vendor/vendor.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 127,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								65,
+								65
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "bower.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 389,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								357,
+								357
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "css/app.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 143226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37,
+								37
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS3/CSS3.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "sass/components/button.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 353,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								285,
+								285
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/CSS3/CSS3.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "css/components/button.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4915,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "sass/vendor/cssstyle.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "html/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 132,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								110,
+								110
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"auto_complete": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "makeit3d.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"gulpfile.js"
+			],
+			[
+				"gul",
+				"gulpfile.js"
+			],
+			[
+				"inde",
+				"jade/index.jade"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"routes",
+				"chapter12/app/routes.php"
+			],
+			[
+				"main",
+				"css/main.css"
+			],
+			[
+				"reser",
+				"js/reservation.js"
+			],
+			[
+				"categoriesprev",
+				"plugins/hms/wellness/components/CategoriesPreview.php"
+			],
+			[
+				"categoriesp",
+				"plugins/hms/stays/components/CategoriesPreview.php"
+			],
+			[
+				"categor",
+				"category-grid.html"
+			],
+			[
+				"room",
+				"room-single.html"
+			],
+			[
+				"blog",
+				"blog-details.html"
+			],
+			[
+				"route",
+				"modules/backend/routes.php"
+			],
+			[
+				"ga",
+				"gallery.html"
+			],
+			[
+				"conta",
+				"contact.html"
+			],
+			[
+				"fulls",
+				"index-full-screen.html"
+			],
+			[
+				"fallba",
+				"themes/hotelmostslavy/partials/fallbacks.htm"
+			],
+			[
+				"meta",
+				"themes/hotelmostslavy/partials/meta.htm"
+			],
+			[
+				"newsletter.",
+				"themes/hotelmostslavy/partials/newsletter.htm"
+			],
+			[
+				"lists.php",
+				"plugins/michalgallovic/mailchimp/vendor/Mailchimp/Lists.php"
+			],
+			[
+				"news",
+				"plugins/michalgallovic/mailchimp/components/Newsletter.php"
+			],
+			[
+				"list",
+				"modules/backend/widgets/Lists.php"
+			],
+			[
+				"signup",
+				"plugins/rainlab/mailchimp/components/Signup.php"
+			],
+			[
+				"newsletter",
+				"plugins/michalgallovic/mailchimp/components/Newsletter.php"
+			],
+			[
+				"sign",
+				"plugins/rainlab/mailchimp/components/Signup.php"
+			],
+			[
+				"sigun",
+				"plugins/rainlab/mailchimp/components/Signup.php"
+			],
+			[
+				"newsl",
+				"plugins/michalgallovic/mailchimp/components/Newsletter.php"
+			],
+			[
+				"newsletter.php",
+				"plugins/michalgallovic/mailchimp/components/Newsletter.php"
+			],
+			[
+				"settings",
+				"plugins/rainlab/mailchimp/models/Settings.php"
+			],
+			[
+				"default",
+				"themes/hotelmostslavy/layouts/default.htm"
+			],
+			[
+				"subl",
+				"hotelmostslavy.sublime-project"
+			],
+			[
+				"home",
+				"themes/hotelmostslavy/pages/home.htm"
+			],
+			[
+				"defau",
+				"modules/backend/layouts/default.htm"
+			],
+			[
+				".ig",
+				".gitignore"
+			],
+			[
+				"layo",
+				"layouts/default.htm"
+			],
+			[
+				"mode",
+				"app/tests/behat/features/models.feature"
+			],
+			[
+				"orders",
+				"app/tests/behat/features/orders.feature"
+			],
+			[
+				"catego",
+				"app/tests/behat/features/categories.feature"
+			],
+			[
+				"models",
+				"app/tests/behat/features/models.feature"
+			],
+			[
+				"categ",
+				"app/tests/behat/features/categories.feature"
+			],
+			[
+				"model",
+				"app/tests/behat/features/models.feature"
+			],
+			[
+				"feature",
+				"app/tests/behat/features/bootstrap/FeatureContext.php"
+			],
+			[
+				"categories",
+				"app/tests/behat/features/categories.feature"
+			],
+			[
+				"global",
+				"app/start/global.php"
+			],
+			[
+				"feat",
+				"app/tests/behat/features/bootstrap/FeatureContext.php"
+			],
+			[
+				"categori",
+				"app/tests/behat/features/categories-models.feature"
+			],
+			[
+				"cate",
+				"app/tests/behat/features/categories.feature"
+			],
+			[
+				"fea",
+				"app/tests/behat/features/bootstrap/FeatureContext.php"
+			],
+			[
+				"composer",
+				"composer.json"
+			],
+			[
+				"compose",
+				"composer.json"
+			],
+			[
+				"ubyto",
+				"themes/hotelmostslavy/pages/ubytovanie.htm"
+			],
+			[
+				"app",
+				"app/config/app.php"
+			],
+			[
+				"dataa",
+				"app/config/database.php"
+			],
+			[
+				"friends",
+				"app/routes/friends.js"
+			],
+			[
+				"show",
+				"app/templates/friends/show.hbs"
+			],
+			[
+				"new.js",
+				"app/controllers/friends/new.js"
+			],
+			[
+				"form",
+				"app/templates/friends/-form.hbs"
+			],
+			[
+				"new.hb",
+				"app/templates/friends/new.hbs"
+			],
+			[
+				"friends.",
+				"app/models/friend.js"
+			],
+			[
+				"edit.hb",
+				"app/templates/friends/edit.hbs"
+			],
+			[
+				"envi",
+				"config/environment.js"
+			],
+			[
+				"index.hbs",
+				"app/templates/friends/index.hbs"
+			],
+			[
+				"show.js",
+				"app/routes/friends/show.js"
+			],
+			[
+				"show.",
+				"app/routes/friends/show.js"
+			],
+			[
+				"friend.js",
+				"app/models/friend.js"
+			],
+			[
+				"enviro",
+				"config/environment.js"
+			],
+			[
+				"compo",
+				"iia-timak/blog/composer.json"
+			],
+			[
+				"app.php",
+				"iia-timak/blog/app/config/app.php"
+			],
+			[
+				"compos",
+				"iia-timak/blog/composer.json"
+			],
+			[
+				"database",
+				"app/config/database.php"
+			],
+			[
+				"databaa",
+				"vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php"
+			],
+			[
+				"style",
+				"public/css/site/style.css"
+			],
+			[
+				"core",
+				"public/js/site/coretheme.min.js"
+			],
+			[
+				"pac",
+				"package.json"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"namespaced",
+				"vendor/laravel/framework/src/Illuminate/Support/NamespacedItemResolver.php"
+			],
+			[
+				"translator",
+				"vendor/laravel/framework/src/Illuminate/Translation/Translator.php"
+			],
+			[
+				"lang",
+				"vendor/laravel/framework/src/Illuminate/Support/Facades/Lang.php"
+			],
+			[
+				"redire",
+				"pisomka1/redirect.php"
+			],
+			[
+				"body",
+				"include/cyclone/body.h"
+			],
+			[
+				"bod",
+				"src/body.cpp"
+			],
+			[
+				"pc",
+				"src/pcontacts.cpp"
+			],
+			[
+				"pco",
+				"include/cyclone/pcontacts.h"
+			],
+			[
+				"plin",
+				"src/plinks.cpp"
+			],
+			[
+				"pli",
+				"include/cyclone/plinks.h"
+			],
+			[
+				"p",
+				"src/pcontacts.cpp"
+			],
+			[
+				"fgen",
+				"include/cyclone/fgen.h"
+			],
+			[
+				"pconta",
+				"include/cyclone/pcontacts.h"
+			],
+			[
+				"parti",
+				"src/particle.cpp"
+			],
+			[
+				"pwo",
+				"src/pworld.cpp"
+			],
+			[
+				"wor",
+				"src/world.cpp"
+			],
+			[
+				"part",
+				"src/particle.cpp"
+			],
+			[
+				"frac",
+				"src/demos/fracture/fracture.cpp"
+			],
+			[
+				"pwol",
+				"src/pworld.cpp"
+			],
+			[
+				"pfgen",
+				"src/pfgen.cpp"
+			],
+			[
+				"pf",
+				"include/cyclone/pfgen.h"
+			],
+			[
+				"pwor",
+				"include/cyclone/pworld.h"
+			],
+			[
+				"timin",
+				"src/demos/timing.h"
+			],
+			[
+				"explo",
+				"src/demos/explosion/explosion.cpp"
+			],
+			[
+				"pwro",
+				"src/pworld.cpp"
+			],
+			[
+				"app.",
+				"src/demos/app.h"
+			],
+			[
+				"bridge",
+				"src/demos/bridge/bridge.cpp"
+			],
+			[
+				"particle",
+				"src/particle.cpp"
+			],
+			[
+				"pfge",
+				"src/pfgen.cpp"
+			],
+			[
+				"blob",
+				"src/demos/blob/blob.cpp"
+			],
+			[
+				"brid",
+				"src/demos/bridge/bridge.cpp"
+			],
+			[
+				"par",
+				"include/cyclone/particle.h"
+			],
+			[
+				"pa",
+				"include/cyclone/particle.h"
+			],
+			[
+				"particl",
+				"include/cyclone/particle.h"
+			],
+			[
+				"app.c",
+				"src/demos/app.cpp"
+			],
+			[
+				"ball",
+				"src/demos/ballistic/ballistic.cpp"
+			],
+			[
+				"bri",
+				"src/demos/bridge/bridge.cpp"
+			],
+			[
+				"fligh",
+				"src/demos/flightsim/flightsim.cpp"
+			],
+			[
+				"app.h",
+				"src/demos/app.h"
+			],
+			[
+				"ap",
+				"src/demos/app.cpp"
+			],
+			[
+				"start",
+				"bootstrap/start.php"
+			],
+			[
+				"envir",
+				"config/environment.js"
+			],
+			[
+				"e",
+				"example.md"
+			],
+			[
+				"sett",
+				"jobber/jobber/settings.py"
+			],
+			[
+				"subredd",
+				"app/templates/subreddit.hbs"
+			],
+			[
+				"subreddi",
+				"app/templates/subreddit.hbs"
+			],
+			[
+				"broc",
+				"Brocfile.js"
+			],
+			[
+				"router",
+				"app/router.js"
+			],
+			[
+				"registra",
+				"client/app/templates/registration-successful.hbs"
+			],
+			[
+				"regi",
+				"client/app/routes/registration.js"
+			],
+			[
+				"login.h",
+				"client/app/templates/login.hbs"
+			],
+			[
+				"index.blade",
+				"app/views/admin/index.blade.php"
+			],
+			[
+				"create_new",
+				"app/database/migrations/2014_11_11_054153_create_news_table.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 388.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

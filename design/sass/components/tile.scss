@@ -1,0 +1,19 @@
+@include component(m3d-tile) {
+	background: white;
+
+	@include part(header) {
+		color: black;
+		padding: 10px 10px;
+		font-size: 24px;
+	}
+	@include part(content) {
+	}
+	@include part(footer) {
+		font-size: 20px;
+		padding: 10px 10px;
+		span {
+			margin-left: 5px;
+			font-size: 20px;
+		}
+	}
+}

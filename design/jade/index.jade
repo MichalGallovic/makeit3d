@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+html#csstyle(lang="en")
+head
+	meta(charset="UTF-8")
+	title Document
+	link(rel="stylesheet", href="css/app.css")
+	link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext")
+body
+	
+	nav(role="navigation").navbar.navbar-default
+		.container
+			.col-lg-12
+				.navbar-header
+					button(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse").navbar-toggle.collapsed
+						span.sr-only Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a(href="#" ).navbar-brand MakeIt3D
+				.collapse.navbar-collapse.navbar-ex1-collapse.pull-right
+					ul.nav.navbar-nav 
+						li: a(href="#") Categories
+						li: a(href="#") Print Your Model
+						li: a(href="#") Sign up
+						li: a(href="#") Login
+			
+
+	.container
+		.row
+			h2.text-center What do you want to print today ?
+			.col-lg-12.mt20
+				.m3d-searchbar
+				input(type="search" autocomplete="off" autofocus="autofocus" placeholder="Robot...").m3d-searchbar__input
+				span.glyphicon.m3d-searchbar__icon.--loupe
+		.row.mt20
+			.col-lg-12
+				h3 Results
+				.row.mt20
+					.col-lg-3
+						.m3d-tile
+							.m3d-tile__header
+								span Robot
+							.m3d-tile__content
+								img(src="http://lorempixel.com/300/300/technics").img-responsive
+							.m3d-tile__footer.clearfix
+								|Price :
+								span 20 &euro;
+								button.pull-right Open
+
+	script(src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js")
+	script(src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")

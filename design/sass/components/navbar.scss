@@ -1,0 +1,13 @@
+.navbar {
+	border-bottom: 2px solid white;
+	// box-shadow: 0px 2px 2px 1px rgba(255,255,255,0.55);
+	border-radius: 0;
+}
+.navbar-nav {
+	> li > a {
+		font-size: 16px;
+	}
+}
+.navbar-brand {
+	font-size: $font-size-h2;
+}
