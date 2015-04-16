@@ -22,6 +22,7 @@ body
 							img(src="/images/logo2_sm.png" alt="")
 					.collapse.navbar-collapse.navbar-ex1-collapse.pull-right
 						ul.nav.navbar-nav 
+							li: a(href="howitworks.html") How it works
 							li: a(href="categories.html") Categories
 							li: a(href="print.html") Print Your Model
 							li: a(href="signup.html") Sign up
@@ -30,7 +31,7 @@ body
 
 	.container
 		.row.mt20
-			h2.text-center What do you want to print today ?
+			h1.text-center(class="+txtshadow") What do you want to print today ?
 			.col-lg-12.mt20
 				.m3d-searchbar
 				input(type="search" autocomplete="off" autofocus="autofocus" placeholder="Robot...").m3d-searchbar__input
@@ -124,7 +125,7 @@ body
 					a(href="tools.html").left Category: Tools
 					span.left Price: 10 &euro;
 					span.left.fa.fa-clock-o  55 mins
-					button.btn.btn-primary.btn-lg(type='button').fa.fa-shopping-cart
+					button.btn.btn-primary.btn-lg(type='button').fa.fa-shopping-cart.--loggedin
 
 	script(src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js")
 	script(src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")

@@ -33,6 +33,10 @@
 	  	&:focus {
 	  		outline: 0;
 	  	}
+
+	  	@include option(lowercase) {
+	  		text-transform: none;
+	  	}
 	}
 
 	@include part(icon) {

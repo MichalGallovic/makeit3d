@@ -17,3 +17,17 @@ html {
 		z-index: -1;
 	}
 }
+
+@include tweak(txtshadow) {
+	text-shadow: 0 1px 10px rgba(0,0,0,0.5);
+}
+@include tweak(bxshadow) {
+	box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+}
+
+a {
+	color: white;
+	&:hover {
+		color:white;
+	}
+}

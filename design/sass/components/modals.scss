@@ -12,7 +12,17 @@
 .modal-footer {
 	border-top: 0;
 	padding: 0;
+	
+	.btn {
+		@include option(loggedin) {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+	}
 
+	a.left {
+		text-decoration: underline;
+	}
 	.left {
 		float: left;
 		color: white;

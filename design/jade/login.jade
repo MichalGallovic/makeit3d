@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+html#csstyle(lang="en")
+head
+	meta(charset="UTF-8")
+	title Document
+	link(rel="stylesheet", href="css/app.css")
+	link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext")
+body
+	
+	nav(role="navigation").navbar.navbar-default
+		.container
+			.row
+				.col-lg-12
+					.navbar-header
+						button(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse").navbar-toggle.collapsed
+							span.sr-only Toggle navigation
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+						a(href="/" ).navbar-brand
+							img(src="/images/logo_sm.png", alt="")
+							img(src="/images/logo2_sm.png", alt="")
+					.collapse.navbar-collapse.navbar-ex1-collapse.pull-right
+						ul.nav.navbar-nav 
+							li: a(href="howitworks.html") How it works
+							li: a(href="categories.html") Categories
+							li: a(href="print.html") Print Your Model
+							li: a(href="signup.html") Sign up
+							li.active: a(href="login.html") Login
+
+	.container
+		.row.mt20
+			h1.text-center(class="+txtshadow") Login
+		.row.mt40
+			.col-lg-6.col-lg-offset-3
+				input(type="text" autocomplete="off" autofocus="autofocus" placeholder="Email").m3d-searchbar__input.--lowercase
+		.row
+			.col-lg-6.col-lg-offset-3
+				input(type="password" autocomplete="off" autofocus="autofocus" placeholder="Password").m3d-searchbar__input.--lowercase
+		.row.mt20
+			.col-lg-6.col-lg-offset-3
+				button.btn.btn-default.btn-lg.pull-right(class="+bxshadow") Login
+				a(href="forgotpassword.html").pull-left Forgot password?
+
+
+
+	script(src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js")
+	script(src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")

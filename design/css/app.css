@@ -7309,6 +7309,17 @@ html {
     position: absolute;
     z-index: -1; }
 
+#csstyle .\+txtshadow {
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); }
+
+#csstyle .\+bxshadow {
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); }
+
+a {
+  color: white; }
+  a:hover {
+    color: white; }
+
 .navbar {
   border-radius: 0; }
 
@@ -7384,6 +7395,8 @@ html {
     color: white; }
   .m3d-searchbar__input:focus {
     outline: 0; }
+  .m3d-searchbar__input.\--lowercase {
+    text-transform: none; }
 .m3d-searchbar__icon {
   position: absolute;
   font-size: 25px;
@@ -7466,6 +7479,11 @@ html {
 .modal-footer {
   border-top: 0;
   padding: 0; }
+  .modal-footer .btn.\--loggedin {
+    padding-left: 30px;
+    padding-right: 30px; }
+  .modal-footer a.left {
+    text-decoration: underline; }
   .modal-footer .left {
     float: left;
     color: white;
@@ -7486,3 +7504,42 @@ html {
 
 .btn-primary {
   background-color: #1a96ff; }
+
+.btn-default:hover {
+  background-color: #b4b4b4;
+  color: white;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+
+.m3d-upload {
+  position: relative; }
+  .m3d-upload input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    cursor: pointer; }
+  .m3d-upload.btn {
+    color: white;
+    background: #1a96ff;
+    margin-top: 130px;
+    -webkit-transition: 0.3s all;
+            transition: 0.3s all; }
+    .m3d-upload.btn:hover {
+      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+      .m3d-upload.btn:hover .m3d-upload__icon {
+        text-shadow: 0 3px 30px rgba(255, 255, 255, 0.5);
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1); }
+  .m3d-upload__icon {
+    -webkit-transition: 0.3s all;
+            transition: 0.3s all;
+    position: absolute;
+    left: 50%;
+    margin-top: -156px;
+    margin-left: -140px;
+    font-size: 260px;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    z-index: -1; }

@@ -1,0 +1,39 @@
+@include component(m3d-upload) {
+	$icon-size: 260px;
+	position: relative;
+	input {
+		position: absolute;
+		top:0;
+		right:0;
+		margin:0;
+		padding:0;
+		opacity: 0;
+		cursor: pointer;
+	}
+
+	&.btn {
+		color: white;
+		// box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+		background: $theme-blue;
+		margin-top: $icon-size/2;
+		transition: 0.3s all;
+		&:hover {
+			box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+			.m3d-upload__icon {
+				text-shadow: 0 3px 30px rgba(255,255,255,0.5);
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	@include part(icon) {
+		transition: 0.3s all;
+		position: absolute;
+		left:50%;
+		margin-top: -6*$icon-size/10;
+		margin-left: -$icon-size/2 - 10px;
+		font-size: $icon-size;
+		text-shadow: 0 1px 10px rgba(0,0,0,0.5);
+		z-index: -1;
+	}
+}
