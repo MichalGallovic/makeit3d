@@ -30,64 +30,48 @@ body
 	.container
 		.row
 			.col-lg-12
-				h2 Categories
+				h2 Categories / Tools 
 		.row
 			.col-md-3.col-sm-6.mt30
 				.m3d-tile
-					a(href="").m3d-tile__content
+					a(data-toggle='modal', href='#modal-1').m3d-tile__content
 						img(src="/images/models/lorempixel.jpg").img-responsive
-					.m3d-tile__info.--badge
-						span.left Cars
-						span.right 10
+					.m3d-tile__info
+						span.left Robot
+						span.right 30 &euro;
 			.col-md-3.col-sm-6.mt30
 				.m3d-tile
 					a(href="").m3d-tile__content
 						img(src="/images/models/lorempixel-1.jpg").img-responsive
-					.m3d-tile__info.--badge
-						span.left Robots
-						span.right 2
+					.m3d-tile__info
+						span.left Chobot
+						span.right 10 &euro;
 			.col-md-3.col-sm-6.mt30
 				.m3d-tile
 					a(href="").m3d-tile__content
 						img(src="/images/models/lorempixel-2.jpg").img-responsive
-					.m3d-tile__info.--badge
-						span.left Jewelery
-						span.right 17
+					.m3d-tile__info
+						span.left Bobot
+						span.right 15 &euro;
 			.col-md-3.col-sm-6.mt30
 				.m3d-tile
 					a(href="").m3d-tile__content
 						img(src="/images/models/lorempixel-3.jpg").img-responsive
-					.m3d-tile__info.--badge
-						span.left Toys
-						span.right 16
-			.col-md-3.col-sm-6.mt30
-				.m3d-tile
-					a(href="tools.html").m3d-tile__content
-						img(src="/images/models/lorempixel-4.jpg").img-responsive
-					.m3d-tile__info.--badge
-						span.left Tools
-						span.right 8
-			.col-md-3.col-sm-6.mt30
-				.m3d-tile
-					a(href="").m3d-tile__content
-						img(src="/images/models/lorempixel-5.jpg").img-responsive
-					.m3d-tile__info.--badge
-						span.left Printer parts
-						span.right 10
-			.col-md-3.col-sm-6.mt30
-				.m3d-tile
-					a(href="").m3d-tile__content
-						img(src="/images/models/lorempixel-6.jpg").img-responsive
-					.m3d-tile__info.--badge
-						span.left Jewelery
-						span.right 6
-			.col-md-3.col-sm-6.mt30
-				.m3d-tile
-					a(href="").m3d-tile__content
-						img(src="/images/models/lorempixel-7.jpg").img-responsive
-					.m3d-tile__info.--badge
-						span.left Other
-						span.right 4
+					.m3d-tile__info
+						span.left Makerbot
+						span.right 20 &euro;
+		
+		#modal-1.modal.fade
+			.modal-dialog
+				.modal-content
+					.modal-header
+					h2.modal-title.text-center(style="color:black") Random Tool
+					.modal-body
+						img(src="/images/models/lorempixel.jpg").img-responsive
+					.modal-footer
+						span.left Category: Tools
+						span.left Price: 30 &euro;
+						button.btn.btn-primary.btn-lg(type='button') Register
 			
 
 

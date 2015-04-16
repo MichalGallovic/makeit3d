@@ -4,6 +4,62 @@
 		"selected_items":
 		[
 			[
+				"paddi",
+				"padding-left"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"nav",
+				"navbar-height"
+			],
+			[
+				"il",
+				"inline-block"
+			],
+			[
+				"marig",
+				"margin-right"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"bst-nav",
+				"bst-navbar	bst-navbar"
+			],
+			[
+				"bst-navbar",
+				"bst-navbar:basic	bst-navbar-basic"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"box-s",
+				"box-shadow"
+			],
+			[
 				"border",
 				"border-radius"
 			],
@@ -14,10 +70,6 @@
 			[
 				"tran",
 				"transition"
-			],
-			[
-				"box-s",
-				"box-sizing"
 			],
 			[
 				"show",
@@ -50,10 +102,6 @@
 			[
 				"extras",
 				"extras_data〔variable〕"
-			],
-			[
-				"margin",
-				"margint40"
 			],
 			[
 				"getSeleced",
@@ -288,10 +336,6 @@
 				"border-box"
 			],
 			[
-				"font",
-				"font-weight"
-			],
-			[
 				"inline",
 				"inline-block"
 			],
@@ -440,10 +484,21 @@
 	"buffers":
 	[
 		{
+			"contents": "var gulp = require('gulp'),\n    sass = require('gulp-ruby-sass'),\n    prefix = require('gulp-autoprefixer'),\n    jade = require('gulp-jade'),\n	connect = require('gulp-connect');\n\ngulp.task('webserver', function(){\n	connect.server({\n        port: 1234,\n        livereload: true\n    });\n});\n\n\n//#### FOR USING CSSTYLE - RUBY SASS GEM\ngulp.task('sass', function () {\n    return sass('sass/app.scss')\n    .pipe(prefix(\n            \"last 5 versions\", \"> 1%\", \"ie 8\", \"ie 7\"\n        ))\n    .pipe(gulp.dest('./css'))\n    .pipe(connect.reload());\n});\n\ngulp.task('jade', function() {\n \n  gulp.src('./jade/*.jade')\n    .pipe(jade({\n      pretty: true\n    }))\n    .pipe(gulp.dest('./'))\n    .pipe(connect.reload());\n});\n\n\ngulp.task('js', function() {\n    gulp.src('./js/*.js')\n        .pipe(connect.reload());\n});\n\ngulp.task('watch', function() {\n    gulp.watch(['./sass/**/*.scss','./js/*.js','./jade/*.jade'],['sass','js','jade']);\n});\n\ngulp.task('default',['webserver','watch']);\n",
 			"file": "gulpfile.js",
+			"file_size": 1159,
+			"file_write_time": 130735644880000000,
 			"settings":
 			{
-				"buffer_size": 1190,
+				"buffer_size": 972,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "makeit3d.sublime-project",
+			"settings":
+			{
+				"buffer_size": 122,
 				"line_ending": "Unix"
 			}
 		},
@@ -451,15 +506,98 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1792,
+				"buffer_size": 3983,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "jade/index.jade",
+			"contents": "//\n// Modals\n// --------------------------------------------------\n\n// .modal-open      - body class for killing the scroll\n// .modal           - container to scroll within\n// .modal-dialog    - positioning shell for the actual modal\n// .modal-content   - actual modal w/ bg and corners and shit\n\n// Kill the scroll on the body\n.modal-open {\n  overflow: hidden;\n}\n\n// Container that the modal scrolls within\n.modal {\n  display: none;\n  overflow: hidden;\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: $zindex-modal;\n  -webkit-overflow-scrolling: touch;\n\n  // Prevent Chrome on Windows from adding a focus outline. For details, see\n  // https://github.com/twbs/bootstrap/pull/10951.\n  outline: 0;\n\n  // When fading in the modal, animate it to slide down\n  &.fade .modal-dialog {\n    @include translate(0, -25%);\n    @include transition-transform(0.3s ease-out);\n  }\n  &.in .modal-dialog { @include translate(0, 0) }\n}\n.modal-open .modal {\n  overflow-x: hidden;\n  overflow-y: auto;\n}\n\n// Shell div to position the modal with bottom padding\n.modal-dialog {\n  position: relative;\n  width: auto;\n  margin: 10px;\n}\n\n// Actual modal\n.modal-content {\n  position: relative;\n  background-color: $modal-content-bg;\n  border: 1px solid $modal-content-fallback-border-color; //old browsers fallback (ie8 etc)\n  border: 1px solid $modal-content-border-color;\n  border-radius: $border-radius-large;\n  @include box-shadow(0 3px 9px rgba(0,0,0,.5));\n  background-clip: padding-box;\n  // Remove focus outline from opened modal\n  outline: 0;\n}\n\n// Modal background\n.modal-backdrop {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: $zindex-modal-background;\n  background-color: $modal-backdrop-bg;\n  // Fade for backdrop\n  &.fade { @include opacity(0); }\n  &.in { @include opacity($modal-backdrop-opacity); }\n}\n\n// Modal header\n// Top section of the modal w/ title and dismiss\n.modal-header {\n  padding: $modal-title-padding;\n  border-bottom: 1px solid $modal-header-border-color;\n  min-height: ($modal-title-padding + $modal-title-line-height);\n}\n// Close icon\n.modal-header .close {\n  margin-top: -2px;\n}\n\n// Title text within header\n.modal-title {\n  margin: 0;\n  line-height: $modal-title-line-height;\n}\n\n// Modal body\n// Where all modal content resides (sibling of .modal-header and .modal-footer)\n.modal-body {\n  position: relative;\n  padding: $modal-inner-padding;\n}\n\n// Footer (for actions)\n.modal-footer {\n  padding: $modal-inner-padding;\n  text-align: right; // right align buttons\n  border-top: 1px solid $modal-footer-border-color;\n  @include clearfix; // clear it in case folks use .pull-* classes on buttons\n\n  // Properly space out buttons\n  .btn + .btn {\n    margin-left: 5px;\n    margin-bottom: 0; // account for input[type=\"submit\"] which gets the bottom margin like all other inputs\n  }\n  // but override that for button groups\n  .btn-group .btn + .btn {\n    margin-left: -1px;\n  }\n  // and override it for block buttons as well\n  .btn-block + .btn-block {\n    margin-left: 0;\n  }\n}\n\n// Measure scrollbar width for padding body during modal show/hide\n.modal-scrollbar-measure {\n  position: absolute;\n  top: -9999px;\n  width: 50px;\n  height: 50px;\n  overflow: scroll;\n}\n\n// Scale up the modal\n@media (min-width: $screen-sm-min) {\n  // Automatically set modal's width for larger viewports\n  .modal-dialog {\n    width: $modal-md;\n    margin: 30px auto;\n  }\n  .modal-content {\n    @include box-shadow(0 5px 15px rgba(0,0,0,.5));\n  }\n\n  // Modal sizes\n  .modal-sm { width: $modal-sm; }\n}\n\n@media (min-width: $screen-md-min) {\n  .modal-lg { width: $modal-lg; }\n}\n",
+			"file": "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_modals.scss",
+			"file_size": 3615,
+			"file_write_time": 130736088080000000,
 			"settings":
 			{
-				"buffer_size": 1266,
+				"buffer_size": 3612,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss",
+			"settings":
+			{
+				"buffer_size": 30826,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/components/modals.scss",
+			"settings":
+			{
+				"buffer_size": 66,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss",
+			"settings":
+			{
+				"buffer_size": 3691,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/components/buttons.scss",
+			"settings":
+			{
+				"buffer_size": 139,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "categories.html",
+			"settings":
+			{
+				"buffer_size": 4315,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "node_modules/gulp-jade/node_modules/.bin/jade",
+			"settings":
+			{
+				"buffer_size": 6833,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "jade/categories.jade",
+			"settings":
+			{
+				"buffer_size": 2900,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/components/tile.scss",
+			"settings":
+			{
+				"buffer_size": 1317,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/foundation/helpers.scss",
+			"settings":
+			{
+				"buffer_size": 134,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/components/searchbar.scss",
+			"settings":
+			{
+				"buffer_size": 959,
 				"line_ending": "Unix"
 			}
 		},
@@ -478,7 +616,31 @@
 			"file": "sass/app.scss",
 			"settings":
 			{
+				"buffer_size": 277,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/foundation/variables.scss",
+			"settings":
+			{
 				"buffer_size": 56,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/foundation/base.scss",
+			"settings":
+			{
+				"buffer_size": 279,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/foundation/colors.scss",
+			"settings":
+			{
+				"buffer_size": 126,
 				"line_ending": "Unix"
 			}
 		},
@@ -486,7 +648,15 @@
 			"file": "sass/vendor/vendor.scss",
 			"settings":
 			{
-				"buffer_size": 127,
+				"buffer_size": 3628,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss",
+			"settings":
+			{
+				"buffer_size": 1316,
 				"line_ending": "Unix"
 			}
 		},
@@ -502,7 +672,7 @@
 			"file": "css/app.css",
 			"settings":
 			{
-				"buffer_size": 143226,
+				"buffer_size": 144896,
 				"line_ending": "Unix"
 			}
 		},
@@ -510,15 +680,31 @@
 			"file": "sass/components/button.scss",
 			"settings":
 			{
-				"buffer_size": 353,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "css/components/button.css",
+			"file": "sass/components/navbar.scss",
 			"settings":
 			{
-				"buffer_size": 4915,
+				"buffer_size": 985,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/vendor/bootstrap-override.scss",
+			"settings":
+			{
+				"buffer_size": 410,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss",
+			"settings":
+			{
+				"buffer_size": 14729,
 				"line_ending": "Unix"
 			}
 		},
@@ -530,14 +716,6 @@
 			"settings":
 			{
 				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "html/index.html",
-			"settings":
-			{
-				"buffer_size": 132,
 				"line_ending": "Unix"
 			}
 		}
@@ -727,20 +905,42 @@
 	"expanded_folders":
 	[
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components/bootstrap-sass",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components/bootstrap-sass/assets",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components/bootstrap-sass/assets/fonts",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components/bootstrap-sass/assets/stylesheets",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components/jquery",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components/bootstrap-sass/assets/stylesheets/bootstrap",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/css",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/fonts",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/jade",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp/node_modules",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/sass",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/sass/components",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/sass/foundation",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/sass/vendor"
 	],
 	"file_history":
 	[
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/jade/index.jade",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/html/index.html",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/css/components/button.css",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components/font-awesome/scss/_mixins.scss",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_alerts.scss",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components/font-awesome/scss/_animated.scss",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp-sass/node_modules/node-sass/node_modules/shelljs/src/toEnd.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp-ruby-sass/node_modules/vinyl-fs/node_modules/glob-stream/node_modules/unique-stream/node_modules/es6-set/node_modules/es5-ext/object/every.js",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components/jquery/dist/jquery.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp-autoprefixer/node_modules/autoprefixer-core/node_modules/caniuse-db/features-json/css-animation.json",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_nav-vertical-align.scss",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp-connect/node_modules/.bin/tiny-lr",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp/node_modules/gulp-util/node_modules/dateformat/test/test_isoutcdatetime.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp-ruby-sass/node_modules/vinyl-fs/node_modules/glob-stream/node_modules/unique-stream/node_modules/es6-set/node_modules/es5-ext/array/valid-array.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp-ruby-sass/node_modules/vinyl-fs/node_modules/glob-stream/node_modules/unique-stream/node_modules/es6-set/node_modules/es5-ext/array/#/values/shim.js",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp-jade/node_modules/.bin/jade",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp-autoprefixer/node_modules/vinyl-sourcemaps-apply/node_modules/source-map/build/assert-shim.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp-autoprefixer/node_modules/vinyl-sourcemaps-apply/node_modules/source-map/lib/source-map/base64.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp-autoprefixer/node_modules/autoprefixer-core/node_modules/caniuse-db/features-json/css-opacity.json",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components/csstyle/.bower.json",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp/node_modules/gulp-util/lib/isNull.js",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/html/html.index",
@@ -849,28 +1049,11 @@
 		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/plugins/hms/translatable-editable/Plugin.php",
 		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/assets/css/supersized.css",
 		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/modules/cms/twig/DebugExtension.php",
-		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/photos/dok1.doc",
-		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/.gitignore",
-		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/.gitattributes",
-		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/.editorconfig",
-		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/assets/flags/1x1/ht.svg",
-		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/pages/hotel/trencianske-teplice.htm",
-		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/pages/ubytovanie/ubytovanie.htm",
-		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/pages/ubytovanie/apartman-rodinny.htm",
-		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/assets/css/artill-clean-icons/artill_clean_icons-webfont.woff",
-		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/assets/flags/1x1/tw.svg",
-		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/assets/flags/1x1/tc.svg",
-		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/layouts/homepage.htm",
-		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/assets/flags/1x1/la.svg",
-		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/themes/hotelmostslavy/assets/js/main.js",
-		"/Users/michalgallovic/Desktop/10397815_10203165305280361_3289263939489556010_n.jpg",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/composer.json",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/app/filters.php",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/vendor/nikic/php-parser/doc/3_Other_node_tree_representations.markdown"
+		"/Users/michalgallovic/Documents/Developer/Webs/hotelmostslavy/photos/dok1.doc"
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -884,6 +1067,59 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"radius",
+			"padding",
+			"modal-cont",
+			"paddin",
+			"border-ra",
+			"mt0",
+			"0",
+			"title",
+			"price",
+			"title",
+			");\n",
+			"40",
+			"@import \"",
+			"center",
+			"2",
+			"600",
+			"2",
+			".mt15",
+			".mt20",
+			"20",
+			"mt20",
+			".col-md-3.col-sm-6",
+			".m3d-tile__info",
+			"$navbar-default-link-active-color",
+			"active",
+			"300",
+			".col-md-3",
+			".img-responsive",
+			"lg",
+			"300",
+			"0",
+			"200",
+			"0",
+			"255",
+			"  		\n",
+			"red",
+			"brand-primary",
+			"border",
+			"navbar-defa",
+			"font-size",
+			"brand-primary",
+			"brand",
+			"navbar-default-brand",
+			"navbar",
+			"font",
+			"navbar-default",
+			"navbar height",
+			"navbar",
+			"brand",
+			"navbar-bg",
+			"background",
+			"_",
+			";\n",
 			"clock",
 			"ICON",
 			"true",
@@ -958,60 +1194,7 @@
 			"setFood",
 			"selected",
 			"stays",
-			"checked",
-			"toggle",
-			"#reservation label",
-			"point",
-			"vertical",
-			".radio ",
-			"lie",
-			"liec",
-			"liece",
-			"food-services",
-			"lie",
-			"ubytovanie/vy",
-			"fireAni",
-			"reservedM",
-			"clearCou",
-			"ubytovanie/",
-			"ubytovani",
-			"ubytovanie",
-			"finish_res",
-			"fireEAni",
-			"isEmpty",
-			"clearCount",
-			"remove",
-			"sub_",
-			"pobyty",
-			"formValid",
-			"animat",
-			"/vyber",
-			"ubytovanie",
-			"room",
-			"dokoncit",
-			"{{{",
-			"model-create",
-			"destroy",
-			"validation",
-			"renderTool",
-			"{{{",
-			"{{{l",
-			"res-summ",
-			"počet",
-			"finish_reservation",
-			"počet os",
-			"form",
-			"počet",
-			"strava",
-			"checked",
-			"prop",
-			"me.switchRoute(me.router.urlSegments);",
-			"this",
-			"me.",
-			"removeCurrentTemp",
-			"removeCurrent",
-			"deleteTemplateFrom",
-			"unbindModelFromView"
+			"checked"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1029,7 +1212,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -1038,15 +1221,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1190,
+						"buffer_size": 972,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								375,
-								375
+								395,
+								395
 							]
 						],
 						"settings":
@@ -1060,24 +1243,53 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "index.html",
+					"file": "makeit3d.sublime-project",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1792,
+						"buffer_size": 122,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								110,
-								110
+								111,
+								111
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3983,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1090,30 +1302,147 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "jade/index.jade",
+					"buffer": 3,
+					"file": "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_modals.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1266,
+						"buffer_size": 3612,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								405,
-								406
+								2377,
+								2384
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 959.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 30826,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21702,
+								21713
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 10139.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "sass/components/modals.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 66,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								64,
+								64
 							]
 						],
 						"settings":
 						{
 							"_anf_new": "",
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3691,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								645,
+								651
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "sass/components/buttons.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 139,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								84,
+								84
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1123,7 +1452,188 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 8,
+					"file": "categories.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4315,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "node_modules/gulp-jade/node_modules/.bin/jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6833,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "jade/categories.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2900,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1215,
+								1215
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 702.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "sass/components/tile.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1317,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								541,
+								541
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "sass/foundation/helpers.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 134,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								81,
+								81
+							],
+							[
+								99,
+								99
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "sass/components/searchbar.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 959,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								698,
+								694
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
 					"file": "node_modules/csstyle/csstyle.scss",
 					"semi_transient": false,
 					"settings":
@@ -1149,12 +1659,41 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 27,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 15,
 					"file": "sass/app.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 277,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								277,
+								277
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "sass/foundation/variables.scss",
 					"semi_transient": false,
 					"settings":
 					{
@@ -1165,8 +1704,8 @@
 						"selection":
 						[
 							[
-								25,
-								25
+								50,
+								50
 							]
 						],
 						"settings":
@@ -1178,24 +1717,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 22,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "sass/vendor/vendor.scss",
+					"buffer": 17,
+					"file": "sass/foundation/base.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 127,
+						"buffer_size": 279,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								65,
-								65
+								57,
+								57
 							]
 						],
 						"settings":
@@ -1207,11 +1746,97 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 18,
+					"file": "sass/foundation/colors.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								93,
+								93
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "sass/vendor/vendor.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3628,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2347,
+								2347
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1316,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								1316
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
 					"file": "bower.json",
 					"semi_transient": false,
 					"settings":
@@ -1238,73 +1863,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 25,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 22,
 					"file": "css/app.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 143226,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								37,
-								37
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS3/CSS3.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "sass/components/button.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 353,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								285,
-								285
-							]
-						],
-						"settings":
-						{
-							"_anf_new": "",
-							"syntax": "Packages/CSS3/CSS3.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "css/components/button.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4915,
+						"buffer_size": 144896,
 						"regions":
 						{
 						},
@@ -1317,17 +1885,134 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/CSS3/CSS3.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 23,
+					"file": "sass/components/button.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/CSS3/CSS3.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "sass/components/navbar.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 985,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								780,
+								780
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 191.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "sass/vendor/bootstrap-override.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								409,
+								409
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14729,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11896,
+								11908
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 9149.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
 					"file": "sass/vendor/cssstyle.scss",
 					"semi_transient": false,
 					"settings":
@@ -1354,37 +2039,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "html/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 132,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								110,
-								110
-							]
-						],
-						"settings":
-						{
-							"_anf_new": "",
-							"auto_complete": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
+					"stack_index": 26,
 					"type": "text"
 				}
 			]
@@ -1438,19 +2093,143 @@
 		[
 			[
 				"",
-				"gulpfile.js"
+				"jade/index.jade"
 			],
 			[
-				"gul",
-				"gulpfile.js"
+				"app",
+				"sass/app.scss"
+			],
+			[
+				"_button",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss"
+			],
+			[
+				"_modal",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_modals.scss"
+			],
+			[
+				"_var",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss"
+			],
+			[
+				"index.jad",
+				"jade/index.jade"
+			],
+			[
+				"categ",
+				"jade/categories.jade"
+			],
+			[
+				"index.ja",
+				"jade/index.jade"
+			],
+			[
+				"_aler",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_alerts.scss"
+			],
+			[
+				"index.",
+				"index.html"
+			],
+			[
+				"catego",
+				"jade/categories.jade"
+			],
+			[
+				"overr",
+				"sass/vendor/bootstrap-override.scss"
+			],
+			[
+				"color",
+				"sass/foundation/colors.scss"
+			],
+			[
+				"tile",
+				"sass/components/tile.scss"
+			],
+			[
+				"hel",
+				"sass/foundation/helpers.scss"
+			],
+			[
+				"tile.",
+				"sass/components/tile.scss"
+			],
+			[
+				"categorie.",
+				"jade/categories.jade"
+			],
+			[
+				"ja",
+				"node_modules/gulp-jade/node_modules/.bin/jade"
+			],
+			[
+				"boots",
+				"sass/vendor/bootstrap-override.scss"
+			],
+			[
+				"_navba",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss"
+			],
+			[
+				"navba",
+				"sass/components/navbar.scss"
+			],
+			[
+				"helpe",
+				"sass/foundation/helpers.scss"
+			],
+			[
+				"search",
+				"sass/components/searchbar.scss"
 			],
 			[
 				"inde",
 				"jade/index.jade"
 			],
 			[
+				"app.",
+				"sass/app.scss"
+			],
+			[
+				"base",
+				"sass/foundation/base.scss"
+			],
+			[
+				"colors",
+				"sass/foundation/colors.scss"
+			],
+			[
+				"_",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss"
+			],
+			[
+				"navbar",
+				"sass/components/navbar.scss"
+			],
+			[
+				"_navbar",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss"
+			],
+			[
 				"index",
-				"index.html"
+				"jade/index.jade"
+			],
+			[
+				"_nav",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss"
+			],
+			[
+				"_navb",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss"
+			],
+			[
+				"inde.",
+				"jade/index.jade"
+			],
+			[
+				"gul",
+				"gulpfile.js"
 			],
 			[
 				"routes",
@@ -1585,16 +2364,8 @@
 				"app/tests/behat/features/orders.feature"
 			],
 			[
-				"catego",
-				"app/tests/behat/features/categories.feature"
-			],
-			[
 				"models",
 				"app/tests/behat/features/models.feature"
-			],
-			[
-				"categ",
-				"app/tests/behat/features/categories.feature"
 			],
 			[
 				"model",
@@ -1639,10 +2410,6 @@
 			[
 				"ubyto",
 				"themes/hotelmostslavy/pages/ubytovanie.htm"
-			],
-			[
-				"app",
-				"app/config/app.php"
 			],
 			[
 				"dataa",
@@ -1835,118 +2602,6 @@
 			[
 				"pwro",
 				"src/pworld.cpp"
-			],
-			[
-				"app.",
-				"src/demos/app.h"
-			],
-			[
-				"bridge",
-				"src/demos/bridge/bridge.cpp"
-			],
-			[
-				"particle",
-				"src/particle.cpp"
-			],
-			[
-				"pfge",
-				"src/pfgen.cpp"
-			],
-			[
-				"blob",
-				"src/demos/blob/blob.cpp"
-			],
-			[
-				"brid",
-				"src/demos/bridge/bridge.cpp"
-			],
-			[
-				"par",
-				"include/cyclone/particle.h"
-			],
-			[
-				"pa",
-				"include/cyclone/particle.h"
-			],
-			[
-				"particl",
-				"include/cyclone/particle.h"
-			],
-			[
-				"app.c",
-				"src/demos/app.cpp"
-			],
-			[
-				"ball",
-				"src/demos/ballistic/ballistic.cpp"
-			],
-			[
-				"bri",
-				"src/demos/bridge/bridge.cpp"
-			],
-			[
-				"fligh",
-				"src/demos/flightsim/flightsim.cpp"
-			],
-			[
-				"app.h",
-				"src/demos/app.h"
-			],
-			[
-				"ap",
-				"src/demos/app.cpp"
-			],
-			[
-				"start",
-				"bootstrap/start.php"
-			],
-			[
-				"envir",
-				"config/environment.js"
-			],
-			[
-				"e",
-				"example.md"
-			],
-			[
-				"sett",
-				"jobber/jobber/settings.py"
-			],
-			[
-				"subredd",
-				"app/templates/subreddit.hbs"
-			],
-			[
-				"subreddi",
-				"app/templates/subreddit.hbs"
-			],
-			[
-				"broc",
-				"Brocfile.js"
-			],
-			[
-				"router",
-				"app/router.js"
-			],
-			[
-				"registra",
-				"client/app/templates/registration-successful.hbs"
-			],
-			[
-				"regi",
-				"client/app/routes/registration.js"
-			],
-			[
-				"login.h",
-				"client/app/templates/login.hbs"
-			],
-			[
-				"index.blade",
-				"app/views/admin/index.blade.php"
-			],
-			[
-				"create_new",
-				"app/database/migrations/2014_11_11_054153_create_news_table.php"
 			]
 		],
 		"width": 0.0

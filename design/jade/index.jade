@@ -74,28 +74,28 @@ body
 					.col-md-3.col-sm-6.mt30
 						.m3d-tile
 							a(data-toggle='modal', href='#modal-1').m3d-tile__content
-								img(src="http://lorempixel.com/600/600/technics").img-responsive
+								img(src="/images/models/lorempixel.jpg").img-responsive
 							.m3d-tile__info
 								span.left Robot
 								span.right 30 &euro;
 					.col-md-3.col-sm-6.mt30
 						.m3d-tile
-							a(href="").m3d-tile__content
-								img(src="http://lorempixel.com/600/600/people").img-responsive
+							a(data-toggle='modal', href='#modal-2').m3d-tile__content
+								img(src="/images/models/lorempixel-1.jpg").img-responsive
 							.m3d-tile__info
 								span.left Chobot
 								span.right 10 &euro;
 					.col-md-3.col-sm-6.mt30
 						.m3d-tile
 							a(href="").m3d-tile__content
-								img(src="http://lorempixel.com/600/600/nightlife").img-responsive
+								img(src="/images/models/lorempixel-2.jpg").img-responsive
 							.m3d-tile__info
 								span.left Bobot
 								span.right 15 &euro;
 					.col-md-3.col-sm-6.mt30
 						.m3d-tile
 							a(href="").m3d-tile__content
-								img(src="http://lorempixel.com/600/600/sports").img-responsive
+								img(src="/images/models/lorempixel-3.jpg").img-responsive
 							.m3d-tile__info
 								span.left Makerbot
 								span.right 20 &euro;
@@ -104,11 +104,27 @@ body
 		.modal-dialog
 			.modal-content
 				.modal-header
-					h2.modal-title.text-center(style="color:black") Robot
+				h2.modal-title.text-center(style="color:black") Random Tool
 				.modal-body
-					img(src="http://lorempixel.com/600/400/technics").img-responsive
+					img(src="/images/models/lorempixel.jpg").img-responsive
 				.modal-footer
-					button.btn.btn-primary(type='button') Register
+					a(href="tools.html").left Category: Tools
+					span.left Price: 30 &euro;
+					span.left.fa.fa-clock-o  25 mins
+					button.btn.btn-primary.btn-lg(type='button') Register
+
+	#modal-2.modal.fade
+		.modal-dialog
+			.modal-content
+				.modal-header
+				h2.modal-title.text-center(style="color:black") Random Tool
+				.modal-body
+					img(src="/images/models/lorempixel.jpg").img-responsive
+				.modal-footer
+					a(href="tools.html").left Category: Tools
+					span.left Price: 10 &euro;
+					span.left.fa.fa-clock-o  55 mins
+					button.btn.btn-primary.btn-lg(type='button').fa.fa-shopping-cart
 
 	script(src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js")
 	script(src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")
