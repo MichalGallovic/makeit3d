@@ -7307,7 +7307,7 @@ html {
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: -1; }
+    z-index: -10; }
 
 #csstyle .\+txtshadow {
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); }
@@ -7319,9 +7319,6 @@ a {
   color: white; }
   a:hover {
     color: white; }
-
-.navbar {
-  border-radius: 0; }
 
 .navbar-nav > li > a {
   font-size: 17px; }
@@ -7373,7 +7370,7 @@ a {
 .m3d-searchbar__input {
   display: block;
   width: 100%;
-  height: 50px;
+  height: 54px;
   border: none;
   color: white;
   line-height: 50px;
@@ -7395,8 +7392,28 @@ a {
     color: white; }
   .m3d-searchbar__input:focus {
     outline: 0; }
+  .m3d-searchbar__input + label {
+    top: 40%;
+    position: absolute;
+    color: #b4b4b4; }
   .m3d-searchbar__input.\--lowercase {
     text-transform: none; }
+  .m3d-searchbar__input.\--gray {
+    color: black;
+    padding-left: 45px;
+    font-size: 1.8em; }
+    .m3d-searchbar__input.\--gray::-webkit-input-placeholder {
+      color: #b4b4b4; }
+    .m3d-searchbar__input.\--gray:-moz-placeholder {
+      /* Firefox 18- */
+      color: #b4b4b4; }
+    .m3d-searchbar__input.\--gray::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #b4b4b4; }
+    .m3d-searchbar__input.\--gray:-ms-input-placeholder {
+      color: #b4b4b4; }
+    .m3d-searchbar__input.\--gray {
+      border-bottom: 2px solid #b4b4b4; }
 .m3d-searchbar__icon {
   position: absolute;
   font-size: 25px;
@@ -7472,6 +7489,8 @@ a {
 
 .modal-body {
   padding: 15px 0px 0px 0px; }
+  .modal-body.\--padding {
+    padding: 15px; }
 
 .modal-header {
   border-bottom: 0; }
@@ -7543,3 +7562,12 @@ a {
     font-size: 260px;
     text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
     z-index: -1; }
+
+.navbar-nav > li > .dropdown-menu {
+  border-radius: 0;
+  font-size: 15px; }
+  .navbar-nav > li > .dropdown-menu > li > a {
+    color: #1a96ff; }
+    .navbar-nav > li > .dropdown-menu > li > a:hover, .navbar-nav > li > .dropdown-menu > li > a:focus {
+      color: white;
+      background: #1a96ff; }

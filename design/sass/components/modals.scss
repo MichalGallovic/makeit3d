@@ -5,6 +5,10 @@
 }
 .modal-body {
 	padding: 15px 0px 0px 0px;
+	
+	@include option(padding) {
+		padding: 15px;
+	}
 }
 .modal-header {
 	border-bottom: 0;

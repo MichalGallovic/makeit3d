@@ -6,7 +6,6 @@ head
 	link(rel="stylesheet", href="css/app.css")
 	link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext")
 body
-	
 	nav(role="navigation").navbar.navbar-default
 		.container
 			.row
@@ -20,13 +19,20 @@ body
 						a(href="/" ).navbar-brand
 							img(src="/images/logo_sm.png", alt="")
 							img(src="/images/logo2_sm.png" alt="")
-					.collapse.navbar-collapse.navbar-ex1-collapse.pull-right
+					.collapse.navbar-collapse.navbar-ex1-collapse.navbar-right
 						ul.nav.navbar-nav 
 							li: a(href="howitworks.html") How it works
 							li: a(href="categories.html") Categories
 							li: a(href="print.html") Print Your Model
 							li: a(href="signup.html") Sign up
 							li: a(href="login.html") Login
+							li.dropdown
+								a.dropdown-toggle(href="#", data-toggle="dropdown",role="button", aria-expanded="false")
+									| hoblikj@gmail.com
+									span.caret
+								ul.dropdown-menu(role="menu")
+									li: a(href="#modal-edit" data-toggle='modal') Edit profile
+									li: a(href="#modal-cart" data-toggle='modal') Shopping cart
 			
 
 	.container
@@ -126,6 +132,60 @@ body
 					span.left Price: 10 &euro;
 					span.left.fa.fa-clock-o  55 mins
 					button.btn.btn-primary.btn-lg(type='button').fa.fa-shopping-cart.--loggedin
+
+	#modal-edit.modal.fade
+		.modal-dialog
+			.modal-content
+				.modal-header
+				h2.modal-title.text-center(style="color:black") Edit profile
+				.modal-body.--padding
+					.row
+						.col-lg-10.col-lg-offset-1
+							input(type="text" autocomplete="off").m3d-searchbar__input.--lowercase.--gray
+							label Email
+					.row.mt20
+						.col-lg-10.col-lg-offset-1
+							input(type="text" autocomplete="off").m3d-searchbar__input.--lowercase.--gray
+							label First
+					.row.mt20
+						.col-lg-10.col-lg-offset-1
+							input(type="text" autocomplete="off").m3d-searchbar__input.--lowercase.--gray
+							label Last
+					.row.mt20
+						.col-lg-10.col-lg-offset-1
+							input(type="text" autocomplete="off").m3d-searchbar__input.--lowercase.--gray
+							label Street
+					.row.mt20
+						.col-lg-10.col-lg-offset-1
+							input(type="text" autocomplete="off").m3d-searchbar__input.--lowercase.--gray
+							label Town
+
+					.row.mt20
+						.col-lg-10.col-lg-offset-1
+							input(type="text" autocomplete="off").m3d-searchbar__input.--lowercase.--gray
+							label State
+					.row.mt20
+						.col-lg-10.col-lg-offset-1
+							input(type="text" autocomplete="off").m3d-searchbar__input.--lowercase.--gray
+							label Zip
+				.modal-footer
+					//- a(href="tools.html").left Category: Tools
+					//- span.left Price: 30 &euro;
+					//- span.left.fa.fa-clock-o  25 mins
+					button.btn.btn-primary.btn-lg(type='button').mt20 Save changes
+
+	#modal-cart.modal.fade
+		.modal-dialog
+			.modal-content
+				.modal-header
+				h2.modal-title.text-center(style="color:black") Random Tool
+				.modal-body
+					img(src="/images/models/lorempixel.jpg").img-responsive
+				.modal-footer
+					a(href="tools.html").left Category: Tools
+					span.left Price: 30 &euro;
+					span.left.fa.fa-clock-o  25 mins
+					button.btn.btn-primary.btn-lg(type='button') Register
 
 	script(src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js")
 	script(src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")
