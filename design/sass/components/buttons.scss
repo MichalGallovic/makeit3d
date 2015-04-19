@@ -12,9 +12,10 @@
 }
 
 .btn-default {
+	background-color: darken($theme-gray,20%);
+	color: white;
 	&:hover {
 		background-color: $theme-gray;
 		color: white;
-		box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
 	}
 }
