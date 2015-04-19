@@ -7284,6 +7284,9 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+.mt10 {
+  margin-top: 10px; }
+
 .mt25 {
   margin-top: 25px; }
 
@@ -7298,6 +7301,9 @@ button.close {
 
 .ml20 {
   margin-left: 20px; }
+
+.mr95 {
+  margin-right: 95px; }
 
 html {
   background-color: #1a96ff; }
@@ -7500,6 +7506,8 @@ a {
   .modal-body__item .btn {
     font-size: 1.2em;
     padding: 2px 10px; }
+  .modal-body__item .price {
+    margin-right: 96px; }
 
 .modal-header {
   border-bottom: 0; }
@@ -7510,6 +7518,8 @@ a {
   .modal-footer .btn.\--loggedin {
     padding-left: 30px;
     padding-right: 30px; }
+  .modal-footer .btn + .btn {
+    margin-left: 0px; }
   .modal-footer a.left {
     text-decoration: underline; }
   .modal-footer .left {
