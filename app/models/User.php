@@ -35,6 +35,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
         "zip_code"
     ];
 
+
     public function printedModels() {
         return $this->belongsToMany('Model', 'printed_models');
     }
@@ -42,4 +43,20 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
     public function orders() {
         return $this->hasMany('Order');
     }
+
+    public function roles() {
+        return $this->belongsToMany('Role')->withTimestamps();
+    }
+
+    public function isAdmin() {
+        $roles = $this->roles()->get();
+
+        foreach($roles as $role) {
+            if($role->name == 'admin')
+                return true;
+        }
+
+        return false;
+    }
+
 }

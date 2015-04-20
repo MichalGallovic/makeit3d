@@ -112,6 +112,10 @@ class ModelController extends ApiController {
 
     }
 
+    public function delete($id) {
+        return $id;
+    }
+
 
     //####### PRIVATE METHODS
     private function isValidType($fileExtension) {

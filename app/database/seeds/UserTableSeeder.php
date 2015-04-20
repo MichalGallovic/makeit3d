@@ -11,31 +11,41 @@ class UserTableSeeder extends Seeder {
         DB::table('users')->delete();
 
         // main user for model adding and stuff
-        User::create([
+        $admin = User::create([
             "id"            =>  1,
             "email"         =>  "makeit3d@makeit3d.com",
             "first_name"    =>  "Makeit3D",
-            "password"      =>  Hash::make("kominarskycech"),
+            "password"      =>  Hash::make("kominar"),
             "street"        =>  "Plzenská 5",
             "town"          =>  "Bratislava",
             "zip_code"      =>  "83103",
             "country"       =>  "Slovakia"
         ]);
+
+        $adminRole = Role::where('name','admin')->first();
+
+        $admin->roles()->attach($adminRole->id);
+
+
+        $userRole = Role::where('name','user')->first();
+
 		foreach(range(1, 10) as $index)
 		{
-			User::create([
+			$user = User::create([
                 "email" =>  $faker->email,
                 "first_name"    =>  $faker->lastName,
                 "last_name"     =>  $faker->lastName,
-                "password"  =>  Hash::make("makeit3d"),
+                "password"  =>  Hash::make("kominar"),
                 "street"        =>  $faker->streetName,
                 "town"      =>  $faker->city,
                 "zip_code"  =>  $faker->randomNumber(5),
                 "country"   =>  $faker->country
 			]);
+
+            $user->roles()->attach($userRole->id);
 		}
 
-        User::create([
+        $user = User::create([
             "email" =>  "hoblikj@gmail.com",
             "first_name"    =>  "Jakub",
             "last_name"     =>  "Hoblík",
@@ -46,6 +56,8 @@ class UserTableSeeder extends Seeder {
             "country"   =>  "Slovakia",
             "confirmed" => 1
         ]);
+
+        $user->roles()->attach($adminRole->id);
 	}
 
 }

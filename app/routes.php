@@ -10,12 +10,9 @@ Route::get('/phpinfo',function() {
    phpinfo();
 });
 Route::get('/tst', function() {
-    $octoprint = new Octoprint();
-    dd($model = $octoprint->files()->getCollection());
-//    $model = Model::find(1);
-//    dd($model->createdBy->first_name);
-//    dd($octoprint->slice("http://octoprint.makeit3d.dev/api/files/local/Ancestry3d_ColganteEquilibrium.stl"));
-    dd($octoprint->localFile("1428929954_UltimakerRobot_support.gcode")->get());
+    $user = User::find(2);
+
+    dd($user->isAdmin());
 });
 Route::get('users/verify/{code}','UserController@verify');
 
@@ -37,10 +34,12 @@ Route::group(["prefix"  =>  "api"], function() {
     Route::get('models', 'ModelController@index');
     Route::get('models/recently_printed', 'ModelController@recentlyPrinted');
     Route::get('models/{id}', 'ModelController@show');
+    Route::delete('models/{id}','ModelController@delete')->before('auth.admin');
     Route::post('models/create','ModelController@create')->before('auth.token');
     // Orders
     Route::get('orders', 'OrderController@index');
     Route::post('orders/create', 'OrderController@create')->before('auth.token');
+
     // Token Authentication
 //    Route::get('auth', 'Tappleby\AuthToken\AuthTokenController@index');
 //    Route::post('auth', 'Tappleby\AuthToken\AuthTokenController@store');
