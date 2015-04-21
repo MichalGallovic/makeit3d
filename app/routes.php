@@ -10,9 +10,7 @@ Route::get('/phpinfo',function() {
    phpinfo();
 });
 Route::get('/tst', function() {
-    $user = User::find(2);
 
-    dd($user->isAdmin());
 });
 Route::get('users/verify/{code}','UserController@verify');
 
@@ -25,7 +23,7 @@ Route::group(["prefix"  =>  "api"], function() {
     Route::delete('users/logout','UserController@logout')->before('auth.token');
     Route::get('users/current','UserController@getCurrentUser')->before('auth.token');
     Route::put('users/current/edit','UserController@editCurrentUser')->before('auth.token');
-//    Route::get('users/{id}', 'UserController@show');
+    Route::get('users/{id}', 'UserController@show')->before(['auth.token','auth.admin']);
 
     // Categories
     Route::get('categories', 'CategoryController@index');
@@ -34,8 +32,10 @@ Route::group(["prefix"  =>  "api"], function() {
     Route::get('models', 'ModelController@index');
     Route::get('models/recently_printed', 'ModelController@recentlyPrinted');
     Route::get('models/{id}', 'ModelController@show');
-    Route::delete('models/{id}','ModelController@delete')->before('auth.admin');
+    Route::put('models/{id}','ModelController@update');
     Route::post('models/create','ModelController@create')->before('auth.token');
+    Route::delete('models/{id}','ModelController@destroy')->before(['auth.token','auth.admin']);
+
     // Orders
     Route::get('orders', 'OrderController@index');
     Route::post('orders/create', 'OrderController@create')->before('auth.token');

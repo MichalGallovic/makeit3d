@@ -30,7 +30,7 @@ class ModelController extends ApiController {
         else
             $models = Model::all();
 
-        return $this->respondWithCollection($models, new ModelTransformer);
+        return $this->respondWithCollection($models, new ModelTransformer,'models');
 	}
 
 
@@ -43,10 +43,47 @@ class ModelController extends ApiController {
             return $this->errorNotFound('Oh, no such models man, sorry...');
         }
         if($model->count() == 1)
-            return $this->respondWithItem($model->first(), new ModelTransformer);
+            return $this->respondWithItem($model->first(), new ModelTransformer,'model');
 
-        return $this->respondWithCollection($model, new ModelTransformer);
+        return $this->respondWithCollection($model, new ModelTransformer,'models');
 	}
+
+    public function edit($id) {
+        $model = Model::find($id);
+
+        if(!$model)
+            return $this->errorNotFound('Model not found.');
+
+        $input = Input::only([
+            'name',
+            'visible',
+            'price',
+            'image_url',
+            'created_by_user'
+        ]);
+
+        $rules = [
+            'name'  =>  'required',
+            'visible'   =>  'required',
+            'price' =>  'required',
+            'image_url' =>  'required',
+            'created_by'    =>  'required'
+        ];
+
+        $validator = Validator::make($input,$rules);
+
+        if($validator->fails())
+            return $this->errorWrongArgs($validator->messages()->first());
+
+        $model->name = $input['name'];
+        $model->visible = $input['visible'];
+        $model->price = $input['price'];
+        $model->created_by = $input['created_by_user'];
+
+        $model->save();
+
+        return $this->respondWithSuccess('Model updated successfully');
+    }
 
     public function create() {
         $user = $this->userRepo->getCurrentUser();
@@ -112,8 +149,16 @@ class ModelController extends ApiController {
 
     }
 
-    public function delete($id) {
-        return $id;
+    public function destroy($id) {
+        $model = Model::find($id);
+
+        if(!$model)
+            return $this->errorNotFound("Model not found.");
+
+        $model->delete();
+
+        return $this->respondWithSuccess("Model deleted successfully");
+
     }
 
 

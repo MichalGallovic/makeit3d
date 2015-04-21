@@ -56,13 +56,14 @@ Route::filter('auth.basic', function()
 
 
 Route::filter('auth.admin', function() {
-    if(! Auth::check())
-        throw new \Tappleby\AuthToken\Exceptions\NotAuthorizedException;
 
-    $user = Auth::user();
-
-    if(!$user->isAdmin())
-        throw new \Tappleby\AuthToken\Exceptions\NotAuthorizedException;
+//    if(! Auth::check())
+//        throw new \Tappleby\AuthToken\Exceptions\NotAuthorizedException;
+//
+//    $user = Auth::user();
+//
+//    if(!$user->isAdmin())
+//        throw new \Tappleby\AuthToken\Exceptions\NotAuthorizedException;
 });
 
 /*

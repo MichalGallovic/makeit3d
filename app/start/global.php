@@ -67,6 +67,19 @@ App::error(function(\Tappleby\AuthToken\Exceptions\NotAuthorizedException $excep
         ]
     ], 401);
 });
+
+App::error(function(\Symfony\Component\HttpKernel\Exception\NotFoundHttpException $e, $code) {
+    return Response::json([
+        "data" => [
+            'error' => [
+                'code' => "GEN-NOT-FOUND",
+                'http_code' => 404,
+                'message' => "Not found, sorry.",
+            ]
+        ]
+    ], 404);
+});
+
 /*
 |--------------------------------------------------------------------------
 | Maintenance Mode Handler

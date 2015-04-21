@@ -18,6 +18,9 @@ class ApiController extends Controller
     {
         $this->fractal = $fractal;
 
+        if(Request::header('requested-with') == 'ember')
+            $this->fractal->setSerializer(new \League\Fractal\Serializer\JsonApiSerializer());
+
         $include = Input::get('include');
         if(isset($include)) {
             $fractal->parseIncludes($include);
@@ -47,18 +50,18 @@ class ApiController extends Controller
         return $this;
     }
 
-    protected function respondWithItem($item, $callback)
+    protected function respondWithItem($item, $callback,$resourceKey = null)
     {
-        $resource = new Item($item, $callback);
+        $resource = new Item($item, $callback,$resourceKey);
 
         $rootScope = $this->fractal->createData($resource);
 
         return $this->respondWithArray($rootScope->toArray());
     }
 
-    protected function respondWithCollection($collection, $callback)
+    protected function respondWithCollection($collection, $callback, $resourceKey = null)
     {
-        $resource = new Collection($collection, $callback);
+        $resource = new Collection($collection, $callback,$resourceKey);
 
         $rootScope = $this->fractal->createData($resource);
 

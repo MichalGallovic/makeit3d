@@ -22,6 +22,16 @@ class UserController extends ApiController {
     }
 
 
+
+    public function show($id) {
+        $user = User::find($id);
+
+        if(!$user)
+            return $this->errorNotFound("User not found.");
+
+        return $this->respondWithItem($user,new UserTransformer, 'user');
+    }
+
     public function register() {
         $input = Request::only(["username","password"]);
         $rules = [
@@ -92,7 +102,7 @@ class UserController extends ApiController {
     public function getCurrentUser() {
         $user = $this->userRepo->getCurrentUser();
 
-        return $this->respondWithItem($user, new UserTransformer);
+        return $this->respondWithItem($user, new UserTransformer,'user');
     }
 
 
