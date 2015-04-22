@@ -88,13 +88,19 @@ class UserController extends ApiController {
 
         $id = $response->user->id;
 
-        Auth::loginUsingId($id);
+        $user = Auth::loginUsingId($id);
 
-        return $this->respondWithItem($response, new LoggedInTransformer);
+        $user->token = $response->token;
+        $user->save();
+
+        return $this->respondWithItem($response, new LoggedInTransformer, 'user');
     }
 
     public function logout() {
         $this->tokenController->destroy();
+        $user = Auth::user();
+        $user->token = null;
+        $user->save();
         Auth::logout();
         return $this->respondWithSuccess("You logged out successfully");
     }

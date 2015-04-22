@@ -16,5 +16,4 @@ class DbUserRepository {
         $user = User::find($response->getData()->id);
         return $user;
     }
-
 }

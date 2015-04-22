@@ -25,6 +25,7 @@ class CreateUsersTable extends Migration {
             $table->string('town',50)->nullable();
             $table->string('country',40)->nullable();
             $table->string('zip_code', 20)->nullable();
+            $table->text('token')->nullable();
             $table->string('password');
 			$table->timestamps();
 		});
