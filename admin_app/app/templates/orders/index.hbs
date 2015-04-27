@@ -1,0 +1,32 @@
+<table>
+	<thead>
+		<tr>
+			<th>Status</th>
+			<th>From</th>
+			<th>Address</th>
+			<th>Price</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each order in model}}
+			{{#link-to 'orders.manage' order tagName="tr"}}
+				{{#unless order.was_opened}}
+					<td>NEW</td>
+				{{else}}
+					{{#if order.was_shipped}}
+						<td>SHIPPED</td>
+					{{else}}
+						{{#if order.was_printed}}
+							<td>PRINTED</td>
+						{{else}}
+							<td>PENDING</td>
+						{{/if}}
+					{{/if}}
+				{{/unless}}
+				<td>{{order.full_name}}</td>
+				<td>{{order.address}}</td>
+				<td>{{order.price}}</td>
+			{{/link-to}}
+		{{/each}}
+	</tbody>
+</table>

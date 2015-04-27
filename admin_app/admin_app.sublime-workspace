@@ -1,0 +1,3043 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"props",
+				"propsArr〔variable〕"
+			],
+			[
+				"prop",
+				"propString〔variable〕"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"tra",
+				"transitionTo"
+			],
+			[
+				"set",
+				"setProperties"
+			],
+			[
+				"pr",
+				"properties"
+			],
+			[
+				"p",
+				"p	Tag"
+			],
+			[
+				"link",
+				"linkto	{{#link-to}} {{/link-to}}"
+			],
+			[
+				"app",
+				"application"
+			],
+			[
+				"object",
+				"objectKeys"
+			],
+			[
+				"objec",
+				"objectKeys"
+			],
+			[
+				"items",
+				"itemsArr"
+			],
+			[
+				"ites",
+				"itemsArr"
+			],
+			[
+				"item",
+				"itemsArr"
+			],
+			[
+				"prope",
+				"property"
+			],
+			[
+				"each",
+				"eachPropertyHelper"
+			],
+			[
+				"register",
+				"registerBoundHelper"
+			],
+			[
+				"he",
+				"headers"
+			],
+			[
+				"if",
+				"if	if(handlebars)"
+			],
+			[
+				"tran",
+				"transition"
+			],
+			[
+				"con",
+				"controllerFor"
+			],
+			[
+				"atte",
+				"attemtedTrans〔variable〕"
+			],
+			[
+				"contro",
+				"controllers"
+			],
+			[
+				"ada",
+				"adapter〔variable〕"
+			],
+			[
+				"adapte",
+				"adapterFor"
+			],
+			[
+				"use",
+				"username"
+			],
+			[
+				"local",
+				"localStorageName"
+			],
+			[
+				"current",
+				"currentUser"
+			],
+			[
+				"get",
+				"getToken"
+			],
+			[
+				"ac",
+				"access_token"
+			],
+			[
+				"bu",
+				"button"
+			],
+			[
+				"model",
+				"modelItem"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"icon",
+				"icon-size"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"padding",
+				"padding-large-vertical"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"paddi",
+				"padding-left"
+			],
+			[
+				"nav",
+				"navbar-height"
+			],
+			[
+				"il",
+				"inline-block"
+			],
+			[
+				"marig",
+				"margin-right"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"bst-nav",
+				"bst-navbar	bst-navbar"
+			],
+			[
+				"bst-navbar",
+				"bst-navbar:basic	bst-navbar-basic"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"box-s",
+				"box-shadow"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"text-dc",
+				"text-decoration"
+			],
+			[
+				"show",
+				"showExtras"
+			],
+			[
+				"hide",
+				"hideExtras"
+			],
+			[
+				"clear",
+				"clearExtrasData"
+			],
+			[
+				"reser",
+				"reservation_type"
+			],
+			[
+				"price",
+				"price_total"
+			],
+			[
+				"switch",
+				"switchExtras"
+			],
+			[
+				"select",
+				"selectExtras"
+			],
+			[
+				"extras",
+				"extras_data〔variable〕"
+			],
+			[
+				"getSeleced",
+				"getSelectedObjects"
+			],
+			[
+				"swi",
+				"switch〔keyword〕"
+			],
+			[
+				"getSelecte",
+				"getSelectedRoomsJSON"
+			],
+			[
+				"reserva",
+				"reservation_type"
+			],
+			[
+				"is",
+				"isSwitchingContext"
+			],
+			[
+				"vyber",
+				"vyber_pobytu"
+			],
+			[
+				"new_s",
+				"new_sub_object〔variable〕"
+			],
+			[
+				"sele",
+				"selected"
+			],
+			[
+				"has",
+				"hasOwnProperty"
+			],
+			[
+				"refresh",
+				"refreshSummary"
+			],
+			[
+				"arriva",
+				"arrival_date"
+			],
+			[
+				"reservat",
+				"reservation_type"
+			],
+			[
+				"setSel",
+				"setSelectedStays"
+			],
+			[
+				"count",
+				"countNights"
+			],
+			[
+				"refres",
+				"refreshSummary"
+			],
+			[
+				"depar",
+				"departure_date"
+			],
+			[
+				"arr",
+				"arrival_date"
+			],
+			[
+				"cu",
+				"count_price"
+			],
+			[
+				"roo",
+				"rooms"
+			],
+			[
+				"setSelect",
+				"setSelectedRadio"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"stay",
+				"stay_data〔variable〕"
+			],
+			[
+				"new_servi",
+				"new_services"
+			],
+			[
+				"url",
+				"urlSegments"
+			],
+			[
+				"error",
+				"errorIds"
+			],
+			[
+				"reserved",
+				"reservedMainItems"
+			],
+			[
+				"escape",
+				"escapeDots"
+			],
+			[
+				"err",
+				"errorIds"
+			],
+			[
+				"toolti",
+				"tooltipster"
+			],
+			[
+				"vali",
+				"validation"
+			],
+			[
+				"form",
+				"formValid"
+			],
+			[
+				"toolt",
+				"tooltipster"
+			],
+			[
+				"validate",
+				"validateEmail〔function〕"
+			],
+			[
+				"vyber_",
+				"vyber_ubytovania"
+			],
+			[
+				"render",
+				"renderTemplate"
+			],
+			[
+				"add",
+				"addDays"
+			],
+			[
+				"swith",
+				"switchRoute"
+			],
+			[
+				"with",
+				"withAnimation"
+			],
+			[
+				"empty",
+				"emptyDom〔function〕"
+			],
+			[
+				"unbind",
+				"unbindPlugins"
+			],
+			[
+				"food",
+				"food_data〔variable〕"
+			],
+			[
+				"seri",
+				"services_data〔variable〕"
+			],
+			[
+				"room",
+				"room_data〔variable〕"
+			],
+			[
+				"parse",
+				"parseFood"
+			],
+			[
+				"services",
+				"services_data〔variable〕"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"prot",
+				"prototype"
+			],
+			[
+				"uby",
+				"ubytovanie"
+			],
+			[
+				"poby",
+				"pobytyVyber"
+			],
+			[
+				"ubyt",
+				"ubytovanieSluzby"
+			],
+			[
+				"ubyto",
+				"ubytovanieVyber"
+			],
+			[
+				"main",
+				"main_food"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"inlie",
+				"inline-block"
+			],
+			[
+				"border-",
+				"border-left"
+			],
+			[
+				"padding-",
+				"padding-left"
+			],
+			[
+				"bore",
+				"border-box"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"mail",
+				"$mailchimp_lists〔variable〕"
+			],
+			[
+				"api",
+				"api_key"
+			],
+			[
+				"Valida",
+				"ValidationException〔namespace〕"
+			],
+			[
+				"ec",
+				"escape.	autoescape (block)"
+			],
+			[
+				"bl",
+				"blockquote	Tag"
+			],
+			[
+				"print",
+				"printf〔function〕"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"pla",
+				"playing"
+			],
+			[
+				"play",
+				"playBtn〔variable〕"
+			],
+			[
+				"cehc",
+				"checkboxes"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/controllers/application.js",
+			"settings":
+			{
+				"buffer_size": 246,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/router.js",
+			"settings":
+			{
+				"buffer_size": 978,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{{items-list \n	items=model \n	properties=\"id,email, first_name\" \n	resource=\"categories\" \n	delete=\"delete\"\n	edit=\"edit\" \n}}\n",
+			"file": "app/templates/users/index.hbs",
+			"file_size": 11,
+			"file_write_time": 130745242310000000,
+			"settings":
+			{
+				"buffer_size": 122,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/routes/models/create.js",
+			"settings":
+			{
+				"buffer_size": 140,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/routes/categories/create.js",
+			"settings":
+			{
+				"buffer_size": 140,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/routes/categories/edit.js",
+			"settings":
+			{
+				"buffer_size": 218,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/routes/categories/index.js",
+			"settings":
+			{
+				"buffer_size": 410,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/routes/users/index.js",
+			"settings":
+			{
+				"buffer_size": 401,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/routes/categories/show.js",
+			"settings":
+			{
+				"buffer_size": 218,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/routes/models/show.js",
+			"settings":
+			{
+				"buffer_size": 215,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/routes/models/edit.js",
+			"settings":
+			{
+				"buffer_size": 215,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/helpers/utils.js",
+			"settings":
+			{
+				"buffer_size": 192,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/helpers/ajax.js",
+			"settings":
+			{
+				"buffer_size": 1384,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/initializers/ajax.js",
+			"settings":
+			{
+				"buffer_size": 307,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/models/index.hbs",
+			"settings":
+			{
+				"buffer_size": 147,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/helpers/custom-log.js",
+			"settings":
+			{
+				"buffer_size": 222,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/categories/index.hbs",
+			"settings":
+			{
+				"buffer_size": 109,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/components/items-list.js",
+			"settings":
+			{
+				"buffer_size": 1102,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/components/item-show.js",
+			"settings":
+			{
+				"buffer_size": 438,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/components/item-show.hbs",
+			"settings":
+			{
+				"buffer_size": 86,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/models/show.hbs",
+			"settings":
+			{
+				"buffer_size": 25,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/models/index.js",
+			"settings":
+			{
+				"buffer_size": 75,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/model.js",
+			"settings":
+			{
+				"buffer_size": 411,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/category.js",
+			"settings":
+			{
+				"buffer_size": 123,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "import Ember from 'ember';\nimport AuthenticatedRoute from '../../lib/routes/authenticated';\n\nexport default Ember.Route.extend({\n	model: function() {\n		return this.store.find('model');\n	},\n	update: function() {\n	},\n	actions: {\n		delete: function(item) {\n			var me = this;\n			item.destroyRecord().then(function() {\n				me.refresh();\n			});\n		},\n		edit: function(item) {\n			this.transitionTo('models.edit',item);\n		}\n	}\n});\n",
+			"file": "app/routes/models/index.js",
+			"file_size": 562,
+			"file_write_time": 130745910050000000,
+			"settings":
+			{
+				"buffer_size": 422,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/routes/categories.js",
+			"settings":
+			{
+				"buffer_size": 137,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/environment.js",
+			"settings":
+			{
+				"buffer_size": 1152,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/routes/index.js",
+			"settings":
+			{
+				"buffer_size": 137,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Brocfile.js",
+			"settings":
+			{
+				"buffer_size": 709,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/app.js",
+			"settings":
+			{
+				"buffer_size": 422,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/components/items-list.hbs",
+			"settings":
+			{
+				"buffer_size": 514,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/partials/header.hbs",
+			"settings":
+			{
+				"buffer_size": 1368,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/helpers/each-property.js",
+			"settings":
+			{
+				"buffer_size": 198,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/helpers/object-to-row.js",
+			"settings":
+			{
+				"buffer_size": 348,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/lib/utils/register-helper.js",
+			"settings":
+			{
+				"buffer_size": 998,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/initializers/custom-htmlbars-helpers.js",
+			"settings":
+			{
+				"buffer_size": 328,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/lib/helpers/each-property.js",
+			"settings":
+			{
+				"buffer_size": 211,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "node_modules/swag/lib/swag.js",
+			"settings":
+			{
+				"buffer_size": 25268,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 207.0,
+		"selected_items":
+		[
+			[
+				"move",
+				"Quick File Move: Move Current File"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"han",
+				"Set Syntax: Handlebars"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"hand",
+				"Set Syntax: Handlebars"
+			],
+			[
+				"jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS3"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"cs",
+				"Set Syntax: CSS3"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"addre",
+				"Package Control: Add Repository"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"markdo",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"package",
+				"Package Control: Disable Package"
+			],
+			[
+				"table",
+				"Table Editor: Enable for current syntax"
+			],
+			[
+				"minif",
+				"Minify Javascript"
+			],
+			[
+				"mini",
+				"Minify Javascript"
+			],
+			[
+				"mi",
+				"Minify Javascript"
+			],
+			[
+				"mif",
+				"Minify Javascript"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML (Erlang)"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"rename",
+				"ANF: Rename File"
+			],
+			[
+				"twig",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"behat",
+				"Set Syntax: Behat"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"handl",
+				"Set Syntax: Handlebars"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"rub",
+				"Set Syntax: Ruby"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"delete",
+				"ANF: Delete Current File"
+			],
+			[
+				"handle",
+				"Set Syntax: Handlebars"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 153.0,
+		"history":
+		[
+			"import urllib2,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/controllers/models",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/lib/helpers",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/lib/routes",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/lib/utils",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/routes/categories",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/routes/models",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/routes/sessions",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/routes/users",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates/categories",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates/components",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates/models",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates/partials",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/ember",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/ember-cli/node_modules",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/swag/lib"
+	],
+	"file_history":
+	[
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/models/user.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/tests/unit/models/user-test.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/models/.gitkeep",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/tests/unit/routes/models-test.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/.sass-cache/79695cd132054ec4279503a4aa8ff0cdf6e055c9/_component-animations.scssc",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/routes/users.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/admin_usecases.rtf",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/broccoli-ruby-sass/node_modules/mkdirp/test/umask_sync.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/tests/unit/models/category-test.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/index.html",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/ember-cli/lib/commands/install-npm.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/helpers/log.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/tmp/tree_merger-tmp_dest_dir-CdfvO7cH.tmp/index.hbs",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/tmp/tree_merger-tmp_dest_dir-a6PCIrVi.tmp/index.hbs",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates/index.hbs",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/ember-browserify/node_modules/lodash-node/compat/internals/htmlEscapes.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/.sass-cache/05d8c6e464c245b1059c9e2fd0bd4d314acfeb10/helpers.scssc",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/ember-cli/node_modules/npm/node_modules/init-package-json/example/example-npm.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/config/environment.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/swag/test/inflections_test.coffee",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/ember-cli/node_modules/broccoli-es6modules/node_modules/esperanto/bin/showHelp.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/.sass-cache/071071b38b5ca936916191a37c034a9ac4fbaf1e/searchbar.scssc",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/initializers/utils.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/tests/unit/initializers/utils-test.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/ember-cli/node_modules/bower/node_modules/retry/lib/retry_operation.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/README.md",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/routes/models.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates/models.hbs",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/ember-cli/tests/helpers/disable-npm-on-blueprint.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/models/order.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/ember-cli/lib/models/server-watcher.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/router.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/helpers/swag.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/package.json",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/ember-cli/node_modules/lodash/array/pullAt.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/.sass-cache/0776a1d34a3c2a2336ff6a6cd2150c0bd5a5d1f8/_border-radius.scssc",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower.json",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/tmp/tree_merger-tmp_dest_dir-Zq0W5Dqi.tmp/models/model.jshint.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/models/model.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/ember-cli/node_modules/bower/node_modules/graceful-fs/test/max-open.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/ember/Makefile",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/app/tests/behat/features/models.feature",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/vendor/phpunit/phpunit-mock-objects/Tests/MockObjectTest.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/tmp/custom_replace-tmp_dest_dir-6bCmTdwJ.tmp/app-prefix.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/vendor/composer/autoload_psr4.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates/sessions/logout.hbs",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/tmp/funnel-dest_hTboxS.tmp/routes/sessions/logout.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/vendor/guzzlehttp/streams/src/LazyOpenStream.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/login.html",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/jade/login.jade",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/.idea/modules.xml",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/ember-cli-sass/.idea/jsLibraryMappings.xml",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/ember-cli-babel/node_modules/broccoli-babel-transpiler/node_modules/babel-core/lib/babel/transformation/transformers/es6/spec.symbols.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/.idea/makeit3d.iml",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/vendor/guzzlehttp/streams/src/Exception/SeekException.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/vendor/guzzlehttp/guzzle/src/Subscriber/HttpError.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/howitworks.html",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/vendor/league/fractal/src/Serializer/DataArraySerializer.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/app/config/database.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/vendor/laracasts/flash/src/Laracasts/Flash/SessionStore.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/initializers/initializer-routes-authenticated.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/lib/routes/authenticated.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/app/config/auth.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/ember-cli/node_modules/leek/test/adapter-url-test.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/artisan",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates/login.hbs",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/app/controllers/ApiController.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/CONTRIBUTING.md",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/vendor/guzzle/guzzle/docs/conf.py",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/Exception/TooManyRequestsHttpException.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/ember-cli-babel/node_modules/broccoli-babel-transpiler/node_modules/babel-core/node_modules/lodash/collection/sortByOrder.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/composer.json",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/vendor/way/generators/tests/stubs/CreateOrdersTable.txt",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/styles/app.scss",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/app/config/testing/session.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/app/config/session.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/serializers/api-key.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/models/api-key.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/adapters/api-key.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/app/models/User.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/.sass-cache/0472a222a85ccd7077c403a9a54f39f87548af59/bootstrap-override.scssc",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/vendor/guzzlehttp/guzzle/src/BatchResults.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/ember-cli/lib/broccoli/broccoli-config-loader.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/controllers/login.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/vendor/predis/predis/lib/Predis/Command/ServerEvalSHA.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/server.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/jade/index.jade",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/index.html",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/_ide_helper.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/vendor/way/generators/tests/stubs/RecentOrdersTableSeeder.txt",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/ember-cli/node_modules/ember-router-generator/tests/fixtures/route-with-other-expressions.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/ember-cli/node_modules/npm/configure",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/vendor/phpunit/phpunit/build/phar-autoload.php.in",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/phpunit.xml",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/ember-cli/node_modules/npm/node_modules/normalize-package-data/test/github-urls.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/app/start/global.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/bootstrap/less/mixins/border-radius.less",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/app/config/packages/tappleby/laravel-auth-token/config.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/app/config/packages/bogardo/mailgun/config.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/bootstrap/grunt/configBridge.json",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/app/routes.php",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/README.md",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/sass/components/button.scss",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/.sass-cache/1f0bf1cead3c4d5ce8247d0416de7943ea286e12/font-awesome.scssc",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp/completion/fish",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/.sass-cache/ca6efea87ba49b70cdbecd7674ee72e59c049bb7/_dropdowns.scssc",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/.sass-cache/ad0ccb52029cf5b1e8b7b839f4db4c247a05940d/_nav-divider.scssc",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp-livereload/node_modules/debug/debug.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/.sass-cache/f2395d75da2d08c2bad09f6811bee1142bc8176a/dropdown.scssc",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp-sass/node_modules/node-sass/node_modules/pangyp/node_modules/fstream/lib/dir-reader.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp-jade/node_modules/jade/Readme_zh-cn.md",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp/completion/zsh",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_background-variant.scss",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp-autoprefixer/node_modules/vinyl-sourcemaps-apply/node_modules/source-map/lib/source-map/binary-search.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components/font-awesome/less/variables.less",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/.sass-cache/ca6efea87ba49b70cdbecd7674ee72e59c049bb7/_variables.scssc",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_dropdowns.scss",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp-ruby-sass/node_modules/mkdirp/test/opts_fs.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/.sass-cache/1f0bf1cead3c4d5ce8247d0416de7943ea286e12/_animated.scssc",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/node_modules/gulp-sass/node_modules/node-sass/src/libsass/sass_interface.cpp",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_responsive-embed.scss",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/sass/signup.jade",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/sass/login.jade",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/sass/howitworks.jade",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/print.html",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/package.json",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/design/.sass-cache/a79293d545e6d57ea775421bd3e3c7a8aa7a365d/vendor.scssc"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Route",
+			",\n",
+			"\"\n",
+			"item",
+			"span",
+			"attemptedTran",
+			"LOL",
+			"eachProperty",
+			"params",
+			"console.log(this.adapter.get('headers'));",
+			"this",
+			"transition",
+			"reset",
+			"access_token",
+			"getToken",
+			"data",
+			"});\n",
+			"',\n",
+			"});\n",
+			"LSSerializer",
+			"});\n",
+			"({\n",
+			"password",
+			">\n",
+			"<div class=\"container\">\n    <div class=\"row mt20\">\n      <h1 class=\"text-center +txtshadow\">Login</h1>\n    </div>\n    <div class=\"row mt40\">\n      <div class=\"col-lg-6 col-lg-offset-3\">\n        <input type=\"text\" autocomplete=\"off\" autofocus=\"autofocus\" placeholder=\"Email\" class=\"m3d-searchbar__input --lowercase\"/>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-lg-6 col-lg-offset-3\">\n        <input type=\"password\" autocomplete=\"off\" autofocus=\"autofocus\" placeholder=\"Password\" class=\"m3d-searchbar__input --lowercase\"/>\n      </div>\n    </div>\n    <div class=\"row mt20\">\n      <div class=\"col-lg-6 col-lg-offset-3\">\n        <button class=\"btn btn-default btn-lg pull-right +bxshadow\">Login</button><a href=\"forgotpassword.html\" class=\"pull-left\">Forgot password?</a>\n      </div>\n    </div>\n  </div>",
+			">",
+			"}\n",
+			"assets",
+			";\n",
+			"login",
+			"');\n",
+			");",
+			"css",
+			"',\n",
+			"attr",
+			"mt20",
+			"div.pull-right.ml20\n									button.btn.btn-primary.btn-sm(type='button' class=\"+font-md\").ml20 +\n									button.btn.left.btn-default.btn-sm(type='button') -",
+			"margin",
+			"Shopping cart",
+			"shopping cart",
+			"modal",
+			"data-target",
+			".row.mt20\n						.col-lg-10.col-lg-offset-1\n							.modal-body__item\n								span Super duper item\n								div.pull-right\n									button.btn.btn-primary.btn-sm(type='button' class=\"+font-md\").ml20 +\n									button.btn.left.btn-default.btn-sm(type='button') -\n								div.pull-right\n									span.ml20 x\n									span.ml20 5",
+			".col-lg-8.col-lg-offset-2",
+			".col-lg-10.col-lg-offset-1",
+			".row",
+			"transition: opacity 0.3s ease-out 0.3s;",
+			"ease-in",
+			"in",
+			"0.3",
+			"all",
+			"out",
+			"display: none;",
+			"transition: 0.3s all;\n	  	   transition-delay: 0.3s;",
+			"color: $theme-gray;",
+			"black",
+			"$theme-gray",
+			"padding",
+			"white",
+			"z-nde",
+			"webkit",
+			"posi",
+			"z-inde",
+			"$zindex-na",
+			"z-index",
+			"focus",
+			"size",
+			"http://lorempixel.com/600/600/people",
+			"modal-body",
+			"radius",
+			"padding",
+			"modal-cont",
+			"paddin",
+			"border-ra",
+			"mt0",
+			"0",
+			"title",
+			"price",
+			"title",
+			");\n",
+			"40",
+			"@import \"",
+			"center",
+			"2",
+			"600",
+			"2",
+			".mt15",
+			".mt20",
+			"20",
+			"mt20",
+			".col-md-3.col-sm-6",
+			".m3d-tile__info",
+			"$navbar-default-link-active-color",
+			"active",
+			"300",
+			".col-md-3",
+			".img-responsive",
+			"lg",
+			"300",
+			"0",
+			"200",
+			"0",
+			"255",
+			"  		\n",
+			"red",
+			"brand-primary",
+			"border",
+			"navbar-defa",
+			"font-size",
+			"brand-primary",
+			"brand",
+			"navbar-default-brand",
+			"navbar",
+			"font",
+			"navbar-default",
+			"navbar height",
+			"navbar",
+			"brand",
+			"navbar-bg",
+			"background",
+			"_",
+			";\n",
+			"clock",
+			"ICON",
+			"true",
+			"		\n",
+			"green",
+			";\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/controllers/application.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 246,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								240,
+								206
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 30,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/router.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 978,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								376,
+								376
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/templates/users/index.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 122,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								122,
+								122
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Handlebars/Handlebars.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/routes/models/create.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 140,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								140
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/routes/categories/create.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 140,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								140,
+								140
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/routes/categories/edit.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 218,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								197,
+								197
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/routes/categories/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								410
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/routes/users/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 401,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								376,
+								376
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/routes/categories/show.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 218,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								197,
+								197
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/routes/models/show.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 215,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								215
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/routes/models/edit.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 215,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								215
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "app/helpers/utils.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 192,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								192,
+								192
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "app/helpers/ajax.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1384,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1380,
+								1380
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "app/initializers/ajax.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 307,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								307,
+								307
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 31,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "app/templates/models/index.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 147,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								26,
+								26
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"auto_complete": false,
+							"syntax": "Packages/Handlebars/Handlebars.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "app/helpers/custom-log.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 222,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								91,
+								91
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "app/templates/categories/index.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 109,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								109
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Handlebars/Handlebars.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "app/components/items-list.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1102,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								411,
+								411
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "app/components/item-show.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 438,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								432,
+								432
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "app/templates/components/item-show.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 86,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								48,
+								48
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Handlebars/Handlebars.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 28,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "app/templates/models/show.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23,
+								23
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Handlebars/Handlebars.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "app/controllers/models/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 75,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								70,
+								70
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "app/models/model.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 411,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								60,
+								60
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "app/models/category.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 123,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								62,
+								62
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "app/routes/models/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 422,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								417,
+								130
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "app/routes/categories.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 137,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								90,
+								90
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "config/environment.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1152,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								629,
+								629
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "app/routes/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 137,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								132,
+								64
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "Brocfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 709,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								676,
+								676
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 37,
+					"type": "text"
+				},
+				{
+					"buffer": 29,
+					"file": "app/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 422,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								400,
+								400
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 35,
+					"type": "text"
+				},
+				{
+					"buffer": 30,
+					"file": "app/templates/components/items-list.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 514,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								402,
+								446
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Handlebars/Handlebars.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 31,
+					"file": "app/templates/partials/header.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1368,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1056,
+								1056
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Handlebars/Handlebars.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 29,
+					"type": "text"
+				},
+				{
+					"buffer": 32,
+					"file": "app/helpers/each-property.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 198,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								165,
+								165
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 32,
+					"type": "text"
+				},
+				{
+					"buffer": 33,
+					"file": "app/helpers/object-to-row.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 348,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								348,
+								348
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 34,
+					"file": "app/lib/utils/register-helper.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 998,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								564,
+								564
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 33,
+					"type": "text"
+				},
+				{
+					"buffer": 35,
+					"file": "app/initializers/custom-htmlbars-helpers.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 328,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								297,
+								297
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 36,
+					"file": "app/lib/helpers/each-property.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 211,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								211,
+								211
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 34,
+					"type": "text"
+				},
+				{
+					"buffer": 37,
+					"file": "node_modules/swag/lib/swag.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25268,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11266,
+								11000
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6917.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 36,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "admin_app.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"app/templates/users/index.hbs"
+			],
+			[
+				"categories/inde",
+				"app/templates/categories/index.hbs"
+			],
+			[
+				"users/index.hbs",
+				"app/templates/users/index.hbs"
+			],
+			[
+				"router",
+				"app/router.js"
+			],
+			[
+				"categories",
+				"app/routes/categories.js"
+			],
+			[
+				"index.hbs",
+				"app/templates/models/index.hbs"
+			],
+			[
+				"route",
+				"app/router.js"
+			],
+			[
+				"index.js",
+				"app/routes/index.js"
+			],
+			[
+				"envi",
+				"config/environment.js"
+			],
+			[
+				"item-l",
+				"app/templates/components/items-list.hbs"
+			],
+			[
+				"show.hb",
+				"app/templates/models/show.hbs"
+			],
+			[
+				"item-sho",
+				"app/templates/components/item-show.hbs"
+			],
+			[
+				"utils.",
+				"app/helpers/utils.js"
+			],
+			[
+				"header",
+				"app/templates/partials/header.hbs"
+			],
+			[
+				"items-",
+				"app/templates/components/items-list.hbs"
+			],
+			[
+				"items-l",
+				"app/templates/components/items-list.hbs"
+			],
+			[
+				"object",
+				"app/helpers/object-to-row.js"
+			],
+			[
+				"objec",
+				"app/helpers/object-to-row.js"
+			],
+			[
+				"swag.",
+				"node_modules/swag/lib/swag.js"
+			],
+			[
+				"brocfi",
+				"Brocfile.js"
+			],
+			[
+				"broc",
+				"Brocfile.js"
+			],
+			[
+				"model.hbs",
+				"app/templates/models.hbs"
+			],
+			[
+				"models",
+				"app/routes/models.js"
+			],
+			[
+				"models.js",
+				"admin_app/app/routes/models.js"
+			],
+			[
+				"logout",
+				"admin_app/app/routes/sessions/logout.js"
+			],
+			[
+				"applicati",
+				"admin_app/app/controllers/application.js"
+			],
+			[
+				"login",
+				"admin_app/app/controllers/sessions/login.js"
+			],
+			[
+				"ajax",
+				"admin_app/app/helpers/ajax.js"
+			],
+			[
+				"sessions",
+				"admin_app/app/controllers/sessions.js"
+			],
+			[
+				"header.",
+				"admin_app/app/templates/partials/header.hbs"
+			],
+			[
+				"sess",
+				"admin_app/app/controllers/sessions.js"
+			],
+			[
+				"user",
+				"admin_app/app/models/user.js"
+			],
+			[
+				"dashboar",
+				"admin_app/app/routes/dashboard.js"
+			],
+			[
+				"sessions.js",
+				"admin_app/app/controllers/sessions.js"
+			],
+			[
+				"session",
+				"admin_app/app/controllers/sessions.js"
+			],
+			[
+				"login.hbs",
+				"admin_app/app/templates/login.hbs"
+			],
+			[
+				"user.",
+				"admin_app/app/models/user.js"
+			],
+			[
+				"package",
+				"admin_app/package.json"
+			],
+			[
+				"bower",
+				"admin_app/bower.json"
+			],
+			[
+				"sessio",
+				"admin_app/app/controllers/sessions.js"
+			],
+			[
+				"gulp",
+				"design/gulpfile.js"
+			],
+			[
+				"b",
+				"admin_app/Brocfile.js"
+			],
+			[
+				"model",
+				"app/models/model.js"
+			],
+			[
+				"inde",
+				"jade/index.jade"
+			],
+			[
+				"buttons",
+				"sass/components/buttons.scss"
+			],
+			[
+				"modal",
+				"sass/components/modals.scss"
+			],
+			[
+				"index",
+				"jade/index.jade"
+			],
+			[
+				"app",
+				"sass/app.scss"
+			],
+			[
+				"button",
+				"sass/components/buttons.scss"
+			],
+			[
+				"help",
+				"sass/foundation/helpers.scss"
+			],
+			[
+				"base",
+				"sass/foundation/base.scss"
+			],
+			[
+				"searc",
+				"sass/components/searchbar.scss"
+			],
+			[
+				"index.",
+				"jade/index.jade"
+			],
+			[
+				"sear",
+				"sass/components/searchbar.scss"
+			],
+			[
+				"_varia",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss"
+			],
+			[
+				"varia",
+				"sass/foundation/variables.scss"
+			],
+			[
+				"_mo",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_modals.scss"
+			],
+			[
+				"color",
+				"sass/foundation/colors.scss"
+			],
+			[
+				"search",
+				"sass/components/searchbar.scss"
+			],
+			[
+				"navbar",
+				"sass/components/navbar.scss"
+			],
+			[
+				"dro",
+				"bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"
+			],
+			[
+				"drop",
+				"sass/components/dropdown.scss"
+			],
+			[
+				"_navba",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss"
+			],
+			[
+				"_variables",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss"
+			],
+			[
+				"_variab",
+				"bower_components/font-awesome/scss/_variables.scss"
+			],
+			[
+				"_variable",
+				".sass-cache/1f0bf1cead3c4d5ce8247d0416de7943ea286e12/_variables.scssc"
+			],
+			[
+				"_na",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss"
+			],
+			[
+				"navba",
+				"sass/components/navbar.scss"
+			],
+			[
+				"_drop",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_dropdowns.scss"
+			],
+			[
+				"_dropdo",
+				".sass-cache/ca6efea87ba49b70cdbecd7674ee72e59c049bb7/_dropdowns.scssc"
+			],
+			[
+				"upload",
+				"sass/components/upload.scss"
+			],
+			[
+				"_butt",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss"
+			],
+			[
+				"sign",
+				"jade/signup.jade"
+			],
+			[
+				"bu",
+				"sass/components/buttons.scss"
+			],
+			[
+				"baes",
+				"sass/foundation/base.scss"
+			],
+			[
+				"colo",
+				"sass/foundation/colors.scss"
+			],
+			[
+				"print",
+				"jade/print.jade"
+			],
+			[
+				"cate",
+				"jade/categories.jade"
+			],
+			[
+				"index.ja",
+				"jade/index.jade"
+			],
+			[
+				"modals",
+				"sass/components/modals.scss"
+			],
+			[
+				"vendo",
+				"sass/vendor/vendor.scss"
+			],
+			[
+				"tool",
+				"jade/tools.jade"
+			],
+			[
+				"i",
+				"jade/index.jade"
+			],
+			[
+				"colors",
+				"sass/foundation/colors.scss"
+			],
+			[
+				"tile",
+				"sass/components/tile.scss"
+			],
+			[
+				"_button",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss"
+			],
+			[
+				"_modal",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_modals.scss"
+			],
+			[
+				"_var",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss"
+			],
+			[
+				"index.jad",
+				"jade/index.jade"
+			],
+			[
+				"categ",
+				"jade/categories.jade"
+			],
+			[
+				"_aler",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_alerts.scss"
+			],
+			[
+				"catego",
+				"jade/categories.jade"
+			],
+			[
+				"overr",
+				"sass/vendor/bootstrap-override.scss"
+			],
+			[
+				"hel",
+				"sass/foundation/helpers.scss"
+			],
+			[
+				"tile.",
+				"sass/components/tile.scss"
+			],
+			[
+				"categorie.",
+				"jade/categories.jade"
+			],
+			[
+				"ja",
+				"node_modules/gulp-jade/node_modules/.bin/jade"
+			],
+			[
+				"boots",
+				"sass/vendor/bootstrap-override.scss"
+			],
+			[
+				"helpe",
+				"sass/foundation/helpers.scss"
+			],
+			[
+				"app.",
+				"sass/app.scss"
+			],
+			[
+				"_",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss"
+			],
+			[
+				"_navbar",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss"
+			],
+			[
+				"_nav",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss"
+			],
+			[
+				"_navb",
+				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss"
+			],
+			[
+				"inde.",
+				"jade/index.jade"
+			],
+			[
+				"gul",
+				"gulpfile.js"
+			],
+			[
+				"routes",
+				"chapter12/app/routes.php"
+			],
+			[
+				"main",
+				"css/main.css"
+			],
+			[
+				"reser",
+				"js/reservation.js"
+			],
+			[
+				"categoriesprev",
+				"plugins/hms/wellness/components/CategoriesPreview.php"
+			],
+			[
+				"categoriesp",
+				"plugins/hms/stays/components/CategoriesPreview.php"
+			],
+			[
+				"categor",
+				"category-grid.html"
+			],
+			[
+				"room",
+				"room-single.html"
+			],
+			[
+				"blog",
+				"blog-details.html"
+			],
+			[
+				"ga",
+				"gallery.html"
+			],
+			[
+				"conta",
+				"contact.html"
+			],
+			[
+				"fulls",
+				"index-full-screen.html"
+			],
+			[
+				"fallba",
+				"themes/hotelmostslavy/partials/fallbacks.htm"
+			],
+			[
+				"meta",
+				"themes/hotelmostslavy/partials/meta.htm"
+			],
+			[
+				"newsletter.",
+				"themes/hotelmostslavy/partials/newsletter.htm"
+			],
+			[
+				"lists.php",
+				"plugins/michalgallovic/mailchimp/vendor/Mailchimp/Lists.php"
+			],
+			[
+				"news",
+				"plugins/michalgallovic/mailchimp/components/Newsletter.php"
+			],
+			[
+				"list",
+				"modules/backend/widgets/Lists.php"
+			],
+			[
+				"signup",
+				"plugins/rainlab/mailchimp/components/Signup.php"
+			],
+			[
+				"newsletter",
+				"plugins/michalgallovic/mailchimp/components/Newsletter.php"
+			],
+			[
+				"sigun",
+				"plugins/rainlab/mailchimp/components/Signup.php"
+			],
+			[
+				"newsl",
+				"plugins/michalgallovic/mailchimp/components/Newsletter.php"
+			],
+			[
+				"newsletter.php",
+				"plugins/michalgallovic/mailchimp/components/Newsletter.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 247.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

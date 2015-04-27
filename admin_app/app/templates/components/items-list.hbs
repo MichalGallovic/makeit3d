@@ -1,0 +1,22 @@
+<table>
+	<thead>
+		<tr>
+			{{#each property in properties}}
+				<th>{{ property }}</th>
+			{{/each}}
+			<th>Edit</th>
+			<th>Delete</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each item in items_list}}
+			{{#link-to 'models.show' item.store tagName="tr"}}
+				{{#each value in item.data}}
+					<td>{{ value }}</td>
+				{{/each}}
+				<td><button {{action 'edit' item.store}}>Edit</button></td>
+				<td><button {{action 'delete' item.store bubbles=false}}>Delete</button></td>
+			{{/link-to}}
+		{{/each}}
+	</tbody>
+</table>
