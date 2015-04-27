@@ -22,7 +22,10 @@ class Order extends \Eloquent {
         $data = new Collection();
 
         foreach($models->data as $model_id) {
-            $data->push(Model::find($model_id));
+            $model = Model::find($model_id);
+            if($model) {
+                $data->push($model);
+            }
         }
         return $data;
     }

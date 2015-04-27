@@ -4,14 +4,15 @@ use App\Transformer\OrderTransformer;
 use App\Repositories\DbUserRepository;
 use App\Repositories\DbOrderRepository;
 use Bogardo\Mailgun\Facades\Mailgun;
-
+use League\Fractal\Manager;
 class OrderController extends ApiController {
 
     protected $userRepo;
 
     protected $orderRepo;
 
-	public function __construct(DbUserRepository $userRepo, DbOrderRepository $orderRepo) {
+	public function __construct(Manager $manager, DbUserRepository $userRepo, DbOrderRepository $orderRepo) {
+        parent::__construct($manager);
         $this->userRepo = $userRepo;
         $this->orderRepo = $orderRepo;
     }
@@ -21,7 +22,7 @@ class OrderController extends ApiController {
 	{
         $orders = Order::all();
 
-        return $this->respondWithCollection($orders, new OrderTransformer);
+        return $this->respondWithCollection($orders, new OrderTransformer,'orders');
 	}
 
 	public function create() {
@@ -66,6 +67,16 @@ class OrderController extends ApiController {
         return $this->respondWithSuccess("Your order has been created. Email with details, has been send to you.");
     }
 
+    public function show($id) {
+        try {
+            $order = Order::findOrFail($id);
+
+            return $this->respondWithItem($order, new OrderTransformer, 'order');
+        } catch(\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+            return $this->errorNotFound();
+        }
+
+    }
 
     //##### PRIVATE METHODS
 

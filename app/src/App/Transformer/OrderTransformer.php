@@ -14,6 +14,7 @@ class OrderTransformer extends TransformerAbstract {
 
     public function transform(Order $order) {
         return [
+            'id'            =>  $order->id,
             'price'         =>  $order->price,
             'created_at'    =>  $order->created_at,
             'first_name'    =>  $order->first_name,
@@ -21,20 +22,25 @@ class OrderTransformer extends TransformerAbstract {
             'street'        =>  $order->street,
             'town'          =>  $order->town,
             'country'       =>  $order->country,
-            'zip_code'      =>  $order->zip_code
+            'zip_code'      =>  $order->zip_code,
+            'was_opened'    =>  (boolean) $order->wasOpened,
+            'was_printed'   =>  (boolean) $order->wasPrinted,
+            'was_shipped'   =>  (boolean)$order->wasShipped
         ];
     }
 
     public function includeUser(Order $order) {
         $user = $order->user;
-
-        return $this->item($user, new UserTransformer);
+        if($user){
+            return $this->item($user, new UserTransformer);
+        }
     }
 
     public function includeModels(Order $order) {
         $models = $order->models();
-
-        return $this->collection($models, new ModelTransformer);
+        if($models->count()) {
+            return $this->collection($models, new ModelTransformer);
+        }
     }
 
 }

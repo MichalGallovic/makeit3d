@@ -25,6 +25,9 @@ class CreateOrdersTable extends Migration {
             $table->string('town')->nullable();
             $table->string('country')->nullable();
             $table->string('zip_code')->nullable();
+            $table->boolean('wasOpened')->default(false);
+            $table->boolean('wasPrinted')->default(false);
+            $table->boolean('wasShipped')->default(false);
 			$table->timestamps();
 		});
 	}

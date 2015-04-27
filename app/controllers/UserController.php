@@ -22,6 +22,12 @@ class UserController extends ApiController {
     }
 
 
+    public function index() {
+        $users = User::all();
+
+        return $this->respondWithCollection($users, new UserTransformer, 'users');
+    }
+
 
     public function show($id) {
         $user = User::find($id);
@@ -30,6 +36,55 @@ class UserController extends ApiController {
             return $this->errorNotFound("User not found.");
 
         return $this->respondWithItem($user,new UserTransformer, 'user');
+    }
+
+    public function update($id) {
+        $user = User::find($id);
+
+        if(!$user)
+            return $this->errorNotFound();
+
+        $input = Input::only([
+            'name',
+            'username',
+            'first_name',
+            'lats_name',
+            'street',
+            'town',
+            'country',
+            'zip_code'
+        ]);
+
+        $rules = [
+            'username'  =>  'required|email'
+        ];
+
+        $validator = Validator::make($input, $rules);
+
+        if($validator->fails()) {
+            $messages = $validator->messages();
+            return $this->errorWrongArgs($messages->first());
+        }
+
+        $input['email'] = $input['username'];
+        $user->fill($input);
+        $user->save();
+
+        return $this->respondWithSuccess("User edited successfully");
+    }
+
+    public function destroy($id) {
+        try {
+            $user = User::findOrFail($id);
+
+            if($user->delete()) {
+                return $this->respondWithSuccess('User deleted successfully');
+            }
+
+            return $this->errorInternalError();
+        } catch(\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+            return $this->errorNotFound();
+        }
     }
 
     public function register() {

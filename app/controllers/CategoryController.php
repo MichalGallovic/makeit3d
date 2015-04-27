@@ -14,7 +14,7 @@ class CategoryController extends ApiController {
 	{
         $categories = Category::all();
 
-        return $this->respondWithCollection($categories, new CategoryTransformer);
+        return $this->respondWithCollection($categories, new CategoryTransformer, 'categories');
 
 	}
 
@@ -25,7 +25,36 @@ class CategoryController extends ApiController {
             return $this->errorNotFound('Sorry, this category does not exist man...');
         }
 
-        return $this->respondWithItem($category, new CategoryTransformer);
+        return $this->respondWithItem($category, new CategoryTransformer, 'category');
+    }
+
+    public function edit($id) {
+        $category = Category::find($id);
+
+        if(!$category) {
+            return $this->errorNotFound('Sorry, this category does not exist man...');
+        }
+
+        $input = Input::only(['name', 'image_url']);
+
+        $category->fill($input);
+        $category->save();
+
+        return $this->respondWithSuccess('Category edited successfully!');
+    }
+
+    public function destroy($id) {
+        $category = Category::find($id);
+
+        if(!$category) {
+            return $this->errorNotFound('Sorry, this category does not exist....');
+        }
+
+        if($category->delete()) {
+            return $this->respondWithSuccess('Category deleted successfully.');
+        }
+
+        return $this->errorInternalError('Sth went wrong while deleting Category.');
     }
 
 }
