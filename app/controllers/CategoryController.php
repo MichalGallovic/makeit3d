@@ -28,7 +28,7 @@ class CategoryController extends ApiController {
         return $this->respondWithItem($category, new CategoryTransformer, 'category');
     }
 
-    public function edit($id) {
+    public function update($id) {
         $category = Category::find($id);
 
         if(!$category) {

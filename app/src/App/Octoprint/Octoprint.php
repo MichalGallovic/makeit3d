@@ -61,6 +61,11 @@ class Octoprint {
         return $this;
     }
 
+    public function currentJob() {
+        $this->endpoint = "/job";
+        return $this;
+    }
+
     protected function local() {
         $this->location = "local";
         $this->endpoint .= "/local";
@@ -75,6 +80,35 @@ class Octoprint {
         $this->fileName = $name;
         return $this;
     }
+
+//    public function currentPrinter() {
+//        $this->endpoint = "/printer";
+//
+//        return $this;
+//    }
+
+    public function printIt() {
+        return $this->selectAndPrint();
+    }
+
+    protected function selectAndPrint() {
+        $endpointUrl = $this->getEndpointUrl();
+
+        $response = $this->client->post($endpointUrl,[
+            "headers"   =>  [
+                "X-Api-Key" =>  $this->api_key
+            ],
+            "json"  =>  [
+                "command"   =>  "select",
+                "print"     =>  true
+            ]
+        ]);
+
+        $this->parseResponse($response);
+
+        return $response->json();
+    }
+
 
     public function get() {
         $endpointUrl = $this->getEndpointUrl();

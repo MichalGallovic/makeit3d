@@ -34,6 +34,7 @@ class OrderTransformer extends TransformerAbstract {
         if($user){
             return $this->item($user, new UserTransformer);
         }
+
     }
 
     public function includeModels(Order $order) {

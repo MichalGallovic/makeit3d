@@ -161,10 +161,39 @@ class ModelController extends ApiController {
 
     }
 
+    public function printModel($id) {
+        try {
+            $model = Model::findOrFail($id);
+            $name = $this->parseUrlToName($model->download_link_gcode);
+            $this->octoprint->localFile($name)->printIt();
+
+            // start a watcher job - monitoring printing progress
+            // send email to admin, when job finished
+
+            Queue::push('App\Queue\Printer\MonitorPrinting',['model_name'=>$name]);
+
+            return $this->respondWithSuccess("Printing has started!");
+
+        } catch(\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+            return $this->errorNotFound("Model selected for printing, not found.");
+        } catch(\GuzzleHttp\Exception\ClientException $e) {
+            if($e->getCode()) {
+//                return $this->errorInternalError("Printer not connected.");
+                Queue::push('App\Queue\Printer\MonitorPrinting',['model_name'=>$name]);
+                return $this->respondWithSuccess("Printing has started!");
+            }
+        }
+    }
+
 
     //####### PRIVATE METHODS
     private function isValidType($fileExtension) {
         return in_array($fileExtension,["gcode","gco","stl"]);
+    }
+
+    private function parseUrlToName($url) {
+        $segments = explode('/', $url);
+        return $segments[count($segments) - 1];
     }
 
 

@@ -40,7 +40,6 @@ class Makeit3dCommand extends Command {
 		$this->call('migrate:refresh');
         $this->call('migrate',['--package' =>  'tappleby/laravel-auth-token']);
         $this->info("Database refreshed...OK!");
-
         $this->call('db:seed');
         $this->info("Database seeded...OK!");
 

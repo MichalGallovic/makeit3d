@@ -31,7 +31,7 @@ Route::group(["prefix"  =>  "api"], function() {
     // Categories
     Route::get('categories', 'CategoryController@index');
     Route::get('categories/{id}', 'CategoryController@show');
-    Route::put('categories/{id}/edit', 'CategoryController@edit')->before(['auth.token', 'auth.admin']);
+    Route::put('categories/{id}/update', 'CategoryController@update')->before(['auth.token', 'auth.admin']);
     Route::delete('categories/{id}', 'CategoryController@destroy')->before(['auth.token', 'auth.admin']);
     // Models
     Route::get('models', 'ModelController@index');
@@ -40,6 +40,7 @@ Route::group(["prefix"  =>  "api"], function() {
     Route::put('models/{id}','ModelController@update');
     Route::post('models/create','ModelController@create')->before('auth.token');
     Route::delete('models/{id}','ModelController@destroy')->before('auth.token');
+    Route::get('models/{id}/print','ModelController@printModel');
 
     // Orders
     Route::get('orders', 'OrderController@index');
