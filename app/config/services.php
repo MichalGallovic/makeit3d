@@ -28,8 +28,12 @@ return array(
 		'secret' => '',
 	),
     'octoprint' =>  [
-        "api_key"   =>  '2AB67DB172BE4647BC1056289E3583A3',
-        "root_prefix"      =>  "octoprint"
+        "api_key"           =>  '2AB67DB172BE4647BC1056289E3583A3',
+        "printer_api_key"   =>  '7BF6AC45336F4FDDBC724ACE7E91265C',
+        "root_prefix"       =>  "octoprint",
+        "root_postfix"      =>  "/api",
+        "localhost_port"    =>  "4321",
+        "printer_url"       =>  "makeit3d.noip.me/api",
     ]
 
 );

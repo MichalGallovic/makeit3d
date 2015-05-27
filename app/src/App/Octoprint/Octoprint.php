@@ -1,7 +1,9 @@
 <?php namespace App\Octoprint;
 
+use App\Octoprint\Exceptions\FileIsBeingPrintedException;
 use App\Octoprint\Exceptions\NameNotSpecifiedException;
 use App\Octoprint\Exceptions\OctoprintException;
+use App\Octoprint\Exceptions\PrinterNotConnectedException;
 use App\Octoprint\Exceptions\TTLExceededException;
 use Config;
 use GuzzleHttp\Client;
@@ -19,9 +21,13 @@ class Octoprint {
 
     protected $api_key;
 
+    protected $printer_api_key;
+
     protected $client;
 
     protected $root_url;
+
+    protected $printer_url;
 
     protected $endpoint;
 
@@ -38,14 +44,12 @@ class Octoprint {
     const TTL = 10;
     const SLICE_TTL = 60;
     const FILE_CREATED = 201;
+    const CONFLICT = 409;
     const NOT_FOUND = 404;
+
     public function __construct($api_key = null) {
-        $this->api_key = $this->api_key($api_key);
         $this->client = new Client();
-
-        $this->root_url = $this->getRootApiUrl();
-
-
+        $this->setDefaults($api_key);
     }
 
 
@@ -88,27 +92,70 @@ class Octoprint {
 //    }
 
     public function printIt() {
+        $this->uploadToPrinter();
         return $this->selectAndPrint();
     }
 
     protected function selectAndPrint() {
+        $this->printer()->localFile($this->fileName);
         $endpointUrl = $this->getEndpointUrl();
 
-        $response = $this->client->post($endpointUrl,[
-            "headers"   =>  [
-                "X-Api-Key" =>  $this->api_key
-            ],
-            "json"  =>  [
-                "command"   =>  "select",
-                "print"     =>  true
-            ]
-        ]);
+        try {
+            $response = $this->client->post($endpointUrl,[
+                "headers"   =>  [
+                    "X-Api-Key" =>  $this->api_key
+                ],
+                "json"  =>  [
+                    "command"   =>  "select",
+                    "print"     =>  true
+                ]
+            ]);
 
-        $this->parseResponse($response);
+            $this->parseResponse($response);
+            return $response->json();
+        } catch(ClientException $e) {
+            if($e->getCode() == 409)
+                throw new PrinterNotConnectedException("Printer is probably not connected.");
+            else
+                throw $e;
+        }
 
-        return $response->json();
     }
 
+    public function delete() {
+        $endpointUrl = $this->getEndpointUrl();
+
+        try {
+            $response = $this->client->delete($endpointUrl,[
+                "headers"   =>  [
+                    "X-Api-Key" =>  $this->api_key
+                ]
+            ]);
+
+            $this->parseResponse($response);
+            return $response->json();
+        } catch(ClientException $e) {
+            if($e->getCode() == 409)
+                throw new FileIsBeingPrintedException("Requested file for delete is currently being printed.");
+            else if($e->getCode())
+                throw new \App\Octoprint\Exceptions\FileNotFoundException("File not Found: $this->fileName");
+            else
+                throw $e;
+        }
+    }
+
+    public function printer() {
+        $this->root_url = $this->printer_url;
+        $this->api_key = $this->printer_api_key;
+        return $this;
+    }
+
+    protected function setDefaults($api_key) {
+        $this->root_url = $this->getRootApiUrl();
+        $this->printer_url = $this->getPrinterApiUrl();
+        $this->api_key = $this->api_key($api_key);
+        $this->printer_api_key = Config::get('services.octoprint.printer_api_key');
+    }
 
     public function get() {
         $endpointUrl = $this->getEndpointUrl();
@@ -208,6 +255,34 @@ class Octoprint {
         return new OctoprintGcodeModel($this->localFile($this->fileName)->forceGcodeAnalysis());
     }
 
+
+    protected function uploadToPrinter() {
+        $this->printer()->files()->local();
+        $endpointUrl = $this->getEndpointUrl();
+        $path  = public_path()."/storage/models/".$this->fileName;
+        $this->fileName = pathinfo($this->fileName,PATHINFO_BASENAME);
+
+        if(!File::exists($path))
+            throw new FileNotFoundException($path);
+
+
+        $fileContent = File::get($path);
+
+        $response = $this->client->post($endpointUrl,[
+            'body'   =>  [
+                'file' =>  fopen($path,'r')
+            ],
+            'headers'=>  [
+                "X-Api-Key"  =>  $this->printer_api_key
+            ]
+        ]);
+
+        $this->parseResponse($response);
+
+        if($this->statusCode != self::FILE_CREATED)
+            throw new UnsupportedMediaTypeHttpException;
+
+    }
 
 
     public function slice($responseData) {
@@ -318,18 +393,37 @@ class Octoprint {
         return $api_key;
     }
 
+    protected function getPrinterApiUrl() {
+        $printer_url = Config::get('services.octoprint.printer_url');
+
+        if(!$printer_url)
+            $printer_url = "192.168.2.21/api";
+
+        return $printer_url;
+    }
+
     protected function getRootApiUrl() {
         $root_url = "";
-        $domain_root = str_replace("http://","",url());
+        // remove http// or https://
+        $domain_root = str_replace("http://","",str_replace("https://","",url()));
+
         $root_url = $domain_root;
+        $api_root_postfix = Config::get('services.octoprint.root_postfix');
+
+        if($root_url == "localhost") {
+            // when called as a queue job url is resolved as localhost
+            $port = Config::get('services.octoprint.localhost_port');
+            $root_url .= ":".$port.$api_root_postfix;
+            $root_url = "http://".$root_url;
+            return $root_url;
+        }
 
         $api_root_prefix = Config::get('services.octoprint.root_prefix');
 
         if($api_root_prefix)
-            $root_url = $api_root_prefix.".".$domain_root;
+            $root_url = $api_root_prefix.".".$root_url;
 
-        $root_url = "http://".$root_url.'/api';
-
+        $root_url = "http://".$root_url.$api_root_postfix;
         return $root_url;
 
     }
