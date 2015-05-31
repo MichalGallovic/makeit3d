@@ -9,13 +9,13 @@ class PrinterController extends ApiController {
     }
 
 	public function status() {
-        $response = $this->octoprint->currentJob();
-        $currentStatus = $response['state'];
+        $response = $this->octoprint->currentJob()->get();
 
         return Response::json([
-            "printer" => [
-                'status'    =>  $currentStatus
-            ]
+                'status'    =>  $response['state'],
+                'timeleft'      =>  $response['progress']['printTimeLeft'],
+                'name'      =>  $response['job']['file']['name'],
+                'completed' =>  $response['progress']['completion']*100
         ], 200);
     }
 

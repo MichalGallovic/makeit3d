@@ -2,30 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74d518cc-54cb-4719-8df0-1e0f16799d04" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/databases/development.sqlite" afterPath="$PROJECT_DIR$/app/storage/databases/development.sqlite" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2015_04_09_183554_create_models_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2015_04_09_183554_create_models_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2015_04_09_190115_create_orders_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2015_04_09_190115_create_orders_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ApiController.php" afterPath="$PROJECT_DIR$/app/controllers/ApiController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Model.php" afterPath="$PROJECT_DIR$/app/models/Model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ModelController.php" afterPath="$PROJECT_DIR$/app/controllers/ModelController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/seeds/ModelTableSeeder.php" afterPath="$PROJECT_DIR$/app/database/seeds/ModelTableSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/App/Transformer/ModelTransformer.php" afterPath="$PROJECT_DIR$/app/src/App/Transformer/ModelTransformer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/App/Queue/Printer/MonitorPrinting.php" afterPath="$PROJECT_DIR$/app/src/App/Queue/Printer/MonitorPrinting.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/App/Octoprint/Octoprint.php" afterPath="$PROJECT_DIR$/app/src/App/Octoprint/Octoprint.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Order.php" afterPath="$PROJECT_DIR$/app/models/Order.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/OrderController.php" afterPath="$PROJECT_DIR$/app/controllers/OrderController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/App/Transformer/OrderTransformer.php" afterPath="$PROJECT_DIR$/app/src/App/Transformer/OrderTransformer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_app/app/helpers/ajax.js" afterPath="$PROJECT_DIR$/admin_app/app/helpers/ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_app/app/initializers/ajax.js" afterPath="$PROJECT_DIR$/admin_app/app/initializers/ajax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/PrinterController.php" afterPath="$PROJECT_DIR$/app/controllers/PrinterController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_app/app/templates/dashboard.hbs" afterPath="$PROJECT_DIR$/admin_app/app/templates/dashboard.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_app/app/routes/dashboard.js" afterPath="$PROJECT_DIR$/admin_app/app/routes/dashboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_app/app/templates/models/index.hbs" afterPath="$PROJECT_DIR$/admin_app/app/templates/models/index.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_app/app/templates/orders/manage.hbs" afterPath="$PROJECT_DIR$/admin_app/app/templates/orders/manage.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_app/app/routes/orders/manage.js" afterPath="$PROJECT_DIR$/admin_app/app/routes/orders/manage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_app/app/models/model.js" afterPath="$PROJECT_DIR$/admin_app/app/models/model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_app/app/models/order.js" afterPath="$PROJECT_DIR$/admin_app/app/models/order.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="makeit3d.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -105,9 +84,11 @@
       <file leaf-file-name="PrinterController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/PrinterController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.066924065" vertical-offset="0" max-vertical-offset="777">
-              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-              <folding />
+            <state vertical-scroll-proportion="0.5688546" vertical-offset="0" max-vertical-offset="777">
+              <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+              <folding>
+                <element signature="e#6#34#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1161,9 +1142,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/PrinterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.066924065" vertical-offset="0" max-vertical-offset="777">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-          <folding />
+        <state vertical-scroll-proportion="0.5688546" vertical-offset="0" max-vertical-offset="777">
+          <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+          <folding>
+            <element signature="e#6#34#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

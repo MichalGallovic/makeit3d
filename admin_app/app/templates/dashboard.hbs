@@ -1,3 +1,15 @@
 {{outlet}}
 
-<p>Printer status: {{ model.status }}</p>
+<p>
+Printer status: {{ model.status }}
+<button {{action 'updateStatus'}}>Update status</button>
+</p>
+{{#if model.name}}
+<h4>Currently printing: {{ model.completed }}</h4>
+<p>
+Model: {{ model.name }}
+</p>
+<p>
+Printing time left: {{seconds-to-time  model.timeleft}}
+</p>
+{{/if}}
