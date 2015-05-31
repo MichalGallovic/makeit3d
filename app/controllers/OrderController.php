@@ -78,6 +78,22 @@ class OrderController extends ApiController {
 
     }
 
+    public function update($id) {
+        try {
+            $input = Input::get('order');
+            $order = Order::findOrFail($id);
+            $order->update($input);
+            if($input['was_shipped']) {
+                Mail::send('emails.order.shipped',['order'  =>  $order], function($message) use ($order) {
+                    $message->to($order->user->email)->subject("Your order has been shipped.");
+                });
+            }
+            return $this->respondWithSuccess('Order updated successfully');
+        } catch(\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+            return $this->errorNotFound('Order not found.');
+        }
+    }
+
     //##### PRIVATE METHODS
 
     private function areModelsValid($models) {

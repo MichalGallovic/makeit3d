@@ -1,1 +1,32 @@
-{{item-show model=model}}
+<p>
+	Status: 
+	{{#unless model.was_opened}}
+		<span>NEW</span>
+	{{else}}
+		{{#if model.was_shipped}}
+			<span>SHIPPED</span>
+		{{else}}
+			{{#if model.was_printed}}
+				<span>PRINTED</span>
+			{{else}}
+				<span>PENDING</span>
+			{{/if}}
+		{{/if}}
+	{{/unless}}
+</p>
+<p>Fullname: {{ model.full_name }}</p>
+<p>Address: {{ model.address }}</p>
+<p>Order price: {{ model.price }}</p>
+<p>Models to print:</p>
+{{#each item in model.models}}
+		<p>
+			{{ item.name }} - {{ item.price }}&euro; - {{ item.printing_time}} sec
+			{{#if item.deleted}}
+			<strong>This model has been deleted!</strong>
+			{{/if}}
+		</p>
+{{/each}}
+
+<p>
+	<button {{action 'shipped'}}>Shipped</button>
+</p>

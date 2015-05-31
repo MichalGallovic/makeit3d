@@ -259,7 +259,8 @@ class Octoprint {
     protected function uploadToPrinter() {
         $this->printer()->files()->local();
         $endpointUrl = $this->getEndpointUrl();
-        $path  = public_path()."/storage/models/".$this->fileName;
+
+        $path  = $_SERVER['HOME']."/.octoprint/uploads/".$this->fileName;
         $this->fileName = pathinfo($this->fileName,PATHINFO_BASENAME);
 
         if(!File::exists($path))
@@ -313,7 +314,8 @@ class Octoprint {
         // make sure it was processed and gcodeanalysis is included
         if(!isset($response->json()['gcodeAnalysis'])) {
             $fileName = pathinfo($response->json()['refs']['resource']);
-            $response = $this->localFile($fileName)->forceGcodeAnalysis();
+            $response = $this->localFile($fileName['basename'])->forceGcodeAnalysis();
+            return $response;
         }
 
         return $response->json();

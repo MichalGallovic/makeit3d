@@ -23,7 +23,7 @@ class ApiController extends Controller
 
         $include = Input::get('include');
         if(isset($include)) {
-            $fractal->parseIncludes($include);
+            $this->fractal->parseIncludes($include);
         }
     }
 

@@ -10,12 +10,13 @@ export default DS.Model.extend({
   	price: DS.attr('number'),
   	created_at: DS.attr(),
   	was_opened: DS.attr('boolean'),
-	was_printed: DS.attr('boolean'),
-	was_shipped: DS.attr('boolean'),
+    was_printed: DS.attr('boolean'),
+    was_shipped: DS.attr('boolean'),
+    models: DS.hasMany('model',{async:true}),
   	full_name: function(){
   		return this.get('first_name') + " " + this.get('last_name');
   	}.property('first_name','last_name'),
   	address: function() {
-  		return this.get('street') + ", " + this.get('town') + ", " + this.get('country');
+  		return this.get('street') + ", " + this.get('town') + " " + this.get('zip_code') + ", " + this.get('country');
   	}.property('street','town','country')
 });

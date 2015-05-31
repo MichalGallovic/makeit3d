@@ -18,7 +18,9 @@ class ModelTableSeeder extends Seeder {
                 "price" =>  $faker->randomFloat(2,0,100),
                 "image_url" =>  $faker->imageUrl(640, 480),
                 "category_id"   =>  $categories[rand(0,count($categories) - 1)],
-                "printing_time" =>  $faker->numberBetween(1000,20000)
+                "printing_time" =>  $faker->numberBetween(1000,20000),
+                "download_link_gcode"   =>  "http://octoprint.makeit3d.dev/downloads/files/local/testcube_05mm.gco",
+                "download_link_stl"     =>  "http://octoprint.makeit3d.dev/downloads/files/local/testcube_05mm.stl"
 			]);
 		}
 	}

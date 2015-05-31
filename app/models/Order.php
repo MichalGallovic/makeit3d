@@ -2,7 +2,7 @@
 use Illuminate\Database\Eloquent\Collection;
 
 class Order extends \Eloquent {
-	protected $fillable = [];
+	protected $fillable = ['was_opened','was_printed','was_shipped'];
 
     public function user() {
         return $this->belongsTo('User');

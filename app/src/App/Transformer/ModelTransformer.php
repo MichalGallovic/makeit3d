@@ -22,6 +22,7 @@ class ModelTransformer extends TransformerAbstract {
             'filament_volume'   =>  (float) $model->filament_volume,
             'download_link_gcode'     =>  $model->download_link_gcode,
             'download_link_stl' =>  $model->download_link_stl,
+            'deleted'   =>  $model->trashed(),
             'created_by'        =>  $model->createdBy->first_name . " " . $model->createdBy->last_name
         ];
     }

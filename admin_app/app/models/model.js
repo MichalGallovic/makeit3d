@@ -10,5 +10,9 @@ export default DS.Model.extend({
 	filament_volume : DS.attr('number'),
 	download_link_gcode : DS.attr('string'),
 	download_stl_gcode : DS.attr('string'),
-	created_by : DS.attr('string')
+	deleted: DS.attr('boolean'),
+	created_by : DS.attr('string'),
+	print: function() {
+		return this.ajax.getJSON('models/'+this.id+"/print");
+	}
 });

@@ -2,5 +2,7 @@ import Ember from 'ember';
 import AuthenticatedRoute from '../lib/routes/authenticated';
 
 export default AuthenticatedRoute.extend({
-	
+	model: function() {
+		return this.ajax.getJSON('printer/status');
+	}
 });

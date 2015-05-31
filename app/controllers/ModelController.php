@@ -36,9 +36,14 @@ class ModelController extends ApiController {
 
 	public function show($id)
 	{
+        $user = $this->userRepo->getCurrentUser();
         $ids = explode(',', $id);
 
-        $model = Model::find($ids);
+        if($user->isAdmin())
+            $model = Model::withTrashed()->find($ids);
+        else
+            $model = Model::find($ids);
+
         if(!$model) {
             return $this->errorNotFound('Oh, no such models man, sorry...');
         }
@@ -48,7 +53,7 @@ class ModelController extends ApiController {
         return $this->respondWithCollection($model, new ModelTransformer,'models');
 	}
 
-    public function edit($id) {
+    public function update($id) {
         $model = Model::find($id);
 
         if(!$model)
@@ -102,7 +107,7 @@ class ModelController extends ApiController {
 
         $extension = $file->getClientOriginalExtension();
         if(!$this->isValidType($extension))
-            return $this->errorWrongArgs("Wrong file type. Please use .stl or .gcode files only");
+            return $this->errorWrongArgs("Wrong file type. Please use .stl files only");
 
         $fileName = str_replace(" ","_",$file->getClientOriginalName());
         $customFileName = isset($input['name']) ? $input['name'].".".$extension : $file->getClientOriginalName();
@@ -162,21 +167,18 @@ class ModelController extends ApiController {
     }
 
     public function printModel($id) {
-//        Queue::push('App\Queue\Printer\MonitorPrinting',['model_name'=>$name]);
-//        return $this->respondWithSuccess("Printing has started!");
-
         try {
             $model = Model::findOrFail($id);
             $name = $this->parseUrlToName($model->download_link_gcode);
             $this->octoprint->localFile($name)->printIt();
-            Queue::push('App\Queue\Printer\MonitorPrinting');
+            Queue::push('App\Queue\Printer\MonitorPrinting',['model_name' => $name]);
             return $this->respondWithSuccess("Printing has started!");
 
         } catch(\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
             return $this->errorNotFound("Model selected for printing, not found.");
 
         } catch(\App\Octoprint\Exceptions\PrinterNotConnectedException $e) {
-                $this->octoprint->printer()->localFile($name)->delete();
+                Queue::push('App\Queue\Printer\MonitorPrinting',['model_name'=>$name]);
                 return $this->errorInternalError($e->getMessage());
         }
     }
@@ -184,7 +186,7 @@ class ModelController extends ApiController {
 
     //####### PRIVATE METHODS
     private function isValidType($fileExtension) {
-        return in_array($fileExtension,["gcode","gco","stl"]);
+        return in_array($fileExtension,["stl"]);
     }
 
     private function parseUrlToName($url) {

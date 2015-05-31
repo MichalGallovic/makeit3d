@@ -13,6 +13,7 @@ class OrderTransformer extends TransformerAbstract {
     ];
 
     public function transform(Order $order) {
+        $models = array_map('intval',json_decode($order->models)->data);
         return [
             'id'            =>  $order->id,
             'price'         =>  $order->price,
@@ -23,9 +24,10 @@ class OrderTransformer extends TransformerAbstract {
             'town'          =>  $order->town,
             'country'       =>  $order->country,
             'zip_code'      =>  $order->zip_code,
-            'was_opened'    =>  (boolean) $order->wasOpened,
-            'was_printed'   =>  (boolean) $order->wasPrinted,
-            'was_shipped'   =>  (boolean)$order->wasShipped
+            'was_opened'    =>  (boolean) $order->was_opened,
+            'was_printed'   =>  (boolean) $order->was_printed,
+            'was_shipped'   =>  (boolean)$order->was_shipped,
+            'models'        =>  $models,
         ];
     }
 

@@ -31,6 +31,7 @@ class CreateModelsTable extends Migration {
             $table->unsignedInteger('created_by')->default(1);
             $table->foreign('created_by')->references('id')->on('users');
 			$table->timestamps();
+            $table->softDeletes();
 		});
 	}
 
