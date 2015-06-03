@@ -28,7 +28,7 @@ class ModelController extends ApiController {
         if($search = Request::get('search'))
             $models = Search::models($search);
         else
-            $models = Model::all();
+            $models = Model::withTrashed()->get();
 
         return $this->respondWithCollection($models, new ModelTransformer,'models');
 	}
@@ -36,13 +36,9 @@ class ModelController extends ApiController {
 
 	public function show($id)
 	{
-        $user = $this->userRepo->getCurrentUser();
         $ids = explode(',', $id);
 
-        if($user->isAdmin())
-            $model = Model::withTrashed()->find($ids);
-        else
-            $model = Model::find($ids);
+        $model = Model::withTrashed()->find($ids);
 
         if(!$model) {
             return $this->errorNotFound('Oh, no such models man, sorry...');
@@ -54,18 +50,13 @@ class ModelController extends ApiController {
 	}
 
     public function update($id) {
-        $model = Model::find($id);
+        $model = Model::withTrashed()->find($id);
 
         if(!$model)
             return $this->errorNotFound('Model not found.');
 
-        $input = Input::only([
-            'name',
-            'visible',
-            'price',
-            'image_url',
-            'created_by_user'
-        ]);
+        $input = Input::get('model');
+
 
         $rules = [
             'name'  =>  'required',
@@ -83,8 +74,8 @@ class ModelController extends ApiController {
         $model->name = $input['name'];
         $model->visible = $input['visible'];
         $model->price = $input['price'];
-        $model->created_by = $input['created_by_user'];
-
+        $model->image_url = $input['image_url'];
+        $model->created_by = (int) $input['created_by'];
         $model->save();
 
         return $this->respondWithSuccess('Model updated successfully');

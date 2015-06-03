@@ -11,7 +11,7 @@ class PrintedModelsTableSeeder extends Seeder {
 		$faker = Faker::create();
 
         $orders = Order::all();
-		foreach(range(1, 10) as $index)
+		foreach(range(1, 2) as $index)
 		{
             $order = $orders->random(1);
             $printed_models = json_decode($order->models)->data;

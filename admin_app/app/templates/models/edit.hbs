@@ -1,1 +1,32 @@
 {{outlet}}
+<p>
+Name:
+{{input type="text" value=model.name}}
+</p>
+<p>
+Visibility:
+{{radio-button value=1 groupValue=model.visible }} Visible
+{{radio-button value=0 groupValue=model.visible }} Hidden
+</p>
+<p>
+Price:
+{{input type="text" value=model.price}}
+</p>
+<p>
+Image url:
+{{input type="text" value=model.image_url}}
+</p>
+<p>
+<img src="{{ model.image_url }}" alt="">
+</p>
+<p>
+Created by:
+{{select-picker content=users
+       			value=model.created_by
+       			optionValuePath="content.id"
+       			optionLabelPath="content.first_name"}}
+</p>
+<p>
+<button {{action "update" model}}>Save</button>
+<button {{action "cancel" model}}>Cancel</button>
+</p>

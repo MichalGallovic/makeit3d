@@ -20,33 +20,44 @@ Route::group(["prefix"  =>  "api"], function() {
     // Authentication
     Route::post('users/register','UserController@register');
     Route::post('users/login','UserController@login');
-    Route::get('users', 'UserController@index')->before('auth.token');
+    Route::get('users', 'UserController@index')->before(['auth.token','auth.admin']);
     Route::delete('users/logout','UserController@logout')->before('auth.token');
     Route::get('users/current','UserController@getCurrentUser')->before('auth.token');
     Route::put('users/current/edit','UserController@editCurrentUser')->before('auth.token');
+
     Route::get('users/{id}', 'UserController@show')->before(['auth.token','auth.admin']);
-    Route::put('users/{id}', 'UserController@update')->before('auth.token');
-    Route::delete('users/{id}','UserController@destroy');
+    Route::put('users/{id}', 'UserController@update')->before(['auth.token','auth.admin']);
+    Route::delete('users/{id}','UserController@destroy')->before(['auth.token','auth.admin']);
+//    Route::post('users', 'UserController@create')->before(['auth.token','auth.admin']);
+
 
     // Categories
     Route::get('categories', 'CategoryController@index');
     Route::get('categories/{id}', 'CategoryController@show');
-    Route::put('categories/{id}/update', 'CategoryController@update')->before(['auth.token', 'auth.admin']);
+
+//    Route::post('categories','CategoryController@create')->before(['auth.token', 'auth.admin']);
+    Route::put('categories/{id}', 'CategoryController@update')->before(['auth.token', 'auth.admin']);
     Route::delete('categories/{id}', 'CategoryController@destroy')->before(['auth.token', 'auth.admin']);
+
     // Models
     Route::get('models', 'ModelController@index');
-    Route::get('models/recently_printed', 'ModelController@recentlyPrinted');
     Route::get('models/{id}', 'ModelController@show');
-    Route::put('models/{id}','ModelController@update');
+    Route::get('models/recently_printed', 'ModelController@recentlyPrinted');
+
+
     Route::post('models/create','ModelController@create')->before('auth.token');
-    Route::delete('models/{id}','ModelController@destroy')->before('auth.token');
-    Route::get('models/{id}/print','ModelController@printModel');
+
+    Route::put('models/{id}','ModelController@update')->before(['auth.token','auth.admin']);
+    Route::delete('models/{id}','ModelController@destroy')->before(['auth.token','auth.admin']);
+    Route::get('models/{id}/print','ModelController@printModel')->before(['auth.token','auth.admin']);
 
     // Orders
-    Route::get('orders', 'OrderController@index');
     Route::post('orders/create', 'OrderController@create')->before('auth.token');
-    Route::get('orders/{id}', 'OrderController@show');
+
+    Route::get('orders', 'OrderController@index')->before(['auth.token','auth.admin']);
+    Route::get('orders/{id}', 'OrderController@show')->before(['auth.token','auth.admin']);
     Route::put('orders/{id}','OrderController@update')->before(['auth.token','auth.admin']);
+//    Route::delete('orders/{id}','OrderController@delete')->before(['auth.token','auth.admin']);
 
     // Printer
     Route::get('printer/status','PrinterController@status')->before(['auth.token','auth.admin']);

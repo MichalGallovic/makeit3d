@@ -9,14 +9,26 @@ class PrinterController extends ApiController {
     }
 
 	public function status() {
-        $response = $this->octoprint->currentJob()->get();
 
-        return Response::json([
+        try {
+            $response = $this->octoprint->currentJob()->get();
+
+            return Response::json([
                 'status'    =>  $response['state'],
                 'timeleft'      =>  $response['progress']['printTimeLeft'],
                 'name'      =>  $response['job']['file']['name'],
                 'completed' =>  $response['progress']['completion']*100
-        ], 200);
+            ], 200);
+
+        } catch(GuzzleHttp\Exception\ServerException $e) {
+            return Response::json([
+                'status'    =>  "Raspberry Pi Not Connected",
+                'timeleft'      =>  null,
+                'name'      =>  null,
+                'completed' =>  null
+            ], 200);
+        }
+
     }
 
 }

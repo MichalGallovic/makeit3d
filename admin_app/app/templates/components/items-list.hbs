@@ -15,7 +15,11 @@
 					<td>{{ value }}</td>
 				{{/each}}
 				<td><button {{action 'edit' item.store}}>Edit</button></td>
+				{{#unless item.store.deleted}}
 				<td><button {{action 'delete' item.store bubbles=false}}>Delete</button></td>
+				{{else}}
+				<td><button {{action 'restore' item.store bubbles=false}}>Restore</button></td>
+				{{/unless}}
 			{{/link-to}}
 		{{/each}}
 	</tbody>
