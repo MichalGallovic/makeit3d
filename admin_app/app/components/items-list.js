@@ -41,6 +41,9 @@ export default Ember.Component.extend({
 		},
 		edit: function(item) {
 			this.sendAction('edit', item);
+		},
+		restore: function(item) {
+			this.sendAction('restore', item);
 		}
 	}
 });

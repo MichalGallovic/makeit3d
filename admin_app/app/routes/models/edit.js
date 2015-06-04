@@ -1,7 +1,7 @@
 import Ember from 'ember';
-import AuthenticatedRoute from '../../lib/routes/authenticated';
+import CrudEditRoute from '../../lib/routes/crudedit';
 
-export default AuthenticatedRoute.extend({
+export default CrudEditRoute.extend({
 	model: function(params) {
 		return this.store.find('model',params.id);
 	},
@@ -12,12 +12,5 @@ export default AuthenticatedRoute.extend({
 			controller.set('users', users);
 		});
 
-	},
-	actions: {
-		willTransition: function() {
-			if(this.currentModel.get('isDirty')) {
-				this.currentModel.rollback();
-			}
-		}
 	}
 });

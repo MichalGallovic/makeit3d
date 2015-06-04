@@ -1,1 +1,18 @@
 {{outlet}}
+<p>
+Name:
+{{input type="text" value=model.name}}
+</p>
+
+<p>
+Image url:
+{{input type="text" value=model.image_url}}
+</p>
+<p>
+<img src="{{ model.image_url }}" alt="">
+</p>
+
+<p>
+<button {{action "update" model}}>Save</button>
+<button {{action "cancel" model}}>Cancel</button>
+</p>

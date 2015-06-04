@@ -78,6 +78,9 @@ class ModelController extends ApiController {
         $model->created_by = (int) $input['created_by'];
         $model->save();
 
+        if(Input::get('model.deleted') == false)
+            $model->restore();
+
         return $this->respondWithSuccess('Model updated successfully');
     }
 
