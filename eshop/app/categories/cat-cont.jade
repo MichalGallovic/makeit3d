@@ -1,0 +1,20 @@
+script(type="text/template", id="category-cont-template")
+	h2 Category / <%= category.name%>
+	<% _.each(models,function(model){ %>
+	.col-md-3.col-sm-6.mt30.model_detail(data-id!="<%= model.get('id') %>")
+		.m3d-tile
+			a(data-toggle='modal',href='#model_detail2').m3d-tile__content
+				img(src!="<%= model.get('image_url') %>").img-responsive
+				//- img(src="/images/models/lorempixel.jpg").img-responsive
+			.m3d-tile__info
+				span.left <%= model.get('name') %>
+				span.right <%= model.get('price') %> &euro;
+	<% }); %>
+	//- .row
+	//- 	.col-md-12
+	//- 		h2 Categories / <%= category.name %>
+	//- 		<% _.each(models,function(model){ %>
+	//- 		button(data-id!="<%= model.get('id') %>").model_detail<%= model.get('name') %>
+	//- 		<% }); %>
+	
+

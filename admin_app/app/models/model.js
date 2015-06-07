@@ -14,5 +14,8 @@ export default DS.Model.extend({
 	created_by : DS.attr('string'),
 	print: function() {
 		return this.ajax.getJSON('models/'+this.id+"/print");
+	},
+	removeFromOrder: function(orderId) {
+		return this.ajax.delete('orders/'+orderId+'/models/'+this.id);
 	}
 });

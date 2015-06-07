@@ -1,8 +1,13 @@
 import Ember from 'ember';
-import AuthenticatedRoute from '../../lib/routes/authenticated';
+import CrudIndexRoute from '../../lib/routes/crudindex';
 
-export default AuthenticatedRoute.extend({
+export default CrudIndexRoute.extend({
 	model: function() {
 		return this.store.find('order');
+	},
+	actions: {
+		edit: function(item) {
+			this.transitionTo('orders.edit', item);
+		}
 	}
 });

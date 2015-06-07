@@ -1,0 +1,1 @@
+/home/vagrant/makeit3d/app/views/emails/order/delete.blade.php

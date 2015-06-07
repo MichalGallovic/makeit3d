@@ -5,6 +5,7 @@
 			<th>From</th>
 			<th>Address</th>
 			<th>Price</th>
+			<th>Edit</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -26,6 +27,8 @@
 				<td>{{order.full_name}}</td>
 				<td>{{order.address}}</td>
 				<td>{{order.price}}</td>
+				<td><button {{action 'edit' order bubbles=false}}>Edit</button></td>
+				<td><button {{action 'delete' order}}>Delete</button></td>
 			{{/link-to}}
 		{{/each}}
 	</tbody>

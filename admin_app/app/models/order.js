@@ -1,4 +1,5 @@
 import DS from 'ember-data';
+import Ember from 'ember';
 
 export default DS.Model.extend({
   	first_name: DS.attr('string'),
@@ -18,5 +19,12 @@ export default DS.Model.extend({
   	}.property('first_name','last_name'),
   	address: function() {
   		return this.get('street') + ", " + this.get('town') + " " + this.get('zip_code') + ", " + this.get('country');
-  	}.property('street','town','country')
+  	}.property('street','town','country'),
+    reloadAssociated: function () {
+    var modelPromises = this.get('models').invoke('reload');
+
+    return Ember.RSVP.hash({
+      models: modelPromises
+    });
+  }
 });

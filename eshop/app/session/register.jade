@@ -1,0 +1,34 @@
+script(type="text/template", id="register-template")
+	.container
+		form(id="register-form")
+			.row.mt20
+				h1.text-center(class="+txtshadow") Sign up
+			.row.mt40
+	
+				.col-lg-6.col-lg-offset-3
+					input(type="email" name="email" autocomplete="off" autofocus="autofocus" placeholder="Email" required).m3d-searchbar__input.--lowercase
+			.row
+				.col-lg-6.col-lg-offset-3
+					input(type="password" name="password" autocomplete="off" autofocus="autofocus" placeholder="Password" required).m3d-searchbar__input.--lowercase
+			.row.mt20
+				.col-lg-6.col-lg-offset-3
+					button.btn.btn-default.btn-lg.pull-right(class="+bxshadow" type="submit") Sign up
+		
+		.row.mt20
+				h1.text-center(id="reg_message", class="+txtshadow")
+	//- .row
+	//- 	.col-md-4
+	//- 		h1 Register
+	//- .row
+	//- 	.col-md-4
+	//- 		form(id="register-form")
+	//- 			div.form-group
+	//- 				label Mail
+	//- 				input(type="email",name="email",required).form-control
+	//- 			div.form-group
+	//- 				label Password
+	//- 				input(type="password",name="password",required).form-control
+	//- 			button(type="submit").btn.btn-primary Submit
+	//- .row
+	//- 	.col-md-12
+	//- 		#reg_message

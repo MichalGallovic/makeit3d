@@ -23,6 +23,8 @@
 			{{ item.name }} - {{ item.price }}&euro; - {{ item.printing_time}} sec
 			{{#if item.deleted}}
 			<strong>This model has been deleted!</strong>
+			{{else}}
+			<button {{action 'print' item }} {{bind-attr disabled="printerUnpluged"}}>Print</button>
 			{{/if}}
 		</p>
 {{/each}}

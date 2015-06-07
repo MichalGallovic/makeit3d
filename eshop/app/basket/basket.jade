@@ -1,0 +1,72 @@
+script(type="text/template", id="modal-basket-template")
+	.modal-dialog
+		.modal-content
+			.modal-header
+				h2.modal-title.text-center(style="color:black")
+					i.fa.fa-shopping-cart  Shopping cart
+			.modal-body.--padding
+				#basket_obsah
+					<% _.each(models,function(model){ %>
+					.row.mt20
+						.col-lg-10.col-lg-offset-1
+							.modal-body__item
+								span.ml20 <%= model.pocet %>
+								span.ml20 x
+								span.ml20  
+								span <%= model.model.name %>
+								span.ml20  ( <%= model.model.price %> &euro;)
+								div.pull-right.ml20
+									button.btn.btn-primary.btn-sm.plus(type='button' ,class="+font-md" ,data-id!="<%= model.model.id %>").ml20 +
+									button.btn.left.btn-default.btn-sm.minus(type='button',data-id!="<%= model.model.id %>") -
+								div.pull-right
+									span.ml20 <%= model.model.price*model.pocet %> &euro;
+					<% }); %>
+					hr
+
+					.row.mt20
+						.col-lg-10.col-lg-offset-1
+							.modal-body__item
+								span.ml20 Total
+								span.pull-right.price <%= total%> &euro;
+					.modal-footer.mt20
+						button.left.btn.btn-default.btn-lg(type='button',id="hide_basket") Close
+						button(type="button",id="next_to_address").btn.btn-primary.btn-lg Next
+
+				#basket_address(hidden)
+					form(id="basket_address_checkout_form")
+						.row.mt20
+							.col-lg-10.col-lg-offset-1
+								input(type="text",name="first_name",value!="<%= user.first_name%>",autocomplete="off",required).m3d-searchbar__input.--lowercase.--gray
+								label First
+						.row.mt20
+							.col-lg-10.col-lg-offset-1
+								input(type="text",name="last_name",value!="<%= user.last_name%>",autocomplete="off",required).m3d-searchbar__input.--lowercase.--gray
+								label Last
+						.row.mt20
+							.col-lg-10.col-lg-offset-1
+								input(type="text",name="street",value!="<%= user.street%>",autocomplete="off",required).m3d-searchbar__input.--lowercase.--gray
+								label Street
+						.row.mt20
+							.col-lg-10.col-lg-offset-1
+								input(type="text",name="town",value!="<%= user.town%>",autocomplete="off",required).m3d-searchbar__input.--lowercase.--gray
+								label Town
+						.row.mt20
+							.col-lg-10.col-lg-offset-1
+								input(type="text",name="country",value!="<%= user.country%>",autocomplete="off",required).m3d-searchbar__input.--lowercase.--gray
+								label State
+						.row.mt20
+							.col-lg-10.col-lg-offset-1
+								input(type="text",name="zip_code",value!="<%= user.zip_code%>",autocomplete="off",required).m3d-searchbar__input.--lowercase.--gray
+								label Zip
+						.modal-footer.mt20
+							button.left.btn.btn-default.btn-lg(type="button",id="back_to_obsah") Back
+							button(type="submit",id="next_to_checkout").btn.btn-primary.btn-lg Next
+
+							
+							//- button(type="button",id="back_to_obsah") back
+							//- button(type="submit",id="next_to_checkout") next
+		
+				#basket_checkout(hidden)
+			
+
+

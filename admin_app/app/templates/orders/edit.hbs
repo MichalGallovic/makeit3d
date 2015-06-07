@@ -1,1 +1,44 @@
 {{outlet}}
+<p>
+Firstname:
+{{input type="text" value=model.first_name}}
+</p>
+
+<p>
+Lastname:
+{{input type="text" value=model.last_name}}
+</p>
+<p>
+Street:
+{{input type="text" value=model.street}}
+</p>
+<p>
+Town:
+{{input type="text" value=model.town}}
+</p>
+<p>
+Country:
+{{input type="text" value=model.country}}
+</p>
+<p>
+Zipcode:
+{{input type="text" value=model.zip_code}}
+</p>
+<p>
+Models to print:
+</p>
+{{#each item in model.models}}
+		<p>
+			{{ item.name }} - {{ item.price }}&euro; - {{ item.printing_time}} sec
+			{{#if item.deleted}}
+			<strong>This model has been deleted!</strong>
+			<button {{action 'restore' item}}>Restore</button>
+			{{else}}
+			<button {{action 'removeFromOrder' item}}>Remove from order</button>
+			{{/if}}
+		</p>
+{{/each}}
+<p>
+<button {{action "update" model}}>Save</button>
+<button {{action "cancel" model}}>Cancel</button>
+</p>

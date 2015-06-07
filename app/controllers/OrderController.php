@@ -94,6 +94,46 @@ class OrderController extends ApiController {
         }
     }
 
+    public function destroy($id) {
+        try {
+            $order = Order::findOrFail($id);
+
+            Mail::send('emails.order.delete',["order"   =>  $order], function($message) use ($order){
+                $message->to($order->user->email)->subject("Order:#".$order->id);
+            });
+//        Mailgun::send('emails.order.create',["order"   =>  $order], function($message) use ($order){
+//            $message->to($order->user->email)->subject("Order:#".$order->id);
+//        });
+            $order->delete();
+
+            return $this->respondWithSuccess("Order deleted successfully");
+
+        }catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+            return $this->errorNotFound("Order not found.");
+        }
+    }
+
+    public function removeFromOrder($orderId, $modelId) {
+        try {
+            $order = Order::findOrFail($orderId);
+            $models = json_decode($order->models);
+
+            if(($key = array_search($modelId, $models->data)) !== false) {
+                unset($models->data[$key]);
+            } else {
+                return $this->errorNotFound("Model $modelId not found in data");
+            }
+
+            $order->models = json_encode(["data" => array_values($models->data)]);
+            $order->save();
+
+            return $this->respondWithSuccess("Model deleted successfully");
+
+        } catch(\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+            return $this->errorInternalError("Order not found");
+        }
+    }
+
     //##### PRIVATE METHODS
 
     private function areModelsValid($models) {

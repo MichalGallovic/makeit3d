@@ -57,8 +57,8 @@ Route::group(["prefix"  =>  "api"], function() {
     Route::get('orders', 'OrderController@index')->before(['auth.token','auth.admin']);
     Route::get('orders/{id}', 'OrderController@show')->before(['auth.token','auth.admin']);
     Route::put('orders/{id}','OrderController@update')->before(['auth.token','auth.admin']);
-//    Route::delete('orders/{id}','OrderController@delete')->before(['auth.token','auth.admin']);
-
+    Route::delete('orders/{id}','OrderController@destroy')->before(['auth.token','auth.admin']);
+    Route::delete('orders/{orderId}/models/{modelId}','Ordercontroller@removeFromOrder')->before(['auth.token','auth.admin']);
     // Printer
     Route::get('printer/status','PrinterController@status')->before(['auth.token','auth.admin']);
 

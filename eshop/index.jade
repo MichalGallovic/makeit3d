@@ -1,0 +1,75 @@
+html#csstyle(lang="en")
+	head
+		meta(charset="utf-8")
+		title .:MakeIt 3D:.
+		link(rel="stylesheet", type="text/css", href="mystyle.css")
+		link(rel="stylesheet", type="text/css", href="style.css")
+		script(data-main="main", src="libs/require/require.js")
+		script(src="http://localhost:35729/livereload.js")
+
+	body(id="body")
+		nav(role="navigation").navbar.navbar-default
+			.container
+				.row
+					.col-lg-12
+						.navbar-header
+							button(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse").navbar-toggle.collapsed
+								span.sr-only Toggle navigation
+								span.icon-bar
+								span.icon-bar
+								span.icon-bar
+							a(href="/#home" ).navbar-brand
+								img(src="/images/logo_sm.png", alt="")
+								img(src="/images/logo2_sm.png" alt="")
+						.collapse.navbar-collapse.navbar-ex1-collapse.pull-right
+							ul.nav.navbar-nav 
+								//- li: a(href="howitworks.html") How it works
+								li: a(href="/#how_it_works") How it works
+								li(id='categories-link').hidden: a(href="/#categories") Categories
+								li(id='print-link').hidden: a(href="/#print") Print Your Model
+								li(id='register-link').hidden: a(href="/#register") Sign up
+								li(id='login-link').hidden: a(href="/#login") Login
+								li(id='logout-link').hidden: a(href="/#logout") Logout
+								li(id='profile-link').hidden.dropdown
+									a.dropdown-toggle(id="logged-name", href="", data-toggle="dropdown",role="button", aria-expanded="false")
+										span.caret
+									ul.dropdown-menu(role="menu")
+										li: a(href="#profileView", data-toggle='modal', id="profile") Edit profile
+										li: a(href="#basketView", data-toggle='modal', id="basket") Shopping cart
+		#home.indextab.hidden
+		#how_it_works.indextab.hidden
+		#categories.indextab.hidden
+		#print.indextab.hidden
+		#login.indextab.hidden
+		#register.indextab.hidden
+		#logout.indextab.hidden
+
+		//- #model_detail.hidden
+		#model_detail2.modal.fade
+		#basketView.modal.fade
+		#profileView.modal.fade
+		//- .modal_beckdrop(hidden)
+
+
+
+
+
+
+
+
+
+
+		//- TEMPLATES
+		include app/home/home.jade
+		include app/model/model_template.jade
+		include app/basket/basket.jade
+		include app/basket/partial_basket.jade
+		include app/basket/checkout.jade
+		include app/print/print.jade
+		include app/categories/categories.jade
+		include app/categories/cat-cont.jade
+		include app/session/login.jade
+		include app/session/register.jade
+		include app/session/profile.jade
+		include app/home/search_results.jade
+		include app/how_it_works/how.jade

@@ -1,0 +1,14 @@
+script(type="text/template", id="search_results-template")
+	//- <% _.each(models,function(model){ %>
+	//- button(data-id!="<%= model.id %>").model_detail_resp<%= model.name %>
+	//- <% }); %>
+	<% _.each(models,function(model){ %>
+	.col-md-3.col-sm-6.mt30.model_detail_resp(data-id!="<%= model.id %>")
+		.m3d-tile
+			a(data-toggle='modal',href='#model_detail2').m3d-tile__content
+				img(src!="<%= model.image_url %>").img-responsive
+				//- img(src="/images/models/lorempixel.jpg").img-responsive
+			.m3d-tile__info
+				span.left <%= model.name %>
+				span.right <%= model.price %> &euro;
+	<% }); %>

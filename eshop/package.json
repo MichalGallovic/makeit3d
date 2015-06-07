@@ -1,0 +1,12 @@
+{
+  "name": "MakeIt3D",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jade": "^0.14.1",
+    "grunt-contrib-watch": "^0.6.1",
+  },
+  "dependencies": {
+    "when": "^3.7.2"
+  }
+}
