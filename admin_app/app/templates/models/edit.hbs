@@ -1,32 +1,39 @@
-{{outlet}}
-<p>
-Name:
-{{input type="text" value=model.name}}
-</p>
-<p>
-Visibility:
-{{radio-button value=1 groupValue=model.visible }} Visible
-{{radio-button value=0 groupValue=model.visible }} Hidden
-</p>
-<p>
-Price:
-{{input type="text" value=model.price}}
-</p>
-<p>
-Image url:
-{{input type="text" value=model.image_url}}
-</p>
-<p>
-<img src="{{ model.image_url }}" alt="">
-</p>
-<p>
-Created by:
-{{select-picker content=users
-       			value=model.created_by
-       			optionValuePath="content.id"
-       			optionLabelPath="content.first_name"}}
-</p>
-<p>
-<button {{action "update" model}}>Save</button>
-<button {{action "cancel" model}}>Cancel</button>
-</p>
+<div class="col-lg-10 col-lg-offset-1">
+	<h1 class="mb20">Model Edit</h1>
+	<div class="well">
+		<div class="form-group">
+			<label>Name:</label>
+			{{input class="form-control" type="text" value=model.name}}
+		</div>
+		<div class="form-group">
+			<label>Visibility:</label>
+			{{radio-button value=1 groupValue=model.visible }} Visible
+			{{radio-button value=0 groupValue=model.visible }} Hidden
+		</div>
+		<div class="form-group">
+			<label>Price:</label>
+			{{input class="form-control" type="text" value=model.price}}
+		</div>
+
+		<div class="form-group">
+			<label>Image url:</label>
+			{{input class="form-control" type="text" value=model.image_url}}	
+		</div>
+
+
+		<div class="form-group" class="text-center">
+			<img src="{{ model.image_url }}">	
+		</div>
+		<div class="form-group mt20">
+			<label>Created by:</label>
+			{{select-picker content=users
+			       			value=model.created_by
+			       			optionValuePath="content.id"
+			       			optionLabelPath="content.first_name"}}
+		</div>
+		<p>
+			<button {{action "update" model}} class="btn btn-success">Save</button>
+			<button {{action "cancel" model}} class="btn btn-default">Cancel</button>
+		</p>
+	</div>
+</div>

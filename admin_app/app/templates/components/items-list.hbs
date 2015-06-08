@@ -11,7 +11,7 @@
 		</thead>
 		<tbody>
 			{{#each item in items_list}}
-				{{#link-to 'models.show' item.store tagName="tr"}}
+				{{#link-to showRoute item.store tagName="tr"}}
 					{{#each value in item.data}}
 						<td>{{ value }}</td>
 					{{/each}}
