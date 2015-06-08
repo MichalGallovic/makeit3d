@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-export function parsetime(params, hash) {
+export function parsetime(params) {
 	var sec_num = parseInt(params[0], 10);
     var hours   = Math.floor(sec_num / 3600);
     var minutes = Math.floor((sec_num - (hours * 3600)) / 60);

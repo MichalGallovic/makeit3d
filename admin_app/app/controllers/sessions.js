@@ -39,7 +39,7 @@ export default Ember.Controller.extend({
 			function(response) {
 				me.login(response);
 			},
-			function(error) {
+			function() {
 				me.resetSession();
 				me.transitionToRoute('sessions.login');
 			}

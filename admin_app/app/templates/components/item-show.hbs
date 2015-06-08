@@ -1,3 +1,5 @@
-{{#each property in item}}
-	<p>{{ property.key }} - {{ property.value }}</p>
-{{/each}}
+<div class="well">
+	{{#each property in item}}
+		<p style="word-wrap: break-word;"><strong>{{ property.key }}: </strong>{{ property.value }}</p>
+	{{/each}}
+</div>

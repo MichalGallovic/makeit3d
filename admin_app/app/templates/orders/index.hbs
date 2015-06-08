@@ -1,35 +1,38 @@
-<table>
-	<thead>
-		<tr>
-			<th>Status</th>
-			<th>From</th>
-			<th>Address</th>
-			<th>Price</th>
-			<th>Edit</th>
-		</tr>
-	</thead>
-	<tbody>
-		{{#each order in model}}
-			{{#link-to 'orders.manage' order tagName="tr"}}
-				{{#unless order.was_opened}}
-					<td>NEW</td>
-				{{else}}
-					{{#if order.was_shipped}}
-						<td>SHIPPED</td>
+<h1>Orders</h1>
+<div class="well mt20">
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>From</th>
+				<th>Address</th>
+				<th>Price</th>
+				<th>Edit</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each order in model}}
+				{{#link-to 'orders.manage' order tagName="tr"}}
+					{{#unless order.was_opened}}
+						<td><span class="label label-success">NEW</span></td>
 					{{else}}
-						{{#if order.was_printed}}
-							<td>PRINTED</td>
+						{{#if order.was_shipped}}
+							<td><span class="label label-primary">SHIPPED</span></td>
 						{{else}}
-							<td>PENDING</td>
+							{{#if order.was_printed}}
+								<td>PRINTED</td>
+							{{else}}
+								<td><span class="label label-warning">PENDING</span></td>
+							{{/if}}
 						{{/if}}
-					{{/if}}
-				{{/unless}}
-				<td>{{order.full_name}}</td>
-				<td>{{order.address}}</td>
-				<td>{{order.price}}</td>
-				<td><button {{action 'edit' order bubbles=false}}>Edit</button></td>
-				<td><button {{action 'delete' order}}>Delete</button></td>
-			{{/link-to}}
-		{{/each}}
-	</tbody>
-</table>
+					{{/unless}}
+					<td>{{order.full_name}}</td>
+					<td>{{order.address}}</td>
+					<td>{{order.price}} &euro;</td>
+					<td><button {{action 'edit' order bubbles=false}} class="btn btn-primary">Edit</button></td>
+					<td><button {{action 'delete' order}} class="btn btn-danger">Delete</button></td>
+				{{/link-to}}
+			{{/each}}
+		</tbody>
+	</table>
+</div>

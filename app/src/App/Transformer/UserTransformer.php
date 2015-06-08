@@ -15,7 +15,7 @@ class UserTransformer extends TransformerAbstract {
             'email'         =>  $user->email,
             'first_name'    =>  $user->first_name,
             'last_name'     =>  $user->last_name,
-            'confirmed'     =>  $user->confirmed,
+            'confirmed'     =>  (int) $user->confirmed,
             'street'        =>  $user->street,
             'town'          =>  $user->town,
             'country'       =>  $user->country,

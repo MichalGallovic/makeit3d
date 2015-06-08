@@ -1,0 +1,82 @@
+$tile-size: 300px;
+@include component(m3d-tile) {
+	position: relative;
+	// width: $tile-size;
+	// height: $tile-size;
+	transition: 0.3s all;
+	box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.45);
+	opacity: 0.95;
+
+
+	&:hover {
+		box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.45);
+		opacity: 1;
+		transform: translateY(-10px);
+		.m3d-tile__badge {
+			box-shadow: 1px -1px 8px 1px rgba(0,0,0,0.75);
+		}
+	}
+	
+	@include part(content) {
+		display: inline-block;
+
+		@include option(loading) {
+			background: gray;
+			> img {
+				visibility: hidden;
+			}
+		}
+	}
+
+	@include part(badge) {
+		$size: 40px;
+		position: absolute;
+		right:-$size/2;
+		top:-$size/2;
+		width:$size;
+		height:$size;
+		border-radius: 50%;
+		background: rgb(255, 26, 56);
+		color:white;
+		text-align: center;
+		line-height: $size;
+		box-shadow: 1px -1px 4px 1px rgba(0,0,0,0.75);
+		transition: 0.3s all;
+		font-size: 1.2em;
+	}
+
+	@include part(info) {
+		position: absolute;
+		bottom:0;
+		padding: 10px 10px;
+		color: black;
+		width: 100%;
+		background: rgba(255,255,255,0.9);
+
+		span{
+			font-size: 20px;
+		}
+		
+		.right {
+			display: inline-block;
+			position: absolute;
+			background: #b4b4b4;
+			color: white;
+			padding: 10px 30px;
+			top: 0;
+			right: 0;
+		}
+		.left {
+			margin-left: 20px;
+		}
+
+		@include option(center) {
+			text-align: center;
+		}
+
+		
+	}
+
+
+	
+}

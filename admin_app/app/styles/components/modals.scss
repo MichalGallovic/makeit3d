@@ -1,0 +1,66 @@
+.modal-content {
+	border-radius: 0;
+
+}
+.modal-body {
+	padding: 15px 0px 0px 0px;
+	
+	@include option(padding) {
+		padding: 15px;
+	}
+
+	@include part(item) {
+		span {
+			font-size: 1.2em;
+			vertical-align: middle;
+		}
+
+		.btn {
+			font-size: 1.2em;
+			padding: 2px 10px;
+		}
+
+		.price {
+			margin-right: 96px;
+		}
+	}
+}
+.modal-header {
+	border-bottom: 0;
+}
+.modal-footer {
+	border-top: 0;
+	padding: 0;
+	
+	.btn {
+		@include option(loggedin) {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
+		&+.btn {
+			margin-left: 0px;
+		}
+	}
+	a.left {
+		text-decoration: underline;
+	}
+	.left {
+		float: left;
+		color: white;
+		font-size: $font-size-large;
+		background: darken($theme-gray,20%);
+		padding: $padding-large-vertical $padding-large-horizontal;
+		line-height: $line-height-large;
+
+		&:nth-child(2) {
+			background: darken($theme-gray,10%);
+		}
+
+		&:nth-child(3) {
+			background: $theme-gray;
+		}
+	}
+
+
+}

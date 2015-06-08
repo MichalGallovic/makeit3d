@@ -1,4 +1,3 @@
-import Ember from 'ember';
 import CrudIndexRoute from '../../lib/routes/crudindex';
 
 export default CrudIndexRoute.extend({

@@ -160,9 +160,15 @@ class Octoprint {
     public function get() {
         $endpointUrl = $this->getEndpointUrl();
 
-        $response = $this->client->get($endpointUrl,["headers"=>[
-            "X-Api-Key" =>  $this->api_key
-        ]]);
+        $response = $this->client->get($endpointUrl,
+            [
+                "headers"  => [
+                    "X-Api-Key" =>  $this->api_key
+                ],
+                "timeout"   => 5,
+                "connect_timeout"   =>  5
+            ]
+        );
 
         $this->parseResponse($response);
 

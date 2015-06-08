@@ -5,7 +5,7 @@ export default Ember.Route.extend({
 	model: function(params) {
 		return this.store.find('order',params.id);
 	},
-	afterModel: function(order, transition) {
+	afterModel: function(order) {
 		order.set('was_opened',true);
 		order.save();
 		this.refreshPrinterStatus();
@@ -18,7 +18,7 @@ export default Ember.Route.extend({
 		}, 5000);
 	},
 	actions: {
-		willTransition: function(transition) {
+		willTransition: function() {
 			Ember.run.cancel(this.printerStatusTimer);
 		}
 	}

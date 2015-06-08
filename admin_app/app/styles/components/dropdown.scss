@@ -1,0 +1,25 @@
+.navbar-nav {
+
+
+	.dropdown.open {
+		.dropdown-menu {
+			// top:100%;
+		}
+	}
+	> li > .dropdown-menu {
+		border-radius: 0;
+		font-size: 15px;
+
+
+
+		> li > a {
+			color: $theme-blue;
+
+			&:hover,
+			&:focus {
+				color: white;
+				background: $theme-blue;
+			}
+		}
+	}
+}

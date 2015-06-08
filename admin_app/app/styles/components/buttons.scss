@@ -1,0 +1,21 @@
+.btn {
+	border-radius: 0;
+	border: 0;
+
+	&:hover {
+		background-color: $theme-purple;
+	}
+}
+
+.btn-primary {
+	background-color: $theme-blue;
+}
+
+.btn-default {
+	background-color: darken($theme-gray,20%);
+	color: white;
+	&:hover {
+		background-color: $theme-gray;
+		color: white;
+	}
+}

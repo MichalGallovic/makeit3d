@@ -1,44 +1,50 @@
-{{outlet}}
-<p>
-Firstname:
-{{input type="text" value=model.first_name}}
-</p>
+<div class="row">
+	<div class="col-lg-6 col-lg-offset-3">
+		<h1 class="mb20">Order Edit</h1>
+		<div class="well">
+			<div class="form-group">
+				<label>Firstname:</label>
+				{{input type="text" value=model.first_name class="form-control"}}
+			</div>
 
-<p>
-Lastname:
-{{input type="text" value=model.last_name}}
-</p>
-<p>
-Street:
-{{input type="text" value=model.street}}
-</p>
-<p>
-Town:
-{{input type="text" value=model.town}}
-</p>
-<p>
-Country:
-{{input type="text" value=model.country}}
-</p>
-<p>
-Zipcode:
-{{input type="text" value=model.zip_code}}
-</p>
-<p>
-Models to print:
-</p>
-{{#each item in model.models}}
-		<p>
-			{{ item.name }} - {{ item.price }}&euro; - {{ item.printing_time}} sec
-			{{#if item.deleted}}
-			<strong>This model has been deleted!</strong>
-			<button {{action 'restore' item}}>Restore</button>
-			{{else}}
-			<button {{action 'removeFromOrder' item}}>Remove from order</button>
-			{{/if}}
-		</p>
-{{/each}}
-<p>
-<button {{action "update" model}}>Save</button>
-<button {{action "cancel" model}}>Cancel</button>
-</p>
+			<div class="form-group">
+				<label>Lastname:</label>
+				{{input type="text" class="form-control" value=model.last_name}}
+			</div>
+			<div class="form-group">
+				<label>Street:</label>
+				{{input type="text" class="form-control" value=model.street}}
+			</div>
+			<div class="form-group">
+				<label>Town:</label>
+				{{input type="text" class="form-control" value=model.town}}
+			</div>
+			<div class="form-group">
+				<label>Country:</label>
+				{{input type="text" class="form-control" value=model.country}}
+			</div>
+			<div class="form-group">
+				<label>Zipcode:</label>
+				{{input type="text" class="form-control" value=model.zip_code}}
+			</div>
+			<p>
+			<strong>Models to print:</strong>
+			</p>
+			{{#each item in model.models}}
+					<p>
+						{{ item.name }} - {{ item.price }}&euro; - {{ item.printing_time}} sec
+						{{#if item.deleted}}
+						<strong>This model has been deleted!</strong>
+						<button {{action 'restore' item}} class="btn btn-success ml20">Restore</button>
+						{{else}}
+						<button {{action 'removeFromOrder' item}} class="btn btn-danger ml20">Remove from order</button>
+						{{/if}}
+					</p>
+			{{/each}}
+			<p>
+			<button {{action "update" model}} class="btn btn-success">Save</button>
+			<button {{action "cancel" model}} class="btn btn-default">Cancel</button>
+			</p>
+		</div>	
+	</div>
+</div

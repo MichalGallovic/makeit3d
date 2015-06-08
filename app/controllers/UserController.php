@@ -44,19 +44,11 @@ class UserController extends ApiController {
         if(!$user)
             return $this->errorNotFound();
 
-        $input = Input::only([
-            'name',
-            'username',
-            'first_name',
-            'lats_name',
-            'street',
-            'town',
-            'country',
-            'zip_code'
-        ]);
+        $input = Input::get('user');
 
         $rules = [
-            'username'  =>  'required|email'
+            'username'  =>  'sometimes|required|email',
+            'email'  =>  'sometimes|required|email'
         ];
 
         $validator = Validator::make($input, $rules);
@@ -66,7 +58,10 @@ class UserController extends ApiController {
             return $this->errorWrongArgs($messages->first());
         }
 
-        $input['email'] = $input['username'];
+        if(!isset($input['email']) && !isset($input['username']))
+            return $this->errorWrongArgs("Username or email not present!");
+
+        $input['email'] = isset($input['username']) ? $input['username'] : $input['email'];
         $user->fill($input);
         $user->save();
 

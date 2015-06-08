@@ -1,26 +1,28 @@
-<table>
-	<thead>
-		<tr>
-			{{#each property in properties}}
-				<th>{{ property }}</th>
-			{{/each}}
-			<th>Edit</th>
-			<th>Delete</th>
-		</tr>
-	</thead>
-	<tbody>
-		{{#each item in items_list}}
-			{{#link-to 'models.show' item.store tagName="tr"}}
-				{{#each value in item.data}}
-					<td>{{ value }}</td>
+<div class="well">
+	<table class="table">
+		<thead>
+			<tr>
+				{{#each property in properties}}
+					<th>{{ property }}</th>
 				{{/each}}
-				<td><button {{action 'edit' item.store}}>Edit</button></td>
-				{{#unless item.store.deleted}}
-				<td><button {{action 'delete' item.store bubbles=false}}>Delete</button></td>
-				{{else}}
-				<td><button {{action 'restore' item.store bubbles=false}}>Restore</button></td>
-				{{/unless}}
-			{{/link-to}}
-		{{/each}}
-	</tbody>
-</table>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each item in items_list}}
+				{{#link-to 'models.show' item.store tagName="tr"}}
+					{{#each value in item.data}}
+						<td>{{ value }}</td>
+					{{/each}}
+					<td><button {{action 'edit' item.store}} class="btn btn-primary">Edit</button></td>
+					{{#unless item.store.deleted}}
+					<td><button {{action 'delete' item.store bubbles=false}} class="btn btn-danger">Delete</button></td>
+					{{else}}
+					<td><button {{action 'restore' item.store bubbles=false}} class="btn btn-success">Restore</button></td>
+					{{/unless}}
+				{{/link-to}}
+			{{/each}}
+		</tbody>
+	</table>
+</div>

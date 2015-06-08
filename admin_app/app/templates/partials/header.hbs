@@ -16,13 +16,14 @@
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse navbar-right">
           <ul class="nav navbar-nav"> 
-            <li>{{#link-to 'sessions.login'}}Login{{/link-to}}</li>
             {{#if isAuthenticated}}
               <li>{{#link-to 'sessions.logout'}}Logout{{/link-to}}</li>
               <li>{{#link-to 'models'}}Models{{/link-to}}</li>
               <li>{{#link-to 'categories'}}Categories{{/link-to}}</li>
               <li>{{#link-to 'orders'}}Orders{{/link-to}}</li>
               <li>{{#link-to 'users'}}Users{{/link-to}}</li>
+            {{else}}
+              <li>{{#link-to 'sessions.login'}}Login{{/link-to}}</li>
             {{/if}}
           </ul>
         </div>

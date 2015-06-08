@@ -1,1 +1,45 @@
-{{outlet}}
+<div class="row">
+	<div class="col-lg-6 col-lg-offset-3">
+		<h1 class="mb20">User Edit</h1>
+		<div class="well">
+			<div class="form-group">
+				<label>Email:</label>
+				{{input class="form-control" type="text" value=model.username}}
+			</div>
+			<div class="form-group">
+				<label>Firstname:</label>
+				{{input class="form-control" type="text" value=model.first_name}}
+			</div>
+			<div class="form-group">
+				<label>Lastname:</label>
+				{{input class="form-control" type="text" value=model.last_name}}
+			</div>
+			<div class="form-group">
+				<label>Street:</label>
+				{{input class="form-control" type="text" value=model.street}}
+			</div>
+			<div class="form-group">
+				<label>Town:</label>
+				{{input class="form-control" type="text" value=model.town}}
+			</div>
+			<div class="form-group">
+				<label>Country:</label>
+				{{input class="form-control" type="text" value=model.country}}
+			</div>
+			<div class="form-group">
+				<label>Zipcode:</label>
+				{{input class="form-control" type="text" value=model.zip_code}}
+			</div>
+			
+			<div class="form-group">
+				<label>Confirmed:</label>
+				{{radio-button value=1 groupValue=model.confirmed }} Verified
+				{{radio-button value=0 groupValue=model.confirmed }} Unverified
+			</div>
+			<p>
+			<button {{action "update" model}} class="btn btn-success">Save</button>
+			<button {{action "cancel"}} class="btn btn-default">Cancel</button>
+			</p>		
+		</div>
+	</div>
+</div>

@@ -5,7 +5,6 @@ export default Ember.Component.extend({
 		this.update();
 	}.on('init'),
 	update: function() {
-		var me = this;
 		var propString = this.get('properties');
 		var propsArr = null;
 		if(!Ember.isArray(propString)) {
@@ -16,7 +15,7 @@ export default Ember.Component.extend({
 		}
 		var items = this.get('items');
 		var itemsArr = Ember.A();
-		items.forEach(function(elm, index) {
+		items.forEach(function(elm) {
 			var obj = Ember.Object.create();
 			var data = Ember.A();
 			propsArr.forEach(function(prop){
@@ -34,7 +33,6 @@ export default Ember.Component.extend({
 	resource: null,
 	actions: {
 		delete: function(item) {
-			var me = this;
 			if(confirm('Do you really want to delete this model?')) {
 				this.sendAction('delete', item);
 			}

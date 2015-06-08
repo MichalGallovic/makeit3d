@@ -1,0 +1,94 @@
+@include component(m3d-searchbar) {
+	@include part(input) {
+		display: block;
+		width: 100%;
+		height:54px;
+		border: none;
+		color: white;
+		line-height: 50px;
+		text-transform: uppercase;
+		background: transparent;
+		font-size: 2em;
+		-webkit-appearance: none;
+	  	-webkit-tap-highlight-color: transparent;
+		border-bottom: 2px solid white;
+
+	  	&::-webkit-input-placeholder {
+	  	   color: white;
+	  	}
+
+	  	&:-moz-placeholder { /* Firefox 18- */
+	  	   color: white;  
+	  	}
+
+	  	&::-moz-placeholder {  /* Firefox 19+ */
+	  	   color: white;  
+	  	}
+
+	  	&:-ms-input-placeholder {  
+	  	   color: white;  
+	  	}
+
+	  	&:focus {
+	  		outline: 0;
+	  	}
+
+	  	&+label {
+	  		top:40%;
+	  		position: absolute;
+	  		color: $theme-gray;
+	  	}
+
+	  	@include option(lowercase) {
+	  		text-transform: none;
+	  	}
+
+	  	@include option(gray) {
+	  		color: black;
+	  		padding-left: 45px;
+	  		font-size: 1.8em;
+	  		&::-webkit-input-placeholder {
+	  		   color: $theme-gray;
+	  		}
+
+	  		&:-moz-placeholder { /* Firefox 18- */
+	  		   color: $theme-gray;  
+	  		}
+
+	  		&::-moz-placeholder {  /* Firefox 19+ */
+	  		   color: $theme-gray;  
+	  		}
+
+	  		&:-ms-input-placeholder {  
+	  		   color: $theme-gray;  
+	  		}
+	  		& {
+	  			border-bottom: 2px solid $theme-gray;
+	  		}
+	  	}
+	}
+
+	@include part(icon) {
+		$size : 25px;
+		position: absolute;
+		font-size: $size;
+		right: $size;
+		top: 10px;
+		color: white;
+
+		@include option(loupe) {
+			&:before {
+				content: "\e003";
+			}
+		}
+
+		@include option(erase) {
+			cursor: pointer;
+
+			&:before {
+				content: "\e088";
+			}
+		}
+	}
+
+}

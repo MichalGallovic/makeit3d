@@ -1,34 +1,35 @@
-<p>
-	Status: 
-	{{#unless model.was_opened}}
-		<span>NEW</span>
-	{{else}}
-		{{#if model.was_shipped}}
-			<span>SHIPPED</span>
+<h1 class="mb20">Manage Order: #{{model.id}}</h1>
+<div class="well">
+	<p>
+		<strong>Status: </strong>
+		{{#unless model.was_opened}}
+			<span class="label label-success">NEW</span>
 		{{else}}
-			{{#if model.was_printed}}
-				<span>PRINTED</span>
+			{{#if model.was_shipped}}
+				<span class="label label-primary">SHIPPED</span>
 			{{else}}
-				<span>PENDING</span>
+				{{#if model.was_printed}}
+					PRINTED
+				{{else}}
+					<span class="label label-warning">PENDING</span>
+					<button class="btn btn-primary" {{action 'shipped'}}>Shipped</button>
+				{{/if}}
 			{{/if}}
-		{{/if}}
-	{{/unless}}
-</p>
-<p>Fullname: {{ model.full_name }}</p>
-<p>Address: {{ model.address }}</p>
-<p>Order price: {{ model.price }}</p>
-<p>Models to print:</p>
-{{#each item in model.models}}
-		<p>
-			{{ item.name }} - {{ item.price }}&euro; - {{ item.printing_time}} sec
-			{{#if item.deleted}}
-			<strong>This model has been deleted!</strong>
-			{{else}}
-			<button {{action 'print' item }} {{bind-attr disabled="printerUnpluged"}}>Print</button>
-			{{/if}}
-		</p>
-{{/each}}
+		{{/unless}}
 
-<p>
-	<button {{action 'shipped'}}>Shipped</button>
-</p>
+	</p>
+	<p><strong>Fullname:</strong> {{ model.full_name }}</p>
+	<p><strong>Address:</strong> {{ model.address }}</p>
+	<p><strong>Order price:</strong> {{ model.price }} &euro;</p>
+	<p><strong>Models to print:</strong></p>
+	{{#each item in model.models}}
+			<p>
+				{{ item.name }} - {{ item.price }}&euro; - {{ item.printing_time}} sec
+				{{#if item.deleted}}
+				<strong>This model has been deleted!</strong>
+				{{else}}
+				<button class="btn btn-success" {{action 'print' item }} {{bind-attr disabled="printerUnpluged"}}>Print</button>
+				{{/if}}
+			</p>
+	{{/each}}
+</div>

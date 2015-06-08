@@ -1,21 +1,19 @@
-<div class="container">
-  <div class="row mt20">
-    <h1 class="text-center +txtshadow">Login</h1>
+<div class="row mt20">
+  <h1 class="text-center +txtshadow">Login</h1>
+</div>
+<div class="row mt40">
+  <div class="col-lg-6 col-lg-offset-3">
+    {{input type="text" autocomplete="off" placeholder="Email" classNames="m3d-searchbar__input --lowercase" value=username}}
   </div>
-  <div class="row mt40">
-    <div class="col-lg-6 col-lg-offset-3">
-      {{input type="text" autocomplete="off" placeholder="Email" classNames="m3d-searchbar__input --lowercase" value=username}}
-    </div>
+</div>
+<div class="row">
+  <div class="col-lg-6 col-lg-offset-3">
+    {{input type="password" autocomplete="off" placeholder="Password" classNames="m3d-searchbar__input --lowercase" value=password}}
   </div>
-  <div class="row">
-    <div class="col-lg-6 col-lg-offset-3">
-      {{input type="password" autocomplete="off" placeholder="Password" classNames="m3d-searchbar__input --lowercase" value=password}}
-    </div>
-  </div>
-  <div class="row mt20">
-    <div class="col-lg-6 col-lg-offset-3">
-      
-      <button class="btn btn-default btn-lg pull-right +bxshadow" {{action 'login' }}>Login</button><a href="forgotpassword.html" class="pull-left">Forgot password?</a>
-    </div>
+</div>
+<div class="row mt20">
+  <div class="col-lg-6 col-lg-offset-3">
+    
+    <button class="btn btn-default btn-lg pull-right +bxshadow" {{action 'login' }}>Login</button><a href="forgotpassword.html" class="pull-left">Forgot password?</a>
   </div>
 </div>

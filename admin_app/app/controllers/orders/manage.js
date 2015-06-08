@@ -5,7 +5,7 @@ export default Ember.Controller.extend({
 	getPrinterStatus: function() {
 		var me = this;
 		return this.ajax.getJSON('printer/status').then(function(response) {
-			if(response.status == "Operational") {
+			if(response.status === "Operational") {
 				me.set('printerUnpluged', true);
 			}
 		});
