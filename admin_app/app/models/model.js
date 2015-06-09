@@ -9,7 +9,7 @@ export default DS.Model.extend({
 	filament_length : DS.attr('number'),
 	filament_volume : DS.attr('number'),
 	download_link_gcode : DS.attr('string'),
-	download_stl_gcode : DS.attr('string'),
+	download_link_stl : DS.attr('string'),
 	deleted: DS.attr('boolean'),
 	created_by : DS.attr('string'),
 	print: function() {

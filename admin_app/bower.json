@@ -15,6 +15,7 @@
     "csstyle": "~1.4.0",
     "font-awesome": "~4.3.0",
     "bootstrap-sass": "~3.3.4",
-    "bootstrap": "~3.3.4"
+    "bootstrap": "~3.3.4",
+    "ember-uploader": "0.3.7"
   }
 }

@@ -1,1 +1,57 @@
-{{outlet}}
+<div class="col-lg-10 col-lg-offset-1">
+	<h1 class="mb20 --inline">Model Create</h1>
+	<div class="m3d-upload ml20 btn btn-success btn-lg --single_button">
+		<i class="fa fa-cloud m3d_upload__icon"></i>
+		{{file-upload url="/api/models/create" modelUploaded="modelUploaded"}}
+		<span>Upload Model</span>
+	</div>
+	{{#if model}}
+		<div class="well">
+			<div class="form-group">
+				<label>Name:</label>
+				{{input class="form-control" type="text" value=model.name}}
+			</div>
+			<div class="form-group">
+				<label>Visibility:</label>
+				{{radio-button value=1 groupValue=model.visible }} Visible
+				{{radio-button value=0 groupValue=model.visible }} Hidden
+			</div>
+			<div class="form-group">
+				<label>Price:</label>
+				{{input class="form-control" type="text" value=model.price}}
+			</div>
+
+			<div class="form-group">
+				<label>Image url:</label>
+				{{input class="form-control" type="text" value=model.image_url}}	
+			</div>
+			<div class="form-group" class="text-center">
+				<img src="{{ model.image_url }}">	
+			</div>
+			<div class="form-group">
+				<label for="">Download link gcode:</label>
+				{{input class="form-control" type="text" value=model.download_link_gcode}}
+			</div>
+			<div class="form-group">
+				<label for="">Download link stl:</label>
+				{{input class="form-control" type="text" value=model.download_link_stl}}
+			</div>
+			<div class="form-group">
+				<label for="">Printing time:</label>
+				{{input class="form-control" type="text" value=model.printing_time}}
+			</div>
+			<div class="form-group">
+				<label for="">Filament length:</label>
+				{{input class="form-control" type="text" value=model.filament_length}}
+			</div>
+			<div class="form-group">
+				<label for="">Filament volume:</label>
+				{{input class="form-control" type="text" value=model.filament_volume}}
+			</div>
+			<p>
+				<button {{action "create" model}} class="btn btn-success">Save</button>
+				{{#link-to 'models.index' class="btn btn-default"}}Cancel{{/link-to}}
+			</p>
+		</div>
+	{{/if}}
+</div>

@@ -1,0 +1,32 @@
+script(type="text/template", id="categories-template")
+	.container
+		.row(id="categories-container")
+			.col-lg-12
+
+				h2 Categories
+
+				<% _.each(categories,function(category){ %>
+				.col-md-3.col-sm-6.mt30
+					.m3d-tile
+						a(href!="#categories/<%= category.id %>").category.m3d-tile__content
+							img(src!="<%= category.image_url %>").img-responsive
+						.m3d-tile__info.--badge
+							span.left <%= category.name %>
+							span.right <%= category.model_count %>
+				<% }); %>
+		.row
+			.col-lg-12
+				<% _.each(categories,function(category){ %>
+				div(id!="<%= category.id %>-cat-cont").cats-conts
+				<% }); %>
+	//- .row
+	//- 	.col-md-12
+	//- 		h1 Categories
+	//- 		<% _.each(categories,function(category){ %>
+	//- 		a(href!="#categories/<%= category.id %>").category <%= category.name %>
+	//- 		<% }); %>
+	//- .row
+	//- 	.col-md-12
+	//- 		<% _.each(categories,function(category){ %>
+	//- 		div(id!="<%= category.id %>-cat-cont").cats-conts
+	//- 		<% }); %>		

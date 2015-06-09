@@ -6,12 +6,7 @@ use Illuminate\Support\Facades\Request;
 use App\Octoprint\Octoprint;
 
 Route::get('/',['uses'  =>  'HomeController@index','as'=>'home']);
-Route::get('/phpinfo',function() {
-   phpinfo();
-});
-Route::get('/tst', function() {
-
-});
+Route::get('/admin/{whatever}','HomeController@admin');
 Route::get('users/verify/{code}','UserController@verify');
 
 Route::group(["prefix"  =>  "api"], function() {

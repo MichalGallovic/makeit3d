@@ -1,0 +1,44 @@
+script(type="text/template", id="search-template")
+	.container
+		.row.mt20
+			h1.text-center(class="+txtshadow") What do you want to print today ?
+			.col-lg-12.mt20
+				.m3d-searchbar
+				input(type="search" autocomplete="off" autofocus="autofocus" placeholder="Robot...").search_input.m3d-searchbar__input
+				span.glyphicon.m3d-searchbar__icon.--loupe
+		.row.mt20
+			.col-lg-12
+				#search_results.row
+		.row.mt20
+			.col-lg-12
+				h3 Recently printed
+					.row
+						<% _.each(models,function(model){ %>
+						.col-md-3.col-sm-6.mt30.model_detail(data-id!="<%= model.get('id') %>")
+							.m3d-tile
+								a(data-toggle='modal',href='#model_detail2').m3d-tile__content
+									img(src!="<%= model.get('image_url') %>").img-responsive
+									//- img(src="/images/models/lorempixel.jpg").img-responsive
+								.m3d-tile__info
+									span.left <%= model.get('name') %>
+									span.right <%= model.get('price') %> &euro;
+						<% }); %>
+
+
+	//- .row
+	//- 	.col-md-12
+	//- 		form(id="search_form")
+	//- 			h1 Home
+	//- 			div.form-group
+	//- 				label Search:
+	//- 				input.form-control(type="text").search_input
+	//- .row
+	//- 	.col-md-12
+	//- 		#search_results
+	//- .row
+	//- 	.col-md-12
+	//- 		h3 Recently
+		<% _.each(models,function(model){ %>
+		button(data-id!="<%= model.get('id') %>").model_detail<%= model.get('name') %>
+		<% }); %>
+

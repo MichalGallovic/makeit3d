@@ -11,3 +11,15 @@ $navbar-default-link-color: $background-color;
 $navbar-default-link-active-bg: none;
 $navbar-default-link-active-color: $theme-purple;
 $navbar-default-link-hover-color: $theme-purple;
+
+
+h1,h2,h3,h4,h5,h6 {
+	@include option(inline) {
+		display: inline-block;
+	}
+}
+.btn {
+	@include option(text-align) {
+		vertical-align: text-bottom;
+	}
+}

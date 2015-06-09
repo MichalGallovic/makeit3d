@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+	showRoute: null,
 	prepareProperties: function() {
 		this.update();
 	}.on('init'),

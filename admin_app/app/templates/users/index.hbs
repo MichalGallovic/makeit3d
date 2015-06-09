@@ -1,7 +1,9 @@
 <h1 class="mb20">Users</h1>
 {{items-list 
 	items=model 
-	properties="id,email, first_name, last_name" 
+	properties="id,email, first_name, last_name"
+	showRoute="users.show"
+	editRoute="users.edit" 
 	resource="users" 
 	delete="delete"
 	edit="edit" 

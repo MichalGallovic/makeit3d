@@ -13,6 +13,8 @@ class PrinterController extends ApiController {
         try {
             $response = $this->octoprint->printer()->currentJob()->get();
 
+            if(substr($response['state'],0,5) === "Error" )
+                $response['state'] = "Printer Error!";
             return Response::json([
                 'status'    =>  $response['state'],
                 'timeleft'      =>  $response['progress']['printTimeLeft'],
@@ -26,14 +28,16 @@ class PrinterController extends ApiController {
                 'status'    =>  "Raspberry: Not Connected",
                 'timeleft'      =>  null,
                 'name'      =>  null,
-                'completed' =>  null
+                'completed' =>  null,
+                'description'   =>  "Raspberry Not Connected"
             ], 200);
         } catch(\GuzzleHttp\Exception\ConnectException $e) {
             return Response::json([
                 'status'    =>  "Raspberry: Not Connected",
                 'timeleft'      =>  null,
                 'name'      =>  null,
-                'completed' =>  null
+                'completed' =>  null,
+                'description'   =>  "Raspberry Not Connected"
             ], 200);
         }
 

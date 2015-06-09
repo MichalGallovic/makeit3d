@@ -29,7 +29,7 @@
 					<td>{{order.full_name}}</td>
 					<td>{{order.address}}</td>
 					<td>{{order.price}} &euro;</td>
-					<td><button {{action 'edit' order bubbles=false}} class="btn btn-primary">Edit</button></td>
+					<td>{{#link-to 'orders.edit' order class="btn btn-primary"}}Edit{{/link-to}}</td>
 					<td><button {{action 'delete' order}} class="btn btn-danger">Delete</button></td>
 				{{/link-to}}
 			{{/each}}

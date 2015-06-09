@@ -76,6 +76,11 @@ class ModelController extends ApiController {
         $model->price = $input['price'];
         $model->image_url = $input['image_url'];
         $model->created_by = (int) $input['created_by'];
+        $model->download_link_gcode = isset($input['download_link_gcode']) ? $input['download_link_gcode'] : $model->download_link_gcode;
+        $model->download_link_stl = isset($input['download_link_stl']) ? $input['download_link_stl'] : $model->download_link_stl;
+        $model->printing_time = isset($input['printing_time']) ? $input['printing_time'] : $model->printing_time;
+        $model->filament_length = isset($input['filament_length']) ? $input['filament_length'] : $model->filament_length;
+        $model->filament_volume = isset($input['filament_volume']) ? $input['filament_volume'] : $model->filament_volume;
         $model->save();
 
         if(Input::get('model.deleted') == false)
@@ -137,7 +142,7 @@ class ModelController extends ApiController {
         $model->save();
 
 
-        return $this->respondWithItem($model, new ModelTransformer);
+        return $this->respondWithItem($model, new ModelTransformer,'model');
     }
 
     public function recentlyPrinted() {

@@ -15,7 +15,7 @@
 					{{#each value in item.data}}
 						<td>{{ value }}</td>
 					{{/each}}
-					<td><button {{action 'edit' item.store}} class="btn btn-primary">Edit</button></td>
+					<td>{{#link-to editRoute item.store class="btn btn-primary"}}Edit{{/link-to}}</td>
 					{{#unless item.store.deleted}}
 					<td><button {{action 'delete' item.store bubbles=false}} class="btn btn-danger">Delete</button></td>
 					{{else}}

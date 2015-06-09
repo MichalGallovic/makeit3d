@@ -24,6 +24,12 @@
 				transform: scale(1.1);
 			}
 		}
+
+		@include option(single_button) {
+			margin-top: 0;
+			vertical-align: text-bottom;
+			background: none;
+		}
 	}
 
 	@include part(icon) {

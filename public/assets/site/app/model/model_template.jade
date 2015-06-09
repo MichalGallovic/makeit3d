@@ -1,0 +1,32 @@
+script(type="text/template", id="modal-model-detail-template")
+	.modal-dialog
+		.modal-content
+			.modal-header
+				h2.modal-title.text-center(style="color:black") <%= model.get('name')%>
+			.modal-body
+				img(src!="<%= model.get('image_url')%>").img-responsive
+			.modal-footer
+				a(href!="#categories/<%=model.get('category').data.id%>").left Category: <%=model.get('category').data.name%>
+				span.left Price: <%= model.get('price')%> &euro;
+				<% var t = (model.get('printing_time')/60).toFixed(2);%>
+				span.left.fa.fa-clock-o  <%= t%> mins
+				<% if (logged) { %>
+				button(type="button",id="add_to_cart").btn.btn-primary.btn-lg +
+				<% }else{%>
+				//- button.btn.btn-primary.btn-lg(type='button') Register
+				a(href="#register").btn.btn-primary.btn-lg Register
+				<% } %>
+	//- .info_box
+	//- 	button(type="button",id="hide_modal") close
+	//- 	div <%= model.get('name')%>
+	//- 		<%= model.get('price')%>
+	//- 	<% if (logged) { %>
+	//- 	button(type="button",id="add_to_cart") +
+	//- 	<% }else{%>
+	//- 	button(type="button",id="add_to_cart",disabled) +
+	//- 	a(href="#register") register
+	//- 	br
+	//- 	<% } %>
+	//- 	a(href!="#categories/<%=model.get('category').data.id%>")<%=model.get('category').data.name%>
+
+

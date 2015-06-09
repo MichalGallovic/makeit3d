@@ -1,15 +1,29 @@
 {{outlet}}
 
-<p>
-Printer status: {{ model.description }}
-<button {{action 'updateStatus'}}>Update status</button>
-</p>
-{{#if model.name}}
-<h4>Currently printing: {{ model.completed }}</h4>
-<p>
-Model: {{ model.name }}
-</p>
-<p>
-Printing time left: {{seconds-to-time  model.timeleft}}
-</p>
-{{/if}}
+<div class="col-lg-4">
+	<div class="well">
+		<p>
+		<strong>System status:</strong> 
+		</p>
+		<p>{{ model.description }}
+		</p>
+		<p><button {{action 'updateStatus'}} class="btn btn-primary">Update status</button></p>
+		{{#if model.name}}
+		<p>
+		<strong>Model:</strong> {{ model.name }}
+		</p>
+		<p>
+		<strong>Progress:</strong> {{round-percents model.completed }}
+		</p>
+		{{#if mode.timeleft}}
+			<p>
+			<strong>Printing time left:</strong> {{seconds-to-time  model.timeleft}}
+			</p>
+		{{else}}
+			<p>
+			<strong>Printing stuck - check the printer !</strong>
+			</p>
+		{{/if}}
+		{{/if}}
+	</div>
+</div>

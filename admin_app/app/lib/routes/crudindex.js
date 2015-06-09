@@ -1,9 +1,6 @@
 import AuthenticateRoute from './authenticated';
 
 export default AuthenticateRoute.extend({
-	showRoute: function() {
-		return this.get('routeName')+".show";
-	},
 	actions: {
 		delete: function(item) {
 			var me = this;

@@ -1,0 +1,63 @@
+script(type="text/template", id="checkout-template")
+	<% _.each(order,function(model){ %>
+	.row.mt20
+		.col-lg-10.col-lg-offset-1
+			.modal-body__item
+				span.ml20 <%= model.pocet %>
+				span.ml20 x
+				span.ml20  
+				span <%= model.model.name %>
+				span.ml20  ( <%= model.model.price %> &euro;)
+				div.pull-right.ml20
+				div.pull-right
+					span.ml20 <%= model.model.price*model.pocet %> &euro;
+	<% }); %>
+	hr
+
+	.row.mt10
+		.col-lg-10.col-lg-offset-1
+			.modal-body__item
+				span.ml20 Total
+				span.pull-right <%= total%> &euro;
+	hr
+
+	.row.mt10
+		.col-lg-10.col-lg-offset-1
+			.modal-body__item
+				span Delivery information
+				span.pull-right <%= user.first_name%> <%= user.last_name%>
+
+	.row.mt10
+		.col-lg-10.col-lg-offset-1
+			.modal-body__item
+				span.pull-right <%= user.street%>
+	.row.mt10
+		.col-lg-10.col-lg-offset-1
+			.modal-body__item
+				span.pull-right <%= user.town%>, <%= user.zip_code%>
+	.row.mt10
+		.col-lg-10.col-lg-offset-1
+			.modal-body__item
+				span.pull-right <%= user.country%>
+
+	.modal-footer.mt20
+		button.left.btn.btn-default.btn-lg(type='button',id="hide_basket") Close
+		button.pull-left.btn.btn-primary.btn-lg(type="button",id="back_to_address") Back
+		button.btn.btn-primary.btn-lg(type="button",id="order") Send oder
+	//- div checkout
+	//- <% _.each(order,function(model){ %>
+	//- div<%= model.model.name %> : <%= model.pocet %> : <%= model.model.price %>
+	//- <% }); %>
+	//- div total: <%= total%>
+	//- div shipping to
+	//- div <%= user.first_name%>
+	//- div <%= user.last_name%>
+	//- div <%= user.street%>
+	//- div <%= user.town%>
+	//- div <%= user.country%>
+	//- div <%= user.zip_code%>
+
+
+
+	//- button(type="button",id="back_to_address") back
+	//- button(type="button",id="order") order

@@ -1,0 +1,64 @@
+script(type="text/template", id="modal-profile-template")
+	.modal-dialog
+		.modal-content
+			.modal-header
+			h2.modal-title.text-center(style="color:black") Edit profile
+			form(id="profile-form")
+				.modal-body.--padding
+					.row.mt20
+						.col-lg-10.col-lg-offset-1
+							input(type="email",name="email",value!="<%= user.email%>",autocomplete="off",required).m3d-searchbar__input.--lowercase.--gray
+							label Email
+					.row.mt20
+						.col-lg-10.col-lg-offset-1
+							input(type="text",name="first_name",value!="<%= user.first_name%>",autocomplete="off",required).m3d-searchbar__input.--lowercase.--gray
+							label First
+					.row.mt20
+						.col-lg-10.col-lg-offset-1
+							input(type="text",name="last_name",value!="<%= user.last_name%>",autocomplete="off",required).m3d-searchbar__input.--lowercase.--gray
+							label Last
+					.row.mt20
+						.col-lg-10.col-lg-offset-1
+							input(type="text",name="street",value!="<%= user.street%>",autocomplete="off",required).m3d-searchbar__input.--lowercase.--gray
+							label Street
+					.row.mt20
+						.col-lg-10.col-lg-offset-1
+							input(type="text",name="town",value!="<%= user.town%>",autocomplete="off",required).m3d-searchbar__input.--lowercase.--gray
+							label Town
+	
+					.row.mt20
+						.col-lg-10.col-lg-offset-1
+							input(type="text",name="country",value!="<%= user.country%>",autocomplete="off",required).m3d-searchbar__input.--lowercase.--gray
+							label State
+					.row.mt20
+						.col-lg-10.col-lg-offset-1
+							input(type="text",name="zip_code",value!="<%= user.zip_code%>",autocomplete="off",required).m3d-searchbar__input.--lowercase.--gray
+							label Zip
+				.modal-footer
+					button.btn.btn-primary.btn-lg(type='submit').mt20 Save changes
+	//- .info_box
+	//- 	button(type="button",id="hide_profile") close
+	//- 	form(id="profile-form")
+	//- 		div.form-group
+	//- 			label Mail
+	//- 			input(type="email",name="email",value!="<%= user.email%>",required).form-control
+	//- 		div.form-group
+	//- 			label First Name
+	//- 			input(type="text",name="first_name",value!="<%= user.first_name%>",required).form-control
+	//- 		div.form-group
+	//- 			label Last Name
+	//- 			input(type="text",name="last_name",value!="<%= user.last_name%>",required).form-control
+	//- 		div.form-group
+	//- 			label Street
+	//- 			input(type="text",name="street",value!="<%= user.street%>",required).form-control
+	//- 		div.form-group
+	//- 			label Town
+	//- 			input(type="text",name="town",value!="<%= user.town%>",required).form-control
+	//- 		div.form-group
+	//- 			label Country
+	//- 			input(type="text",name="country",value!="<%= user.country%>",required).form-control
+	//- 		div.form-group
+	//- 			label Zip Code
+	//- 			input(type="string",name="zip_code",value!="<%= user.zip_code%>",required).form-control
+
+	//- 		button(type="submit").btn.btn-primary Submit

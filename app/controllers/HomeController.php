@@ -16,8 +16,11 @@ class HomeController extends BaseController {
 	*/
 
 	public function index() {
-        return 'home';
+        return View::make('makeit3d.site');
     }
 
+    public function admin() {
+        return View::make('makeit3d.admin');
+    }
 
 }
