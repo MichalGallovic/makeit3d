@@ -555,7 +555,7 @@
 			"file": "app/templates/models/edit.hbs",
 			"settings":
 			{
-				"buffer_size": 651,
+				"buffer_size": 1175,
 				"line_ending": "Unix"
 			}
 		},
@@ -563,7 +563,7 @@
 			"file": "app/templates/categories/edit.hbs",
 			"settings":
 			{
-				"buffer_size": 287,
+				"buffer_size": 681,
 				"line_ending": "Unix"
 			}
 		},
@@ -571,7 +571,7 @@
 			"file": "app/templates/orders/edit.hbs",
 			"settings":
 			{
-				"buffer_size": 855,
+				"buffer_size": 1596,
 				"line_ending": "Unix"
 			}
 		},
@@ -603,7 +603,15 @@
 			"file": "app/templates/orders/index.hbs",
 			"settings":
 			{
-				"buffer_size": 765,
+				"buffer_size": 1038,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/foundation/helpers.scss",
+			"settings":
+			{
+				"buffer_size": 287,
 				"line_ending": "Unix"
 			}
 		},
@@ -622,7 +630,15 @@
 			"file": "app/templates/orders/manage.hbs",
 			"settings":
 			{
-				"buffer_size": 775,
+				"buffer_size": 1087,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/components/buttons.scss",
+			"settings":
+			{
+				"buffer_size": 280,
 				"line_ending": "Unix"
 			}
 		},
@@ -630,7 +646,7 @@
 			"file": "app/templates/sessions/login.hbs",
 			"settings":
 			{
-				"buffer_size": 812,
+				"buffer_size": 743,
 				"line_ending": "Unix"
 			}
 		},
@@ -646,7 +662,7 @@
 			"file": "app/templates/users/index.hbs",
 			"settings":
 			{
-				"buffer_size": 128,
+				"buffer_size": 156,
 				"line_ending": "Unix"
 			}
 		},
@@ -726,7 +742,7 @@
 			"file": "app/templates/users/edit.hbs",
 			"settings":
 			{
-				"buffer_size": 677,
+				"buffer_size": 1436,
 				"line_ending": "Unix"
 			}
 		},
@@ -734,7 +750,7 @@
 			"file": "app/templates/categories/show.hbs",
 			"settings":
 			{
-				"buffer_size": 25,
+				"buffer_size": 63,
 				"line_ending": "Unix"
 			}
 		},
@@ -742,7 +758,15 @@
 			"file": "app/templates/users/show.hbs",
 			"settings":
 			{
-				"buffer_size": 25,
+				"buffer_size": 58,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/orders/show.hbs",
+			"settings":
+			{
+				"buffer_size": 11,
 				"line_ending": "Unix"
 			}
 		},
@@ -838,7 +862,7 @@
 			"file": "app/templates/models/index.hbs",
 			"settings":
 			{
-				"buffer_size": 142,
+				"buffer_size": 162,
 				"line_ending": "Unix"
 			}
 		},
@@ -870,7 +894,7 @@
 			"file": "app/templates/categories/index.hbs",
 			"settings":
 			{
-				"buffer_size": 136,
+				"buffer_size": 169,
 				"line_ending": "Unix"
 			}
 		},
@@ -894,7 +918,7 @@
 			"file": "app/templates/components/item-show.hbs",
 			"settings":
 			{
-				"buffer_size": 86,
+				"buffer_size": 162,
 				"line_ending": "Unix"
 			}
 		},
@@ -902,7 +926,7 @@
 			"file": "app/templates/models/show.hbs",
 			"settings":
 			{
-				"buffer_size": 25,
+				"buffer_size": 62,
 				"line_ending": "Unix"
 			}
 		},
@@ -942,7 +966,7 @@
 			"file": "app/lib/routes/crudindex.js",
 			"settings":
 			{
-				"buffer_size": 357,
+				"buffer_size": 426,
 				"line_ending": "Unix"
 			}
 		},
@@ -1006,7 +1030,15 @@
 			"file": "app/templates/components/items-list.hbs",
 			"settings":
 			{
-				"buffer_size": 662,
+				"buffer_size": 795,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/application.hbs",
+			"settings":
+			{
+				"buffer_size": 125,
 				"line_ending": "Unix"
 			}
 		},
@@ -1062,9 +1094,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 47.0,
+		"height": 67.0,
 		"selected_items":
 		[
+			[
+				"had",
+				"Set Syntax: Handlebars"
+			],
 			[
 				"handle",
 				"Set Syntax: Handlebars"
@@ -1245,19 +1281,10 @@
 	[
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/controllers/categories",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/controllers/models",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/controllers/orders",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/controllers/sessions",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/helpers",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/lib",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/lib/helpers",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/lib/routes",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/lib/utils",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/routes/categories",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/routes/models",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/routes/orders",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/styles",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/styles/components",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/styles/foundation",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates/components",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates/models",
@@ -1268,6 +1295,9 @@
 	],
 	"file_history":
 	[
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_text-overflow.scss",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates/orders/show.hbs",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/adapters/application.js",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/styles/app.scss",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/ember-cli-shims/app-shims.js",
@@ -1315,7 +1345,6 @@
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/ember/Makefile",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates/orders.hbs",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/routes/categories.js",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates/orders/show.hbs",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates/users/show.hbs",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates/users/edit.hbs",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/ember/ember-template-compiler.js",
@@ -1393,9 +1422,7 @@
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/serializers/api-key.js",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/models/api-key.js",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/adapters/api-key.js",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/app/models/User.php",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/.sass-cache/0472a222a85ccd7077c403a9a54f39f87548af59/bootstrap-override.scssc",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/vendor/guzzlehttp/guzzle/src/BatchResults.php"
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/app/models/User.php"
 	],
 	"find":
 	{
@@ -1413,6 +1440,24 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"input",
+			"<div class=\"form-group\">",
+			"</p>",
+			"<p>",
+			"form",
+			"div",
+			"</p>",
+			"<p>",
+			"input",
+			"</p>",
+			"<p>",
+			"p",
+			"value",
+			"strong",
+			"p",
+			"order",
+			"</td>",
+			"<td>",
 			"modelRefreshTimer: null,",
 			"visible",
 			"refreshModel",
@@ -1522,25 +1567,7 @@
 			"price",
 			"title",
 			");\n",
-			"40",
-			"@import \"",
-			"center",
-			"2",
-			"600",
-			"2",
-			".mt15",
-			".mt20",
-			"20",
-			"mt20",
-			".col-md-3.col-sm-6",
-			".m3d-tile__info",
-			"$navbar-default-link-active-color",
-			"active",
-			"300",
-			".col-md-3",
-			".img-responsive",
-			"lg",
-			"300"
+			"40"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1558,7 +1585,7 @@
 	"groups":
 	[
 		{
-			"selected": 58,
+			"selected": 55,
 			"sheets":
 			[
 				{
@@ -1587,7 +1614,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 51,
+					"stack_index": 62,
 					"type": "text"
 				},
 				{
@@ -1610,13 +1637,14 @@
 						"settings":
 						{
 							"auto_complete": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 27,
+					"stack_index": 48,
 					"type": "text"
 				},
 				{
@@ -1643,10 +1671,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 365.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 26,
+					"stack_index": 47,
 					"type": "text"
 				},
 				{
@@ -1676,7 +1704,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 25,
 					"type": "text"
 				},
 				{
@@ -1685,15 +1713,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 651,
+						"buffer_size": 1175,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								197,
-								81
+								791,
+								791
 							]
 						],
 						"settings":
@@ -1705,7 +1733,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 31,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
@@ -1714,15 +1742,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 287,
+						"buffer_size": 681,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								287
+								86,
+								86
 							]
 						],
 						"settings":
@@ -1734,7 +1762,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 33,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -1743,15 +1771,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 855,
+						"buffer_size": 1596,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11,
-								372
+								1572,
+								1409
 							]
 						],
 						"settings":
@@ -1760,10 +1788,10 @@
 							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 119.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 32,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -1786,13 +1814,14 @@
 						"settings":
 						{
 							"auto_complete": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 34,
 					"type": "text"
 				},
 				{
@@ -1823,7 +1852,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 41,
+					"stack_index": 55,
 					"type": "text"
 				},
 				{
@@ -1852,7 +1881,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 33,
 					"type": "text"
 				},
 				{
@@ -1861,15 +1890,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 765,
+						"buffer_size": 1038,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								634,
-								634
+								692,
+								292
 							]
 						],
 						"settings":
@@ -1882,11 +1911,39 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 40,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
 					"buffer": 11,
+					"file": "app/styles/foundation/helpers.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 287,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								254,
+								254
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
 					"file": "app/templates/orders/create.hbs",
 					"semi_transient": false,
 					"settings":
@@ -1911,24 +1968,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 57,
+					"stack_index": 65,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 13,
 					"file": "app/templates/orders/manage.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 775,
+						"buffer_size": 1087,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								672,
-								672
+								419,
+								419
 							]
 						],
 						"settings":
@@ -1941,16 +1998,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 34,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
-					"file": "app/templates/sessions/login.hbs",
-					"semi_transient": false,
+					"buffer": 14,
+					"file": "app/styles/components/buttons.scss",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 812,
+						"buffer_size": 280,
 						"regions":
 						{
 						},
@@ -1963,6 +2020,35 @@
 						],
 						"settings":
 						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "app/templates/sessions/login.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 743,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								743
+							]
+						],
+						"settings":
+						{
 							"syntax": "Packages/Handlebars/Handlebars.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -1971,11 +2057,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 55,
+					"stack_index": 22,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 16,
 					"file": "app/models/order.js",
 					"semi_transient": false,
 					"settings":
@@ -2002,40 +2088,40 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 36,
+					"stack_index": 51,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 17,
 					"file": "app/templates/users/index.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 128,
+						"buffer_size": 156,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								110,
-								110
+								22,
+								22
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"syntax": "Packages/Handlebars/Handlebars.tmLanguage"
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 61,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 18,
 					"file": "admin_app.sublime-project",
 					"semi_transient": false,
 					"settings":
@@ -2060,11 +2146,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 62,
+					"stack_index": 66,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 19,
 					"file": "app/models/user.js",
 					"semi_transient": false,
 					"settings":
@@ -2076,8 +2162,8 @@
 						"selection":
 						[
 							[
-								28,
-								28
+								504,
+								504
 							]
 						],
 						"settings":
@@ -2090,11 +2176,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 20,
 					"file": "app/routes/models/create.js",
 					"semi_transient": false,
 					"settings":
@@ -2119,11 +2205,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 39,
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 21,
 					"file": "app/routes/orders/create.js",
 					"semi_transient": false,
 					"settings":
@@ -2147,11 +2233,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 38,
 					"type": "text"
 				},
 				{
-					"buffer": 20,
+					"buffer": 22,
 					"file": "app/routes/categories/create.js",
 					"semi_transient": false,
 					"settings":
@@ -2176,11 +2262,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 37,
 					"type": "text"
 				},
 				{
-					"buffer": 21,
+					"buffer": 23,
 					"file": "app/routes/categories/edit.js",
 					"semi_transient": false,
 					"settings":
@@ -2205,11 +2291,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 42,
 					"type": "text"
 				},
 				{
-					"buffer": 22,
+					"buffer": 24,
 					"file": "app/routes/categories/index.js",
 					"semi_transient": false,
 					"settings":
@@ -2235,11 +2321,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 41,
 					"type": "text"
 				},
 				{
-					"buffer": 23,
+					"buffer": 25,
 					"file": "app/routes/users/index.js",
 					"semi_transient": false,
 					"settings":
@@ -2265,11 +2351,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 28,
 					"type": "text"
 				},
 				{
-					"buffer": 24,
+					"buffer": 26,
 					"file": "app/routes/users/edit.js",
 					"semi_transient": false,
 					"settings":
@@ -2288,30 +2374,31 @@
 						"settings":
 						{
 							"auto_complete": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 29,
 					"type": "text"
 				},
 				{
-					"buffer": 25,
+					"buffer": 27,
 					"file": "app/templates/users/edit.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 677,
+						"buffer_size": 1436,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								62,
-								62
+								75,
+								75
 							]
 						],
 						"settings":
@@ -2323,69 +2410,97 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 30,
-					"type": "text"
-				},
-				{
-					"buffer": 26,
-					"file": "app/templates/categories/show.hbs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 25,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								25,
-								25
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/Handlebars/Handlebars.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 60,
-					"type": "text"
-				},
-				{
-					"buffer": 27,
-					"file": "app/templates/users/show.hbs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 25,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								25,
-								25
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/Handlebars/Handlebars.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 59,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
 					"buffer": 28,
+					"file": "app/templates/categories/show.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 63,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								63,
+								63
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 29,
+					"file": "app/templates/users/show.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 58,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								27,
+								27
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Handlebars/Handlebars.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 30,
+					"file": "app/templates/orders/show.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11,
+								11
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 31,
 					"file": "app/routes/categories/show.js",
 					"semi_transient": false,
 					"settings":
@@ -2410,11 +2525,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 40,
 					"type": "text"
 				},
 				{
-					"buffer": 29,
+					"buffer": 32,
 					"file": "app/routes/models/show.js",
 					"semi_transient": false,
 					"settings":
@@ -2439,11 +2554,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 30,
+					"buffer": 33,
 					"file": "app/routes/orders/manage.js",
 					"semi_transient": false,
 					"settings":
@@ -2462,17 +2577,18 @@
 						"settings":
 						{
 							"auto_complete": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 32,
 					"type": "text"
 				},
 				{
-					"buffer": 31,
+					"buffer": 34,
 					"file": "app/routes/sessions/login.js",
 					"semi_transient": false,
 					"settings":
@@ -2497,11 +2613,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 31,
 					"type": "text"
 				},
 				{
-					"buffer": 32,
+					"buffer": 35,
 					"file": "app/routes/sessions/logout.js",
 					"semi_transient": false,
 					"settings":
@@ -2527,11 +2643,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 30,
 					"type": "text"
 				},
 				{
-					"buffer": 33,
+					"buffer": 36,
 					"file": "app/routes/orders/show.js",
 					"semi_transient": false,
 					"settings":
@@ -2555,11 +2671,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 43,
+					"stack_index": 57,
 					"type": "text"
 				},
 				{
-					"buffer": 34,
+					"buffer": 37,
 					"file": "app/routes/models/edit.js",
 					"semi_transient": false,
 					"settings":
@@ -2585,11 +2701,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 36,
 					"type": "text"
 				},
 				{
-					"buffer": 35,
+					"buffer": 38,
 					"file": "app/controllers/models/edit.js",
 					"semi_transient": false,
 					"settings":
@@ -2615,11 +2731,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 37,
+					"stack_index": 52,
 					"type": "text"
 				},
 				{
-					"buffer": 36,
+					"buffer": 39,
 					"file": "app/helpers/utils.js",
 					"semi_transient": false,
 					"settings":
@@ -2645,11 +2761,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 63,
+					"stack_index": 67,
 					"type": "text"
 				},
 				{
-					"buffer": 37,
+					"buffer": 40,
 					"file": "app/helpers/ajax.js",
 					"semi_transient": false,
 					"settings":
@@ -2675,11 +2791,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 25,
+					"stack_index": 46,
 					"type": "text"
 				},
 				{
-					"buffer": 38,
+					"buffer": 41,
 					"file": "app/initializers/ajax.js",
 					"semi_transient": false,
 					"settings":
@@ -2704,41 +2820,41 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 52,
+					"stack_index": 63,
 					"type": "text"
 				},
 				{
-					"buffer": 39,
+					"buffer": 42,
 					"file": "app/templates/models/index.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 142,
+						"buffer_size": 162,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								142,
-								142
+								28,
+								0
 							]
 						],
 						"settings":
 						{
 							"_anf_new": "",
 							"auto_complete": false,
-							"syntax": "Packages/Handlebars/Handlebars.tmLanguage"
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 44,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
-					"buffer": 40,
+					"buffer": 43,
 					"file": "app/templates/dashboard.hbs",
 					"semi_transient": false,
 					"settings":
@@ -2763,11 +2879,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 29,
+					"stack_index": 50,
 					"type": "text"
 				},
 				{
-					"buffer": 41,
+					"buffer": 44,
 					"file": "app/helpers/custom-log.js",
 					"semi_transient": false,
 					"settings":
@@ -2792,11 +2908,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 23,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 42,
+					"buffer": 45,
 					"file": "app/helpers/seconds-to-time.js",
 					"semi_transient": false,
 					"settings":
@@ -2822,40 +2938,40 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
+					"stack_index": 43,
 					"type": "text"
 				},
 				{
-					"buffer": 43,
+					"buffer": 46,
 					"file": "app/templates/categories/index.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 136,
+						"buffer_size": 169,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								131,
-								131
+								27,
+								27
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"syntax": "Packages/Handlebars/Handlebars.tmLanguage"
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 46,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
-					"buffer": 44,
+					"buffer": 47,
 					"file": "app/components/items-list.js",
 					"semi_transient": false,
 					"settings":
@@ -2881,11 +2997,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 28,
+					"stack_index": 49,
 					"type": "text"
 				},
 				{
-					"buffer": 45,
+					"buffer": 48,
 					"file": "app/components/item-show.js",
 					"semi_transient": false,
 					"settings":
@@ -2911,69 +3027,69 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 54,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 46,
+					"buffer": 49,
 					"file": "app/templates/components/item-show.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 86,
+						"buffer_size": 162,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								48,
-								48
+								81,
+								81
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"syntax": "Packages/Handlebars/Handlebars.tmLanguage"
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 58,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 47,
+					"buffer": 50,
 					"file": "app/templates/models/show.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 25,
+						"buffer_size": 62,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								31,
+								31
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"syntax": "Packages/Handlebars/Handlebars.tmLanguage"
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 53,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 48,
+					"buffer": 51,
 					"file": "app/controllers/models/index.js",
 					"semi_transient": false,
 					"settings":
@@ -2998,11 +3114,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 42,
+					"stack_index": 56,
 					"type": "text"
 				},
 				{
-					"buffer": 49,
+					"buffer": 52,
 					"file": "app/models/model.js",
 					"semi_transient": false,
 					"settings":
@@ -3028,11 +3144,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 39,
+					"stack_index": 54,
 					"type": "text"
 				},
 				{
-					"buffer": 50,
+					"buffer": 53,
 					"file": "app/models/category.js",
 					"semi_transient": false,
 					"settings":
@@ -3057,11 +3173,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 47,
+					"stack_index": 58,
 					"type": "text"
 				},
 				{
-					"buffer": 51,
+					"buffer": 54,
 					"file": "app/routes/models/index.js",
 					"semi_transient": false,
 					"settings":
@@ -3088,28 +3204,29 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 35,
 					"type": "text"
 				},
 				{
-					"buffer": 52,
+					"buffer": 55,
 					"file": "app/lib/routes/crudindex.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 357,
+						"buffer_size": 426,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								350,
-								223
+								116,
+								116
 							]
 						],
 						"settings":
 						{
+							"auto_complete": false,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -3117,11 +3234,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 35,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 53,
+					"buffer": 56,
 					"file": "app/lib/routes/crudedit.js",
 					"semi_transient": false,
 					"settings":
@@ -3148,11 +3265,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 38,
+					"stack_index": 53,
 					"type": "text"
 				},
 				{
-					"buffer": 54,
+					"buffer": 57,
 					"file": "config/environment.js",
 					"semi_transient": false,
 					"settings":
@@ -3179,11 +3296,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 49,
+					"stack_index": 60,
 					"type": "text"
 				},
 				{
-					"buffer": 55,
+					"buffer": 58,
 					"file": "public/crossdomain.xml",
 					"semi_transient": false,
 					"settings":
@@ -3207,11 +3324,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 48,
+					"stack_index": 59,
 					"type": "text"
 				},
 				{
-					"buffer": 56,
+					"buffer": 59,
 					"file": "app/routes/index.js",
 					"semi_transient": false,
 					"settings":
@@ -3236,11 +3353,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 50,
+					"stack_index": 61,
 					"type": "text"
 				},
 				{
-					"buffer": 57,
+					"buffer": 60,
 					"file": "Brocfile.js",
 					"semi_transient": false,
 					"settings":
@@ -3265,11 +3382,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 27,
 					"type": "text"
 				},
 				{
-					"buffer": 58,
+					"buffer": 61,
 					"file": "package.json",
 					"semi_transient": false,
 					"settings":
@@ -3296,11 +3413,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 24,
 					"type": "text"
 				},
 				{
-					"buffer": 59,
+					"buffer": 62,
 					"file": "app/app.js",
 					"semi_transient": false,
 					"settings":
@@ -3325,41 +3442,70 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 65,
+					"stack_index": 69,
 					"type": "text"
 				},
 				{
-					"buffer": 60,
+					"buffer": 63,
 					"file": "app/templates/components/items-list.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 662,
+						"buffer_size": 795,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								662,
-								662
+								264,
+								264
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"syntax": "Packages/Handlebars/Handlebars.tmLanguage",
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 45,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 61,
+					"buffer": 64,
+					"file": "app/templates/application.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 125,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								109,
+								109
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 65,
 					"file": "app/templates/partials/header.hbs",
 					"semi_transient": false,
 					"settings":
@@ -3386,11 +3532,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 26,
 					"type": "text"
 				},
 				{
-					"buffer": 62,
+					"buffer": 66,
 					"file": "app/helpers/object-to-row.js",
 					"semi_transient": false,
 					"settings":
@@ -3415,11 +3561,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 24,
+					"stack_index": 45,
 					"type": "text"
 				},
 				{
-					"buffer": 63,
+					"buffer": 67,
 					"file": "app/lib/utils/register-helper.js",
 					"semi_transient": false,
 					"settings":
@@ -3446,11 +3592,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 56,
+					"stack_index": 64,
 					"type": "text"
 				},
 				{
-					"buffer": 64,
+					"buffer": 68,
 					"file": "app/initializers/custom-htmlbars-helpers.js",
 					"semi_transient": false,
 					"settings":
@@ -3475,11 +3621,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 64,
+					"stack_index": 68,
 					"type": "text"
 				},
 				{
-					"buffer": 65,
+					"buffer": 69,
 					"file": "app/lib/helpers/each-property.js",
 					"semi_transient": false,
 					"settings":
@@ -3507,11 +3653,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 22,
+					"stack_index": 44,
 					"type": "text"
 				},
 				{
-					"buffer": 66,
+					"buffer": 70,
 					"file": "node_modules/swag/lib/swag.js",
 					"semi_transient": false,
 					"settings":
@@ -3537,7 +3683,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 66,
+					"stack_index": 70,
 					"type": "text"
 				}
 			]
@@ -3590,8 +3736,120 @@
 		"selected_items":
 		[
 			[
+				"crudinde",
+				"app/lib/routes/crudindex.js"
+			],
+			[
 				"",
-				"app/styles/app.scss"
+				"app/templates/components/items-list.hbs"
+			],
+			[
+				"modelsshow",
+				"app/templates/models/show.hbs"
+			],
+			[
+				"show.hbs",
+				"app/templates/orders/show.hbs"
+			],
+			[
+				"item-show",
+				"app/templates/components/item-show.hbs"
+			],
+			[
+				"show.",
+				"app/templates/models/show.hbs"
+			],
+			[
+				"item-sho",
+				"app/templates/components/item-show.hbs"
+			],
+			[
+				"item-sh",
+				"app/components/item-show.js"
+			],
+			[
+				"edit.hbs",
+				"app/templates/categories/edit.hbs"
+			],
+			[
+				"edit.hb",
+				"app/templates/categories/edit.hbs"
+			],
+			[
+				"categories.hbs",
+				"app/templates/categories/show.hbs"
+			],
+			[
+				"ordersedit",
+				"app/templates/orders/edit.hbs"
+			],
+			[
+				"helpers",
+				"app/styles/foundation/helpers.scss"
+			],
+			[
+				"item-",
+				"app/templates/components/item-show.hbs"
+			],
+			[
+				"user",
+				"app/models/user.js"
+			],
+			[
+				"ordersinde",
+				"app/templates/orders/index.hbs"
+			],
+			[
+				"manage",
+				"app/templates/orders/manage.hbs"
+			],
+			[
+				"categoriesshow",
+				"app/templates/categories/show.hbs"
+			],
+			[
+				"show.h",
+				"app/templates/models/show.hbs"
+			],
+			[
+				"item-s",
+				"app/templates/components/item-show.hbs"
+			],
+			[
+				"usersinde",
+				"app/templates/users/index.hbs"
+			],
+			[
+				"categoriesindex",
+				"app/templates/categories/index.hbs"
+			],
+			[
+				"modelsinde",
+				"app/templates/models/index.hbs"
+			],
+			[
+				"orders.h",
+				"app/templates/orders/index.hbs"
+			],
+			[
+				"models.hbs",
+				"app/templates/models/index.hbs"
+			],
+			[
+				"item",
+				"app/templates/components/items-list.hbs"
+			],
+			[
+				"login",
+				"app/templates/sessions/login.hbs"
+			],
+			[
+				"applica",
+				"app/templates/application.hbs"
+			],
+			[
+				"item-lis",
+				"app/templates/components/items-list.hbs"
 			],
 			[
 				"dashboar",
@@ -3634,14 +3892,6 @@
 				"app/routes/orders/index.js"
 			],
 			[
-				"ordersedit",
-				"app/routes/orders/edit.js"
-			],
-			[
-				"modelsshow",
-				"app/routes/models/show.js"
-			],
-			[
 				"modelsindex",
 				"app/routes/models/index.js"
 			],
@@ -3662,24 +3912,12 @@
 				"app/routes/models/create.js"
 			],
 			[
-				"categoriesshow",
-				"app/routes/categories/show.js"
-			],
-			[
-				"categoriesindex",
-				"app/routes/categories/index.js"
-			],
-			[
 				"categoriesedit",
 				"app/routes/categories/edit.js"
 			],
 			[
 				"create",
 				"app/routes/models/create.js"
-			],
-			[
-				"user",
-				"app/models/user.js"
 			],
 			[
 				"each-",
@@ -3702,10 +3940,6 @@
 				"app/controllers/orders/manage.js"
 			],
 			[
-				"item",
-				"app/components/items-list.js"
-			],
-			[
 				"appscs",
 				"app/styles/app.scss"
 			],
@@ -3726,10 +3960,6 @@
 				"app/templates/orders/edit.hbs"
 			],
 			[
-				"edit.hbs",
-				"app/templates/categories/edit.hbs"
-			],
-			[
 				"useredit",
 				"app/templates/users/edit.hbs"
 			],
@@ -3747,10 +3977,6 @@
 			],
 			[
 				"manage.",
-				"app/templates/orders/manage.hbs"
-			],
-			[
-				"manage",
 				"app/templates/orders/manage.hbs"
 			],
 			[
@@ -3858,20 +4084,12 @@
 				"app/models/order.js"
 			],
 			[
-				"login",
-				"app/templates/sessions/login.hbs"
-			],
-			[
 				"models/show",
 				"app/routes/models/show.js"
 			],
 			[
 				"router",
 				"app/router.js"
-			],
-			[
-				"show.hbs",
-				"app/templates/users/show.hbs"
 			],
 			[
 				"show.sh",
@@ -3916,10 +4134,6 @@
 			[
 				"show.hb",
 				"app/templates/models/show.hbs"
-			],
-			[
-				"item-sho",
-				"app/templates/components/item-show.hbs"
 			],
 			[
 				"utils.",
@@ -4032,74 +4246,6 @@
 			[
 				"app",
 				"sass/app.scss"
-			],
-			[
-				"button",
-				"sass/components/buttons.scss"
-			],
-			[
-				"help",
-				"sass/foundation/helpers.scss"
-			],
-			[
-				"base",
-				"sass/foundation/base.scss"
-			],
-			[
-				"searc",
-				"sass/components/searchbar.scss"
-			],
-			[
-				"index.",
-				"jade/index.jade"
-			],
-			[
-				"sear",
-				"sass/components/searchbar.scss"
-			],
-			[
-				"_varia",
-				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss"
-			],
-			[
-				"varia",
-				"sass/foundation/variables.scss"
-			],
-			[
-				"_mo",
-				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_modals.scss"
-			],
-			[
-				"color",
-				"sass/foundation/colors.scss"
-			],
-			[
-				"search",
-				"sass/components/searchbar.scss"
-			],
-			[
-				"navbar",
-				"sass/components/navbar.scss"
-			],
-			[
-				"dro",
-				"bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"
-			],
-			[
-				"drop",
-				"sass/components/dropdown.scss"
-			],
-			[
-				"_navba",
-				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss"
-			],
-			[
-				"_variables",
-				"bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss"
-			],
-			[
-				"_variab",
-				"bower_components/font-awesome/scss/_variables.scss"
 			]
 		],
 		"width": 0.0

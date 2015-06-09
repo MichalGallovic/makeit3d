@@ -6,7 +6,7 @@ export default Ember.Controller.extend({
 		var me = this;
 		return this.ajax.getJSON('printer/status').then(function(response) {
 			if(response.status === "Operational") {
-				me.set('printerUnpluged', true);
+				me.set('printerUnpluged', false);
 			}
 		});
 	},
