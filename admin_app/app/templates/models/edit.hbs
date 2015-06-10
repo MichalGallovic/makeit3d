@@ -22,7 +22,7 @@
 
 
 		<div class="form-group" class="text-center">
-			<img src="{{ model.image_url }}">
+			<img src="{{ model.image_url }}" class="img-responsive">
 		</div>
       <div class="form-group">
           <label for="">Download link gcode:</label>
@@ -60,6 +60,7 @@
 		</div>
 		<p>
 			<button {{action "update" model}} class="btn btn-success">Save</button>
+      <button {{action "forceDelete" model}} class="btn btn-danger">Force delete</button>
 			<button {{action "cancel" model}} class="btn btn-default">Cancel</button>
 		</p>
 	</div>

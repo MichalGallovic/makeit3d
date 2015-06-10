@@ -31,7 +31,7 @@
             <div class="col-lg-4">
                 <div class="m3d-upload ml20 btn btn-success btn-md --single_button">
                     <i class="fa fa-cloud m3d_upload__icon"></i>
-                  {{file-upload url="/api/models/image" modelUploaded="modelUploaded"
+                  {{file-upload url="/api/models/image" imageUploaded="imageUploaded"
                   parameterName="image"}}
                     <span>Upload image</span>
                 </div>
@@ -39,7 +39,7 @@
         </div>
 			</div>
 			<div class="form-group" class="text-center">
-				<img src="{{ model.image_url }}">
+				<img src="{{ model.image_url }}" class="img-responsive">
 			</div>
 			<div class="form-group">
 				<label for="">Download link gcode:</label>

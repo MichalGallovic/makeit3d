@@ -16,5 +16,16 @@ export default CrudEditRoute.extend({
         controller.set('model', model);
       });
 		});
-	}
+	},
+  actions : {
+    forceDelete: function(item) {
+      var me = this;
+      item.forceDelete().then(function(response) {
+        var oldModel = me.controllerFor('models.index').get('model');
+        oldModel.removeRecord(item);
+        me.controllerFor('models.index').set('model',oldModel);
+        me.transitionTo('models.index');
+      });
+    }
+  }
 });

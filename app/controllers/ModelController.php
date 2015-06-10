@@ -63,8 +63,6 @@ class ModelController extends ApiController {
             'visible'   =>  'required',
             'price' =>  'required',
             'image_url' =>  'required',
-            'created_by'    =>  'required',
-            'category'      =>  'required'
         ];
 
         $validator = Validator::make($input,$rules);
@@ -76,8 +74,8 @@ class ModelController extends ApiController {
         $model->visible = $input['visible'];
         $model->price = $input['price'];
         $model->image_url = $input['image_url'];
-        $model->created_by = (int) $input['created_by'];
-        $model->category_id = (int) $input['category'];
+        $model->created_by = isset($input['created_by']) ? (int) $input['created_by'] : $model->created_by;
+        $model->category_id = isset($input['category_id']) ? (int) $input['category_id'] : $model->category_id;
         $model->download_link_gcode = isset($input['download_link_gcode']) ? $input['download_link_gcode'] : $model->download_link_gcode;
         $model->download_link_stl = isset($input['download_link_stl']) ? $input['download_link_stl'] : $model->download_link_stl;
         $model->printing_time = isset($input['printing_time']) ? $input['printing_time'] : $model->printing_time;
@@ -148,7 +146,27 @@ class ModelController extends ApiController {
     }
 
     public function uploadImage() {
+        if(Input::hasFile('image')) {
+            $image = Input::file('image');
+            $filename  = time() . '.' . $image->getClientOriginalExtension();
+            $path = public_path('images/models/' . $filename);
+            $img = Image::make($image)->resize(800, null, function ($constraint) {
+                $constraint->aspectRatio();
+                $constraint->upsize();
+            })->save($path);
+            $response = array(
+                "status" => 'success',
+                "image_url" => asset('images/models')."/".$filename,
+            );
+            $status = 200;
+        } else {
+            $response = array(
+                "status" => 'error'
+            );
+            $status = 400;
+        }
 
+        return Response::json($response, $status);
     }
 
     public function recentlyPrinted() {
@@ -165,7 +183,11 @@ class ModelController extends ApiController {
         if(!$model)
             return $this->errorNotFound("Model not found.");
 
-        $model->delete();
+        $deleteAbsolutely = Input::get('forceDelete');
+        if($deleteAbsolutely)
+            $model->forceDelete();
+        else
+            $model->delete();
 
         return $this->respondWithSuccess("Model deleted successfully");
 

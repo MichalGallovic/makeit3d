@@ -18,5 +18,8 @@ export default DS.Model.extend({
 	},
 	removeFromOrder: function(orderId) {
 		return this.ajax.delete('orders/'+orderId+'/models/'+this.id);
-	}
+	},
+  forceDelete: function() {
+    return this.ajax.delete('models/'+this.id+'?forceDelete=true');
+  }
 });
