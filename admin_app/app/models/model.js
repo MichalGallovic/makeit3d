@@ -12,6 +12,7 @@ export default DS.Model.extend({
 	download_link_stl : DS.attr('string'),
 	deleted: DS.attr('boolean'),
 	created_by : DS.attr('string'),
+  category: DS.belongsTo('category',{async: true}),
 	print: function() {
 		return this.ajax.getJSON('models/'+this.id+"/print");
 	},

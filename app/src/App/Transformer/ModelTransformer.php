@@ -23,6 +23,7 @@ class ModelTransformer extends TransformerAbstract {
             'download_link_gcode'     =>  $model->download_link_gcode,
             'download_link_stl' =>  $model->download_link_stl,
             'deleted'   =>  $model->trashed(),
+            'category'  =>  (int) isset($model->category->id) ? $model->category->id : null,
             'created_by'        =>  $model->createdBy->id
         ];
     }

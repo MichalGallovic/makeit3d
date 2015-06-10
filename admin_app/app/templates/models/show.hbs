@@ -1,2 +1,45 @@
-<h1 class="mb20">Show Modelssss</h1>
-{{item-show model=model}}
+<h1 class="mb20">Show Models</h1>
+<div class="well">
+    <p>
+        <strong>Name:</strong>
+        {{ model.name }}
+    </p>
+    <p>
+        <strong>Visible:</strong>
+        {{ model.visible }}
+    </p>
+    <p>
+        <strong>Price:</strong>
+        {{ model.price }}
+    </p>
+    <p>
+        <strong>Image:</strong>
+    </p>
+    <p class="text-center">
+        <img src="{{ model.image_url }}" alt=""/>
+    </p>
+    <p>
+        <strong>Printing time:</strong>
+        {{ model.printing_time }}
+    </p>
+    <p>
+        <strong>Filament length::</strong>
+        {{ model.filament_length }}
+    </p>
+    <p>
+        <strong>Filament volume:</strong>
+        {{ model.filament_volume }}
+    </p>
+    <p>
+        <strong>Download link gcode:</strong>
+        <a class="--classic" href="{{ model.download_link_gcode }}">{{ model.download_link_gcode }}</a>
+    </p>
+    <p>
+        <strong>Download link stl:</strong>
+        <a class="--classic" href="{{ model.download_link_stl }}">{{ model.download_link_stl }}</a>
+    </p>
+    <p>
+        <strong>Category:</strong>
+        {{ model.category.name }}
+    </p>
+</div>
