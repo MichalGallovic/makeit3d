@@ -11,7 +11,8 @@
 		"tappleby/laravel-auth-token": "~0.3",
 		"laracasts/flash": "1.2",
 		"mailgun/mailgun-php": "1.7.2",
-        "bogardo/mailgun": "3.1.*"
+        "bogardo/mailgun": "3.1.*",
+		"intervention/image": "2.2.1"
 	},
 	"autoload": {
 		"classmap": [

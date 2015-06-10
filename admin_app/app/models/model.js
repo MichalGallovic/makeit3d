@@ -11,7 +11,7 @@ export default DS.Model.extend({
 	download_link_gcode : DS.attr('string'),
 	download_link_stl : DS.attr('string'),
 	deleted: DS.attr('boolean'),
-	created_by : DS.attr('string'),
+	created_by : DS.belongsTo('user', {async: true}),
   category: DS.belongsTo('category',{async: true}),
 	print: function() {
 		return this.ajax.getJSON('models/'+this.id+"/print");

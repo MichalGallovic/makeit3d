@@ -5,8 +5,8 @@ export default DS.Model.extend({
 	username : function() {
 		return this.get('email');
 	}.property('email'),
-	first_name : DS.attr('string'),
-	last_name : DS.attr('string'),
+	first_name : DS.attr('string', { defaultValue: ""}),
+	last_name : DS.attr('string', { defaultValue: ""}),
 	confirmed : DS.attr('number'),
 	street : DS.attr('string'),
 	town : DS.attr('string'),
@@ -14,7 +14,8 @@ export default DS.Model.extend({
 	zip_code : DS.attr('string'),
 	token : DS.attr('string'),
 	full_name: function() {
-		return this.get('first_name') + " " + this.get('last_name');
-	}
-
+    var first_name = this.get('first_name') ? this.get('first_name') : "";
+    var last_name = this.get('last_name') ? this.get('last_name') : "";
+		return first_name + " " + last_name;
+  }.property('first_name','last_name')
 });

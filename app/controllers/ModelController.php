@@ -63,7 +63,8 @@ class ModelController extends ApiController {
             'visible'   =>  'required',
             'price' =>  'required',
             'image_url' =>  'required',
-            'created_by'    =>  'required'
+            'created_by'    =>  'required',
+            'category'      =>  'required'
         ];
 
         $validator = Validator::make($input,$rules);
@@ -76,6 +77,7 @@ class ModelController extends ApiController {
         $model->price = $input['price'];
         $model->image_url = $input['image_url'];
         $model->created_by = (int) $input['created_by'];
+        $model->category_id = (int) $input['category'];
         $model->download_link_gcode = isset($input['download_link_gcode']) ? $input['download_link_gcode'] : $model->download_link_gcode;
         $model->download_link_stl = isset($input['download_link_stl']) ? $input['download_link_stl'] : $model->download_link_stl;
         $model->printing_time = isset($input['printing_time']) ? $input['printing_time'] : $model->printing_time;
@@ -143,6 +145,10 @@ class ModelController extends ApiController {
 
 
         return $this->respondWithItem($model, new ModelTransformer,'model');
+    }
+
+    public function uploadImage() {
+
     }
 
     public function recentlyPrinted() {

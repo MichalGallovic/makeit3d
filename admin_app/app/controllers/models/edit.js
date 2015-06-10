@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
 	users: [],
+  categories: [],
 	actions: {
 		update: function(item) {
 			var me = this;

@@ -17,19 +17,46 @@
 
 		<div class="form-group">
 			<label>Image url:</label>
-			{{input class="form-control" type="text" value=model.image_url}}	
+			{{input class="form-control" type="text" value=model.image_url}}
 		</div>
 
 
 		<div class="form-group" class="text-center">
-			<img src="{{ model.image_url }}">	
+			<img src="{{ model.image_url }}">
 		</div>
+      <div class="form-group">
+          <label for="">Download link gcode:</label>
+        {{input class="form-control" type="text" value=model.download_link_gcode}}
+      </div>
+      <div class="form-group">
+          <label for="">Download link stl:</label>
+        {{input class="form-control" type="text" value=model.download_link_stl}}
+      </div>
+      <div class="form-group">
+          <label for="">Printing time:</label>
+        {{input class="form-control" type="text" value=model.printing_time}}
+      </div>
+      <div class="form-group">
+          <label for="">Filament length:</label>
+        {{input class="form-control" type="text" value=model.filament_length}}
+      </div>
+      <div class="form-group">
+          <label for="">Filament volume:</label>
+        {{input class="form-control" type="text" value=model.filament_volume}}
+      </div>
+      <div class="form-group">
+          <label for="">Category:</label>
+        {{select-picker content=categories
+                        value=model.category.id
+                        optionValuePath="content.id"
+                        optionLabelPath="content.name"}}
+      </div>
 		<div class="form-group mt20">
 			<label>Created by:</label>
 			{{select-picker content=users
-			       			value=model.created_by
+			       			value=model.created_by.id
 			       			optionValuePath="content.id"
-			       			optionLabelPath="content.first_name"}}
+			       			optionLabelPath="content.full_name"}}
 		</div>
 		<p>
 			<button {{action "update" model}} class="btn btn-success">Save</button>

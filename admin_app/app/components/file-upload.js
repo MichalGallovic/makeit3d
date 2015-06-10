@@ -3,6 +3,7 @@ import EmberUploader from 'ember-uploader';
 
 export default EmberUploader.FileField.extend({
   url: '',
+  parameterName: '',
   filesDidChange: (function() {
   	var me = this;
     var uploadUrl = this.get('url');
@@ -29,15 +30,20 @@ export default EmberUploader.FileField.extend({
 
     var uploader = CustomizedUploader.create({
     	url: uploadUrl,
-    	paramName: "model"
+    	paramName: me.get('parameterName')
     });
 
     if (!Ember.isEmpty(files)) {
-		var promise = uploader.upload(files[0]);
+      var promise = uploader.upload(files[0]);
 
-		promise.then(function(response) {
-			me.sendAction('modelUploaded', response);
-		});
+      promise.then(function(response) {
+        me.sendAction('modelUploaded', response);
+      });
+      if(this.get('url') == '/api/models/image') {
+        promise.then(function(response) {
+            me.sendAction('imageUploaded', response);
+        });
+      }
     }
 
   }).observes('files')

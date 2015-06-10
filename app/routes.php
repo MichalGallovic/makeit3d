@@ -39,8 +39,8 @@ Route::group(["prefix"  =>  "api"], function() {
     Route::get('models/{id}', 'ModelController@show');
     Route::get('models/recently_printed', 'ModelController@recentlyPrinted');
 
-
     Route::post('models/create','ModelController@create')->before('auth.token');
+    Route::post('models/image','ModelController@uploadImage')->before(['auth.token','auth.admin']);
 
     Route::put('models/{id}','ModelController@update')->before(['auth.token','auth.admin']);
     Route::delete('models/{id}','ModelController@destroy')->before(['auth.token','auth.admin']);

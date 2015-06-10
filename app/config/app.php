@@ -125,7 +125,8 @@ return array(
         'Tappleby\AuthToken\AuthTokenServiceProvider',
         'Laracasts\Flash\FlashServiceProvider',
         'App\Search\SearchServiceProvider',
-        'Bogardo\Mailgun\MailgunServiceProvider'
+        'Bogardo\Mailgun\MailgunServiceProvider',
+        'Intervention\Image\ImageServiceProvider'
 	),
 
 	/*
@@ -196,7 +197,8 @@ return array(
         'AuthToken' => 'Tappleby\Support\Facades\AuthToken',
         'AuthTokenNotAuthorizedException' => 'Tappleby\AuthToken\Exceptions\NotAuthorizedException',
         'Flash' => 'Laracasts\Flash\Flash',
-        'Search'    =>'App\Facades\Search'
+        'Search'    =>'App\Facades\Search',
+        'Image' => 'Intervention\Image\Facades\Image'
 
 	),
 
