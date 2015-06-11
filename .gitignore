@@ -10,3 +10,4 @@ Thumbs.db
 /public/storage
 /public/images
 /app/storage/databases/development.sqlite
+/_ide_helper.php
