@@ -8,4 +8,5 @@ composer.lock
 .DS_Store
 Thumbs.db
 /public/storage
+/public/images
 /app/storage/databases/development.sqlite

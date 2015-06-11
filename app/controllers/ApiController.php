@@ -111,6 +111,10 @@ class ApiController extends Controller
 
     }
 
+    protected function respondWithCreated($item, $callback,$resourceKey = null) {
+        return $this->setStatusCode(201)->respondWithItem($item, $callback, $resourceKey);
+    }
+
     /**
      * Generates a Response with a 403 HTTP header and a given message.
      *

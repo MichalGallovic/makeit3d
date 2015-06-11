@@ -36,17 +36,18 @@ export default EmberUploader.FileField.extend({
     if (!Ember.isEmpty(files)) {
       var promise = uploader.upload(files[0]);
 
-      if(this.get('url') == '/api/models/create') {
-        promise.then(function(response) {
-          me.sendAction('modelUploaded', response);
-        });
-      }
-      console.log(this.get('url'));
-      if(this.get('url') == '/api/models/image') {
-        console.log(this.get('url'));
-        promise.then(function(response) {
+      switch(this.get('url')) {
+        case '/api/models/create':
+          promise.then(function(response) {
+            me.sendAction('modelUploaded', response);
+          });
+          break;
+        case '/api/models/image':
+        case '/api/categories/image':
+          promise.then(function(response) {
             me.sendAction('imageUploaded', response);
-        });
+          });
+          break;
       }
     }
 

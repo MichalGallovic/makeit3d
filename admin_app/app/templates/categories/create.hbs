@@ -1,1 +1,32 @@
-{{outlet}}
+<div class="col-lg-10 col-lg-offset-1">
+    <h1 class="mb20 --inline">Category Create</h1>
+      <div class="well">
+          <div class="form-group">
+              <label>Name:</label>
+            {{input class="form-control" type="text" value=model.name}}
+          </div>
+          <div class="form-group">
+              <label>Image url:</label>
+              <div class="row">
+                  <div class="col-lg-8">
+                    {{input class="form-control" type="text" value=model.image_url}}
+                  </div>
+                  <div class="col-lg-4">
+                      <div class="m3d-upload ml20 btn btn-success btn-md --single_button">
+                          <i class="fa fa-cloud m3d_upload__icon"></i>
+                        {{file-upload url="/api/categories/image" imageUploaded="imageUploaded"
+                        parameterName="image"}}
+                          <span>Upload image</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="form-group" class="text-center">
+              <img src="{{ model.image_url }}" class="img-responsive">
+          </div>
+          <div class="form-group mt20">
+              <button {{action "create" model}} class="btn btn-success">Save</button>
+              {{#link-to 'categories.index' class="btn btn-default"}}Cancel{{/link-to}}
+          </div>
+      </div>
+</div>

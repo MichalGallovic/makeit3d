@@ -62,11 +62,61 @@ class CategoryController extends ApiController {
             return $this->errorNotFound('Sorry, this category does not exist....');
         }
 
-        if($category->delete()) {
+        $deleteAbsolutely = Input::get('forceDelete');
+        if($deleteAbsolutely) {
+            $category->forceDelete();
+            return $this->respondWithSuccess('Category deleted successfully.');
+        }
+        else if($category->delete()) {
             return $this->respondWithSuccess('Category deleted successfully.');
         }
 
         return $this->errorInternalError('Sth went wrong while deleting Category.');
+    }
+
+    public function create() {
+        $input = Input::get('category');
+
+        $rules = [
+            'name'  =>  'required',
+            'image_url' =>  'required'
+        ];
+
+        $validation = Validator::make($input, $rules);
+
+        if($validation->fails())
+            return $this->errorWrongArgs($validation->messages()->first());
+
+        $category = new Category;
+        $category->name = $input['name'];
+        $category->image_url = $input['image_url'];
+        $category->save();
+
+        return $this->respondWithCreated($category, new CategoryTransformer, 'category');
+    }
+
+    public function uploadImage() {
+        if(Input::hasFile('image')) {
+            $image = Input::file('image');
+            $filename  = time() . '.' . $image->getClientOriginalExtension();
+            $path = public_path('images/categories/' . $filename);
+            $img = Image::make($image)->resize(800, null, function ($constraint) {
+                $constraint->aspectRatio();
+                $constraint->upsize();
+            })->save($path);
+            $response = array(
+                "status" => 'success',
+                "image_url" => asset('images/categories')."/".$filename,
+            );
+            $status = 200;
+        } else {
+            $response = array(
+                "status" => 'error'
+            );
+            $status = 400;
+        }
+
+        return Response::json($response, $status);
     }
 
 }

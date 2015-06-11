@@ -25,11 +25,6 @@ export default CrudCreateRoute.extend({
         me.controller.set('model',newModel);
 			});
 		},
-    imageUploaded: function(response) {
-      var model = this.controller.get('model');
-      model.set('image_url',response.image_url);
-      this.controller.set('model', model);
-    },
 		create: function(item) {
 			var me = this;
 			item.save().then(function() {
