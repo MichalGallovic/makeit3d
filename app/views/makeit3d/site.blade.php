@@ -15,7 +15,7 @@
               <button type="button" data-toggle="collapse" data-target=".navbar-ex1-collapse" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/#home" class="navbar-brand"><img src="/images/logo_sm.png" alt=""/><img src="/images/logo2_sm.png" alt=""/></a>
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse pull-right">
-              <ul class="nav navbar-nav"> 
+              <ul class="nav navbar-nav">
                 <li><a href="/#how_it_works">How it works</a></li>
                 <li id="categories-link" class="hidden"><a href="/#categories">Categories</a></li>
                 <li id="print-link" class="hidden"><a href="/#print">Print Your Model</a></li>
@@ -44,15 +44,15 @@
     <div id="model_detail2" class="modal fade"></div>
     <div id="basketView" class="modal fade"></div>
     <div id="profileView" class="modal fade"></div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
     <script type="text/template" id="search-template">
       <div class="container">
         <div class="row mt20">
@@ -94,7 +94,7 @@
           </div>
         </div>
       </div>
-      
+
     </script>
     <script type="text/template" id="modal-basket-template">
       <div class="modal-dialog">
@@ -239,8 +239,8 @@
         <button type="button" id="back_to_address" class="pull-left btn btn-primary btn-lg">Back</button>
         <button type="button" id="order" class="btn btn-primary btn-lg">Send oder</button>
       </div>
-      
-      
+
+
     </script>
     <script type="text/template" id="print-template">
       <div class="container">
@@ -398,10 +398,36 @@
       </div><% }); %>
     </script>
     <script type="text/template" id="how-template">
-      <div class="container">
+      <div style="margin-bottom:100px;" class="container">
         <div class="row mt20">
           <h1 class="text-center +txtshadow">How it works ?</h1>
         </div>
+        <div class="row mt20">
+          <h1 class="text-center +txtshadow">1. Check our <a href="#/categories" class="+txtunderline">categories!</a></h1>
+        </div>
+        <div class="row mt20">
+          <h1 class="text-center +txtshadow">2. If you can't find what you want just make it <a href="http://shapesmith.net/" class="+txtunderline">here !</a></h1>
+        </div>
+        <div style="text-align:center" class="row mt20"><a href="http://shapesmith.net/"><img src="{{ asset('assets/images/shapesmith.png')  }}" alt="shapesmith" width="600"/></a></div>
+        <div class="row mt20">
+          <div class="text-center +txtshadow +txtwhite">There you can create your own model, download a stl file and upload it here.</div>
+        </div>
+        <div class="row mt20">
+          <h1 class="text-center +txtshadow">3. <a href="#/register" class="+txtunderline">Sign up !</a></h1>
+        </div>
+        <div class="row mt20">
+          <h1 class="text-center +txtshadow">4. After Log in, find "Print Your model" section !</h1>
+        </div>
+        <div class="row mt20">
+          <h1 class="text-center +txtshadow">5. Upload Your Model !</h1>
+        </div>
+        <div class="row mt20 text-center">
+          <div style="cursor:default;" class="m3d-upload btn btn-lg"><i class="fa fa-cloud m3d-upload__icon"></i><span>Print Your model section</span></div>
+        </div>
+        <div style="margin-top:40px;" class="row mt20">
+          <h1 class="text-center +txtshadow">6. Finish order !</h1>
+        </div>
+        <div style="text-align:center" class="row mt20"><img src={{ asset('assets/images/cart.png') }} alt="shapesmith" width="600"/></div>
       </div>
     </script>
   </body>
