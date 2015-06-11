@@ -32,7 +32,8 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
         "street",
         "town",
         "country",
-        "zip_code"
+        "zip_code",
+        "confirmed"
     ];
 
 

@@ -82,6 +82,28 @@ class UserController extends ApiController {
         }
     }
 
+    public function create(){
+        $input = Input::get('user');
+        $rules = [
+            'email'  => 'required|email|unique:users,email'
+        ];
+        $validator = Validator::make($input, $rules);
+
+        if($validator->fails())
+            return $this->errorNotFound($validator->messages()->first());
+
+        $password = str_random(7);
+        $input['password'] = Hash::make($password);
+
+        $user = User::create($input);
+
+        Mail::send('emails.admin.user_created',["user" =>  $user], function($message) use ($input) {
+            $message->to($input['email'])->subject('Makeit3D: Your account has been created!');
+        });
+
+        return $this->respondWithCreated($user, new UserTransformer, 'user');
+    }
+
     public function register() {
         $input = Request::only(["username","password"]);
         $rules = [
@@ -114,6 +136,7 @@ class UserController extends ApiController {
         return $this->respondWithSuccess("Your account was registered successfully. The confirmation email was sent to you.");
 
     }
+
 
     public function verify($confirmation_code) {
         if(!$confirmation_code){

@@ -23,7 +23,7 @@ Route::group(["prefix"  =>  "api"], function() {
     Route::get('users/{id}', 'UserController@show')->before(['auth.token','auth.admin']);
     Route::put('users/{id}', 'UserController@update')->before(['auth.token','auth.admin']);
     Route::delete('users/{id}','UserController@destroy')->before(['auth.token','auth.admin']);
-//    Route::post('users', 'UserController@create')->before(['auth.token','auth.admin']);
+    Route::post('users', 'UserController@create')->before(['auth.token','auth.admin']);
 
 
     // Categories

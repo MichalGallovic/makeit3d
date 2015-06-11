@@ -1,10 +1,11 @@
-<h1 class="mb20">Users</h1>
-{{items-list 
-	items=model 
+<h1 class="mb20 --inline">Users</h1>
+{{#link-to 'users.create' class="btn btn-success btn-md ml20 --text-align"}}Create{{/link-to}}
+{{items-list
+	items=model
 	properties="id,email, first_name, last_name"
 	showRoute="users.show"
-	editRoute="users.edit" 
-	resource="users" 
+	editRoute="users.edit"
+	resource="users"
 	delete="delete"
-	edit="edit" 
+	edit="edit"
 }}
