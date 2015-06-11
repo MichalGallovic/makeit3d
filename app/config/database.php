@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+	'default' => 'sqlite',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -46,11 +46,11 @@ return array(
 
 	'connections' => array(
 
-		'sqlite' => array(
-			'driver'   => 'sqlite',
-			'database' => __DIR__.'/../database/production.sqlite',
-			'prefix'   => '',
-		),
+        'sqlite'    =>  array(
+            'driver'    =>  'sqlite',
+            'database'  =>  app_path().'/storage/databases/production.sqlite',
+            'prefix'    =>  ''
+        ),
 
 		'mysql' => array(
 			'driver'    => 'mysql',
