@@ -29,21 +29,21 @@ class UserTableSeeder extends Seeder {
 
         $userRole = Role::where('name','user')->first();
 
-		foreach(range(1, 10) as $index)
-		{
-			$user = User::create([
-                "email" =>  $faker->email,
-                "first_name"    =>  $faker->lastName,
-                "last_name"     =>  $faker->lastName,
-                "password"  =>  Hash::make("kominar"),
-                "street"        =>  $faker->streetName,
-                "town"      =>  $faker->city,
-                "zip_code"  =>  $faker->randomNumber(5),
-                "country"   =>  $faker->country
-			]);
-
-            $user->roles()->attach($userRole->id);
-		}
+//		foreach(range(1, 10) as $index)
+//		{
+//			$user = User::create([
+//                "email" =>  $faker->email,
+//                "first_name"    =>  $faker->lastName,
+//                "last_name"     =>  $faker->lastName,
+//                "password"  =>  Hash::make("kominar"),
+//                "street"        =>  $faker->streetName,
+//                "town"      =>  $faker->city,
+//                "zip_code"  =>  $faker->randomNumber(5),
+//                "country"   =>  $faker->country
+//			]);
+//
+//            $user->roles()->attach($userRole->id);
+//		}
 
         $user = User::create([
             "email" =>  "hoblikj@gmail.com",
