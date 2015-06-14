@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"new",
+				"newModel"
+			],
+			[
+				"Ember",
+				"EmberUploader"
+			],
+			[
 				"printe",
 				"printerReady"
 			],
@@ -506,14 +514,6 @@
 			[
 				"ec",
 				"escape.	autoescape (block)"
-			],
-			[
-				"bl",
-				"blockquote	Tag"
-			],
-			[
-				"print",
-				"printf〔function〕"
 			]
 		]
 	},
@@ -555,7 +555,31 @@
 			"file": "app/templates/models/edit.hbs",
 			"settings":
 			{
-				"buffer_size": 1175,
+				"buffer_size": 2443,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/models/create.hbs",
+			"settings":
+			{
+				"buffer_size": 3135,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/components/file-upload.js",
+			"settings":
+			{
+				"buffer_size": 1459,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/adapters/application.js",
+			"settings":
+			{
+				"buffer_size": 256,
 				"line_ending": "Unix"
 			}
 		},
@@ -563,7 +587,15 @@
 			"file": "app/templates/categories/edit.hbs",
 			"settings":
 			{
-				"buffer_size": 681,
+				"buffer_size": 798,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/categories/edit.js",
+			"settings":
+			{
+				"buffer_size": 315,
 				"line_ending": "Unix"
 			}
 		},
@@ -595,7 +627,7 @@
 			"file": "app/routes/orders/index.js",
 			"settings":
 			{
-				"buffer_size": 248,
+				"buffer_size": 160,
 				"line_ending": "Unix"
 			}
 		},
@@ -603,7 +635,7 @@
 			"file": "app/templates/orders/index.hbs",
 			"settings":
 			{
-				"buffer_size": 1038,
+				"buffer_size": 1027,
 				"line_ending": "Unix"
 			}
 		},
@@ -635,14 +667,6 @@
 			}
 		},
 		{
-			"file": "app/styles/components/buttons.scss",
-			"settings":
-			{
-				"buffer_size": 280,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/templates/sessions/login.hbs",
 			"settings":
 			{
@@ -662,7 +686,7 @@
 			"file": "app/templates/users/index.hbs",
 			"settings":
 			{
-				"buffer_size": 156,
+				"buffer_size": 303,
 				"line_ending": "Unix"
 			}
 		},
@@ -670,7 +694,7 @@
 			"file": "admin_app.sublime-project",
 			"settings":
 			{
-				"buffer_size": 164,
+				"buffer_size": 349,
 				"line_ending": "Unix"
 			}
 		},
@@ -678,7 +702,7 @@
 			"file": "app/models/user.js",
 			"settings":
 			{
-				"buffer_size": 504,
+				"buffer_size": 704,
 				"line_ending": "Unix"
 			}
 		},
@@ -686,7 +710,15 @@
 			"file": "app/routes/models/create.js",
 			"settings":
 			{
-				"buffer_size": 113,
+				"buffer_size": 1115,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/lib/routes/crudcreate.js",
+			"settings":
+			{
+				"buffer_size": 402,
 				"line_ending": "Unix"
 			}
 		},
@@ -702,7 +734,7 @@
 			"file": "app/routes/categories/create.js",
 			"settings":
 			{
-				"buffer_size": 113,
+				"buffer_size": 346,
 				"line_ending": "Unix"
 			}
 		},
@@ -710,7 +742,7 @@
 			"file": "app/routes/categories/edit.js",
 			"settings":
 			{
-				"buffer_size": 191,
+				"buffer_size": 541,
 				"line_ending": "Unix"
 			}
 		},
@@ -718,7 +750,7 @@
 			"file": "app/routes/categories/index.js",
 			"settings":
 			{
-				"buffer_size": 254,
+				"buffer_size": 163,
 				"line_ending": "Unix"
 			}
 		},
@@ -726,7 +758,7 @@
 			"file": "app/routes/users/index.js",
 			"settings":
 			{
-				"buffer_size": 245,
+				"buffer_size": 159,
 				"line_ending": "Unix"
 			}
 		},
@@ -822,7 +854,7 @@
 			"file": "app/routes/models/edit.js",
 			"settings":
 			{
-				"buffer_size": 350,
+				"buffer_size": 983,
 				"line_ending": "Unix"
 			}
 		},
@@ -830,7 +862,7 @@
 			"file": "app/controllers/models/edit.js",
 			"settings":
 			{
-				"buffer_size": 319,
+				"buffer_size": 337,
 				"line_ending": "Unix"
 			}
 		},
@@ -862,7 +894,7 @@
 			"file": "app/templates/models/index.hbs",
 			"settings":
 			{
-				"buffer_size": 162,
+				"buffer_size": 317,
 				"line_ending": "Unix"
 			}
 		},
@@ -870,7 +902,15 @@
 			"file": "app/templates/dashboard.hbs",
 			"settings":
 			{
-				"buffer_size": 294,
+				"buffer_size": 617,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/helpers/round-percents.js",
+			"settings":
+			{
+				"buffer_size": 196,
 				"line_ending": "Unix"
 			}
 		},
@@ -894,7 +934,7 @@
 			"file": "app/templates/categories/index.hbs",
 			"settings":
 			{
-				"buffer_size": 169,
+				"buffer_size": 332,
 				"line_ending": "Unix"
 			}
 		},
@@ -902,7 +942,7 @@
 			"file": "app/components/items-list.js",
 			"settings":
 			{
-				"buffer_size": 1130,
+				"buffer_size": 1148,
 				"line_ending": "Unix"
 			}
 		},
@@ -926,7 +966,7 @@
 			"file": "app/templates/models/show.hbs",
 			"settings":
 			{
-				"buffer_size": 62,
+				"buffer_size": 1211,
 				"line_ending": "Unix"
 			}
 		},
@@ -942,7 +982,7 @@
 			"file": "app/models/model.js",
 			"settings":
 			{
-				"buffer_size": 629,
+				"buffer_size": 799,
 				"line_ending": "Unix"
 			}
 		},
@@ -950,7 +990,7 @@
 			"file": "app/models/category.js",
 			"settings":
 			{
-				"buffer_size": 153,
+				"buffer_size": 258,
 				"line_ending": "Unix"
 			}
 		},
@@ -958,7 +998,7 @@
 			"file": "app/routes/models/index.js",
 			"settings":
 			{
-				"buffer_size": 247,
+				"buffer_size": 160,
 				"line_ending": "Unix"
 			}
 		},
@@ -966,7 +1006,7 @@
 			"file": "app/lib/routes/crudindex.js",
 			"settings":
 			{
-				"buffer_size": 426,
+				"buffer_size": 357,
 				"line_ending": "Unix"
 			}
 		},
@@ -974,7 +1014,7 @@
 			"file": "app/lib/routes/crudedit.js",
 			"settings":
 			{
-				"buffer_size": 226,
+				"buffer_size": 227,
 				"line_ending": "Unix"
 			}
 		},
@@ -982,7 +1022,7 @@
 			"file": "config/environment.js",
 			"settings":
 			{
-				"buffer_size": 1152,
+				"buffer_size": 1154,
 				"line_ending": "Unix"
 			}
 		},
@@ -1006,7 +1046,15 @@
 			"file": "Brocfile.js",
 			"settings":
 			{
-				"buffer_size": 709,
+				"buffer_size": 708,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bower.json",
+			"settings":
+			{
+				"buffer_size": 645,
 				"line_ending": "Unix"
 			}
 		},
@@ -1014,7 +1062,15 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 1121,
+				"buffer_size": 1156,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/components/upload.scss",
+			"settings":
+			{
+				"buffer_size": 873,
 				"line_ending": "Unix"
 			}
 		},
@@ -1022,7 +1078,7 @@
 			"file": "app/app.js",
 			"settings":
 			{
-				"buffer_size": 422,
+				"buffer_size": 420,
 				"line_ending": "Unix"
 			}
 		},
@@ -1030,7 +1086,7 @@
 			"file": "app/templates/components/items-list.hbs",
 			"settings":
 			{
-				"buffer_size": 795,
+				"buffer_size": 794,
 				"line_ending": "Unix"
 			}
 		},
@@ -1279,34 +1335,35 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/helpers",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/styles",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/styles/components",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/styles/foundation",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates/components",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates/models",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates/orders",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/transforms",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/config",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/public"
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app"
 	],
 	"file_history":
 	[
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/bootstrap/less/modals.less",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/ember-data/ember-data.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/controllers/sessions/login.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/jquery/src/intro.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/bootstrap-sass/CONTRIBUTING.md",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/bootstrap-sass/composer.json",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/bootstrap/less/mixins/table-row.less",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/styles/components/navbar.scss",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/models/.gitkeep",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/admin_usecases.rtf",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/styles/app.scss",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/ember-cli-shims/app-shims.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/jquery/src/css/var/cssExpand.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates/index.hbs",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/ember-qunit-notifications/index.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/qunit-notifications/index.js",
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/index.html",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_text-overflow.scss",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates/orders/show.hbs",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/adapters/application.js",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/styles/app.scss",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/ember-cli-shims/app-shims.js",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/csstyle/bower.json",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/ember-resolver/bower.json",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/bootstrap/bower.json",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower.json",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/controllers/sessions/login.js",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/bootstrap/less/modals.less",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/font-awesome/scss/_bordered-pulled.scss",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/helpers/each-property.js",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/jquery/src/selector-sizzle.js",
@@ -1315,8 +1372,6 @@
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/bootstrap/less/mixins/nav-vertical-align.less",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/font-awesome/less/bordered-pulled.less",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/jquery/src/var/indexOf.js",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/qunit-notifications/index.js",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/admin_usecases.rtf",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_border-radius.scss",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/bootstrap/less/mixins/border-radius.less",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/controllers/categories/edit.js",
@@ -1324,16 +1379,12 @@
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/bootstrap/less/component-animations.less",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/ember-load-initializers/ember-load-initializers.js",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/bootstrap/less/media.less",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/ember-data/ember-data.js",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/ember-qunit-notifications/index.js",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/ember/ember-docs.json",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/routes/users/show.js",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/models/printer.js",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/routes/dashboard.js",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/models/.gitkeep",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_nav-divider.scss",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_media.scss",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/templates/index.hbs",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/transforms/stringarray.js",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/routes/orders/edit.js",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/routes/orders/create.js",
@@ -1356,7 +1407,6 @@
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/routes/users.js",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/broccoli-ruby-sass/node_modules/mkdirp/test/umask_sync.js",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/tests/unit/models/category-test.js",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/index.html",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/ember-cli/lib/commands/install-npm.js",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/helpers/log.js",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/tmp/tree_merger-tmp_dest_dir-CdfvO7cH.tmp/index.hbs",
@@ -1416,13 +1466,7 @@
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/Exception/TooManyRequestsHttpException.php",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/node_modules/ember-cli-babel/node_modules/broccoli-babel-transpiler/node_modules/babel-core/node_modules/lodash/collection/sortByOrder.js",
 		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/composer.json",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/vendor/way/generators/tests/stubs/CreateOrdersTable.txt",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/app/config/testing/session.php",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/app/config/session.php",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/serializers/api-key.js",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/models/api-key.js",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/admin_app/app/adapters/api-key.js",
-		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/app/models/User.php"
+		"/Users/michalgallovic/Documents/FEI/7semester/Timak/makeit3d/vendor/way/generators/tests/stubs/CreateOrdersTable.txt"
 	],
 	"find":
 	{
@@ -1440,6 +1484,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"h4",
 			"input",
 			"<div class=\"form-group\">",
 			"</p>",
@@ -1566,8 +1611,7 @@
 			"title",
 			"price",
 			"title",
-			");\n",
-			"40"
+			");\n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1585,7 +1629,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 67,
 			"sheets":
 			[
 				{
@@ -1614,7 +1658,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 62,
+					"stack_index": 72,
 					"type": "text"
 				},
 				{
@@ -1630,8 +1674,8 @@
 						"selection":
 						[
 							[
-								292,
-								292
+								344,
+								344
 							]
 						],
 						"settings":
@@ -1644,7 +1688,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 37,
 					"type": "text"
 				},
 				{
@@ -1674,7 +1718,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 48,
+					"stack_index": 64,
 					"type": "text"
 				},
 				{
@@ -1704,7 +1748,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 26,
+					"stack_index": 52,
 					"type": "text"
 				},
 				{
@@ -1713,15 +1757,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1175,
+						"buffer_size": 2443,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								791,
-								791
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1734,24 +1778,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "app/templates/categories/edit.hbs",
+					"file": "app/templates/models/create.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 681,
+						"buffer_size": 3135,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								86,
-								86
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1764,11 +1808,127 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 6,
+					"file": "app/components/file-upload.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1459,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/adapters/application.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 256,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								127,
+								154
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/templates/categories/edit.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 798,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/controllers/categories/edit.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 315,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
 					"file": "app/templates/orders/edit.hbs",
 					"semi_transient": false,
 					"settings":
@@ -1794,11 +1954,11 @@
 						"translation.y": 119.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 46,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 11,
 					"file": "app/routes/orders/edit.js",
 					"semi_transient": false,
 					"settings":
@@ -1824,11 +1984,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 35,
+					"stack_index": 58,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 12,
 					"file": "app/router.js",
 					"semi_transient": false,
 					"settings":
@@ -1855,24 +2015,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 55,
+					"stack_index": 66,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 13,
 					"file": "app/routes/orders/index.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 248,
+						"buffer_size": 160,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								155,
+								155
 							]
 						],
 						"settings":
@@ -1884,24 +2044,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 34,
+					"stack_index": 25,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 14,
 					"file": "app/templates/orders/index.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1038,
+						"buffer_size": 1027,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								692,
-								292
+								858,
+								858
 							]
 						],
 						"settings":
@@ -1914,11 +2074,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 28,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 15,
 					"file": "app/styles/foundation/helpers.scss",
 					"semi_transient": false,
 					"settings":
@@ -1942,11 +2102,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 33,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 16,
 					"file": "app/templates/orders/create.hbs",
 					"semi_transient": false,
 					"settings":
@@ -1971,11 +2131,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 65,
+					"stack_index": 74,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 17,
 					"file": "app/templates/orders/manage.hbs",
 					"semi_transient": false,
 					"settings":
@@ -2001,40 +2161,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 38,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
-					"file": "app/styles/components/buttons.scss",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 280,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 18,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
+					"buffer": 18,
 					"file": "app/templates/sessions/login.hbs",
 					"semi_transient": false,
 					"settings":
@@ -2060,11 +2191,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 23,
+					"stack_index": 50,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 19,
 					"file": "app/models/order.js",
 					"semi_transient": false,
 					"settings":
@@ -2091,24 +2222,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 51,
+					"stack_index": 65,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 20,
 					"file": "app/templates/users/index.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 156,
+						"buffer_size": 303,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								22,
-								22
+								0,
+								0
 							]
 						],
 						"settings":
@@ -2120,24 +2251,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 29,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 21,
 					"file": "admin_app.sublime-project",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 164,
+						"buffer_size": 349,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								152,
-								152
+								339,
+								339
 							]
 						],
 						"settings":
@@ -2149,24 +2280,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 66,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 22,
 					"file": "app/models/user.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 504,
+						"buffer_size": 704,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								504,
-								504
+								0,
+								0
 							]
 						],
 						"settings":
@@ -2179,16 +2310,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 49,
 					"type": "text"
 				},
 				{
-					"buffer": 20,
+					"buffer": 23,
 					"file": "app/routes/models/create.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 113,
+						"buffer_size": 1115,
 						"regions":
 						{
 						},
@@ -2208,11 +2339,41 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 40,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 21,
+					"buffer": 24,
+					"file": "app/lib/routes/crudcreate.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 402,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
 					"file": "app/routes/orders/create.js",
 					"semi_transient": false,
 					"settings":
@@ -2236,129 +2397,129 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 39,
-					"type": "text"
-				},
-				{
-					"buffer": 22,
-					"file": "app/routes/categories/create.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 113,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 38,
-					"type": "text"
-				},
-				{
-					"buffer": 23,
-					"file": "app/routes/categories/edit.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 191,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 43,
-					"type": "text"
-				},
-				{
-					"buffer": 24,
-					"file": "app/routes/categories/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 254,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 42,
-					"type": "text"
-				},
-				{
-					"buffer": 25,
-					"file": "app/routes/users/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 245,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 29,
+					"stack_index": 60,
 					"type": "text"
 				},
 				{
 					"buffer": 26,
+					"file": "app/routes/categories/create.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 346,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "app/routes/categories/edit.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 541,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 61,
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "app/routes/categories/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 163,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 29,
+					"file": "app/routes/users/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 159,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								154,
+								154
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"type": "text"
+				},
+				{
+					"buffer": 30,
 					"file": "app/routes/users/edit.js",
 					"semi_transient": false,
 					"settings":
@@ -2384,11 +2545,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 30,
+					"stack_index": 54,
 					"type": "text"
 				},
 				{
-					"buffer": 27,
+					"buffer": 31,
 					"file": "app/templates/users/edit.hbs",
 					"semi_transient": false,
 					"settings":
@@ -2414,11 +2575,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 47,
 					"type": "text"
 				},
 				{
-					"buffer": 28,
+					"buffer": 32,
 					"file": "app/templates/categories/show.hbs",
 					"semi_transient": false,
 					"settings":
@@ -2443,11 +2604,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 48,
 					"type": "text"
 				},
 				{
-					"buffer": 29,
+					"buffer": 33,
 					"file": "app/templates/users/show.hbs",
 					"semi_transient": false,
 					"settings":
@@ -2472,11 +2633,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 43,
 					"type": "text"
 				},
 				{
-					"buffer": 30,
+					"buffer": 34,
 					"file": "app/templates/orders/show.hbs",
 					"semi_transient": false,
 					"settings":
@@ -2500,11 +2661,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 42,
 					"type": "text"
 				},
 				{
-					"buffer": 31,
+					"buffer": 35,
 					"file": "app/routes/categories/show.js",
 					"semi_transient": false,
 					"settings":
@@ -2529,11 +2690,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 41,
+					"stack_index": 27,
 					"type": "text"
 				},
 				{
-					"buffer": 32,
+					"buffer": 36,
 					"file": "app/routes/models/show.js",
 					"semi_transient": false,
 					"settings":
@@ -2558,11 +2719,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 41,
 					"type": "text"
 				},
 				{
-					"buffer": 33,
+					"buffer": 37,
 					"file": "app/routes/orders/manage.js",
 					"semi_transient": false,
 					"settings":
@@ -2588,11 +2749,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 33,
+					"stack_index": 57,
 					"type": "text"
 				},
 				{
-					"buffer": 34,
+					"buffer": 38,
 					"file": "app/routes/sessions/login.js",
 					"semi_transient": false,
 					"settings":
@@ -2617,11 +2778,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 32,
+					"stack_index": 56,
 					"type": "text"
 				},
 				{
-					"buffer": 35,
+					"buffer": 39,
 					"file": "app/routes/sessions/logout.js",
 					"semi_transient": false,
 					"settings":
@@ -2647,11 +2808,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 31,
+					"stack_index": 55,
 					"type": "text"
 				},
 				{
-					"buffer": 36,
+					"buffer": 40,
 					"file": "app/routes/orders/show.js",
 					"semi_transient": false,
 					"settings":
@@ -2675,16 +2836,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 57,
+					"stack_index": 68,
 					"type": "text"
 				},
 				{
-					"buffer": 37,
+					"buffer": 41,
 					"file": "app/routes/models/edit.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 350,
+						"buffer_size": 983,
 						"regions":
 						{
 						},
@@ -2705,24 +2866,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 37,
+					"stack_index": 59,
 					"type": "text"
 				},
 				{
-					"buffer": 38,
+					"buffer": 42,
 					"file": "app/controllers/models/edit.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 319,
+						"buffer_size": 337,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								314,
-								82
+								0,
+								0
 							]
 						],
 						"settings":
@@ -2735,11 +2896,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 52,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 39,
+					"buffer": 43,
 					"file": "app/helpers/utils.js",
 					"semi_transient": false,
 					"settings":
@@ -2765,11 +2926,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 67,
+					"stack_index": 75,
 					"type": "text"
 				},
 				{
-					"buffer": 40,
+					"buffer": 44,
 					"file": "app/helpers/ajax.js",
 					"semi_transient": false,
 					"settings":
@@ -2792,14 +2953,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 564.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 47,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 41,
+					"buffer": 45,
 					"file": "app/initializers/ajax.js",
 					"semi_transient": false,
 					"settings":
@@ -2824,24 +2985,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 63,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 42,
+					"buffer": 46,
 					"file": "app/templates/models/index.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 162,
+						"buffer_size": 317,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								28,
-								0
+								121,
+								121
 							]
 						],
 						"settings":
@@ -2858,20 +3019,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 43,
+					"buffer": 47,
 					"file": "app/templates/dashboard.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 294,
+						"buffer_size": 617,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								293,
-								293
+								516,
+								516
 							]
 						],
 						"settings":
@@ -2883,11 +3044,41 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 50,
+					"stack_index": 34,
 					"type": "text"
 				},
 				{
-					"buffer": 44,
+					"buffer": 48,
+					"file": "app/helpers/round-percents.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 196,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								133,
+								133
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 35,
+					"type": "text"
+				},
+				{
+					"buffer": 49,
 					"file": "app/helpers/custom-log.js",
 					"semi_transient": false,
 					"settings":
@@ -2912,11 +3103,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 39,
 					"type": "text"
 				},
 				{
-					"buffer": 45,
+					"buffer": 50,
 					"file": "app/helpers/seconds-to-time.js",
 					"semi_transient": false,
 					"settings":
@@ -2928,8 +3119,8 @@
 						"selection":
 						[
 							[
-								60,
-								60
+								0,
+								541
 							]
 						],
 						"settings":
@@ -2942,24 +3133,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 44,
+					"stack_index": 36,
 					"type": "text"
 				},
 				{
-					"buffer": 46,
+					"buffer": 51,
 					"file": "app/templates/categories/index.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 169,
+						"buffer_size": 332,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								27,
-								27
+								0,
+								0
 							]
 						],
 						"settings":
@@ -2971,24 +3162,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
+					"stack_index": 30,
 					"type": "text"
 				},
 				{
-					"buffer": 47,
+					"buffer": 52,
 					"file": "app/components/items-list.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1130,
+						"buffer_size": 1148,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								881,
-								881
+								172,
+								172
 							]
 						],
 						"settings":
@@ -2998,14 +3189,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 83.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 49,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 48,
+					"buffer": 53,
 					"file": "app/components/item-show.js",
 					"semi_transient": false,
 					"settings":
@@ -3031,11 +3222,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 45,
 					"type": "text"
 				},
 				{
-					"buffer": 49,
+					"buffer": 54,
 					"file": "app/templates/components/item-show.hbs",
 					"semi_transient": false,
 					"settings":
@@ -3060,24 +3251,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 44,
 					"type": "text"
 				},
 				{
-					"buffer": 50,
+					"buffer": 55,
 					"file": "app/templates/models/show.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 62,
+						"buffer_size": 1211,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								31,
-								31
+								0,
+								0
 							]
 						],
 						"settings":
@@ -3089,11 +3280,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 40,
 					"type": "text"
 				},
 				{
-					"buffer": 51,
+					"buffer": 56,
 					"file": "app/controllers/models/index.js",
 					"semi_transient": false,
 					"settings":
@@ -3118,24 +3309,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 56,
+					"stack_index": 67,
 					"type": "text"
 				},
 				{
-					"buffer": 52,
+					"buffer": 57,
 					"file": "app/models/model.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 629,
+						"buffer_size": 799,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								621,
-								621
+								0,
+								0
 							]
 						],
 						"settings":
@@ -3148,24 +3339,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 54,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 53,
+					"buffer": 58,
 					"file": "app/models/category.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 153,
+						"buffer_size": 258,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								146,
-								146
+								0,
+								0
 							]
 						],
 						"settings":
@@ -3177,16 +3368,77 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 58,
+					"stack_index": 69,
 					"type": "text"
 				},
 				{
-					"buffer": 54,
+					"buffer": 59,
 					"file": "app/routes/models/index.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 247,
+						"buffer_size": 160,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								155,
+								155
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 60,
+					"file": "app/lib/routes/crudindex.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 357,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								91,
+								91
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 32,
+					"type": "text"
+				},
+				{
+					"buffer": 61,
+					"file": "app/lib/routes/crudedit.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 227,
 						"regions":
 						{
 						},
@@ -3208,85 +3460,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 36,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 55,
-					"file": "app/lib/routes/crudindex.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 426,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								422,
-								422
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 56,
-					"file": "app/lib/routes/crudedit.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 226,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								226,
-								226
-							]
-						],
-						"settings":
-						{
-							"_anf_new": "",
-							"auto_complete": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 53,
-					"type": "text"
-				},
-				{
-					"buffer": 57,
+					"buffer": 62,
 					"file": "config/environment.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1152,
+						"buffer_size": 1154,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								629,
-								629
+								0,
+								0
 							]
 						],
 						"settings":
@@ -3300,11 +3491,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 60,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 58,
+					"buffer": 63,
 					"file": "public/crossdomain.xml",
 					"semi_transient": false,
 					"settings":
@@ -3328,11 +3519,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 59,
+					"stack_index": 70,
 					"type": "text"
 				},
 				{
-					"buffer": 59,
+					"buffer": 64,
 					"file": "app/routes/index.js",
 					"semi_transient": false,
 					"settings":
@@ -3357,16 +3548,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 61,
+					"stack_index": 71,
 					"type": "text"
 				},
 				{
-					"buffer": 60,
+					"buffer": 65,
 					"file": "Brocfile.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 709,
+						"buffer_size": 708,
 						"regions":
 						{
 						},
@@ -3386,16 +3577,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 28,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 61,
-					"file": "package.json",
-					"semi_transient": false,
+					"buffer": 66,
+					"file": "bower.json",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 1121,
+						"buffer_size": 645,
 						"regions":
 						{
 						},
@@ -3404,6 +3595,36 @@
 							[
 								0,
 								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 67,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1156,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								855,
+								855
 							]
 						],
 						"settings":
@@ -3417,16 +3638,45 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 25,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 62,
+					"buffer": 68,
+					"file": "app/styles/components/upload.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 873,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 69,
 					"file": "app/app.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 422,
+						"buffer_size": 420,
 						"regions":
 						{
 						},
@@ -3446,24 +3696,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 69,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
-					"buffer": 63,
+					"buffer": 70,
 					"file": "app/templates/components/items-list.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 795,
+						"buffer_size": 794,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								264,
-								264
+								430,
+								430
 							]
 						],
 						"settings":
@@ -3476,11 +3726,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 31,
 					"type": "text"
 				},
 				{
-					"buffer": 64,
+					"buffer": 71,
 					"file": "app/templates/application.hbs",
 					"semi_transient": false,
 					"settings":
@@ -3505,11 +3755,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 24,
+					"stack_index": 51,
 					"type": "text"
 				},
 				{
-					"buffer": 65,
+					"buffer": 72,
 					"file": "app/templates/partials/header.hbs",
 					"semi_transient": false,
 					"settings":
@@ -3536,11 +3786,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 27,
+					"stack_index": 53,
 					"type": "text"
 				},
 				{
-					"buffer": 66,
+					"buffer": 73,
 					"file": "app/helpers/object-to-row.js",
 					"semi_transient": false,
 					"settings":
@@ -3565,11 +3815,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 46,
+					"stack_index": 63,
 					"type": "text"
 				},
 				{
-					"buffer": 67,
+					"buffer": 74,
 					"file": "app/lib/utils/register-helper.js",
 					"semi_transient": false,
 					"settings":
@@ -3596,11 +3846,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 64,
+					"stack_index": 73,
 					"type": "text"
 				},
 				{
-					"buffer": 68,
+					"buffer": 75,
 					"file": "app/initializers/custom-htmlbars-helpers.js",
 					"semi_transient": false,
 					"settings":
@@ -3625,11 +3875,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 68,
+					"stack_index": 76,
 					"type": "text"
 				},
 				{
-					"buffer": 69,
+					"buffer": 76,
 					"file": "app/lib/helpers/each-property.js",
 					"semi_transient": false,
 					"settings":
@@ -3657,11 +3907,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 45,
+					"stack_index": 62,
 					"type": "text"
 				},
 				{
-					"buffer": 70,
+					"buffer": 77,
 					"file": "node_modules/swag/lib/swag.js",
 					"semi_transient": false,
 					"settings":
@@ -3679,6 +3929,7 @@
 						],
 						"settings":
 						{
+							"auto_complete": false,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -3687,7 +3938,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 70,
+					"stack_index": 77,
 					"type": "text"
 				}
 			]
@@ -3740,6 +3991,134 @@
 		"selected_items":
 		[
 			[
+				"",
+				"package.json"
+			],
+			[
+				"create",
+				"app/templates/models/create.hbs"
+			],
+			[
+				"models",
+				"app/models/model.js"
+			],
+			[
+				"create.",
+				"app/routes/models/create.js"
+			],
+			[
+				"controlledit.js",
+				"app/controllers/categories/edit.js"
+			],
+			[
+				"edit.hbs",
+				"app/templates/categories/edit.hbs"
+			],
+			[
+				"create.hbs",
+				"app/templates/models/create.hbs"
+			],
+			[
+				"ajax.",
+				"app/helpers/ajax.js"
+			],
+			[
+				"controlleredit",
+				"app/controllers/models/edit.js"
+			],
+			[
+				"model",
+				"app/models/model.js"
+			],
+			[
+				"item-",
+				"app/components/items-list.js"
+			],
+			[
+				"adapter",
+				"app/adapters/application.js"
+			],
+			[
+				"create.js",
+				"app/routes/models/create.js"
+			],
+			[
+				"ajax",
+				"app/helpers/ajax.js"
+			],
+			[
+				"aja.",
+				"app/helpers/ajax.js"
+			],
+			[
+				"package",
+				"package.json"
+			],
+			[
+				"enviro",
+				"config/environment.js"
+			],
+			[
+				"app.js",
+				"app/app.js"
+			],
+			[
+				"modelscreate.js",
+				"app/routes/models/create.js"
+			],
+			[
+				"modelscreate",
+				"app/templates/models/create.hbs"
+			],
+			[
+				"edit",
+				"app/templates/models/edit.hbs"
+			],
+			[
+				"modelsinde",
+				"app/templates/models/index.hbs"
+			],
+			[
+				"orders.h",
+				"app/templates/orders/index.hbs"
+			],
+			[
+				"index.hbs",
+				"app/templates/models/index.hbs"
+			],
+			[
+				"usersindex.",
+				"app/templates/users/index.hbs"
+			],
+			[
+				"item-list",
+				"app/templates/components/items-list.hbs"
+			],
+			[
+				"item",
+				"app/components/items-list.js"
+			],
+			[
+				"index.js",
+				"app/routes/users/index.js"
+			],
+			[
+				"usersindex",
+				"app/templates/users/index.hbs"
+			],
+			[
+				"item-l",
+				"app/templates/components/items-list.hbs"
+			],
+			[
+				"crudin",
+				"app/lib/routes/crudindex.js"
+			],
+			[
+				"dashbo",
+				"app/templates/dashboard.hbs"
+			],
+			[
 				"manage.",
 				"app/controllers/orders/manage.js"
 			],
@@ -3750,10 +4129,6 @@
 			[
 				"crudinde",
 				"app/lib/routes/crudindex.js"
-			],
-			[
-				"",
-				"app/templates/components/items-list.hbs"
 			],
 			[
 				"modelsshow",
@@ -3780,10 +4155,6 @@
 				"app/components/item-show.js"
 			],
 			[
-				"edit.hbs",
-				"app/templates/categories/edit.hbs"
-			],
-			[
 				"edit.hb",
 				"app/templates/categories/edit.hbs"
 			],
@@ -3798,10 +4169,6 @@
 			[
 				"helpers",
 				"app/styles/foundation/helpers.scss"
-			],
-			[
-				"item-",
-				"app/templates/components/item-show.hbs"
 			],
 			[
 				"user",
@@ -3836,20 +4203,8 @@
 				"app/templates/categories/index.hbs"
 			],
 			[
-				"modelsinde",
-				"app/templates/models/index.hbs"
-			],
-			[
-				"orders.h",
-				"app/templates/orders/index.hbs"
-			],
-			[
 				"models.hbs",
 				"app/templates/models/index.hbs"
-			],
-			[
-				"item",
-				"app/templates/components/items-list.hbs"
 			],
 			[
 				"login",
@@ -3878,10 +4233,6 @@
 			[
 				"broc",
 				"Brocfile.js"
-			],
-			[
-				"usersindex",
-				"app/routes/users/index.js"
 			],
 			[
 				"usersedit",
@@ -3920,16 +4271,8 @@
 				"app/routes/orders/create.js"
 			],
 			[
-				"modelscreate",
-				"app/routes/models/create.js"
-			],
-			[
 				"categoriesedit",
 				"app/routes/categories/edit.js"
-			],
-			[
-				"create",
-				"app/routes/models/create.js"
 			],
 			[
 				"each-",
@@ -3996,20 +4339,8 @@
 				"app/controllers/models/edit.js"
 			],
 			[
-				"ajax.",
-				"app/helpers/ajax.js"
-			],
-			[
-				"model",
-				"app/models/model.js"
-			],
-			[
 				"crudedi",
 				"app/lib/routes/crudedit.js"
-			],
-			[
-				"crudin",
-				"app/lib/routes/crudindex.js"
 			],
 			[
 				"eidt.hbs",
@@ -4020,20 +4351,8 @@
 				"app/routes/orders/index.js"
 			],
 			[
-				"index.js",
-				"app/routes/orders/index.js"
-			],
-			[
 				"route",
 				"app/router.js"
-			],
-			[
-				"index.hbs",
-				"app/templates/models/index.hbs"
-			],
-			[
-				"item-list",
-				"app/templates/components/items-list.hbs"
 			],
 			[
 				"categor",
@@ -4054,10 +4373,6 @@
 			[
 				"users",
 				"app/models/user.js"
-			],
-			[
-				"dashbo",
-				"app/templates/dashboard.hbs"
 			],
 			[
 				"dashboard",
@@ -4136,10 +4451,6 @@
 				"config/environment.js"
 			],
 			[
-				"item-l",
-				"app/templates/components/items-list.hbs"
-			],
-			[
 				"show.hb",
 				"app/templates/models/show.hbs"
 			],
@@ -4176,10 +4487,6 @@
 				"app/templates/models.hbs"
 			],
 			[
-				"models",
-				"app/routes/models.js"
-			],
-			[
 				"models.js",
 				"admin_app/app/routes/models.js"
 			],
@@ -4192,64 +4499,8 @@
 				"admin_app/app/controllers/application.js"
 			],
 			[
-				"ajax",
-				"admin_app/app/helpers/ajax.js"
-			],
-			[
 				"sessions",
 				"admin_app/app/controllers/sessions.js"
-			],
-			[
-				"header.",
-				"admin_app/app/templates/partials/header.hbs"
-			],
-			[
-				"sess",
-				"admin_app/app/controllers/sessions.js"
-			],
-			[
-				"sessions.js",
-				"admin_app/app/controllers/sessions.js"
-			],
-			[
-				"login.hbs",
-				"admin_app/app/templates/login.hbs"
-			],
-			[
-				"user.",
-				"admin_app/app/models/user.js"
-			],
-			[
-				"package",
-				"admin_app/package.json"
-			],
-			[
-				"bower",
-				"admin_app/bower.json"
-			],
-			[
-				"sessio",
-				"admin_app/app/controllers/sessions.js"
-			],
-			[
-				"gulp",
-				"design/gulpfile.js"
-			],
-			[
-				"b",
-				"admin_app/Brocfile.js"
-			],
-			[
-				"inde",
-				"jade/index.jade"
-			],
-			[
-				"buttons",
-				"sass/components/buttons.scss"
-			],
-			[
-				"modal",
-				"sass/components/modals.scss"
 			]
 		],
 		"width": 0.0

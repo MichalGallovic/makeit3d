@@ -28,7 +28,7 @@ return array(
 		'secret' => '',
 	),
     'octoprint' =>  [
-        "api_key"           =>  '2AB67DB172BE4647BC1056289E3583A3',
+        "api_key"           =>  'A7339BA35A6F495384BF6533DF381E94',
         "printer_api_key"   =>  '7BF6AC45336F4FDDBC724ACE7E91265C',
         "root_prefix"       =>  "octoprint",
         "root_postfix"      =>  "/api",
