@@ -411,25 +411,25 @@ class Octoprint {
     }
 
     protected function getRootApiUrl() {
-        $root_url = "";
+        $root_url = "localhost";
         // remove http// or https://
-        $domain_root = str_replace("http://","",str_replace("https://","",url()));
+//        $domain_root = str_replace("http://","",str_replace("https://","",url()));
 
-        $root_url = $domain_root;
+//        $root_url = $domain_root;
         $api_root_postfix = Config::get('services.octoprint.root_postfix');
 
-        if($root_url == "localhost") {
+//        if($root_url == "localhost") {
             // when called as a queue job url is resolved as localhost
             $port = Config::get('services.octoprint.localhost_port');
             $root_url .= ":".$port.$api_root_postfix;
             $root_url = "http://".$root_url;
             return $root_url;
-        }
+//        }
 
-        $api_root_prefix = Config::get('services.octoprint.root_prefix');
+//        $api_root_prefix = Config::get('services.octoprint.root_prefix');
 
-        if($api_root_prefix)
-            $root_url = $api_root_prefix.".".$root_url;
+//        if($api_root_prefix)
+//            $root_url = $api_root_prefix.".".$root_url;
 
         $root_url = "http://".$root_url.$api_root_postfix;
         return $root_url;

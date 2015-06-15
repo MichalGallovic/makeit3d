@@ -6,8 +6,6 @@ use Illuminate\Support\Facades\Request;
 use App\Octoprint\Octoprint;
 
 Route::get('/',['uses'  =>  'HomeController@index','as'=>'home']);
-Route::get('/admin/*','HomeController@admin');
-Route::get('/admin','HomeController@admin');
 Route::get('users/verify/{code}','UserController@verify');
 
 Route::group(["prefix"  =>  "api"], function() {
@@ -64,6 +62,8 @@ Route::group(["prefix"  =>  "api"], function() {
 //    Route::post('auth', 'Tappleby\AuthToken\AuthTokenController@store');
 //    Route::delete('auth', 'Tappleby\AuthToken\AuthTokenController@destroy');
 });
+
+Route::get('/admin{data?}','HomeController@admin')->where('data','.*');
 
 // @TODO handle HTML request
 App::error(function(AuthTokenNotAuthorizedException $exception) {
