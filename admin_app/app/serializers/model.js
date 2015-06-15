@@ -5,6 +5,6 @@ export default DS.RESTSerializer.extend({
     var key = relationship.key;
     var belongsTo = snapshot.belongsTo(key);
     key = this.keyForRelationship ? this.keyForRelationship(key, "belongsTo", "serialize") : key;
-    json[key] = Ember.isNone(belongsTo) ? belongsTo : belongsTo.record._data.id;
+    json[key] = Ember.isNone(belongsTo) ? belongsTo : belongsTo.id;
   }
 });

@@ -21,7 +21,7 @@ class UserTransformer extends TransformerAbstract {
             'country'       =>  $user->country,
             'zip_code'      =>  $user->zip_code,
             'token'         =>  $user->token,
-            'created_at'    =>  $user->created_at
+            'created'    =>  $user->created_at->format('m-d-Y H:i:s')
         ];
     }
 

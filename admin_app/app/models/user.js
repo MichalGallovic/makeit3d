@@ -12,6 +12,7 @@ export default DS.Model.extend({
 	town : DS.attr('string'),
 	country : DS.attr('string'),
 	zip_code : DS.attr('string'),
+    created: DS.attr('date'),
 	token : DS.attr('string'),
 	full_name: function() {
     var first_name = this.get('first_name') ? this.get('first_name') : "";

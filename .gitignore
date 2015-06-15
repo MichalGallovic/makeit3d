@@ -9,5 +9,5 @@ composer.lock
 Thumbs.db
 /public/storage
 /public/images
-/app/storage/databases/development.sqlite
+/app/storage/databases/
 /_ide_helper.php

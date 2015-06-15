@@ -11,6 +11,7 @@ export default DS.Model.extend({
 	download_link_gcode : DS.attr('string'),
 	download_link_stl : DS.attr('string'),
 	deleted: DS.attr('boolean'),
+    created: DS.attr('date'),
 	created_by : DS.belongsTo('user', {async: true}),
   category: DS.belongsTo('category',{async: true}),
 	print: function() {

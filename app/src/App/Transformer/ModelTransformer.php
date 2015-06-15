@@ -24,13 +24,15 @@ class ModelTransformer extends TransformerAbstract {
             'download_link_stl' =>  $model->download_link_stl,
             'deleted'   =>  $model->trashed(),
             'category'  =>  (int) isset($model->category->id) ? $model->category->id : null,
-            'created_by'        =>  $model->createdBy->id
+            'created_by'        =>  $model->createdBy->id,
+            'created'   => $model->created_at->format('m-d-Y H:i:s')
         ];
     }
 
     public function includeCategory(Model $model) {
         $category = $model->category;
+        if($category)
+            return $this->item($category, new CategoryTransformer);
 
-        return $this->item($category, new CategoryTransformer);
     }
 }

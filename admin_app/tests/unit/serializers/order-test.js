@@ -1,9 +1,6 @@
-import {
-  moduleForModel,
-  test
-} from 'ember-qunit';
+import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('order', {
+moduleForModel('order', 'Unit | Serializer | order', {
   // Specify the other units that are required for this test.
   needs: ['serializer:order']
 });

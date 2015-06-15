@@ -9,7 +9,7 @@ export default DS.Model.extend({
   	country: DS.attr('string'),
   	zip_code: DS.attr('string'),
   	price: DS.attr('number'),
-  	created_at: DS.attr(),
+  	created: DS.attr('date'),
   	was_opened: DS.attr('boolean'),
     was_printed: DS.attr('boolean'),
     was_shipped: DS.attr('boolean'),

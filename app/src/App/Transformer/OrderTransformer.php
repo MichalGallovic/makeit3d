@@ -17,7 +17,7 @@ class OrderTransformer extends TransformerAbstract {
         return [
             'id'            =>  $order->id,
             'price'         =>  $order->price,
-            'created_at'    =>  $order->created_at,
+            'created'       =>  $order->created_at->format('m-d-Y H:i:s'),
             'first_name'    =>  $order->first_name,
             'last_name'     =>  $order->last_name,
             'street'        =>  $order->street,

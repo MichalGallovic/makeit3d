@@ -1,5 +1,5 @@
-import Ember from 'ember';
+import CrudIndexController from '../../lib/controllers/crudindex';
 
-export default Ember.Controller.extend({
-	
+export default CrudIndexController.extend({
+
 });

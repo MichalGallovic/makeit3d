@@ -1,7 +1,7 @@
 <h1 class="mb20 --inline">Categories</h1>
 {{#link-to 'categories.create' class="btn btn-success btn-md ml20 --text-align"}}Create{{/link-to}}
 {{items-list
-	items=model
+	items=sortedModel
 	properties="id,name, deleted"
 	showRoute="categories.show"
 	editRoute="categories.edit"

@@ -17,7 +17,8 @@ class CategoryTransformer extends TransformerAbstract {
             'name'          =>  $category->name,
             'image_url'     =>  $category->image_url,
             'model_count'   =>  count($category->models),
-            'deleted'       =>  $category->trashed()
+            'deleted'       =>  $category->trashed(),
+            'created'       =>  $category->created_at->format('m-d-Y H:i:s')
         ];
     }
 

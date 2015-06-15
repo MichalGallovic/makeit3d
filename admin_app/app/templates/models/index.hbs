@@ -1,7 +1,7 @@
 <h1 class="mb20 --inline">Models</h1>
 {{#link-to 'models.create' class="btn btn-success btn-md ml20 --text-align"}}Create{{/link-to}}
 {{items-list 
-	items=model 
+	items=sortedModel
 	properties="id, name, visible" 
 	showRoute="models.show"
 	editRoute="models.edit"

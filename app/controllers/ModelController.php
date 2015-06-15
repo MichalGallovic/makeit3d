@@ -75,7 +75,7 @@ class ModelController extends ApiController {
         $model->price = $input['price'];
         $model->image_url = $input['image_url'];
         $model->created_by = isset($input['created_by']) ? (int) $input['created_by'] : $model->created_by;
-        $model->category_id = isset($input['category_id']) ? (int) $input['category_id'] : $model->category_id;
+        $model->category_id = isset($input['category']) ? (int) $input['category'] : $model->category_id;
         $model->download_link_gcode = isset($input['download_link_gcode']) ? $input['download_link_gcode'] : $model->download_link_gcode;
         $model->download_link_stl = isset($input['download_link_stl']) ? $input['download_link_stl'] : $model->download_link_stl;
         $model->printing_time = isset($input['printing_time']) ? $input['printing_time'] : $model->printing_time;
