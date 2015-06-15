@@ -7,7 +7,7 @@ composer.lock
 .env.php
 .DS_Store
 Thumbs.db
-/public/storage
-/public/images
+/public/storage/**
+/public/images/**
 /app/storage/databases/
 /_ide_helper.php
